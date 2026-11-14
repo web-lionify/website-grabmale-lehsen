@@ -25,12 +25,16 @@ MAIL = "steine@online.de"
 HOURS = "Termine nach Vereinbarung – auch abends und samstags"
 MAP_URL = "https://www.openstreetmap.org/search?query=Unter%20den%20Linden%2014%2C%2019243%20Wittenburg"
 
+EBAY_URL = "https://www.ebay.de/str/grabsteine"
+EBAY_SOLD = "über 6.300"
+
 NAV = [
     ("index.html", "Start"),
     ("grabmale.html", "Grabmale"),
     ("referenzen.html", "Referenzen"),
-    ("index.html#ablauf", "Ablauf"),
+    ("ratgeber.html", "Ratgeber"),
 ]
+RATGEBER_PAGES = ("ratgeber.html", "friedhofssatzungen.html", "steinsorten.html")
 
 CATEGORIES = [
     {
@@ -64,6 +68,7 @@ CATEGORIES = [
     {
         "slug": "liegesteine", "title": "Liegesteine", "card": "liegesteine-05",
         "short": "Schlicht, pflegeleicht und ideal für Urnengräber.",
+        "shop": "Liege- und Rasensteine sowie Grabherzen mit Ihrer Inschrift können Sie auch direkt in unserem eBay-Shop bestellen.",
         "intro": "Liegesteine – auch Kissensteine genannt – liegen flach oder leicht geneigt auf dem Grab. Sie wirken zurückhaltend und fügen sich harmonisch in die Grabgestaltung ein.",
         "text": [
             "Besonders für Urnengrabstellen und kleinere Grabflächen ist der Liegestein eine beliebte Wahl. Er lässt sich gut mit Bepflanzung, Kies oder einer Teilabdeckung kombinieren und ist dabei angenehm pflegeleicht.",
@@ -74,6 +79,7 @@ CATEGORIES = [
     {
         "slug": "grabanlagen", "title": "Grabanlagen", "card": "grabanlagen-06",
         "short": "Einfassung, Abdeckung und Zubehör aus einer Hand.",
+        "shop": "Urnengrab-Einfassungen und Zubehör wie Stützen und Sockel finden Sie auch in unserem eBay-Shop.",
         "intro": "Bei der Gestaltung einer Grabstätte haben Angehörige viele Möglichkeiten – von der schlichten Grabtafel bis zur vollständigen, individuellen Grabanlage.",
         "text": [
             "Ob Grabtafel, Kissenstein, Standstein oder eine individuelle Grabanlage mit Grabsteineinfassung und Abdeckung: Mit Grablichtern, Grabvasen und weiterem Zubehör sind der Vielfalt kaum Grenzen gesetzt.",
@@ -118,7 +124,7 @@ LOCAL_BUSINESS = {
 def page(filename, title, description, body, current=None, head_extra=""):
     nav_html = []
     for href, label in NAV:
-        cur = ' aria-current="page"' if current == href else ""
+        cur = ' aria-current="page"' if current == href or (href == "ratgeber.html" and current in RATGEBER_PAGES) else ""
         nav_html.append(f'<a href="{href}"{cur}>{label}</a>')
     cur = ' aria-current="page"' if current == "kontakt.html" else ""
     nav_html.append(f'<a class="nav-cta" href="kontakt.html"{cur}>Kontakt</a>')
@@ -173,6 +179,7 @@ def page(filename, title, description, body, current=None, head_extra=""):
           <li><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></li>
           <li><a href="mailto:{MAIL}">{MAIL}</a></li>
           <li>{HOURS}</li>
+          <li><a href="{EBAY_URL}" target="_blank" rel="noopener">Online-Shop bei eBay ↗</a></li>
         </ul>
       </div>
       <div>
@@ -180,6 +187,12 @@ def page(filename, title, description, body, current=None, head_extra=""):
         <ul>
           {"".join(f'<li><a href="{c["slug"]}.html">{c["title"]}</a></li>' for c in CATEGORIES)}
           <li><a href="referenzen.html">Referenzen</a></li>
+        </ul>
+        <h4 style="margin-top:22px">Ratgeber</h4>
+        <ul>
+          <li><a href="ratgeber.html">Häufige Fragen</a></li>
+          <li><a href="friedhofssatzungen.html">Friedhofssatzungen</a></li>
+          <li><a href="steinsorten.html">Steinsorten</a></li>
         </ul>
       </div>
     </div>
@@ -223,6 +236,35 @@ def cards():
   <div class="card-body"><h3>{c["title"]}</h3><p>{c["short"]}</p><span class="more">Ansehen →</span></div>
 </a>""")
     return '<div class="cards">\n' + "\n".join(out) + "\n</div>"
+
+
+def shop_section():
+    return f"""<section class="section shop">
+  <div class="wrap shop-grid">
+    <div class="shop-media">
+      <img src="img/liegesteine/liegesteine-10-k.jpg" alt="Grabherz aus Multicolor-Granit" loading="lazy" width="480" height="480">
+      <img src="img/liegesteine/liegesteine-03-k.jpg" alt="Liegestein mit Weidenmotiv" loading="lazy" width="480" height="480">
+    </div>
+    <div>
+      <p class="eyebrow">Online-Shop</p>
+      <h2>Liegesteine &amp; Grabherzen – auch online bestellen</h2>
+      <p>Viele unserer Liege- und Rasensteine, Grabherzen und Urnengrab-Einfassungen können Sie auch bequem über unseren eBay-Shop bestellen – mit Ihrer persönlichen Inschrift und Ihrem Wunschsymbol, gefertigt in unserer Werkstatt in Lehsen.</p>
+      <ul class="shop-facts">
+        <li><strong>{EBAY_SOLD}</strong><span>verkaufte Artikel</span></li>
+        <li><strong>100 %</strong><span>positive Bewertungen</span></li>
+      </ul>
+      <div class="btn-row"><a class="btn" href="{EBAY_URL}" target="_blank" rel="noopener">Zum eBay-Shop ↗</a><a class="btn btn-ghost" href="kontakt.html">Lieber persönlich beraten lassen</a></div>
+      <p class="muted" style="font-size:.82rem;margin-top:12px">Der Link führt zu eBay. Dort gelten die Datenschutzbestimmungen von eBay.</p>
+    </div>
+  </div>
+</section>"""
+
+
+def shop_hint(text):
+    return f"""<div class="shop-hint">
+      <p><strong>Auch online erhältlich:</strong> {text}</p>
+      <a href="{EBAY_URL}" target="_blank" rel="noopener">Zum eBay-Shop ↗</a>
+    </div>"""
 
 
 STEPS = """<ol class="steps">
@@ -277,6 +319,8 @@ def build_index():
     {cards()}
   </div>
 </section>
+
+{shop_section()}
 
 <section class="section section-alt" id="ablauf">
   <div class="wrap">
@@ -359,7 +403,7 @@ def build_category(c):
 </section>
 <section class="section">
   <div class="wrap split">
-    <div class="prose">{paras}</div>
+    <div class="prose">{paras}{shop_hint(c["shop"]) if c.get("shop") else ""}</div>
     <div class="callout">
       <h3>Persönliche Beratung</h3>
       <p>In unserer Ausstellung in Lehsen zeigen wir Ihnen Materialien, Formen und Schriften – und erstellen Ihnen gern ein unverbindliches Angebot.</p>
@@ -416,6 +460,8 @@ def build_contact():
         <li><small>Telefon</small><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></li>
         <li><small>E-Mail</small><a href="mailto:{MAIL}">{MAIL}</a></li>
         <li><small>Öffnungszeiten</small>{HOURS}.<br><span class="muted">Terminabsprachen sind wünschenswert.</span></li>
+        <li><small>Anfahrt</small>Lehsen liegt direkt bei Wittenburg, nur wenige Minuten von der A24 (Anschlussstelle Wittenburg) entfernt – aus Schwerin, Hagenow und Hamburg gut erreichbar.</li>
+        <li><small>Online-Shop</small><a href="{EBAY_URL}" target="_blank" rel="noopener">Liegesteine &amp; Grabherzen bei eBay ↗</a></li>
       </ul>
       <a class="btn btn-ghost" href="{MAP_URL}" target="_blank" rel="noopener">Route planen (OpenStreetMap)</a>
       <p class="muted" style="font-size:.85rem;margin-top:10px">Der Link öffnet OpenStreetMap in einem neuen Fenster.</p>
@@ -492,7 +538,7 @@ def build_privacy():
 <p>Ihre Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten (z. B. bei Angeboten und Aufträgen) entgegenstehen. Eine Weitergabe an Dritte findet nicht statt.</p>
 
 <h2>6. Externe Links</h2>
-<p>Auf der Kontaktseite verlinken wir zur Routenplanung auf OpenStreetMap. Die Karte wird nicht in unsere Website eingebunden; erst wenn Sie den Link anklicken, wird die Seite von OpenStreetMap geöffnet und es gelten deren Datenschutzbestimmungen.</p>
+<p>Unsere Website enthält Links zu externen Angeboten, unter anderem zu unserem Shop bei eBay, zur Routenplanung bei OpenStreetMap sowie zu Satzungen und Informationen von Städten, Ämtern, Kirchengemeinden und Verbänden. Diese Inhalte werden nicht in unsere Website eingebunden; beim bloßen Aufruf unserer Seiten werden keine Daten an diese Anbieter übertragen. Erst wenn Sie einen Link anklicken, wird die jeweilige Seite geöffnet und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
 
 <h2>7. Ihre Rechte</h2>
 <p>Sie haben im Rahmen der gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
@@ -512,6 +558,282 @@ def build_privacy():
     return page("datenschutz.html", "Datenschutzerklärung", f"Datenschutzerklärung von {NAME}.", body)
 
 
+STONES = [
+    {"name": "Orion", "art": "Granit", "herkunft": "Indien", "img": "liegesteine/liegesteine-17",
+     "farbe": "Blaugrau mit dunklen Einsprengseln",
+     "text": "Ein ruhiger, gleichmäßig gemusterter Granit mit kühlem Blauton. Poliert wirkt er elegant und tief, gestockt oder geflammt hell und natürlich – ideal für klare, gut lesbare Inschriften."},
+    {"name": "Himalaya", "art": "Granit", "herkunft": "Indien", "img": "reihensteine/reihensteine-08",
+     "farbe": "Grau- und Brauntöne mit fließender Maserung",
+     "text": "Die bewegte, wellenartige Struktur macht jeden Stein zum Unikat. Himalaya passt besonders gut zu modernen Formen und naturnahen Motiven wie Bäumen oder Blättern."},
+    {"name": "Multicolor Red", "art": "Granit", "herkunft": "Indien", "img": "liegesteine/liegesteine-05",
+     "farbe": "Rot, Grau und Schwarz, kräftig geflammt",
+     "text": "Ein lebendiger, warmer Stein mit ausdrucksstarker Zeichnung. Sehr beliebt für Liegesteine und Grabherzen, weil er auch auf kleiner Fläche viel Wirkung entfaltet."},
+    {"name": "Halmstad", "art": "Granit", "herkunft": "Schweden", "img": "liegesteine/liegesteine-09",
+     "farbe": "Rotbraun mit dunkler Struktur",
+     "text": "Ein nordischer Granit von großer Härte und Beständigkeit. Poliert zeigt er eine warme, tiefe Farbe, die über Jahrzehnte schön bleibt."},
+    {"name": "Viscont White", "art": "Granit", "herkunft": "Indien", "img": "grabanlagen/grabanlagen-21",
+     "farbe": "Hellgrau bis Weiß mit grauen Adern",
+     "text": "Ein heller, freundlicher Granit mit feiner Aderung. Er eignet sich besonders für Einfassungen und Abdeckungen und lässt Grabanlagen offen und licht wirken."},
+    {"name": "Rainbow", "art": "Sandstein", "herkunft": "Indien", "img": "liegesteine/liegesteine-28",
+     "farbe": "Gelb, Ocker und Rotbraun in Wellenlinien",
+     "text": "Kein Granit, sondern ein Sandstein mit auffälliger, regenbogenartiger Zeichnung. Weicher als Granit und deshalb mit naturbelassener Oberfläche besonders schön."},
+]
+
+
+def build_stones():
+    items = []
+    for st in STONES:
+        items.append(f"""<article class="stone">
+  <a href="img/{st["img"]}.jpg" data-lb><img src="img/{st["img"]}-k.jpg" alt="{st["name"]} – {st["art"]} aus {st["herkunft"]}" loading="lazy" width="480" height="480"></a>
+  <div class="stone-body">
+    <h3>{st["name"]}</h3>
+    <dl><dt>Art</dt><dd>{st["art"]}</dd><dt>Herkunft</dt><dd>{st["herkunft"]}</dd><dt>Farbe</dt><dd>{st["farbe"]}</dd></dl>
+    <p>{st["text"]}</p>
+  </div>
+</article>""")
+    body = f"""<section class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Start</a> / <a href="ratgeber.html">Ratgeber</a> / Steinsorten</div>
+    <h1>Steinsorten</h1>
+    <p class="lead">Jeder Naturstein hat seine eigene Farbe, Zeichnung und Wirkung. Hier stellen wir eine Auswahl der Sorten vor, die wir häufig verarbeiten – alle Fotos zeigen Arbeiten aus unserer Werkstatt.</p>
+    {ratgeber_nav("steinsorten.html")}
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="stones">
+{chr(10).join(items)}
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="wrap split">
+    <div>
+      <h2>Weitere Sorten in der Ausstellung</h2>
+      <p>Neben diesen Beispielen verarbeiten wir viele weitere Granite, Sandsteine und Marmore – von schwarzem Granit bis zu hellen nordischen Sorten. Am besten wirken Natursteine im Original: In unserer Ausstellung können Sie Farben und Oberflächen direkt vergleichen.</p>
+    </div>
+    <div class="callout">
+      <h3>Oberfläche macht den Unterschied</h3>
+      <p>Derselbe Stein wirkt poliert dunkel und glänzend, geschliffen matt und gestockt oder bruchrau hell und natürlich. Gern zeigen wir Ihnen Muster.</p>
+    </div>
+  </div>
+</section>
+{cta()}"""
+    return page("steinsorten.html", "Steinsorten",
+                "Steinsorten für Grabmale: Orion, Himalaya, Multicolor Red, Halmstad, Viscont White und Rainbow-Sandstein – Farben, Herkunft und Wirkung erklärt.",
+                body, "steinsorten.html")
+
+
+SRC_BESTATTG = ("Bestattungsgesetz M-V (Landesrecht M-V)", "https://www.landesrecht-mv.de/bsmv/document/jlr-NNLMV00007941")
+SRC_AET_GRABMAL = ("Aeternitas: Die Auswahl eines Grabmals", "https://www.aeternitas.de/fileadmin/user_upload/Downloads/Spalte2/leitfaden_09_grabmalkauf.pdf")
+SRC_AET_STAND = ("Aeternitas: Die Standsicherheit des Grabmals", "https://www.aeternitas.de/fileadmin/user_upload/Downloads/Spalte3/rechtsgutachten_grabmalstandsicherheit.pdf")
+SRC_AET_KOSTEN = ("Aeternitas: Kostenüberblick Grabmal", "https://www.aeternitas.de/fuer-betroffene/kosten-und-vorsorge/kostenueberblick/steinmetze/grabmal")
+SRC_FAIRSTONE = ("Fair Stone e.V.", "https://www.fairstone.org/")
+
+FAQ = [
+    ("Wann kann der Grabstein gesetzt werden?", """
+<p>Eine landesweit einheitliche Frist gibt es nicht – maßgeblich ist die <a href="friedhofssatzungen.html">Friedhofssatzung</a> des jeweiligen Friedhofs.</p>
+<p>Nach einer Erdbestattung muss sich der Boden zunächst setzen, damit das Grabmal später sicher steht. Üblich sind deshalb einige Monate bis etwa ein Jahr Wartezeit. Bei Urnengräbern ist eine Aufstellung meist früher möglich. Manche Satzungen schreiben umgekehrt vor, dass ein Grabmal innerhalb einer bestimmten Frist gesetzt werden muss, und erlauben ein Holzkreuz nur übergangsweise.</p>
+<p>Unser Tipp: Die Beratung und der Entwurf können schon vorher stattfinden – dann ist alles vorbereitet, sobald der Stein gesetzt werden darf.</p>""", [SRC_AET_GRABMAL]),
+    ("Braucht ein Grabmal eine Genehmigung?", """
+<p>Ja. Jedes Grabmal muss vor der Aufstellung vom Friedhofsträger genehmigt werden – ebenso spätere Veränderungen wie eine Nachbeschriftung oder das Entfernen des Steins.</p>
+<p>Für den Antrag werden in der Regel benötigt:</p>
+<ul><li>eine maßstäbliche Zeichnung mit Vorder- und Seitenansicht</li><li>Angaben zu Material, Farbe und Oberflächenbearbeitung</li><li>Wortlaut der Inschrift sowie Ornamente und Symbole</li><li>Angaben zu Fundament und Befestigung</li><li>der Nachweis, dass der Naturstein ohne Kinderarbeit hergestellt wurde</li></ul>
+<p>Den Antrag stellt der bzw. die Nutzungsberechtigte des Grabes – <strong>wir übernehmen das gern für Sie</strong> und stimmen alles mit der Friedhofsverwaltung ab.</p>""", [SRC_AET_GRABMAL]),
+    ("Natursteine ohne Kinderarbeit – was gilt in Mecklenburg-Vorpommern?", """
+<p>In Mecklenburg-Vorpommern ist das gesetzlich geregelt: Nach <strong>§ 14a des Bestattungsgesetzes M-V</strong> dürfen Grabmale und Einfassungen aus Naturstein nur aufgestellt werden, wenn sie</p>
+<ul><li>in Ländern gewonnen und verarbeitet wurden, in denen die Natursteinproduktion nicht gegen das ILO-Übereinkommen 182 gegen die schlimmsten Formen der Kinderarbeit verstößt, <strong>oder</strong></li><li>von einer anerkannten Zertifizierungsstelle als frei von Kinderarbeit bestätigt und dauerhaft gekennzeichnet sind, zum Beispiel mit einem Siegel.</li></ul>
+<p>Ausgenommen sind Steine, die schon vor dem 1. Juli 2021 nach Deutschland eingeführt wurden.</p>
+<p>Wir achten bei jedem Stein auf die erforderlichen Nachweise und legen sie dem Genehmigungsantrag bei. Fragen Sie uns gern, woher ein Stein stammt und wie er zertifiziert ist.</p>""", [SRC_BESTATTG, SRC_FAIRSTONE]),
+    ("Wovon hängt der Preis eines Grabmals ab?", """
+<p>Jedes Grabmal ist eine Einzelanfertigung, deshalb erstellen wir Ihnen immer ein individuelles, schriftliches Angebot. Den Preis bestimmen vor allem:</p>
+<ul>
+<li><strong>Steinsorte und Herkunft</strong> – heimische, nordische oder überseeische Natursteine unterscheiden sich deutlich (<a href="steinsorten.html">Steinsorten</a>)</li>
+<li><strong>Größe und Stärke</strong> – die Friedhofssatzung schreibt oft Mindeststärken vor</li>
+<li><strong>Oberfläche</strong> – poliert, geschliffen, gestockt oder bruchrau</li>
+<li><strong>Schrift</strong> – Anzahl der Buchstaben und Technik: vertieft, erhaben oder aufgesetzt aus Bronze, Aluminium oder Edelstahl</li>
+<li><strong>Ornamente und Symbole</strong></li>
+<li><strong>Einfassung und Abdeckung</strong>, falls gewünscht</li>
+<li><strong>Fundament, Transport und Aufstellung</strong></li>
+<li><strong>Genehmigungsgebühr</strong> der Friedhofsverwaltung</li>
+</ul>""", [SRC_AET_KOSTEN, SRC_AET_GRABMAL]),
+    ("Standsicherheit: Wer ist verantwortlich?", """
+<p>Ein Grabmal muss dauerhaft sicher stehen. Nach der Aufstellung wird es deshalb mit einer festgelegten Prüflast auf Standsicherheit geprüft und das Ergebnis dokumentiert – je nach Friedhof nach der <em>TA Grabmal</em> oder der Richtlinie des Bundesinnungsverbands des Steinmetzhandwerks. Diese Abnahmeprüfung übernehmen wir als Fachbetrieb.</p>
+<p>Danach prüft der Friedhofsträger die Grabmale regelmäßig, in der Regel einmal jährlich nach der Frostperiode. Verantwortlich für den sicheren Zustand des Grabmals ist laut den Friedhofssatzungen der bzw. die Nutzungsberechtigte. Wird ein Grabmal locker, sprechen Sie uns an – wir richten es fachgerecht wieder auf.</p>""", [SRC_AET_STAND]),
+    ("Nachbeschriftung, Pflege und Ruhezeit", """
+<p><strong>Nachbeschriftung:</strong> Wir ergänzen Inschriften passend zur vorhandenen Schrift – je nach Stein vor Ort oder in unserer Werkstatt. Auch dafür ist die Zustimmung der Friedhofsverwaltung nötig; die holen wir für Sie ein.</p>
+<p><strong>Pflege:</strong> Am besten reinigen Sie den Stein mit klarem Wasser und einer weichen Bürste. Von scharfen Reinigungsmitteln und Hochdruckreinigern raten wir ab, weil sie Oberfläche und Schrift angreifen können. Bei hartnäckigen Verschmutzungen beraten wir Sie gern.</p>
+<p><strong>Ruhezeit:</strong> Die Mindestruhezeit beträgt in Mecklenburg-Vorpommern nach § 15 Bestattungsgesetz mindestens 20 Jahre; viele Friedhöfe legen 20 bis 25 Jahre fest. Nach Ablauf des Nutzungsrechts muss das Grabmal innerhalb der in der Satzung genannten Frist entfernt werden.</p>""", [SRC_BESTATTG, SRC_AET_GRABMAL]),
+]
+
+
+def build_faq():
+    items = []
+    for i, (q, a, srcs) in enumerate(FAQ, 1):
+        src = " · ".join(f'<a href="{u}" target="_blank" rel="noopener">{t}</a>' for t, u in srcs)
+        items.append(f"""<details{" open" if i == 1 else ""}>
+  <summary><span class="num">{i:02d}</span>{q}</summary>
+  <div class="answer">{a.strip()}
+    <p class="src">Quellen: {src}</p>
+  </div>
+</details>""")
+    faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", " ", a).strip()}} for q, a, _ in FAQ]}
+    body = f"""<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Ratgeber</p>
+    <h1>Gut informiert zum Grabmal</h1>
+    <p class="lead">In einer schweren Zeit kommen viele Fragen auf einmal. Hier finden Sie Antworten auf die häufigsten – und für alles Weitere nehmen wir uns gern persönlich Zeit.</p>
+    {ratgeber_nav("ratgeber.html")}
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="faq">
+{chr(10).join(items)}
+    </div>
+    <p class="muted" style="font-size:.85rem;margin-top:28px;max-width:760px">Diese Informationen ersetzen keine Rechtsberatung. Verbindlich sind das Bestattungsgesetz M-V und die Satzung des jeweiligen Friedhofs (Stand: November 2026).</p>
+  </div>
+</section>
+{cta("Noch Fragen?", "Wir beraten Sie persönlich – auch zur Friedhofssatzung und zur Genehmigung.")}
+<script type="application/ld+json">{json.dumps(faq_ld, ensure_ascii=False)}</script>"""
+    return page("ratgeber.html", "Ratgeber Grabmal",
+                "Ratgeber Grabmal: Wann darf der Grabstein gesetzt werden, welche Genehmigung braucht es, was gilt zu Kinderarbeit in MV, wovon hängt der Preis ab?",
+                body, "ratgeber.html")
+
+
+KM = "https://www.kirche-mv.de"
+HL = "https://www.amt-hagenow-land.de/amt-gemeinden/{}/ortsrecht/"
+BL = "https://www.amtboizenburgland.de/amt-gemeinden/{}/ortsrecht/"
+
+# (Name, Entfernung, Hinweis, [(Linktext, URL), ...]) – alle Links geprüft am 14.11.2026
+SATZUNGEN = [
+    ("Landkreis Ludwigslust-Parchim", [
+        ("Wittenburg", "0–3 km", "Hauptfriedhof: Ev.-Luth. Kirchengemeinde St. Bartholomäus. Die städtische Satzung gilt nur für den Friedhof Zühr.", [
+            ("Friedhof der Kirchengemeinde", f"{KM}/wittenburg-bartholomaeus/gemeinde/friedhof"),
+            ("Städtische Satzung (Zühr)", "https://www.amt-wittenburg.de/output/download.php?fid=3627.2435.1.PDF"),
+            ("Friedhofsordnung Körchow, Camin, Marsow", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Koerchow-Camin/20240813_Friedhofsordnung_fuer_die__Friedhoefe_Koerchow__Camin_und_Marsow.pdf"),
+            ("Übersicht Kirchen & Friedhöfe im Amt", "https://www.amt-wittenburg.de/Familie-Soziales/Kirchen-und-Friedh%C3%B6fe/")]),
+        ("Wittendörp", "ca. 5 km", "Gemeindliche Satzung; Döbbersen, Lassahn und Neuenkirchen sind kirchlich.", [
+            ("Ortsrecht der Gemeinde", "https://www.amt-wittenburg.de/Verwaltung-Aktuelles/Ortsrecht-Wittend%C3%B6rp/"),
+            ("Kirchengemeinde Döbbersen", f"{KM}/doebbersen/friedhof")]),
+        ("Zarrentin am Schaalsee und Amt Zarrentin", "ca. 8 km", "Stadtfriedhof: Ev.-Luth. Kirchengemeinde. Gemeindliche Satzungen u. a. für Gallin und Vellahn.", [
+            ("Friedhofsordnung Zarrentin", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Zarrentin/251118_Friedhofsordnung_Zarrentin.pdf"),
+            ("Satzungen des Amtes", "https://www.amt-zarrentin.de/portal/seiten/satzungen-900000012-29120.html")]),
+        ("Hagenow", "ca. 10 km", "Der Friedhof wird von der Kirchengemeinde betrieben; eine Friedhofsordnung ist nicht online veröffentlicht.", [
+            ("Kirchengemeinde Hagenow", f"{KM}/hagenow/friedhof")]),
+        ("Amt Hagenow-Land", "5–25 km", "Eigene Satzungen je Gemeinde:", [
+            ("Alt Zachun", HL.format("alt-zachun")), ("Bresegard b. Picher", HL.format("bresegard-bei-picher")),
+            ("Groß Krams", HL.format("gross-krams")), ("Hoort", HL.format("hoort")), ("Hülseburg", HL.format("huelseburg")),
+            ("Kirch Jesar", HL.format("kirch-jesar")), ("Kuhstorf", HL.format("kuhstorf")), ("Moraas", HL.format("moraas")),
+            ("Pritzier", HL.format("pritzier")), ("Strohkirchen", HL.format("strohkirchen")), ("Warlitz", HL.format("warlitz"))]),
+        ("Amt Stralendorf", "12–22 km", "Online nur die Satzung von Holthusen; die übrigen Friedhöfe sind überwiegend kirchlich.", [
+            ("Friedhofssatzung Holthusen", "https://www.amt-stralendorf.de/loadDocument.phtml?FID=3499.54.1&Ext=PDF")]),
+        ("Amt Boizenburg-Land", "12–28 km", "Eigene Satzungen je Gemeinde:", [
+            ("Brahlstorf", BL.format("brahlstorf")), ("Dersenow", BL.format("dersenow")), ("Schwanheide", BL.format("schwanheide"))]),
+        ("Lübtheen", "18–25 km", "Stadtfriedhof: Kirchengemeinde. Gemeindliche Satzung für Gößlow.", [
+            ("Friedhofsordnung Lübtheen", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Luebtheen/210302_Friedhofsordnung_Luebtheen.pdf"),
+            ("Ortsrecht der Stadt (Gößlow)", "https://www.luebtheen.de/aktuelles-ortsrecht/ortsrecht/6-oeffentliche-einrichtungen/")]),
+        ("Amt Ludwigslust-Land", "18–30 km", "Satzungen u. a. für Alt Krenzlin, Göhlen, Lüblow, Rastow, Sülstorf und Warlow.", [
+            ("Satzungen des Amtes", "https://www.amt-ludwigslust-land.de/rechtsgrundlagen/index.php?typ=1")]),
+        ("Boizenburg/Elbe", "ca. 25 km", "Friedhof der Kirchengemeinde St. Marien (Boizenburg und Rensdorf).", [
+            ("Friedhofsordnung Boizenburg", f"{KM}/fileadmin/elkm/propstei_parchim/boizenburg/Friedhof/190618_Friedhofsordnung__Boizenburg.pdf")]),
+        ("Plate und Banzkow (Amt Crivitz)", "ca. 30 km", "", [
+            ("Ortsrecht Plate", "https://www.amt-crivitz.de/unsere-gemeinden/plate/ortsrecht-satzung/"),
+            ("Ortsrecht Banzkow", "https://www.amt-crivitz.de/unsere-gemeinden/banzkow/ortsrechtsatzung/")]),
+    ]),
+    ("Landeshauptstadt Schwerin", [
+        ("Schwerin", "22–26 km", "Die Friedhöfe werden von der Stadt betrieben.", [
+            ("Friedhofssatzung Schwerin", "https://www.schwerin.de/export/sites/default/.galleries/Dokumente/Ortsrecht/Friedhofssatzung.pdf")]),
+    ]),
+    ("Landkreis Nordwestmecklenburg", [
+        ("Amt Lützow-Lübstorf", "10–30 km", "Satzungen u. a. für Alt Meteln und Lützow.", [
+            ("Satzungen des Amtes", "https://www.luetzow-luebstorf.de/rechtsgrundlagen/index.php?typ=1")]),
+        ("Gadebusch und Amt Gadebusch", "17–24 km", "Der Stadtfriedhof wird seit 2024 von der Kirchengemeinde betrieben. Gemeindliche Satzung u. a. für Mühlen Eichsen.", [
+            ("Friedhofsordnung Gadebusch", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Gadebusch-Roggendorf/20240125_KG_Gadebusch-Roggendorf_Friedhofsordnung_fuer_den_FH_Gadebusch.pdf"),
+            ("Satzungen von Stadt und Amt", "https://www.gadebusch.de/verwaltung/satzungen/")]),
+        ("Amt Rehna", "26–30 km", "Satzung Holdorf sowie kirchliche Friedhofsordnungen u. a. für Rehna und Carlow.", [
+            ("Satzungen des Amtes", "https://www.rehna.de/satzungen/")]),
+    ]),
+    ("Kreis Herzogtum Lauenburg (Schleswig-Holstein)", [
+        ("Mölln", "ca. 26 km", "Friedhof der Ev.-Luth. Kirchengemeinde Mölln.", [
+            ("Friedhofssatzung Mölln", "https://www.friedhof-moelln.de/assets/friedhofssatzung-ab-2022.pdf")]),
+        ("Güster (Amt Büchen)", "ca. 27 km", "", [
+            ("Friedhofssatzung Güster", "https://www.amt-buechen.de/fileadmin/user_upload/public/downloads/orts_verbandsrecht/guester/nutzung_oeffentlicher_einrichtungen/Satzung_Friedhofs-_u._Bestattungswesen.pdf")]),
+        ("Grambek (Amt Breitenfelde)", "ca. 28 km", "", [
+            ("Friedhofssatzung Grambek", "https://www.grambek.de/fileadmin/download/gemeinden/grambek/ortsrecht/finanzen/satzung_%C3%BCber_das_friedhofs-_und_bestattungswesen_in_der_gemeinde_grambek.pdf")]),
+        ("Amt Lauenburgische Seen", "18–30 km", "Keine Satzungen online – die Friedhöfe sind überwiegend kirchlich. Bitte bei der Kirchengemeinde erfragen.", []),
+    ]),
+]
+
+
+def build_satzungen():
+    regions = []
+    for region, entries in SATZUNGEN:
+        lis = []
+        for name, km, note, links in entries:
+            if links:
+                lk = "<br>".join(f'<a class="dl" href="{u}" target="_blank" rel="noopener">{t} ↗</a>' for t, u in links)
+            else:
+                lk = '<span class="none">nicht online</span>'
+            many = len(links) > 4
+            if many:
+                lk = " ".join(f'<a class="dl" href="{u}" target="_blank" rel="noopener">{t}</a>' for t, u in links)
+            lis.append(f"""<li{' class="many"' if many else ""}><div class="ort"><strong>{name} <span class="km">· {km}</span></strong>{f"<small>{note}</small>" if note else ""}</div><div class="links">{lk}</div></li>""")
+        regions.append(f"""<div class="region"><h2>{region}</h2><ul class="satzungen">{"".join(lis)}</ul></div>""")
+    body = f"""<section class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Start</a> / <a href="ratgeber.html">Ratgeber</a> / Friedhofssatzungen</div>
+    <h1>Friedhofssatzungen</h1>
+    <p class="lead">Jeder Friedhof legt eigene Regeln für Grabmale fest. Hier finden Sie die Satzungen und Friedhofsordnungen im Umkreis von etwa 30 km um Lehsen – sortiert nach Landkreis und Entfernung.</p>
+    {ratgeber_nav("friedhofssatzungen.html")}
+  </div>
+</section>
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2 style="font-size:1.6rem">Was regelt eine Friedhofssatzung?</h2>
+      <ul class="prose" style="padding-left:1.2em">
+        <li>zulässige <strong>Größe und Stärke</strong> des Grabmals</li>
+        <li><strong>Material, Farbe und Bearbeitung</strong> der Oberfläche</li>
+        <li><strong>Fundament und Befestigung</strong> für die Standsicherheit</li>
+        <li>das <strong>Genehmigungsverfahren</strong> und die nötigen Unterlagen</li>
+        <li><strong>Ruhezeit</strong>, Nutzungsrecht und Fristen</li>
+      </ul>
+    </div>
+    <div class="callout">
+      <h3>Kirchlich oder kommunal?</h3>
+      <p>In vielen Städten unserer Region – etwa Wittenburg, Hagenow, Zarrentin, Boizenburg und Gadebusch – wird der Friedhof von der evangelischen Kirchengemeinde betrieben. Dort gilt deren <em>Friedhofsordnung</em>. Kommunale Satzungen gibt es vor allem für Dorffriedhöfe.</p>
+      <p>Sie wissen nicht, welche Regeln für Ihren Friedhof gelten? <a href="kontakt.html">Fragen Sie uns</a> – wir kennen die Vorgaben und klären alles mit der Friedhofsverwaltung.</p>
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="wrap">
+    {"".join(regions)}
+    <div class="region">
+      <h2>Kirchliche Friedhöfe in Mecklenburg</h2>
+      <ul class="satzungen">
+        <li><div class="ort"><strong>Zentrale Friedhofsverwaltung</strong><small>Kirchenkreis Mecklenburg der Nordkirche – Ansprechpartner für kirchliche Friedhöfe</small></div><div class="links"><a class="dl" href="{KM}/mecklenburg/kirchenkreisverwaltung/liegenschaften-und-friedhof/zentrale-friedhofsverwaltung" target="_blank" rel="noopener">Zur Friedhofsverwaltung ↗</a></div></li>
+        <li><div class="ort"><strong>Friedhofsrichtlinie</strong><small>Grundlage für die Friedhofsordnungen der Kirchengemeinden</small></div><div class="links"><a class="dl" href="{KM}/fileadmin/Mecklenburg/Downloads/Friedhof/1801_Friedhofsrichtlinie_KK_Mecklenburg.pdf" target="_blank" rel="noopener">Richtlinie (PDF) ↗</a></div></li>
+      </ul>
+    </div>
+    <p class="muted" style="font-size:.85rem;max-width:760px">Alle Links führen zu den offiziellen Seiten der Städte, Ämter und Kirchengemeinden (geprüft im November 2026). Satzungen ändern sich gelegentlich – maßgeblich ist immer die aktuelle Fassung beim Friedhofsträger. Ihr Friedhof fehlt? Sprechen Sie uns an.</p>
+  </div>
+</section>
+{cta()}"""
+    return page("friedhofssatzungen.html", "Friedhofssatzungen in der Region",
+                "Friedhofssatzungen und Friedhofsordnungen im Umkreis von 30 km um Wittenburg: Hagenow, Zarrentin, Boizenburg, Lübtheen, Gadebusch, Schwerin, Mölln und mehr.",
+                body, "friedhofssatzungen.html")
+
+
+def ratgeber_nav(active):
+    pages = [("ratgeber.html", "Häufige Fragen"), ("friedhofssatzungen.html", "Friedhofssatzungen"), ("steinsorten.html", "Steinsorten")]
+    return '<nav class="subnav" aria-label="Ratgeber">' + "".join(
+        f'<a href="{h}"{" aria-current=page" if h == active else ""}>{t}</a>' for h, t in pages
+    ) + "</nav>"
+
+
 def build_sitemap(files):
     urls = []
     for f in files:
@@ -527,6 +849,6 @@ def build_sitemap(files):
 if __name__ == "__main__":
     files = [build_index(), build_overview()]
     files += [build_category(c) for c in CATEGORIES]
-    files += [build_references(), build_contact(), build_imprint(), build_privacy()]
+    files += [build_references(), build_faq(), build_satzungen(), build_stones(), build_contact(), build_imprint(), build_privacy()]
     build_sitemap(files)
     print("Erstellt:", ", ".join(files), "+ sitemap.xml")
