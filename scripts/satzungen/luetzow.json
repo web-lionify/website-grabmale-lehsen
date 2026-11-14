@@ -1,0 +1,82 @@
+{
+  "id": "luetzow",
+  "titel": "Friedhofssatzung der Gemeinde Lützow",
+  "orte": [
+    "Lützow"
+  ],
+  "traeger": "Gemeinde Lützow (Amt Lützow-Lübstorf)",
+  "art": "kommunal",
+  "fassung": "vom 21.10.2021 (beschlossen am 21.10.2021), bekanntgemacht am 17.11.2021",
+  "quelle_url": "https://daten.verwaltungsportal.de/dateien/legalframework/1/7/0/6/3/Friedhofssatzung_der_Gemeinde_Luetzow_vom_21.10.2021.pdf",
+  "quelle_titel": "Amt Lützow-Lübstorf: Friedhofssatzung der Gemeinde Lützow vom 21.10.2021 (PDF)",
+  "friedhoefe": [
+    "Kommunaler Friedhof Lützow, Pokrenter Straße, 19209 Lützow (§ 1)"
+  ],
+  "kurzfazit": "Grabmale nur aus Naturstein oder Holz, aufgestellt an der Stirnseite; Findlinge und bruchrauhe Steine sind nicht erlaubt. Die Satzung gibt je Grabart Höhen- und Breitenspannen vor (z. B. Erdgrab stehend 75–120 cm hoch, 50–80 cm breit). Grabstätten dürfen bis zu 75 % mit einer Grabplatte abgedeckt werden.",
+  "ruhezeit": "Leichen und Urnen 25 Jahre, ab erster Belegung; nach der letzten Belegung sind 25 Jahre einzuhalten (§ 9 Abs. 1)",
+  "grabarten": [
+    {
+      "name": "Grabstätte für Erdbestattung",
+      "regel": "1 Sarg + 1 Urne; Grab 2,50 × 1,50 m (zwei: 2,50 × 3,00 m, drei: 2,50 × 4,50 m); stehendes Grabmal H 75–120 cm, B 50–80 cm; liegendes Grabmal L 30–50 cm, B bis 50 cm; Doppelgrab stehend H 80–120 cm, B bis 160 cm (§ 12 Abs. 2, § 13 Abs. 1, § 16 Abs. 5)"
+    },
+    {
+      "name": "Urnengrabstätte",
+      "regel": "Grab 1,00 × 1,00 m (zwei Urnen 1,20 × 1,00 m, drei 1,40 × 1,00 m); stehendes Grabmal H 40–60 cm, B 80–100 cm; liegendes L 30–50 cm, B bis 50 cm; einfassen und bepflanzen, Pflanzen max. 0,50 m; Abdeckung bis 75 % möglich (§ 12 Abs. 2, § 15 Abs. 6, § 16 Abs. 5)"
+    },
+    {
+      "name": "Rasengrabfläche mit Namensplatte liegend (Urne bzw. Erdbestattung)",
+      "regel": "Belegung nach Plan; liegende Namensplatte 40 × 40 cm; Urnen-Rasengrab 0,80 × 0,80 m, Pflege durch Nutzungsberechtigte; Erdbestattungs-Rasengrab Pflege durch die Friedhofsverwaltung; Gemeinde haftet nicht für Schäden an der Namensplatte (§ 12 Abs. 2, 3, § 15 Abs. 3, § 16 Abs. 5)"
+    },
+    {
+      "name": "Urnenbeisetzung an Stele mit Namenskennzeichnung",
+      "regel": "max. 2 Urnen pro Seite, Belegung nach Plan (§ 12 Abs. 1 g, Abs. 3)"
+    },
+    {
+      "name": "Anonyme Urnenbeisetzung",
+      "regel": "Belegung nach Plan, Pflege durch die Friedhofsverwaltung; abgelegte Blumen werden spätestens nach 4 Wochen entfernt (§ 12 Abs. 3, § 15 Abs. 3, 7)"
+    }
+  ],
+  "masse": [
+    "Grabmal-Abmessungen je Grabart als Höhe/Länge und Breite (§ 16 Abs. 5): Erdgrab stehend 75–120 × 50–80 cm; Doppelerdgrab stehend 80–120 × bis 160 cm; Erdgrab liegend 30–50 × bis 50 cm; Urnengrab stehend 40–60 × 80–100 cm; Urnengrab liegend 30–50 × bis 50 cm; Rasengrab-Namensplatte 40 × 40 cm",
+    "Einfassung/Bepflanzung Erdgräber max. 0,80 m hoch; Einzelsträucher max. 1,00 m (§ 15 Abs. 5)",
+    "Urnengräber: Pflanzenwuchs max. 0,50 m (§ 15 Abs. 6)",
+    "Grabplatte als Abdeckung bis 75 % der Grabstelle möglich (§ 15 Abs. 5, 6)",
+    "Keine Mindeststärke für Grabmale festgelegt"
+  ],
+  "material": [
+    "Grabmale nur aus Naturstein oder Holz, handwerksgerecht ausgeführt (§ 16 Abs. 1)",
+    "Je Grabstelle nur ein Grabmal (bei Dreifachgräbern ein weiteres erlaubt), einheitlich an der Stirnseite aufgestellt (§ 16 Abs. 1)"
+  ],
+  "verbote": [
+    "Findlinge, findlingsähnliche, unbearbeitete oder bruchrauhe Grabmale (§ 16 Abs. 6)",
+    "Einfassungen aus Beton o. ä. sollen nicht verwendet werden (§ 15 Abs. 5)",
+    "Baumpflanzungen auf Grabstätten (§ 15 Abs. 5)",
+    "Gewerbliche Tätigkeiten an Sonn- und Feiertagen sowie während Trauerfeiern/Beisetzungen (§ 5 Abs. 2)",
+    "Befahren des Friedhofs nur mit besonderer Genehmigung der Friedhofsverwaltung (§ 5 Abs. 2)"
+  ],
+  "genehmigung": [
+    "Ein Genehmigungsverfahren für Grabmale ist in der Satzung nicht geregelt",
+    "Über Ausnahmen bei der Grabgestaltung (u. a. Abdeckung) entscheidet die Friedhofsverwaltung (§ 15 Abs. 5)"
+  ],
+  "standsicherheit": [
+    "Nutzungsberechtigte halten Grabmale dauerhaft standfest und verkehrssicher und haften für Schäden, z. B. durch Umstürzen (§ 16 Abs. 2)",
+    "Friedhofsverwaltung kann umsturzgefährdete Grabmale niederlegen, sichern oder entfernen lassen (§ 16 Abs. 3)",
+    "Keine Richtlinie (TA Grabmal/BIV) und keine Fundamentvorgaben genannt"
+  ],
+  "fristen": [
+    "Grabstätten sobald es die Jahreszeit zulässt, spätestens 6 Monate nach Belegung gärtnerisch herrichten (§ 15 Abs. 2)",
+    "Nach Ablauf der Nutzungsdauer Grabmale binnen 3 Monaten entfernen, sonst Entfernung auf Kosten der Nutzungsberechtigten; Grabmale gehen entschädigungslos in das Eigentum der Friedhofsverwaltung über (§ 16 Abs. 4, § 10 Abs. 6)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Grabstätten müssen bepflanzt und eingefasst werden (§ 15 Abs. 5, 6)",
+    "Bei Neubelegung vorhandener Gräber ist das Grabmal an die Stirnseite zu stellen; ältere Grabmale bleiben unberührt (§ 16 Abs. 1)",
+    "Nutzungsrecht 25 Jahre, Verlängerung um 2 bis 25 Jahre auf Antrag (§ 10 Abs. 2)",
+    "Gewerbetreibende haften für alle Schäden auf dem Friedhof (§ 17 Abs. 1)"
+  ],
+  "kontakt": "Friedhofsverwaltung ist die Gemeinde Lützow (§ 2), Amt Lützow-Lübstorf",
+  "unsicher": [
+    "Satzung nur als Scan (gedrehte Seiten) vorhanden, per Texterkennung mit Rotation gelesen und Maßtabelle § 16 Abs. 5 am Seitenbild geprüft",
+    "Keine Änderungssatzung zur Satzung von 2021 gefunden; die Seiten 45235 (Lübstorf) und 19346 (Alt Meteln) gehören zu anderen Gemeinden"
+  ]
+}

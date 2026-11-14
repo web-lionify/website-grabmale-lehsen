@@ -1,0 +1,29 @@
+{
+  "id": "lauenburgische-seen",
+  "titel": "Friedhöfe im Amt Lauenburgische Seen (keine Satzung online)",
+  "orte": ["Albsfelde", "Bäk", "Brunsmark", "Buchholz", "Einhaus", "Fredeburg", "Giesensdorf", "Groß Disnack", "Groß Grönau", "Groß Sarau", "Harmsdorf", "Hollenbek", "Horst", "Kittlitz", "Klein Zecher", "Kulpin", "Mechow", "Mustin", "Pogeez", "Römnitz", "Salem", "Schmilau", "Seedorf", "Sterley", "Ziethen"],
+  "traeger": "überwiegend Ev.-Luth. Kirchengemeinden im Kirchenkreis Lübeck-Lauenburg (Verwaltung: Amt Lauenburgische Seen, Ratzeburg)",
+  "art": "keine_online",
+  "fassung": "",
+  "quelle_url": "http://amt-lauenburgische-seen.de/ortsrecht-39.html",
+  "quelle_titel": "Ortsrecht Amt Lauenburgische Seen",
+  "friedhoefe": [],
+  "kurzfazit": "Im Ortsrecht des Amtes Lauenburgische Seen ist keine Friedhofssatzung veröffentlicht; die Friedhöfe in den Amtsgemeinden werden überwiegend von den evangelischen Kirchengemeinden getragen. Vorgaben für Grabmale sind daher bei der jeweils zuständigen Kirchengemeinde bzw. Friedhofsverwaltung zu erfragen.",
+  "ruhezeit": "",
+  "grabarten": [],
+  "masse": [],
+  "material": [],
+  "verbote": [],
+  "genehmigung": [],
+  "standsicherheit": [],
+  "fristen": [],
+  "kinderarbeit": "",
+  "besonderheiten": [],
+  "kontakt": "Amt Lauenburgische Seen, Fünfhausen 1, 23909 Ratzeburg, Tel. 04541 8002-0, kontakt@amt-lauenburgische-seen.de. Zuständige Kirchengemeinden laut Amtsseite (Kirchen): Groß Grönau (Tel. 04509 1047), Mustin (04546 459), Domkirchgemeinde Ratzeburg (04541 3406), St. Georg auf dem Berge Ratzeburg (04541 898591), Seedorf (04545 450), Sterley (04545 244), St. Laurentius Ziethen (04541 82608)",
+  "unsicher": [
+    "Gudow gehört laut Gemeindeliste der Amtsseite NICHT zum Amt Lauenburgische Seen (Gudow liegt im Amt Büchen); deshalb ist keine Kirchengemeinde Gudow als Kontakt genannt – bitte Zuordnung prüfen",
+    "Die Ortsrecht-Seite des Amtes listet nur Haupt-, Wasser-, Abwasser- und Gebührensatzungen, keine Friedhofssatzung; Ortsrechtsseiten der einzelnen Gemeinden wurden nicht einzeln durchsucht",
+    "Welche Friedhöfe es in den einzelnen Orten gibt und ob einzelne davon kommunal sind, wurde nicht geprüft",
+    "Die Zuordnung Gemeinde → Kirchengemeinde stammt von der Seite 'Kirchen' des Amtes; dort ist nicht ausdrücklich angegeben, dass diese Kirchengemeinden auch die Friedhöfe tragen"
+  ]
+}

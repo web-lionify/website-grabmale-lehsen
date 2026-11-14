@@ -1,0 +1,67 @@
+{
+  "id": "vellahn",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen der Gemeinde Vellahn",
+  "orte": ["Banzin", "Bennin", "Tüschow", "Schildfeld", "Melkof", "Jesow"],
+  "traeger": "Gemeinde Vellahn (Amt Zarrentin)",
+  "art": "kommunal",
+  "fassung": "beschlossen am 05.12.2005, ausgefertigt am 27.12.2005, rückwirkend in Kraft zum 13.06.2005 (§ 37); keine Änderungssatzung im Ordner des Amtes Zarrentin veröffentlicht (Stand 11/2026)",
+  "quelle_url": "https://www.amt-zarrentin.de/portal/dokumenteplus-900000172-29120.html?ordner=1",
+  "quelle_titel": "Amt Zarrentin, Satzungen Vellahn › Friedhofs- und Bestattungswesen: Satzung vom 05.12.2005 (PDF)",
+  "friedhoefe": ["Friedhof Banzin (Gemarkung Banzin)", "Friedhof Bennin (Gemarkung Tüschow)", "Friedhof Melkof (Gemarkung Melkof) (§ 1)"],
+  "kurzfazit": "Die Satzung gilt für die drei Gemeindefriedhöfe Banzin, Bennin und Melkof der Gemeinde Vellahn. Grabmale und auch Einfassungen brauchen vorher die schriftliche Zustimmung der Friedhofsverwaltung (Entwurf 1:10, zweifach); die Mindeststärke richtet sich nach der Höhe (12 bis 18 cm). In Abteilungen mit zusätzlichen Gestaltungsvorschriften gelten die Maße einer gesonderten Grabmal- und Bepflanzungsordnung, die nicht online steht.",
+  "ruhezeit": "Erdbestattung 30 Jahre, Urnen 20 Jahre, Kinder bis 5 Jahre 20 Jahre (§ 12 Abs. 1); Nutzungszeit Wahlgräber 30 Jahre (§ 19 Abs. 1)",
+  "grabarten": [
+    {"name": "Reihengrab (Erdbestattung)", "regel": "Einzelgrab der Reihe nach, mit zusätzlichen Gestaltungsvorschriften; Nutzungsrecht für die Ruhezeit, keine Verlängerung; keine Urnen in Reihengräbern (§ 17 Abs. 1, 2; § 18)"},
+    {"name": "Wahlgrab (Erdbestattung)", "regel": "Einzel- oder Familiengrab, 30 Jahre, verlängerbar; mit allgemeinen oder zusätzlichen Gestaltungsvorschriften; je Grabbreite 1 Urne zusätzlich (§ 17, § 19, § 20 Abs. 2)"},
+    {"name": "Urnenreihen-/Urnenwahlgrab", "regel": "in besonderen Urnenfeldern mind. 0,80 × 0,80 m, je Grabbreite eine Urne (§ 9 Abs. 4, § 20 Abs. 1)"},
+    {"name": "Urnengemeinschaftsanlage", "regel": "Rasenfeld im 40 × 40 cm Raster; Namen auf gemeinsamer Tafel; nicht anonym; Blumen am zentralen Platz (§ 20 Abs. 4)"}
+  ],
+  "masse": [
+    "Mindeststärke der Grabmale (allgemeine Gestaltungsvorschriften): 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; ab 1,50 m Höhe 0,18 m; jeweils bei ordnungsgemäßer, standsicherer Verdübelung (§ 23 Abs. 1)",
+    "In Abteilungen mit zusätzlichen Gestaltungsvorschriften gelten die Maße der Grabmal- und Bepflanzungsordnung (§ 23 Abs. 2)",
+    "Mindestgrabmaße: Erwachsene 2,10 × 0,90 m, Kinder bis 5 Jahre 1,20 × 0,60 m, Urnengrab mind. 0,80 × 0,80 m (§ 9 Abs. 3, 4)"
+  ],
+  "material": [
+    "Grabmale und bauliche Anlagen müssen sich in das Gesamtbild des Friedhofs einfügen (§ 24 Abs. 1)",
+    "Im Antrag sind Material, Bearbeitung, Schriftanordnung, Ornamente, Symbole und Fundamentierung anzugeben (§ 24 Abs. 3)"
+  ],
+  "verbote": [
+    "Kunststoffe und nicht verrottbare Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und verbleibenden Pflanzbehältern (ausgenommen Grabvasen, Markierungszeichen, Gießkannen) (§ 30 Abs. 10)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 30 Abs. 9)",
+    "Jegliche Arbeiten an Sonn- und Feiertagen und während Beisetzungsfeierlichkeiten (§ 6 Abs. 1)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 29 Abs. 3)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen braucht die vorherige schriftliche Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 24 Abs. 2)",
+    "Antrag mit Grabmalentwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung, zweifach; auf Verlangen Zeichnungen 1:1 (§ 24 Abs. 3)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 24 Abs. 4)",
+    "Einfassungen der Grabstätten brauchen eine besondere Genehmigung (§ 24 Abs. 5)",
+    "In Abteilungen mit zusätzlichen Gestaltungsvorschriften Zustimmung nur bei Einhaltung der Grabmal- und Bepflanzungsordnung (§ 24 Abs. 6)",
+    "Bei Anlieferung genehmigten Aufstellantrag vorlegen; Prüfung vor Errichtung möglich (§ 25)",
+    "Steinmetze brauchen eine Zulassungskarte (auf Antrag, jeweils ein Jahr gültig, Gewerbeanmeldung; Meisterbetriebe gelten als fachlich zuverlässig), die bei Arbeiten mitzuführen ist; gewerbliche Arbeiten nur nach vorheriger Anmeldung (§ 6 Abs. 1–3)",
+    "Jede Neuanlage einer Grabstätte vorher mit der Friedhofsverwaltung absprechen (§ 30 Abs. 6)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils geltenden Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 26 Abs. 1)",
+    "Die Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 26 Abs. 2)",
+    "Nutzungsberechtigte sind dauerhaft für verkehrssicheren Zustand verantwortlich; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf deren Kosten; wird ein Mangel nicht binnen eines Monats nach Aufforderung beseitigt, kann das Grabmal entfernt werden (§ 27 Abs. 1, 2)",
+    "Verantwortliche haften für Schäden durch umstürzende Grabmale (§ 27 Abs. 3)"
+  ],
+  "fristen": [
+    "Grabstätten innerhalb von 6 Monaten nach Belegung oder Erwerb bepflanzen bzw. herrichten (§ 30 Abs. 7)",
+    "Vor Ablauf der Nutzungszeit Grabmale nur mit schriftlicher Zustimmung entfernen; nach Ende des Nutzungsrechts Grabmal mit Fundament binnen 3 Monaten entfernen, sonst Abräumung auf Kosten des Nutzungsberechtigten, ohne Aufbewahrung (§ 29 Abs. 1, 2)",
+    "Abräumen von Reihengrabfeldern wird 6 Monate vorher bekanntgegeben; nicht entfernte Grabmale gehen danach entschädigungslos an den Friedhofsträger (§ 18 Abs. 3)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Hecken nur nach Abstimmung mit der Friedhofsaufsicht (§ 30 Abs. 3)",
+    "Bestattungen von Montag bis Samstag (§ 7 Abs. 2)"
+  ],
+  "kontakt": "Gemeinde Vellahn als Friedhofsverwaltung (§ 2); Anschrift in der Satzung nicht genannt (Verwaltung über Amt Zarrentin)",
+  "unsicher": [
+    "Camin wird in der Satzung nicht genannt; Geltungsbereich sind nur die Friedhöfe Banzin, Bennin und Melkof (§ 1, § 3). Der Friedhof Camin ist kirchlich (Friedhofsordnung der Kirchengemeinde Körchow-Camin).",
+    "Satzung von 2005; im Ordner „Friedhofs- und Bestattungswesen“ der Gemeinde Vellahn beim Amt Zarrentin sind nur diese Satzung und die Gebührensatzung vom 05.09.2005 veröffentlicht, keine Änderungen.",
+    "Ob und wo Abteilungen mit zusätzlichen Gestaltungsvorschriften bestehen, nennt die Satzung nicht; die Grabmal- und Bepflanzungsordnung ist nicht online.",
+    "Direkter PDF-Link des Amtes ist ein langer Token-Link; als quelle_url ist daher die Ordnerseite angegeben."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "moelln",
+  "titel": "Friedhofssatzung für die Friedhöfe der Ev.-Luth. Kirchengemeinde Mölln",
+  "orte": ["Mölln"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Mölln",
+  "art": "kirchlich",
+  "fassung": "beschlossen am 22.06.2022, kirchenaufsichtlich genehmigt am 27.07.2022, bekannt gemacht am 08.08.2022 (ersetzt die Satzung vom 29.02.2012)",
+  "quelle_url": "https://www.friedhof-moelln.de/assets/friedhofssatzung-ab-2022.pdf",
+  "quelle_titel": "Friedhofssatzung Mölln ab 2022 (PDF)",
+  "friedhoefe": [
+    "Alter Friedhof Mölln (Felder S, T, W und X mit allgemeinen, übrige Felder mit zusätzlichen Gestaltungsvorschriften, § 24 Abs. 1, § 26 Abs. 1)",
+    "Neuer Friedhof Mölln (Name laut Webseite friedhof-moelln.de; Satzung spricht von 'beiden Friedhöfen')"
+  ],
+  "kurzfazit": "Fast alle Grabfelder in Mölln haben zusätzliche Gestaltungsvorschriften: Grabmale nur aus Naturstein, Holz oder Metall in handwerklicher Ausführung, möglichst aus einem Stück, und die Ansichtsfläche ist je Grabart begrenzt (z. B. Urnenwahlgrab 0,25–0,45 m²). Nur die Felder S, T, W und X auf dem Alten Friedhof haben freiere allgemeine Regeln. Jedes Grabmal braucht vorher die schriftliche Zustimmung des Friedhofsträgers mit Zeichnung im Maßstab 1:10.",
+  "ruhezeit": "allgemein 25 Jahre, Kinder bis zum vollendeten 5. Lebensjahr 15 Jahre, Urnen 20 Jahre (§ 9); Nutzungszeit Wahlgrab 25 Jahre (§ 15 Abs. 1)",
+  "grabarten": [
+    {"name": "Grabfelder mit allgemeinen Gestaltungsvorschriften (Alter Friedhof, Felder S, T, W, X)", "regel": "Grabmale sollen aus Naturstein, Holz, geschmiedetem oder gegossenem Metall sein; Mindeststärke stehender Grabmale bis 90 cm Höhe 12 cm, darüber 15 cm (§ 25)"},
+    {"name": "Grabfelder mit zusätzlichen Gestaltungsvorschriften (alle übrigen Felder beider Friedhöfe)", "regel": "nur Naturstein, Holz, geschmiedetes oder gegossenes Metall in handwerklicher Ausführung; nur ein stehendes Grabmal je Grabstätte, zusätzlich je Grabbreite ein passendes liegendes; Breite des stehenden Grabmals höchstens halbe Grabbreite (§ 26 Abs. 3–6). Ohne ausdrückliche Wahl wird in einem solchen Feld bestattet (§ 22 Abs. 3)"},
+    {"name": "Sarg-Reihengrab (zusätzliche Vorschriften)", "regel": "stehendes Grabmal in Stelenform mit 0,30–0,40 m² Ansichtsfläche (§ 26 Abs. 7 Nr. 1)"},
+    {"name": "Sarg-Wahlgrab einstellig (zusätzliche Vorschriften)", "regel": "Ansichtsfläche 0,40–0,60 m² bei einer äußersten Breite von 50 cm (§ 26 Abs. 7 Nr. 2)"},
+    {"name": "Sarg-Wahlgrab mehrstellig (zusätzliche Vorschriften)", "regel": "Ansichtsfläche 0,50–0,90 m²; ab 3 m Breite oder in besonderer Lage Maße nach Festlegung der Friedhofsverwaltung (§ 26 Abs. 7 Nr. 3–4)"},
+    {"name": "Urnenreihengrab (zusätzliche Vorschriften)", "regel": "nur liegende Grabmale bis 0,25 m² (§ 26 Abs. 8 Nr. 1)"},
+    {"name": "Urnenwahlgrab (zusätzliche Vorschriften)", "regel": "Ansichtsfläche 0,25–0,45 m²; in besonderer Lage nach Festlegung der Friedhofsverwaltung (§ 26 Abs. 8 Nr. 2–3)"},
+    {"name": "Baumgrabstätte (Urnen)", "regel": "nur ebenerdig liegende Grabmale ohne Fundament; keine gärtnerische Gestaltung, keine Vasen oder Schalen; einzelne Blumen zum Ewigkeitssonntag auf dem Grabmal erlaubt (§ 19 Abs. 2, § 24 Abs. 5)"},
+    {"name": "Gemeinschaftsgrabstätte", "regel": "Friedhofsträger errichtet ein gemeinsames Grabmal und übernimmt Anlage und Pflege; Blumen nur auf Ablageflächen (§ 19 Abs. 1, § 24 Abs. 6)"},
+    {"name": "Rasenfelder (zusätzliche Vorschriften)", "regel": "keine Schrittplatten; Gewächse max. 70 cm hoch; Umrandungen aus Edelrost, Holz oder Pflanzen zulässig (§ 23 Abs. 3, § 24 Abs. 4)"}
+  ],
+  "masse": [
+    "Mindeststärke stehender Grabmale: bis 90 cm Höhe 12 cm, über 90 cm Höhe 15 cm (§ 25 Abs. 2)",
+    "Liegende Grabmale (zusätzliche Vorschriften) mind. 12 cm stark, Neigung max. 20 % (§ 26 Abs. 6)",
+    "Stehendes Grabmal (zusätzliche Vorschriften) höchstens halb so breit wie die Grabstätte (§ 26 Abs. 6)",
+    "Ansichtsflächen Sarggräber: Reihengrab 0,30–0,40 m², Wahlgrab einstellig 0,40–0,60 m² (max. 50 cm breit), mehrstellig 0,50–0,90 m² (§ 26 Abs. 7)",
+    "Ansichtsflächen Urnengräber: Urnenreihengrab liegend bis 0,25 m², Urnenwahlgrab 0,25–0,45 m² (§ 26 Abs. 8)",
+    "Bilder der Verstorbenen max. 5 % der Grabmalfläche (§ 26 Abs. 4)",
+    "Mindestgrößen der Grabstätten: Sarg bis 120 cm 150 × 90 cm, Sarg über 120 cm 240 × 120 cm, Urnengrab 100 × 100 cm (§ 12 Abs. 6)",
+    "Pflanzenhöhe allgemein max. 2,50 m, auf Rasenfeldern max. 70 cm (§ 23 Abs. 2, § 24 Abs. 4)",
+    "Gestaltungspläne können weitere Höchst- und Mindestmaße festlegen (§ 26 Abs. 9)"
+  ],
+  "material": [
+    "Allgemein: Naturstein, Holz, geschmiedetes oder gegossenes Metall sollen verwendet werden (§ 25 Abs. 1)",
+    "Zusätzliche Vorschriften: nur Naturstein, Holz, geschmiedetes oder gegossenes Metall in handwerklicher Ausführung; Bearbeitung, Form und Farbe müssen sich harmonisch einfügen (§ 26 Abs. 2–3)",
+    "Grabmal möglichst aus einem Stück (§ 26 Abs. 4)",
+    "Schrift, Ornamente und Symbole nicht aus Beton, Kunststoff, Ersatzstoffen oder Imitationen (§ 26 Abs. 4)",
+    "Fotos nur in Keramik oder eingearbeitet (§ 26 Abs. 4)",
+    "Zusätzliches liegendes Grabmal soll dem stehenden in Material, Farbe, Schrift und Bearbeitung entsprechen (§ 26 Abs. 5)",
+    "Einfassungen allgemein aus lebenden Pflanzen, Edelrost oder Naturstein (2 Elemente je Grabseite, nicht am Weg); Kantensteine am Weg setzt nur der Friedhofsträger (§ 23 Abs. 3)"
+  ],
+  "verbote": [
+    "Zusätzliche Vorschriften: keine Grababdeckungen und Einfassungen aus Beton, Terrazzo, Kieselsteinen, Teerpappe, Kunststoff o. ä.; keine Grabgebinde aus künstlichem Werkstoff (§ 24 Abs. 3)",
+    "Keine Kunststoffe in Trauerfloristik, Grabschmuck und Grabeinfassungen; ausgenommen Grabvasen und Markierungszeichen (§ 28 Abs. 2)",
+    "Keine Pflanzenschutz- und Wildkrautmittel und keine chemischen Reinigungsmittel für Grabpflege und Grabmalreinigung (§ 28 Abs. 1)",
+    "Keine Blechdosen, Gläser oder Flaschen als Blumenbehälter (§ 28 Abs. 3)",
+    "Keine gewerblichen Arbeiten an Sonn- und Feiertagen und keine störenden Arbeiten nahe Trauerfeiern; Arbeiten nur zu den vom Träger festgesetzten Zeiten (§ 5 Abs. 2, § 6 Abs. 5)",
+    "Keine Firmenschilder/Werbung auf dem Friedhof (§ 5 Abs. 2)"
+  ],
+  "genehmigung": [
+    "Errichtung und Veränderung von Grabmalen nur mit vorheriger schriftlicher Zustimmung des Friedhofsträgers, zu beantragen vor Anfertigung durch die nutzungsberechtigte oder eine bevollmächtigte Person (§ 31 Abs. 1)",
+    "Antrag zweifach: Entwurf mit Grundriss, Vorder- und Seitenansicht im Maßstab 1:10 mit Material, Bearbeitung und Fundamentierung; Wortlaut und Platzierung von Inschrift, Ornamenten und Symbolen; in besonderen Fällen Modell 1:5 oder Attrappe in Originalgröße (§ 31 Abs. 2)",
+    "Auch sonstige bauliche Anlagen, Bänke und provisorische Tafeln brauchen vorher eine schriftliche Zustimmung (§ 31 Abs. 3)",
+    "Zustimmung erlischt, wenn nicht binnen eines Jahres errichtet (§ 31 Abs. 4)",
+    "Träger kann verlangen, Grabmal und genehmigten Antrag bei Anlieferung vorzuzeigen; abweichende Ausführung kann zurückgewiesen oder auf Kosten der Nutzungsberechtigten geändert/beseitigt werden (§ 32)",
+    "Steinmetze brauchen eine vorherige schriftliche Zulassung (Handwerksrolle, Haftpflichtversicherung); für einmalige Tätigkeit genügt ggf. die Zulassung eines anderen Friedhofs (§ 6 Abs. 1–4)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Richtlinien des Bundesinnungsverbandes des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks in der jeweils geltenden Fassung; dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 33 Abs. 1–2)",
+    "Friedhofsverwaltung kann weitergehende Anforderungen (z. B. besondere Verdübelung) verlangen (§ 25 Abs. 2)",
+    "Nutzungsberechtigte halten Grabmale verkehrssicher und haften für Schäden; Mängel durch zugelassene Gewerbetreibende beheben lassen (§ 35 Abs. 1–2, § 40 Abs. 1)",
+    "Bei unmittelbarer Gefahr darf der Träger das Grabmal ohne Vorwarnung umlegen; Kosten inkl. Zwischenlagerung tragen die Verantwortlichen (§ 35 Abs. 3)",
+    "Gewerbetreibende haften für schuldhaft verursachte Schäden und müssen eine Haftpflichtversicherung nachweisen (§ 6 Abs. 4)"
+  ],
+  "fristen": [
+    "Grabstätte binnen sechs Monaten nach Belegung oder Erwerb des Nutzungsrechts anlegen (§ 27 Abs. 1)",
+    "Provisorische Tafeln nur mit vorheriger Zustimmung; eine Höchstdauer ist nicht geregelt (§ 31 Abs. 3)",
+    "Vor Ablauf des Nutzungsrechts Grabmal nur mit Zustimmung entfernen (§ 36 Abs. 1)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel/Fundament binnen drei Monaten entfernen, sonst Abräumung durch den Träger ohne Entschädigung, Kosten ggf. zulasten der Nutzungsberechtigten (§ 36 Abs. 2–3)",
+    "Zustimmung gilt ein Jahr (§ 31 Abs. 4)"
+  ],
+  "kinderarbeit": "Es sollen keine importierten Grabsteine verwendet werden, die nicht unter fairen Arbeitsbedingungen bzw. mit Kinderarbeit hergestellt wurden (§ 25 Abs. 1, Soll-Vorschrift); ein Nachweis wird nicht verlangt, schleswig-holsteinisches Landesrecht wird nicht genannt",
+  "besonderheiten": [
+    "Wahlmöglichkeit zwischen Feldern mit allgemeinen und mit zusätzlichen Gestaltungsvorschriften; ohne Wahl gelten die zusätzlichen (§ 22)",
+    "Ausnahmen für Grabmale besonderer künstlerischer oder handwerklicher Ausführung möglich; für besondere Lagen zusätzliche Anforderungen (§ 26 Abs. 10–11)",
+    "Grabmale und Pflanzen können bei Umbettung umgesetzt werden, wenn die Gestaltungsregeln des neuen Feldes es zulassen (§ 11 Abs. 7)",
+    "Künstlerisch oder historisch wertvolle Grabmale werden gelistet und sollen erhalten bleiben; Grabpatenschaften möglich (§ 37)",
+    "Wintereindeckung mit Tannengrün nur im Bereich der Wechselbepflanzung (§ 28 Abs. 4)",
+    "Der Träger haftet nicht für Schäden an Einfassungen bei gärtnerischen Arbeiten oder Beisetzungen (§ 23 Abs. 3)",
+    "Entfernung von Pflanzen beim Grabaushub erfolgt ersatzlos, auch auf Nachbargräbern (§ 10 Abs. 4)"
+  ],
+  "kontakt": "Friedhofsverwaltung Mölln, Jochim-Polleyn-Platz 9, 23879 Mölln, Tel. 04542 85688-12, kontakt@friedhof-moelln.de (laut friedhof-moelln.de; Servicezeiten Mo, Di, Do 9–12 Uhr und Do 14:30–16:30 Uhr)",
+  "unsicher": [
+    "Der Name 'Neuer Friedhof' stammt von der Webseite, die Satzung nennt nur den Alten Friedhof namentlich",
+    "Die Gestaltungspläne, auf die die Satzung für Einzelheiten verweist (§ 12 Abs. 6, § 24 Abs. 2, § 26 Abs. 9), sind nicht Teil des Dokuments und wurden nicht geprüft",
+    "Die vom Träger festgesetzten Arbeitszeiten für Gewerbetreibende (§ 6 Abs. 5) sind nicht im Dokument",
+    "Änderungssatzungen nach 2022 wurden nicht geprüft"
+  ]
+}

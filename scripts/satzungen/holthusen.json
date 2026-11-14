@@ -1,0 +1,73 @@
+{
+  "id": "holthusen",
+  "titel": "Friedhofssatzung der Gemeinde Holthusen",
+  "orte": ["Holthusen"],
+  "traeger": "Gemeinde Holthusen (Amt Stralendorf)",
+  "art": "kommunal",
+  "fassung": "beschlossen am 28.06.2011 (ersetzt die Satzung vom 20.11.2007)",
+  "quelle_url": "https://www.amt-stralendorf.de/loadDocument.phtml?FID=3499.54.1&Ext=PDF",
+  "quelle_titel": "Friedhofssatzung der Gemeinde Holthusen (PDF, Amt Stralendorf)",
+  "friedhoefe": ["Friedhof der Gemeinde Holthusen (Kapelle im Eigentum der Ev.-Luth. Kirche Pampow) (§ 1)"],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Amtsverwaltung Stralendorf; dem Antrag ist eine Skizze im Maßstab 1:50 mit Angaben zu Material, Farbe, Bearbeitung und Text beizufügen. Grabmale dürfen höchstens 2/3 der Grabbreite breit und 1/2 der Grabtiefe hoch sein, liegende Platten nur 1/3 der Grabfläche abdecken. Verboten sind u. a. schwarzer Kunststein, Kunststoff-Imitate, Sockel aus anderem Material als der Stein und Firmenhinweise auf der Vorderseite.",
+  "ruhezeit": "Erd- und Urnenbestattungen 25 Jahre (§ 7); Nutzungsrecht Wahl- und Urnenwahlgrab 25 Jahre (§ 10 Abs. 1-2)",
+  "grabarten": [
+    {"name": "Reihengrabstätte einzeln", "regel": "1,40 × 2,80 m (§ 10 Abs. 3 Nr. 1)"},
+    {"name": "Reihengrabstätte doppelt", "regel": "2,80 × 2,80 m (§ 10 Abs. 3 Nr. 2)"},
+    {"name": "Urnengrabstätte einstellig", "regel": "1,00 × 1,00 m (§ 10 Abs. 3 Nr. 3)"},
+    {"name": "Urnengrabstätte zweistellig", "regel": "1,00 × 2,00 m (§ 10 Abs. 3 Nr. 4)"},
+    {"name": "Anonymes Grabfeld („Grüne Wiese“) für Urnen", "regel": "Rasenfeld ohne Grabzeichen; Gestaltung und Pflege nur durch die Gemeinde; Blumen und Kränze nur an der Fläche am Gedenkstein (§ 11 Abs. 1-2)"}
+  ],
+  "masse": [
+    "Grabmale jeder Art: Breite max. 2/3 der Grabbreite, Höhe max. 1/2 der Grabtiefe (§ 14 Abs. 3)",
+    "Liegende Grabmale und Trittplatten dürfen nur 1/3 der Grabfläche abdecken (§ 14 Abs. 4)",
+    "Einzelpflanzen max. 150 cm hoch, Einfassungshecken max. 50 cm hoch (§ 12 Abs. 2)",
+    "Keine Mindeststärken geregelt"
+  ],
+  "material": [
+    "Steinerne Grabmale sollen aus wetterbeständigem Naturstein bestehen (§ 14 Abs. 2)",
+    "Kunststein nur in werksteinmäßiger Bearbeitung mit wetterbeständiger starker Oberschicht mit natürlichem Gesteinszusatz (§ 14 Abs. 2)",
+    "Schrift muss zur Form des Grabmals passen und gut verteilt sein; Farbe und Ausführung dem Werkstoff anpassen; vertieft, erhaben oder aus Metall, eingemeißelt natur oder farbig gefasst (§ 14 Abs. 4)",
+    "Bei liegenden Grabmalen keine erhabene Schrift (§ 14 Abs. 4)"
+  ],
+  "verbote": [
+    "Sockel aus anderem Material als der Grabstein (§ 14 Abs. 1 lit. a)",
+    "Grabmale aus nicht wetterbeständigen oder unwürdigen Werkstoffen wie Gips, Aluminium o. ä. (§ 14 Abs. 1 lit. b)",
+    "Schwarzer Kunststein sowie Kunst- oder Natursteinnachbildungen aus Kunststoff (§ 14 Abs. 1 lit. d)",
+    "Ölfarbanstriche auf Steingrabmalen (§ 14 Abs. 1 lit. e)",
+    "Inschriften, die nicht der Würde des Ortes entsprechen (§ 14 Abs. 1 lit. f)",
+    "Firmenhinweise auf der Vorderseite; an anderer Stelle nur unauffällig (§ 14 Abs. 1 lit. g)",
+    "Grabzeichen auf dem anonymen Grabfeld (§ 11 Abs. 1)"
+  ],
+  "genehmigung": [
+    "Errichtung, Veränderung und Entfernung von Grabmalen, Einfassungen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Amtsverwaltung Stralendorf; Nutzungsrecht ist nachzuweisen (§ 13)",
+    "Antrag durch den Nutzungsberechtigten vor Beginn der Arbeiten; Skizze im Maßstab 1:50 mit Grundriss, Vorder- und Seitenansicht, Wortlaut und Anordnung des Textes, Symbolen sowie Angaben zu Material, Farbe, Oberflächenbearbeitung und Form (§ 17 Abs. 3)",
+    "Steinmetze brauchen eine vorherige Erlaubnis der Amtsverwaltung (§ 3 Abs. 1)",
+    "Gewerbliche Arbeiten nur werktags 7.00–18.00 Uhr, nicht am Buß- und Bettag; während Trauerfeiern ruhen die Arbeiten; Fahrzeuge max. 10 km/h (§ 3 Abs. 2-3)",
+    "Ohne Zustimmung oder satzungswidrig aufgestellte Grabmale kann die Amtsverwaltung auf Kosten des Nutzungsberechtigten entfernen lassen (§ 16 Abs. 1)"
+  ],
+  "standsicherheit": [
+    "Grabmale, Einfassungen und bauliche Anlagen nach den allgemein anerkannten Regeln des Handwerks herstellen, bemessen, fundamentieren und befestigen, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 14)",
+    "Nutzungsberechtigter ist für würdigen und verkehrssicheren Zustand verantwortlich und haftet für Schäden (§ 15 Abs. 1, 3)",
+    "Bei gefährdeter Standsicherheit unverzüglich Abhilfe; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) durch die Amtsverwaltung; nach erfolgloser Aufforderung (3 Monate) Entfernung auf Kosten des Nutzungsberechtigten (§ 15 Abs. 2)",
+    "Keine bestimmte Richtlinie (TA Grabmal o. ä.) genannt"
+  ],
+  "fristen": [
+    "Grabstätten sollen spätestens 6 Wochen nach der Beisetzung würdig hergerichtet und innerhalb von 6 Monaten gärtnerisch angelegt sein (§ 17 Abs. 2)",
+    "Vor dem Aushub müssen Grabmale und Zubehör vom Nutzungsberechtigten entfernt werden; keine Verwahrung durch die Verwaltung (§ 6 Abs. 5)",
+    "Nach Ablauf des Nutzungsrechts Grabmale entfernen; Hinweis 3 Monate vorher; Abräumung durch die Amtsverwaltung, wenn nicht binnen 6 Monaten nach Aufforderung erledigt (§ 10 Abs. 7, § 16 Abs. 2)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Einfassungen sind zustimmungspflichtig (§ 13)",
+    "Bepflanzung muss sich der Umgebung anpassen und darf nicht über die Grabstätte hinauswachsen (§ 12 Abs. 2)",
+    "Verwelkte Blumen und Kränze unverzüglich entfernen (§ 12 Abs. 1)",
+    "Bis zu 2 Urnen können in vorhandenen Erdgrabstätten beigesetzt werden (§ 10 Abs. 4)",
+    "Urnen im anonymen Feld max. 30 cm Außenmaß, nur aus sich zersetzendem Material (§ 11 Abs. 1)"
+  ],
+  "kontakt": "Amtsverwaltung Stralendorf (Verwaltung des Friedhofs, § 1 Abs. 1); Kapelle: Pfarramt Pampow (§ 1 Abs. 3); keine Adresse in der Satzung",
+  "unsicher": [
+    "In § 14 Abs. 1 fehlt in der Aufzählung lit. c (Sprung von b nach d) – vermutlich Redaktionsfehler, nicht inhaltlich.",
+    "Nicht geprüft, ob es nach 2011 Änderungssatzungen gibt; das verlinkte PDF ist die Fassung vom 28.06.2011.",
+    "§ 10 nennt in Abs. 1 'Wahlgrabstätten', in Abs. 3 aber 'Reihengrabstätten' – Begriffe in der Satzung uneinheitlich."
+  ]
+}

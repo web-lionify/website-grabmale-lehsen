@@ -1,0 +1,75 @@
+{
+  "id": "boizenburg",
+  "titel": "Friedhofsordnung für die Friedhöfe in Rensdorf und Boizenburg (Ev.-Luth. Kirchengemeinde Boizenburg St. Marien)",
+  "orte": ["Boizenburg/Elbe", "Rensdorf"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Boizenburg St. Marien",
+  "art": "kirchlich",
+  "fassung": "vom 18.06.2019 (Beschluss des Kirchengemeinderats), vom Kirchenkreis Mecklenburg genehmigt",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/elkm/propstei_parchim/boizenburg/Friedhof/190618_Friedhofsordnung__Boizenburg.pdf",
+  "quelle_titel": "Friedhofsordnung Boizenburg und Rensdorf vom 18.06.2019 (PDF, kirche-mv.de)",
+  "friedhoefe": ["Friedhof Boizenburg (Eigentum der Kirche und der Stadt Boizenburg) (§ 1 Abs. 1)", "Friedhof Rensdorf (Eigentum der Ev.-Luth. Kirche Rensdorf) (§ 1 Abs. 1)"],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung; einzureichen ist ein Entwurf im Maßstab 1:10 in zweifacher Ausfertigung, die Zustimmung gilt ein Jahr. Auf Rasenwahlgräbern sind nur stehende Steine ab 40 cm Breite und bis 80 cm Höhe inklusive Sockel und Fundament erlaubt; Grabplatten dürfen höchstens zwei Drittel der Grabstätte bedecken. Unter dem Baum (nur Boizenburg) ist als Namenszeichen ein graviertes Bronzeblatt vorgeschrieben, das ein Steinmetz anbringt.",
+  "ruhezeit": "Boizenburg: Särge und Urnen 20 Jahre; Rensdorf: Särge und Urnen 25 Jahre (§ 12 Abs. 1); Wahlgrab-Nutzungszeit 20 bzw. 25 Jahre (§ 18 Abs. 1)",
+  "grabarten": [
+    {"name": "Reihen- und Wahlgrab (Sarg/Urne) mit allgemeinen Gestaltungsvorschriften", "regel": "Mindestmaße Erdgrab Kinder bis 5 Jahre 1,20 × 0,60 m, ab 5 Jahre 2,10 × 0,90 m; Mindeststärken der Grabmale nach § 26 (§ 9 Abs. 3, § 16)"},
+    {"name": "Urnenwahlgrab", "regel": "bis zu 1 m breit und 1,20 m lang; je Grabbreite zwei Urnen (§ 9 Abs. 3 lit. c, § 19 Abs. 1)"},
+    {"name": "Urnengemeinschaftsanlage mit Stele und Namensnennung (nur Boizenburg)", "regel": "je Platz 0,50 × 0,50 m; Namen auf zentraler Stele nach vollständiger Belegung; keine Bepflanzung, Blumen nur am zentralen Ablageplatz (§ 9 Abs. 3, § 20)"},
+    {"name": "Rasenwahlgrab für Sarg oder Urne", "regel": "nur stehende Grabsteine ab 40 cm Breite bis 80 cm Höhe inkl. Sockel und Fundament, durch zugelassenen Steinmetz; Stärke nach § 26; Name und Lebensdaten gut lesbar; Pflanzfläche vor dem Stein in Steinbreite und 40 cm Länge mit kleiner Einfassung, Pflanzen nicht höher als der Stein; keine Vasen/Schalen auf dem Rasen (§ 21)"},
+    {"name": "Urnenrasenreihengrab unter dem Baum (nur Boizenburg)", "regel": "Pflege durch den Träger, keine Bepflanzung; Namensnennung nur als Bronzeblatt mit Vor- und Zuname, Geburts- und Sterbejahr, eingraviert und von einem Steinmetz an der vorgesehenen Stelle angebracht (§ 22)"},
+    {"name": "Familiengruft (nur Boizenburg)", "regel": "Erwerb für Urnenbeisetzungen per Vertrag; Erwerber muss baulich einwandfreien, verkehrssicheren Zustand bis Ende der letzten Ruhefrist herstellen und erhalten (§ 23)"}
+  ],
+  "masse": [
+    "Mindeststärke (allgemeine Gestaltungsvorschriften): 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; über 1,50 m Höhe 0,18 m – jeweils bei standsicherer Verdübelung (§ 26)",
+    "Rasenwahlgrab: stehender Stein ab 40 cm Breite, max. 80 cm Höhe inkl. Sockel und Fundament (§ 21)",
+    "Grabplatten max. zwei Drittel der Grabstätte (§ 33 Abs. 10)",
+    "Gehölze max. 1,5 m hoch (§ 33 Abs. 2)"
+  ],
+  "material": [
+    "Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 27 Abs. 1)",
+    "Unter dem Baum: Namensplatte aus Bronze mit Gravur (§ 22)",
+    "Rasenwahlgrab: Name und Geburts-/Sterbedaten gut lesbar (§ 21)"
+  ],
+  "verbote": [
+    "Bedeckung mit Kieselsteinen nicht erlaubt (§ 33 Abs. 10)",
+    "Keine neuen Hecken und kein Ersetzen vorhandener Hecken (§ 33 Abs. 2)",
+    "Keine Kunststoffe oder nicht verrottbaren Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und Pflanzbehältern; ausgenommen Grabvasen, Markierungszeichen, Gießkannen (§ 33 Abs. 9)",
+    "Keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 33 Abs. 9)",
+    "Rasenwahlgrab: keine liegenden Steine, keine Vasen oder Schalen auf dem Rasen (§ 21)",
+    "Grabmale vor Ablauf der Nutzungszeit nur mit schriftlicher Zustimmung entfernen (§ 32 Abs. 1)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 27 Abs. 2)",
+    "Entwurf mit Grundriss und Seitenansicht 1:10 inkl. Material, Bearbeitung, Schrift, Ornamente, Symbole und Fundamentierung, zweifach; auf Verlangen Details 1:1, Modell 1:10 oder Attrappe in Originalgröße (§ 27 Abs. 3)",
+    "Bei Rasenwahlgrab und Baumgrab reicht der Steinmetz einen schriftlichen Antrag mit Skizze und Maßen ein (§§ 21, 22)",
+    "Zustimmung erlischt nach einem Jahr ohne Errichtung (§ 27 Abs. 4)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 27 Abs. 5)",
+    "Bei Anlieferung genehmigten Antrag vorlegen; Prüfung vor Aufstellung möglich (§ 28)",
+    "Steinmetze brauchen eine schriftliche Zulassung (Handwerksrolle, Haftpflichtversicherung); Arbeiten werktags 7–16 Uhr, nicht am Buß- und Bettag (§ 5 Abs. 1-3, 6)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung (§ 29 Abs. 1)",
+    "Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 29 Abs. 2)",
+    "Nutzungsberechtigter verantwortlich für verkehrssicheren Zustand und haftet für Schäden durch Umstürzen; bei Gefahr Umlegen durch die Verwaltung, Aufbewahrung entfernter Teile drei Monate (§ 30)"
+  ],
+  "fristen": [
+    "Zustimmung gilt ein Jahr (§ 27 Abs. 4)",
+    "Rasenwahlgrab: Erstherrichtung und Einsaat spätestens bis zum neunten Monat nach der Beisetzung – in Boizenburg durch Friedhofsmitarbeiter, in Rensdorf durch die Nutzungsberechtigten (§ 21)",
+    "Wahlgräber binnen sechs Monaten nach Erwerb, Reihengräber binnen sechs Monaten nach Bestattung herrichten (§ 33 Abs. 7)",
+    "Nach Ablauf oder Entzug des Nutzungsrechts Grabmal mit Sockel/Fundament binnen drei Monaten entfernen, sonst Abräumung auf Kosten des Nutzungsberechtigten ohne Entschädigung (§ 32 Abs. 2)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Wahl zwischen Abteilungen mit allgemeinen und zusätzlichen Gestaltungsvorschriften beim Erwerb (§ 8 Abs. 13)",
+    "Gehölze sind nach Ablauf der Ruhezeit von den Nutzungsberechtigten abzuräumen (§ 33 Abs. 11)",
+    "Nachbarn müssen vorübergehende Veränderungen beim Grabaushub dulden; Schäden beseitigt die Friedhofsverwaltung (§ 10 Abs. 5)",
+    "Wertvolle Grabmale werden verzeichnet; Änderungen nur mit Zustimmung, ggf. Denkmalschutz beteiligen (§ 31)",
+    "Kriegsgräber pflegt die Stadt Boizenburg (§ 12 Abs. 2)"
+  ],
+  "kontakt": "Friedhofsverwaltung im Büro auf dem Friedhof Boizenburg (Friedhofswart) (§ 7 Abs. 1); Widersprüche an den Friedhofsträger oder die Zentrale Friedhofsverwaltung Güstrow, Domstr. 16, 18273 Güstrow (§ 40)",
+  "unsicher": [
+    "Inhaltsverzeichnis und Text weichen ab (Verzeichnis: 'Rasenreihengrabstätte', Text § 21: 'Rasenwahlgrabstätten'); verwendet wurde der Text.",
+    "Absatznummern in §§ 21 und 22 ließen sich aus dem PDF-Textlayer nicht sicher zuordnen, daher nur Paragraf angegeben.",
+    "Das Genehmigungsdatum des Kirchenkreises ist im PDF unleserlich.",
+    "Der Friedhof Boizenburg gehört laut § 1 teils der Stadt; ob es daneben eine städtische Satzung gibt, wurde nicht geprüft."
+  ]
+}

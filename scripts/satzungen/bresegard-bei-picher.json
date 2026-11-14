@@ -1,0 +1,69 @@
+{
+  "id": "bresegard-bei-picher",
+  "titel": "Friedhofssatzung der Gemeinde Bresegard b. Picher",
+  "orte": ["Bresegard bei Picher"],
+  "traeger": "Gemeinde Bresegard bei Picher (Amt Hagenow-Land)",
+  "art": "kommunal",
+  "fassung": "vom 01.03.2023 (beschlossen am 20.02.2023)",
+  "quelle_url": "https://www.amt-hagenow-land.de/portal/dokumenteplus-900000146-28990.html?ordner=1",
+  "quelle_titel": "Amt Hagenow-Land: Friedhofssatzung der Gemeinde Bresegard b. Picher (PDF)",
+  "friedhoefe": ["Friedhof der Gemeinde Bresegard b. Picher (der im Gemeindegebiet gelegene, von der Gemeinde verwaltete Friedhof, § 1 Abs. 1)"],
+  "kurzfazit": "In Bresegard b. Picher sind nur Natursteine und Holz erlaubt, ohne Farbanstrich und Firmenzeichen; für Erd- und Urnenwahlgräber gibt es feste Breiten- und Höhenspannen (Höhe inkl. Sockel). Baumurnengräber erhalten eine ebenerdige Natursteinplatte von höchstens 30 × 30 cm. Abweichungen von den Gestaltungsregeln sind mit Antrag und Zeichnungen möglich.",
+  "ruhezeit": "Erdbestattung (Leichen) 30 Jahre, Urnen (Aschen) 25 Jahre (§ 8)",
+  "grabarten": [
+    {"name": "Erdwahlgrab 1-stellig", "regel": "stehendes Grabmal/Stele oben: Breite 30–50 cm, Höhe 65–95 cm; liegendes Grabmal: Breite 45–50 cm, Höhe 40–45 cm (§ 15 Abs. 4)"},
+    {"name": "Erdwahlgrab 2-stellig", "regel": "stehendes Grabmal/Stele oben: Breite 30–80 cm, Höhe 65–100 cm; liegendes Grabmal: Breite 60–70 cm, Höhe 45–55 cm (§ 15 Abs. 4)"},
+    {"name": "Urnenwahlgrab 1-stellig (Außenmaß 1,00 m × 1,00 m mit Einfassung)", "regel": "stehendes Grabmal/Stele 18–45 cm und 50–80 cm (vermutlich Breite × Höhe); liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 15 Abs. 5)"},
+    {"name": "Urnenwahlgrab 2-stellig (Außenmaß 2,00 m × 1,00 m mit Einfassung)", "regel": "stehendes Grabmal/Stele 18–45 cm und 50–80 cm (vermutlich Breite × Höhe); liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 15 Abs. 5)"},
+    {"name": "Baumurnengrab", "regel": "Grabstätte 0,50 m × 0,50 m mit ebenerdig eingelassener Natursteinplatte bis max. 0,30 m × 0,30 m; Beschaffung und Einbau beauftragt und bezahlt der Nutzungsberechtigte; Pflege durch den Friedhofsträger (§ 12 Abs. 3, 6)"},
+    {"name": "Wahlgrab für Rasenbestattung", "regel": "Grabplatz und Grabpflege durch den Friedhofsträger inbegriffen; eigene Gestaltungsmaße nicht geregelt (§ 11 Abs. 2)"},
+    {"name": "Anonymes Urnenreihengrab", "regel": "keine Kennzeichnung; Grabschmuck nur am Findling im Bereich der anonymen Gräber (§ 13 Abs. 2, 4)"}
+  ],
+  "masse": [
+    "Mindeststärken: bis 0,80 m Höhe 12 cm, bis 1,20 m Höhe 14 cm, bis 1,60 m Höhe 16 cm (§ 15 Abs. 2)",
+    "Höhenangaben der Grabmale schließen einen eventuellen Sockel ein (§ 15 Abs. 4)",
+    "Verhältnis Breite zu Höhe soll ca. 1:3 betragen (§ 15 Abs. 4)",
+    "Baumurnengrab: Natursteinplatte max. 0,30 m × 0,30 m (§ 12 Abs. 3)",
+    "Bepflanzung: max. 1,50 m bei Einzelgewächsen, 0,75 m bei Hecken (§ 19 Abs. 2)"
+  ],
+  "material": [
+    "Nur Natursteine und Holz; stehend oder liegend (§ 15 Abs. 3)",
+    "Vertiefte und erhabene Schriften sowie flache Metallschriften aus Bronze oder Alu erlaubt (§ 15 Abs. 4)",
+    "Bildliche Darstellung oder Porzellanbild erlaubt (§ 15 Abs. 4)",
+    "Name sowie Geburts- und Sterbejahr sollen in einfacher Schrift lesbar sein (§ 15 Abs. 6)",
+    "Baumurnengrab: Platte aus Naturstein (§ 12 Abs. 3)"
+  ],
+  "verbote": [
+    "Farbanstriche und Firmenbezeichnung auf Grabmalen (§ 15 Abs. 3)",
+    "Grüfte und Grabgebäude (§ 10 Abs. 4)",
+    "Baumurnengrab: kein Urnenschmuck, kein Einwurf von Blumengebinden, nur biologisch abbaubare Urnen; Grabschmuck nach Ablauf eines Monats nicht mehr gestattet (§ 12 Abs. 4, 7)"
+  ],
+  "genehmigung": [
+    "Ausnahmen von den Gestaltungsvorschriften auf Antrag; Entscheidung durch den Träger; beizufügen: Grabmalentwurf mit Grundriss und Seitenansicht 1:10 (Material, Bearbeitung, Schrift, Ornamente, Symbole, Fundamentierung) und Zeichnungen von Schrift, Ornamenten und Symbolen 1:1 (§ 15 Abs. 7)",
+    "Entfernen von Grabmalen vor Ablauf von Ruhezeit/Nutzungsrecht nur mit vorheriger schriftlicher Zustimmung (§ 18 Abs. 1)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den anerkannten Regeln des Handwerks (Richtlinie des Bundesinnungsverbands des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks, jeweils geltende Fassung); dauerhaft standsicher, auch beim Öffnen benachbarter Gräber (§ 16 Abs. 1)",
+    "Friedhofsverwaltung prüft regelmäßig die Standsicherheit (§ 16 Abs. 2)",
+    "Verantwortlich ist der Nutzungsberechtigte; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf dessen Kosten; Haftung für Schäden durch Umfallen (§ 17 Abs. 1–3)"
+  ],
+  "fristen": [
+    "Wahlgrabstätten sind binnen 6 Monaten nach der Beisetzung herzurichten (§ 19 Abs. 4)",
+    "Nach Ablauf von Ruhezeit/Nutzungsrecht sind Grabmale zu entfernen (mit Zustimmung der Friedhofsverwaltung); sonst Abräumung nach 3 Monaten auf Kosten des Nutzungsberechtigten (§ 18 Abs. 2)",
+    "Baumurnengrab: Grabschmuck nur bis einen Monat nach der Beisetzung (§ 12 Abs. 7)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Urnenwahlgräber mit Einfassung; liegende Grabmale/Abdeckplatten bis zum Innenmaß der Einfassung (§ 15 Abs. 5)",
+    "Erdgrab: eine Erdbestattung und zusätzlich bis zu 2 Urnen möglich (§ 11 Abs. 4)",
+    "Grabpflege selbst oder durch Dritte (§ 19 Abs. 3)",
+    "Vorzeitige Beräumung grundsätzlich frühestens nach 2/3 der Ruhezeit auf Antrag (§ 11 Abs. 12)"
+  ],
+  "kontakt": "Friedhofsverwaltung im Auftrag der Gemeinde: Amt Hagenow-Land (§ 1 Abs. 2), Bahnhofstr. 25, 19230 Hagenow (§ 25 Abs. 2)",
+  "unsicher": [
+    "Die Satzung enthält – anders als viele Nachbarsatzungen – keinen eigenen Paragrafen, der die Zustimmung vor dem Aufstellen eines Grabmals verlangt, und keine Regel zu provisorischen Grabzeichen; vor dem Aufstellen trotzdem beim Amt nachfragen",
+    "Spaltenbedeutung der Urnengrab-Maße (18–45 / 50–80 cm) nicht beschriftet; Breite × Höhe angenommen (§ 15 Abs. 5)",
+    "Größen der Erdwahlgrabstätten nicht angegeben (§ 15 Abs. 4)",
+    "Seite 1 per Texterkennung gelesen; Ordnungswidrigkeiten-Paragraf verweist auf § 16 für Werkstoffe (vermutlich § 15 gemeint)"
+  ]
+}

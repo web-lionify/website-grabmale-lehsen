@@ -1,0 +1,29 @@
+{
+  "id": "hagenow",
+  "titel": "Friedhof Hagenow (Friedhofsordnung nicht online)",
+  "orte": ["Hagenow"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Hagenow (Pfarrsprengel mit KG Kirch Jesar)",
+  "art": "keine_online",
+  "fassung": "",
+  "quelle_url": "https://www.kirche-mv.de/hagenow/friedhof",
+  "quelle_titel": "Friedhofsseite der Kirchengemeinde Hagenow",
+  "friedhoefe": [],
+  "kurzfazit": "Für den kirchlichen Friedhof Hagenow ist online keine Friedhofsordnung veröffentlicht. Welche Grabmale erlaubt sind (Maße, Material, Genehmigung), erfahren Angehörige direkt bei der Kirchengemeinde Hagenow.",
+  "ruhezeit": "",
+  "grabarten": [],
+  "masse": [],
+  "material": [],
+  "verbote": [],
+  "genehmigung": [],
+  "standsicherheit": [],
+  "fristen": [],
+  "kinderarbeit": "",
+  "besonderheiten": [],
+  "kontakt": "Ev.-Luth. Kirchengemeinde Hagenow, Kirchenplatz 4, 19230 Hagenow, Tel. 03883 723128, E-Mail hagenow@elkm.de (laut kirche-mv.de/hagenow; eine eigene Friedhofsverwaltung wird dort nicht genannt)",
+  "unsicher": [
+    "Die Friedhofsseite auf kirche-mv.de enthält nur die Kontaktdaten der Kirchengemeinde, keine Friedhofsordnung und keine Angaben zur Friedhofsverwaltung",
+    "Die auf der Kontaktseite genannte Webseite www.kirchgemeinde-hagenow.de war nicht erreichbar (Domain nicht auflösbar)",
+    "Eine Websuche nach einer Friedhofsordnung Hagenow ergab keinen Treffer",
+    "Ob es in Hagenow zusätzlich einen kommunalen Friedhof gibt, wurde nicht geprüft"
+  ]
+}

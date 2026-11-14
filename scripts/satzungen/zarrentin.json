@@ -1,0 +1,78 @@
+{
+  "id": "zarrentin",
+  "titel": "Friedhofsordnung Zarrentiner Friedhof (Ev.-Luth. Kirchengemeinde Zarrentin)",
+  "orte": ["Zarrentin am Schaalsee"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Zarrentin",
+  "art": "kirchlich",
+  "fassung": "vom 12.06.2025 (Kopf der Ordnung); auf der Gemeindeseite als „Friedhofsordnung 2025“ veröffentlicht (Dateidatum 18.11.2025)",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Zarrentin/251118_Friedhofsordnung_Zarrentin.pdf",
+  "quelle_titel": "Kirchengemeinde Zarrentin: Friedhofsordnung 2025 (PDF)",
+  "friedhoefe": ["Friedhof in Zarrentin (Müllerweg / Ecke Rosenstraße / Friedhofsweg) (§ 1 Abs. 1; Lage laut Gemeindeseite)"],
+  "kurzfazit": "Auf dem kirchlichen Friedhof Zarrentin brauchen Grabmale und auch Einfassungen (Schlenken) vorher die schriftliche Zustimmung der Friedhofsverwaltung; Grundlage ist ein Entwurf im Maßstab 1:10, die Mindeststärke richtet sich nach der Höhe (12 bis 18 cm). Grabstätten dürfen nicht ganzflächig mit Stein abgedeckt und nicht mit Stein eingefasst werden (Ausnahme: beantragte Urnengräber 1 × 1 m mit 25–75 % Erdanteil). In den Abteilungen H, K und R gilt zusätzlich eine eigene Grabmal- und Bepflanzungsordnung, die nur in der Friedhofsverwaltung einsehbar ist.",
+  "ruhezeit": "Särge 30 Jahre, Urnen 20 Jahre; in der Rasengrabanlage R auch Urnen 30 Jahre (§ 12 Abs. 1)",
+  "grabarten": [
+    {"name": "Reihengrabstätte (Erd- und Urnenbeisetzung)", "regel": "der Reihe nach vergeben, Nutzungsrecht für die Ruhezeit, nicht verlängerbar; allgemeine Gestaltungsvorschriften (§ 17, § 18)"},
+    {"name": "Wahlgrabstätte (Einzel- oder Familiengrab)", "regel": "mit allgemeinen oder zusätzlichen Gestaltungsvorschriften; Mindeststärken nach § 25; auf Sargbestattung höchstens eine weitere Urne, auf sargfreie Grabstelle bis zu zwei Urnen (§ 17, § 19, § 13 Abs. 2)"},
+    {"name": "Urnengrabstätte", "regel": "Urnenreihengrab grundsätzlich eine Urne, Urnenwahlgrab 1–2 Urnen je Grabbreite; Mindestmaß 0,80 × 0,80 m (§ 20, § 9 Abs. 3 c); auf Antrag Urnengrab 1 m × 1 m mit Steinabdeckung und 25–75 % Erdanteil sowie eingelassener Vase (§ 32 Abs. 10)"},
+    {"name": "Urnengemeinschaftsanlage", "regel": "Rasenfeld im 40 × 40 cm Raster; Namen auf gemeinsamer Tafel/Stele; keine Bepflanzung durch Angehörige; Blumen nur am zentralen Ablageplatz (§ 20, § 9 Abs. 3 d)"},
+    {"name": "Rasenwahlgrabstätte", "regel": "Pflege durch den Friedhofsträger; nach Erstanlage keine Bepflanzung, nur eine handelsübliche Steckvase; Name sowie Geburts- und Sterbejahr eingraviert in einfacher Schrift auf Grabmal oder Namensplatte; Steinmetz reicht vorher schriftlichen Antrag mit Skizze und Maßen ein; es gelten die besonderen Grabmal- und Bepflanzungsvorschriften (§ 21)"}
+  ],
+  "masse": [
+    "Mindeststärke der Grabmale (allgemeine Gestaltungsvorschriften): 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; über 1,50 m Höhe 0,18 m – jeweils bei ordnungsgemäßer, standsicherer Verdübelung (§ 25)",
+    "Hecken höchstens 0,5 m, Kleinbäume höchstens 1,5 m hoch, nicht über die Grabgrenze (§ 32 Abs. 2)",
+    "Mindestgrabmaße: Erwachsene 2,10 × 0,90 m (in Klammern 2,5 m × 1,25 m angegeben), Kinder bis 5 Jahre 1,20 × 0,60 m, Urnengrab 0,80 × 0,80 m, Urnengemeinschaftsanlage 0,40 × 0,40 m (§ 9 Abs. 3)",
+    "Konkrete Grabmalmaße für die Abteilungen H, K und R stehen in der gesonderten Grabmal- und Bepflanzungsordnung (§ 34)"
+  ],
+  "material": [
+    "Grabmale sollen sich in das Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 26 Abs. 1)",
+    "Im Antrag Material, Bearbeitung, Schriftanordnung, Ornamente, Symbole und Fundamentierung angeben (§ 26 Abs. 3)",
+    "Rasengrab: Name, Geburts- und Sterbejahr eingraviert in einfacher Schrift (§ 21)"
+  ],
+  "verbote": [
+    "Ganzflächige Abdeckung der Grabstätte mit Stein oder steinähnlichen Materialien (Ausnahme: beantragte Urnengräber 1 m × 1 m mit 25–75 % Erdanteil) (§ 32 Abs. 10)",
+    "Einfassung von Grabstätten oder Grabhügeln aus Stein oder steinähnlichen Materialien (§ 32 Abs. 10)",
+    "Ganzflächige Abdeckung mit Tannengrün o. Ä. (§ 32 Abs. 10)",
+    "Kunststoffe und nicht verrottbare Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und verbleibenden Pflanzbehältern (ausgenommen Grabvasen und Gießkannen) (§ 32 Abs. 9)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 32 Abs. 8)",
+    "Jegliche Arbeit während Bestattungen und Beisetzungen; Einebnen von Gräbern zwischen Totensonntag und Ende Januar (§ 3 Abs. 4 l, m)",
+    "Gewerbliche Arbeiten an Sonn- und Feiertagen und am Buß- und Bettag (§ 5 Abs. 6)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 26 Abs. 5)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen braucht die vorherige schriftliche Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 26 Abs. 2)",
+    "Antrag mit Grabmalentwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung, zweifach; auf Verlangen Zeichnungen 1:1, Modell 1:10 oder Attrappe (§ 26 Abs. 3)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 26 Abs. 4)",
+    "Einfassungen (Schlenken) brauchen ebenfalls eine besondere Genehmigung (§ 26 Abs. 6)",
+    "In Abteilungen mit zusätzlichen Gestaltungsvorschriften Zustimmung nur bei Einhaltung der Grabmal- und Bepflanzungsordnung (§ 26 Abs. 7)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor Aufstellung möglich (§ 27)",
+    "Steinmetze brauchen vorherige schriftliche Zulassung (Nachweis Handwerksrolle, Haftpflichtversicherung), erkennen Friedhofsordnung und Grabmal-/Bepflanzungsordnung schriftlich an (§ 5 Abs. 1–4, 8; § 34)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 28 Abs. 1)",
+    "Die Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 28 Abs. 2)",
+    "Nutzungsberechtigte sind dauerhaft für verkehrssicheren Zustand verantwortlich; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf deren Kosten, nach erfolgloser Frist Instandsetzung oder Entfernung (§ 29 Abs. 1, 2)",
+    "Verantwortliche haften für Schäden durch umstürzende Grabmale (§ 29 Abs. 3)"
+  ],
+  "fristen": [
+    "Wahlgrabstätten innerhalb von sechs Monaten nach Erwerb, Reihengrabstätten innerhalb von sechs Monaten nach der Bestattung herrichten (§ 32 Abs. 6)",
+    "Rasenwahlgrab: Ersteinrichtung und Raseneinsaat in der Regel bis spätestens zum neunten Monat nach der Beisetzung durch den Friedhofsträger (§ 21)",
+    "Vor Ablauf der Nutzungszeit Grabmale nur mit schriftlicher Zustimmung entfernen; nach Ablauf Grabmal mit Sockel/Fundament innerhalb von drei Monaten entfernen, sonst Abräumung ohne Entschädigung auf Kosten der Nutzungsberechtigten (§ 31)",
+    "Abräumen von Reihengrabfeldern wird sechs Monate vorher bekanntgegeben (§ 18 Abs. 3)",
+    "Gewerbliche Arbeiten nur werktags 7.00–18.00 Uhr (§ 5 Abs. 6)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Abteilungen H, K und R mit zusätzlichen Gestaltungsvorschriften und eigener Grabmal- und Bepflanzungsordnung, einsehbar in der Friedhofsverwaltung während der Dienststunden (§ 34)",
+    "Umgestaltung in ein Rasengrab frühestens nach 15 Jahren auf Antrag möglich; Grabmal bleibt bis zum Ende der Ruhefrist stehen (§ 32 Abs. 11)",
+    "Die Feierhalle gehört der Stadt Zarrentin (§ 22)",
+    "Bestehende Grabstätten: Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 36 Abs. 1)"
+  ],
+  "kontakt": "Friedhofsverwaltung Zarrentin, Frau Beltz, Tel. 038851 25976, friedhof-zarrentin@elkm.de (laut Friedhofsseite der Kirchengemeinde)",
+  "unsicher": [
+    "Die Paragrafennummern im Inhaltsverzeichnis weichen vom Text ab (z. B. Mindeststärke im Verzeichnis § 24, im Text § 25); hier wurde durchgehend die Nummerierung im Text verwendet. Die Überschrift „Rasengrabstätte“ hat im Text keine Nummer (vermutlich § 21).",
+    "Absatznummern in §§ 20 und 21 sind im PDF vom Text getrennt; daher ohne Absatzangabe.",
+    "Die Grabmal- und Bepflanzungsordnung für die Abteilungen H, K und R ist nicht online veröffentlicht.",
+    "Datum der kirchenaufsichtlichen Genehmigung nicht lesbar; Beschlussdatum nur aus dem Kopf („vom 12.06.2025“).",
+    "§ 36 Abs. 2 nennt als Enddatum alter Nutzungsrechte den 31.12.2021 (offenbar aus einer älteren Fassung übernommen)."
+  ]
+}

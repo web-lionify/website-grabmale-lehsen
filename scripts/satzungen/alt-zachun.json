@@ -1,0 +1,75 @@
+{
+  "id": "alt-zachun",
+  "titel": "Friedhofssatzung der Gemeinde Alt Zachun",
+  "orte": ["Alt Zachun"],
+  "traeger": "Gemeinde Alt Zachun (Amt Hagenow-Land)",
+  "art": "kommunal",
+  "fassung": "vom 18.08.2022 (beschlossen am 08.08.2022), geändert durch 1. Änderungssatzung vom 29.02.2024 und 2. Änderungssatzung vom 04.08.2026 (beschlossen am 13.07.2026)",
+  "quelle_url": "https://www.amt-hagenow-land.de/portal/dokumenteplus-900000105-28990.html?ordner=1",
+  "quelle_titel": "Amt Hagenow-Land: Friedhofssatzung der Gemeinde Alt Zachun vom 18.08.2022 mit 1. und 2. Änderungssatzung (PDF)",
+  "friedhoefe": ["Friedhof der Gemeinde Alt Zachun (der im Gemeindegebiet gelegene, von der Gemeinde verwaltete Friedhof, § 1 Abs. 1)"],
+  "kurzfazit": "Auf dem Gemeindefriedhof Alt Zachun sind nur Natursteine und Holz zugelassen, ohne Farbanstrich und ohne Firmenzeichen. Für Erd- und Urnenwahlgräber gelten feste Breiten- und Höhenspannen (Höhe inkl. Sockel), und jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung (Amt Hagenow-Land). Bei Erdröhrengräbern ist die Granitplatte innerhalb von 8–10 Wochen nach der Beisetzung nur mit vertiefter Schrift zu gravieren.",
+  "ruhezeit": "Erdbestattung (Leichen) 30 Jahre, Urnen (Aschen) 25 Jahre (§ 8)",
+  "grabarten": [
+    {"name": "Erdwahlgrab (1-stellig, 1,5 m × 3 m)", "regel": "stehendes Grabmal/Stele oben mittig: Breite 30–50 cm, Höhe 65–95 cm; liegendes Grabmal mittig: Breite 45–50 cm, Höhe 40–45 cm (§ 15 Abs. 4 i. d. F. der 2. Änderung)"},
+    {"name": "Erdwahlgrab (2-stellig, 3 m × 3 m)", "regel": "stehendes Grabmal/Stele oben mittig: Breite 30–80 cm, Höhe 65–100 cm; liegendes Grabmal mittig: Breite 60–70 cm, Höhe 45–55 cm (§ 15 Abs. 4 i. d. F. der 2. Änderung)"},
+    {"name": "Urnenwahlgrab (1-stellig, Außenmaß 1,0 m × 1,0 m mit Einfassung)", "regel": "stehendes Grabmal/Stele 18–45 cm und 50–80 cm (vermutlich Breite × Höhe); liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 15 Abs. 5)"},
+    {"name": "Urnenwahlgrab (2-stellig, Außenmaß 2,00 m × 1,00 m mit Einfassung)", "regel": "stehendes Grabmal/Stele 18–45 cm und 50–80 cm (vermutlich Breite × Höhe); liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 15 Abs. 5)"},
+    {"name": "Erdröhrengrab", "regel": "Grabstätte 1,0 m × 1,0 m, bedeckt mit Granitplatte 0,4 m × 0,4 m; max. 2 Urnen; Gravur der Grabplatte Pflicht innerhalb von 8–10 Wochen nach der Beisetzung, nur vertiefte Schrift; Pflege durch den Friedhofsträger (§ 13 Abs. 3, 4, 5 i. d. F. der 1. Änderung)"},
+    {"name": "Anonymes Urnenreihengrab", "regel": "keine Kennzeichnung der Grabstätte; Grabschmuck nur im dafür vorgesehenen Gestell (§ 12 Abs. 2, 4)"}
+  ],
+  "masse": [
+    "Mindeststärken: bis 0,80 m Höhe 12 cm, bis 1,20 m Höhe 14 cm, bis 1,60 m Höhe 16 cm (§ 15 Abs. 2)",
+    "Höhenangaben der Grabmale schließen einen eventuellen Sockel ein (§ 15 Abs. 4)",
+    "Verhältnis Breite zu Höhe soll ca. 1:3 betragen; auf ausgewogenes Verhältnis ist zu achten (§ 15 Abs. 4)",
+    "Erdröhrengrab: Granitplatte 0,4 m × 0,4 m (§ 13 Abs. 3)",
+    "Bepflanzung: max. 1,50 m bei Einzelgewächsen, 0,75 m bei Hecken (§ 20 Abs. 2)"
+  ],
+  "material": [
+    "Nur Natursteine und Holz; stehend oder liegend (§ 15 Abs. 3)",
+    "Vertiefte und erhabene Schriften sowie flache Metallschriften aus Bronze oder Alu erlaubt – außer bei Erdröhrengrabmalen (§ 15 Abs. 4 i. d. F. der 2. Änderung)",
+    "Erdröhrengrab: Gravur nur aus vertiefter Schrift (§ 13 Abs. 4 i. d. F. der 1. Änderung)",
+    "Bildliche Darstellung oder Porzellanbild erlaubt (§ 15 Abs. 4)",
+    "Name sowie Geburts- und Sterbejahr sollen in einfacher Schrift lesbar sein (§ 15 Abs. 6)",
+    "Gestaltung und Schrift dürfen nichts enthalten, was der Würde des Ortes abträglich ist (§ 15 Abs. 1)"
+  ],
+  "verbote": [
+    "Farbanstriche und Firmenbezeichnung auf Grabmalen (§ 15 Abs. 3)",
+    "Grüfte und Grabgebäude (§ 10 Abs. 4)",
+    "Erdröhrengrab: kein Urnenschmuck, kein Einwurf von Blumengebinden in die Erdröhre (§ 13 Abs. 3)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung; Nutzungsrecht ist nachzuweisen (§ 16 Abs. 2)",
+    "Unterlagen: Grabmalentwurf mit Grundriss und Seitenansicht im Maßstab 1:10 mit Material, Bearbeitung, Anordnung von Schrift, Ornamenten, Symbolen und Fundamentierung; Zeichnungen von Schrift, Ornamenten und Symbolen im Maßstab 1:1 (§ 16 Abs. 3)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet wird (§ 16 Abs. 4)",
+    "Ausnahmen von den Gestaltungsvorschriften auf Antrag; Entscheidung durch den Träger (§ 15 Abs. 7)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den anerkannten Regeln des Handwerks (Richtlinie des Bundesinnungsverbands des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks für das Fundamentieren und Versetzen von Grabdenkmälern, jeweils geltende Fassung); dauerhaft standsicher, auch beim Öffnen benachbarter Gräber (§ 17 Abs. 1)",
+    "Friedhofsverwaltung prüft regelmäßig die Standsicherheit (§ 17 Abs. 2)",
+    "Verantwortlich für den verkehrssicheren Zustand ist der Nutzungsberechtigte; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf dessen Kosten; Haftung für Schäden durch Umfallen (§ 18 Abs. 1–3)"
+  ],
+  "fristen": [
+    "Provisorische Grabmale (zustimmungsfrei) nur als naturlasierte Holztafeln oder -kreuze, höchstens 2 Jahre nach der Beisetzung (§ 16 Abs. 5)",
+    "Wahlgrabstätten sind binnen 6 Monaten nach der Beisetzung herzurichten (§ 20 Abs. 5)",
+    "Erdröhrengrab: Gravur der Grabplatte innerhalb von 8–10 Wochen nach der Beisetzung (§ 13 Abs. 4 i. d. F. der 1. Änderung)",
+    "Nach Ablauf von Ruhezeit/Nutzungsrecht Grabmale und Fundamente entfernen und fachgerecht entsorgen, Grabstelle mit 5,0 cm Mutterboden ebenerdig verfüllen und Rasen einsäen; Zustimmung erforderlich; sonst Abräumung nach 3 Monaten auf Kosten des Nutzungsberechtigten (§ 19 Abs. 2 i. d. F. der 1. Änderung)",
+    "Entfernen vor Ablauf nur mit vorheriger schriftlicher Zustimmung (§ 19 Abs. 1)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Urnenwahlgräber werden mit Einfassung angegeben; liegende Grabmale/Abdeckplatten bis zum Innenmaß der Einfassung (§ 15 Abs. 5)",
+    "Erdgrab: eine Erdbestattung und zusätzlich bis zu 2 Urnen möglich (§ 11 Abs. 3)",
+    "Erdröhrengrab: Grabschmuck auf der Grabstätte nur bis 4 Wochen nach der Beisetzung, danach nur im Gestell (§ 13 Abs. 6 i. d. F. der 1. Änderung)",
+    "Wesentliche Änderungen der Grabgestaltung brauchen vorherige schriftliche Zustimmung; ggf. Zeichnung 1:2 (§ 20 Abs. 3)",
+    "Vorzeitige Beräumung frühestens nach 2/3 der Ruhezeit auf Antrag (§ 11 Abs. 11)",
+    "Für ältere Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 23 Abs. 1)"
+  ],
+  "kontakt": "Friedhofsverwaltung im Auftrag der Gemeinde: Amt Hagenow-Land (§ 1 Abs. 2), Bahnhofstr. 25, 19230 Hagenow (§ 26 Abs. 2)",
+  "unsicher": [
+    "Spaltenbedeutung der Urnengrab-Maße (18–45 / 50–80) ist in der Tabelle nicht beschriftet; Breite × Höhe in cm nach der Erdgrab-Tabelle angenommen (§ 15 Abs. 5)",
+    "Die 1. Änderung ersetzte versehentlich § 15 Abs. 1 durch die Maßtabelle; die 2. Änderung (2026) stellt Abs. 1 wieder her und regelt die Tabelle in Abs. 4 – hier nach der 2. Änderung wiedergegeben",
+    "Erdgrabgrößen: Ursprungssatzung nannte 0,8 m × 2,10 m bzw. 1,60 m × 2,10 m, die Änderungen 1,5 m × 3 m bzw. 3 m × 3 m; die Grabmalmaße blieben gleich",
+    "Inkrafttretensdatum der 2. Änderung im Dokument nicht ausgefüllt"
+  ]
+}

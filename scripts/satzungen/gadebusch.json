@@ -1,0 +1,89 @@
+{
+  "id": "gadebusch",
+  "titel": "Friedhofsordnung für den Friedhof in Gadebusch",
+  "orte": ["Gadebusch"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Gadebusch-Roggendorf",
+  "art": "kirchlich",
+  "fassung": "vom 25.01.2024 (Kirchengemeinderatsbeschluss, kirchenaufsichtlich genehmigungspflichtig)",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Gadebusch-Roggendorf/20240125_KG_Gadebusch-Roggendorf_Friedhofsordnung_fuer_den_FH_Gadebusch.pdf",
+  "quelle_titel": "Friedhofsordnung Friedhof Gadebusch (PDF)",
+  "friedhoefe": [
+    "Friedhof Gadebusch: historischer kirchlicher Friedhof und der seit 01.01.2024 von der Kirchengemeinde übernommene bisher kommunale Friedhofsteil der Stadt Gadebusch, betrieben als eine Anlage (Präambel, § 1)"
+  ],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung; der Antrag braucht einen Entwurf im Maßstab 1:10 in zweifacher Ausfertigung. Feste Höchstmaße nennt die Ordnung kaum, wohl aber Mindeststärken je nach Höhe und Vorgaben für die Gemeinschaftsanlagen (z. B. bündige Namensplatte 40 × 30 × 3 cm beim Paar-Urnengrab). Gestaltung und Aussage sollen sich ins Gesamtbild einfügen und mit dem christlichen Glauben vereinbar sein.",
+  "ruhezeit": "Särge 25 Jahre, Urnen 25 Jahre (§ 12 Abs. 1); Nutzungszeit Wahlgrab 25 Jahre (§ 18 Abs. 1)",
+  "grabarten": [
+    {"name": "Reihengrab (Erd- und Urnenbestattung)", "regel": "allgemeine Gestaltungsvorschriften; Nutzungsrecht nur für die Ruhezeit, keine Verlängerung (§ 16, § 17)"},
+    {"name": "Wahlgrab (Erd- und Urnenbestattung)", "regel": "wahlweise in Abteilungen mit allgemeinen oder mit zusätzlichen Gestaltungsvorschriften; die Wahl wird schriftlich bestätigt (§ 8 Abs. 12, § 16, § 18)"},
+    {"name": "Rasenwahlgrab", "regel": "Pflege durch den Friedhofsträger; ein stehender oder liegender Grabstein ist Pflicht, gesetzt durch einen zugelassenen Steinmetz nach Antrag mit Skizze und Maßen; vor dem Stein darf ein Streifen von max. 30 cm in Breite des Grabmals bepflanzt oder mit einem Schmuckteil versehen werden (§ 20 Abs. 4–6)"},
+    {"name": "Urnengemeinschaftsanlage für Paare mit Grabplatte", "regel": "Raster 50 × 70 cm für zwei Urnen; Namensplatte 40 × 30 × 3 cm, von einem zugelassenen Steinmetz bündig mit dem Boden verlegt; Platte beschafft der Auftraggeber; nur ein Grabschmuck, kleiner Topf oder Vase darauf; nicht anonym (§ 19)"},
+    {"name": "Urnengemeinschaftsanlage mit zentraler Namensnennung", "regel": "Raster 40 × 40 cm; Namen (Geburtsjahr, Vor- und Nachname, Sterbejahr) auf Steinplatten durch den Friedhofsträger, zweimal jährlich; kein eigener Grabschmuck auf dem Grabplatz (§ 19)"},
+    {"name": "Anonyme Urnengemeinschaftsanlage", "regel": "Rasenfeld, Raster je 0,25 m²; kein Grabzeichen, keine Bepflanzung; Blumen nur am zentralen Platz (§ 19)"},
+    {"name": "Urnengräber unter Buchen", "regel": "Name auf einer Stele in der Anlage durch den Friedhofsträger; keine Gestaltung oder Bepflanzung durch Angehörige; Grabschmuck nur bis 3 Wochen nach der Beisetzung (§ 19)"},
+    {"name": "Grabanlage für Sternenkinder", "regel": "Gestaltung durch den Friedhofsträger; Namensplatte nach Absprache, max. 20 × 30 cm (§ 21)"}
+  ],
+  "masse": [
+    "Mindeststärke in Abteilungen mit allgemeinen Gestaltungsvorschriften: Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; über 1,50 m = 0,18 m, jeweils mit ordnungsgemäßer standsicherer Verdübelung (§ 22)",
+    "Grabgrößen (Mindestmaße): Kinder bis 5 Jahre 1,20 × 0,60 m, Personen über 5 Jahre 2,10 × 0,90 m, Urnengrab 1,00 × 1,00 m (§ 9 Abs. 3)",
+    "Mindestmaße im kommunalen Friedhofsteil: Einzelgrab 2,40 × 1,30 m, Doppelgrab 2,40 × 2,60 m, Urnengrab 0,90 × 1,20 m (§ 9 Abs. 3)",
+    "Namensplatte Paar-Urnengemeinschaftsanlage 40 × 30 × 3 cm, bodenbündig (§ 19)",
+    "Namensplatte Sternenkinder max. 20 × 30 cm (§ 21)",
+    "Bepflanzung max. 1,50 m hoch; Hecken max. 0,80 m und nicht über die Grabgrenze hinaus (§ 29 Abs. 2)",
+    "Rasenwahlgrab: Pflanz-/Schmuckstreifen vor dem Grabmal max. 30 cm tief (§ 20 Abs. 4)"
+  ],
+  "material": [
+    "Keine Vorgaben zu Gesteinsart, Bearbeitung oder Farbe; Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 23 Abs. 1)",
+    "Keine Kunststoffe oder nicht verrottbaren Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und an der Pflanze verbleibenden Anzuchtbehältern; ausgenommen Grabvasen, Markierungszeichen und Gießkannen (§ 29 Abs. 9)"
+  ],
+  "verbote": [
+    "Keine Grabeinfassungen aus Kunststoff oder nicht verrottbaren Werkstoffen (§ 29 Abs. 9)",
+    "Keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 29 Abs. 8)",
+    "Keine gewerblichen Arbeiten an Sonn- und Feiertagen und am Buß- und Bettag; nur werktags 7.00–18.00 Uhr (§ 5 Abs. 6)",
+    "Keine Arbeiten in der Nähe einer Bestattung (§ 3 Abs. 4 d)",
+    "Kein Abraum durch Gewerbetreibende auf dem Friedhof; Geräte nicht an Wasserstellen reinigen (§ 5 Abs. 7)",
+    "LED-Grablichter nicht auf dem Friedhof entsorgen (§ 29 Abs. 9)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 23 Abs. 2)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht, Maßstab 1:10) mit Material, Bearbeitung, Anordnung von Schrift, Ornamenten, Symbolen und Fundamentierung; auf Verlangen Schrift/Ornamente 1:1, in besonderen Fällen Modell 1:10 oder Attrappe in Originalgröße (§ 23 Abs. 3)",
+    "Zustimmung erlischt, wenn nicht binnen eines Jahres errichtet (§ 23 Abs. 4)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Verwaltung darf Grabmal vor der Aufstellung prüfen (§ 24)",
+    "Rasenwahlgrab: Steinmetz reicht vorab schriftlichen Antrag mit Skizze und Maßen ein (§ 20 Abs. 5)",
+    "Steinmetze brauchen eine schriftliche Zulassung der Friedhofsverwaltung (Handwerksrolle bzw. Verzeichnis, Haftpflichtversicherung) und müssen die Friedhofsordnung schriftlich anerkennen (§ 5 Abs. 1–4, 8)",
+    "Jede wesentliche Änderung der Grabgestaltung bedarf vorheriger schriftlicher Zustimmung (§ 29 Abs. 3)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 25 Abs. 1)",
+    "Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 25 Abs. 2)",
+    "Mindeststärken setzen eine ordnungsgemäße, standsichere Verdübelung voraus (§ 22)",
+    "Verantwortlich für würdigen und verkehrssicheren Zustand ist die/der Nutzungsberechtigte; bei Gefahr Sicherung (z. B. Umlegen) auf deren Kosten, nach Fristablauf Instandsetzung oder Entfernung; entfernte Teile werden drei Monate aufbewahrt (§ 26 Abs. 1–2)",
+    "Haftung der Verantwortlichen für Schäden durch umstürzende Grabmale (§ 26 Abs. 3)",
+    "Gewerbetreibende haften für schuldhaft verursachte Schäden (§ 5 Abs. 9)"
+  ],
+  "fristen": [
+    "Wahlgräber innerhalb von sechs Monaten nach Erwerb, Reihengräber innerhalb von sechs Monaten nach der Bestattung bepflanzen bzw. herrichten (§ 29 Abs. 6)",
+    "Rasenwahlgrab: Einebnen und Raseneinsaat durch den Friedhofsträger in der Regel bis spätestens zum neunten Monat nach der Beisetzung (§ 20 Abs. 3)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten der Nutzungsberechtigten entfernt werden (§ 23 Abs. 5)",
+    "Vor Ablauf der Nutzungszeit Grabmal nur mit schriftlicher Zustimmung entfernen (§ 28 Abs. 1)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel/Fundament innerhalb von drei Monaten entfernen, sonst Abräumung durch den Träger, ggf. auf Kosten der Nutzungsberechtigten, ohne Entschädigung (§ 28 Abs. 2)",
+    "Abräumen abgelaufener Reihengrabfelder wird sechs Monate vorher bekanntgegeben (§ 17 Abs. 3)",
+    "Grabzubehör vor dem Grabaushub entfernen lassen, sonst Kostenerstattung (§ 10 Abs. 1)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Bei Rückgabe eines belegten Wahlgrabs wird es zur Rasengrabstätte umgestaltet; das Grabmal darf erst nach Ablauf der letzten Ruhezeit entfernt werden (§ 18 Abs. 5)",
+    "Auf Antrag Umgestaltung in ein Rasengrab bei nicht mehr möglicher Pflege; das Grabmal bleibt bis Ende der Ruhezeit stehen, für die spätere Beräumung wird ein Pfand erhoben (§ 29 Abs. 10)",
+    "Künstlerisch oder historisch wertvolle Grabmale werden in einem Verzeichnis geführt; Änderungen nur mit Zustimmung, ggf. unter Beteiligung des Denkmalschutzes (§ 27)",
+    "Für bestehende Grabstätten (auch des bisher kommunalen Teils) gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 32)",
+    "Pflanzen dürfen Nachbargräber und Wege nicht beeinträchtigen (§ 29 Abs. 2)",
+    "Verwelkte Blumen und Kränze sind unverzüglich zu entfernen (§ 29 Abs. 1)"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Gadebusch-Roggendorf; Widersprüche an die Zentrale Friedhofsverwaltung Güstrow, St.-Jürgens-Weg 23, 18273 Güstrow (§ 36); Telefon in der Ordnung nicht genannt",
+  "unsicher": [
+    "Die Ordnung unterscheidet Abteilungen mit allgemeinen und mit zusätzlichen Gestaltungsvorschriften (§ 8 Abs. 12, § 16), die zusätzlichen Vorschriften selbst sind im Dokument nicht enthalten",
+    "Höchstmaße für Grabmale sind nicht geregelt",
+    "Datum der Bekanntmachung/Inkrafttreten und kirchenaufsichtliche Genehmigung sind im PDF nicht vermerkt",
+    "Beim Aufzählungszeichen im Text (§ 3, § 29) sind die Absatznummern im PDF teilweise verrutscht; Absatzangaben wurden nach Reihenfolge zugeordnet"
+  ]
+}

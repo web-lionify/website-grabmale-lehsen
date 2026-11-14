@@ -101,6 +101,7 @@
         }).join('<br>') || '<span class="muted">Keine Satzung online – bitte bei der Kirchengemeinde erfragen.</span>';
         var html = '<div class="pop"><strong>' + esc(m.n) + '</strong>' +
           (m.e !== m.n ? '<small>' + esc(m.e) + '</small>' : '') +
+          (m.s ? '<a class="pop-summ" href="' + esc(m.s) + '">Zusammenfassung lesen →</a>' : '') +
           '<div class="pop-links">' + links + '</div>' +
           '<a href="#' + m.id + '" class="pop-more" data-id="' + m.id + '">In der Liste anzeigen ↓</a></div>';
         var mk = L.circleMarker(m.p, { radius: 7, color: '#fff', weight: 2, fillColor: '#6f552f', fillOpacity: 1 })

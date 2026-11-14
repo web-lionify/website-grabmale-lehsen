@@ -1,0 +1,70 @@
+{
+  "id": "gallin",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen der Gemeinde Gallin",
+  "orte": ["Gallin"],
+  "traeger": "Gemeinde Gallin (Amt Zarrentin)",
+  "art": "kommunal",
+  "fassung": "vom 16.09.2008 (beschlossen von der Gemeindevertretung am 16.09.2008); keine Änderungssatzung im Ordner des Amtes Zarrentin veröffentlicht (Stand 11/2026)",
+  "quelle_url": "https://www.amt-zarrentin.de/portal/dokumenteplus-900000069-29120.html?ordner=1",
+  "quelle_titel": "Amt Zarrentin, Satzungen Gallin › Friedhofs- und Bestattungswesen: Satzung vom 16.09.2008 (PDF)",
+  "friedhoefe": ["Friedhof der Gemeinde Gallin (§ 1; die Satzung nennt nur „den Friedhof“ ohne Ortsangabe)"],
+  "kurzfazit": "Auf dem Gemeindefriedhof Gallin brauchen Grabmale und auch Einfassungen vorher die schriftliche Zustimmung der Friedhofsverwaltung, mit Entwurf im Maßstab 1:10; die Mindeststärke richtet sich nach der Höhe (12 bis 18 cm). Auf Rasengräbern ist nur eine erdgleiche, nicht fundamentierte Liegeplatte von 0,40 × 0,40 m am Kopfende erlaubt, Urnengräber erhalten Liegeplatten im selben Maß. Grabstätten dürfen nicht ganzflächig mit Splitt oder Kies bestreut werden.",
+  "ruhezeit": "Erdbestattung 25 Jahre, Urnen 20 Jahre, anonyme Urnen 20 Jahre, Kinder bis 5 Jahre 20 Jahre (§ 12 Abs. 1); Nutzungszeit Wahlgräber 25 Jahre (§ 19 Abs. 1)",
+  "grabarten": [
+    {"name": "Reihengrab (Erd- oder Urnenbestattung)", "regel": "Einzelgrab der Reihe nach, Nutzungsrecht für die Ruhezeit, keine Verlängerung; Erdgrab 2,20 × 1,25 m, Urnengrab 0,80 × 0,80 m (§ 18 Abs. 1, 2, 5); Grabmal-Mindeststärken nach § 23"},
+    {"name": "Wahlgrab (Erd- oder Urnenbestattung)", "regel": "Einzel- oder Familiengrab, 25 Jahre, verlängerbar; Erdgrab 2,20 × 1,25 m, Urnengrab 0,80 × 0,80 m; in belegte Erdwahlgräber je Grabbreite 1 Urne (§ 19 Abs. 1, 2, 9, 12)"},
+    {"name": "Urnengrab (Reihe/Wahl)", "regel": "Liegeplatten für Urnengräber müssen 0,40 m × 0,40 m groß sein (§ 23 Abs. 2)"},
+    {"name": "Rasengrab (Einfach- oder Doppelrasengrab, Erde und Urne)", "regel": "Pflege nur durch die Gemeinde; nur eine Liegeplatte ohne aufstehenden Stein, bündig am Kopfende, nicht fundamentiert, erdgleich, Größe 0,40 × 0,40 m; keine Bepflanzung, Pflanzschalen, Kerzenständer, Einfriedung, Abdeckung oder sonstige Kennzeichnung (§ 18a)"},
+    {"name": "Anonyme Urnengrabanlage (Grüne Wiese)", "regel": "keine Einzelkennzeichnung; gemeinsamer Gedenkstein, aufgestellt und beschriftet von der Friedhofsverwaltung; Grabstätte 0,40 × 0,40 m; Blumen nur an der Fläche am Gedenkstein (§ 20)"}
+  ],
+  "masse": [
+    "Mindeststärke der Grabmale (allgemeine Gestaltungsvorschriften): 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; ab 1,50 m Höhe 0,18 m; jeweils bei ordnungsgemäßer, standsicherer Befestigung (§ 23 Abs. 1, 2)",
+    "Liegeplatten für Urnengräber 0,40 m × 0,40 m (§ 23 Abs. 2)",
+    "Rasengrab: Liegeplatte 0,40 m × 0,40 m, erdgleich (§ 18a)",
+    "Grabgrößen: Erdgrab 2,20 × 1,25 m, Urnengrab 0,80 × 0,80 m (§ 18 Abs. 5, § 19 Abs. 12)"
+  ],
+  "material": [
+    "Grabmale und bauliche Anlagen müssen sich in das Gesamtbild des Friedhofs einfügen (§ 24 Abs. 1)",
+    "Im Antrag sind Material, Bearbeitung, Schriftanordnung, Ornamente, Symbole und Fundamentierung anzugeben (§ 24 Abs. 3)"
+  ],
+  "verbote": [
+    "Grabstätten nicht ganzflächig mit Steinsplitt, Marmorkies oder kleinen Steinen bestreuen (§ 30 Abs. 3)",
+    "Kunststoffe und nicht verrottbare Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und verbleibenden Pflanzbehältern (ausgenommen Grabvasen, Markierungszeichen, Gießkannen) (§ 30 Abs. 11)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 30 Abs. 10)",
+    "Rasengrab: Bepflanzung, Pflanzschalen, Kerzenständer, Einfrieden, Abdecken, Abgrenzen und Kennzeichnen jeder Art; Fundament für die Liegeplatte (§ 18a)",
+    "Störende Arbeiten an Sonn- und Feiertagen und in der Nähe einer Bestattung (§ 5 Abs. 2 b)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 29 Abs. 3)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen braucht die vorherige schriftliche Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 24 Abs. 2)",
+    "Antrag mit Grabmalentwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung, zweifach; auf Verlangen Zeichnungen 1:1 (§ 24 Abs. 3)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 24 Abs. 4)",
+    "Einfassungen der Grabstätten brauchen ebenfalls eine Genehmigung (§ 24 Abs. 5)",
+    "Bei Anlieferung genehmigten Aufstellantrag vorlegen; Prüfung vor Errichtung möglich (§ 25)",
+    "Steinmetze brauchen eine Zulassungskarte der Friedhofsverwaltung (Antrag, Gewerbeanmeldung, Berufshaftpflicht; Meisterbetriebe gelten als fachlich zuverlässig), gültig jeweils ein Jahr; gewerbliche Arbeiten nur nach vorheriger Anmeldung (§ 6 Abs. 1, 2, 4)",
+    "Jede Neuanlage einer Grabstätte vorher mit der Friedhofsaufsicht absprechen (§ 30 Abs. 7)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils geltenden Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 26 Abs. 1)",
+    "Die Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 26 Abs. 2)",
+    "Nutzungsberechtigte sind dauerhaft für verkehrssicheren Zustand verantwortlich; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf deren Kosten; wird ein Mangel nicht binnen eines Monats nach Aufforderung beseitigt, kann das Grabmal entfernt werden (§ 27 Abs. 1, 2)",
+    "Verantwortliche haften für Schäden durch umstürzende Grabmale (§ 27 Abs. 3)"
+  ],
+  "fristen": [
+    "Grabstätten innerhalb von 6 Monaten nach Belegung oder Erwerb bepflanzen bzw. herrichten (§ 30 Abs. 8)",
+    "Vor Ablauf der Nutzungszeit Grabmale nur mit schriftlicher Zustimmung entfernen; nach Ende des Nutzungsrechts Grabmal mit Fundament binnen 3 Monaten entfernen, sonst Abräumung auf Kosten des Nutzungsberechtigten, ohne Aufbewahrung (§ 29 Abs. 1, 2)",
+    "Abräumen von Reihengrabfeldern wird 6 Monate vorher bekanntgegeben; nicht entfernte Grabmale gehen danach entschädigungslos an den Friedhofsträger (§ 18 Abs. 3)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Hecken nur nach Abstimmung mit der Friedhofsaufsicht (§ 30 Abs. 4)",
+    "Bei Wahl einer Abteilung mit zusätzlichen Gestaltungsvorschriften gilt eine Grabmal- und Bepflanzungsordnung (§ 8 Abs. 6, § 24 Abs. 6); ob es solche Abteilungen gibt, nennt die Satzung nicht",
+    "Bestattungen von Montag bis Samstag (§ 7 Abs. 3)"
+  ],
+  "kontakt": "Gemeinde Gallin als Friedhofsverwaltung (§ 2); Anschrift in der Satzung nicht genannt (Verwaltung über Amt Zarrentin)",
+  "unsicher": [
+    "Satzung von 2008; im Ordner „Friedhofs- und Bestattungswesen“ der Gemeinde Gallin beim Amt Zarrentin sind nur diese Satzung und die Gebührensatzung von 2008 veröffentlicht, keine Änderungen.",
+    "Direkter PDF-Link des Amtes ist ein langer Token-Link; als quelle_url ist daher die Ordnerseite angegeben.",
+    "Welche Ortsteile/Friedhöfe genau gemeint sind, nennt die Satzung nicht."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "wittenburg-zuehr",
+  "titel": "Friedhofssatzung der Stadt Wittenburg (für den Friedhof Zühr)",
+  "orte": ["Zühr (Ortsteil der Stadt Wittenburg)"],
+  "traeger": "Stadt Wittenburg (Amt Wittenburg)",
+  "art": "kommunal",
+  "fassung": "beschlossen von der Stadtvertretung am 27.05.2026, ausgefertigt am 01.06.2026, veröffentlicht am 09.06.2026; ersetzt die Friedhofssatzung vom 25.07.2012 (§ 28)",
+  "quelle_url": "https://www.amt-wittenburg.de/output/download.php?fid=3627.2435.1.PDF",
+  "quelle_titel": "Amt Wittenburg: Friedhofssatzung der Stadt Wittenburg (2026, PDF)",
+  "friedhoefe": ["Friedhof im Ortsteil Zühr, im Gebiet der Stadt Wittenburg und von ihr verwaltet (§ 1)"],
+  "kurzfazit": "Die Satzung gilt nur für den städtischen Friedhof Zühr, nicht für den kirchlichen Hauptfriedhof Wittenburg. Jedes Grabmal braucht vorher die schriftliche Genehmigung der Stadtverwaltung Wittenburg und muss nach der BIV-Richtlinie fundamentiert werden; stehende Grabmale brauchen je nach Höhe 12 bis 18 cm Mindeststärke. Einfassungen sind nur aus Naturstein oder Terrazzo erlaubt, höchstens 10 cm breit und 15 cm über dem Boden.",
+  "ruhezeit": "30 Jahre (§ 9); Nutzungsrechte werden für 30 Jahre verliehen (§ 13 Abs. 2)",
+  "grabarten": [
+    {"name": "Erdgrabstätte als Einzelgrabstelle", "regel": "für einen Sarg oder eine Urne; Länge 3,00 m, Breite 1,50 m, Abstand zur nächsten Grabstätte mind. 0,50 m; Mehrfachbelegung (ein Sarg und eine Urne oder zwei Urnen) nur mit schriftlicher Genehmigung (§ 17 Abs. 2, 4–6)"},
+    {"name": "Erdgrabstätte als Doppel- oder mehrstellige Grabstelle", "regel": "Aneinanderreihung von Einzelgrabstellen; Regeln zu Ruhezeit, Verlängerung und Gestaltung gelten sinngemäß (§ 17 Abs. 3)"},
+    {"name": "Anonyme Urnengrabstätte", "regel": "Rasenfläche ohne individuelle Kennzeichnung, Beisetzung auf 0,50 × 0,50 m; Grabschmuck nur auf der zentralen Gedenkplatte; Gestaltung und Pflege allein durch die Friedhofsverwaltung, keine Arbeiten Dritter; keine Verlängerung (§ 18)"}
+  ],
+  "masse": [
+    "Mindeststärke stehender Grabmale: bis 0,80 m Höhe mind. 12 cm; bis 1,00 m mind. 14 cm; bis 1,50 m mind. 16 cm; über 1,50 m mind. 18 cm (§ 23 Abs. 2)",
+    "Grabeinfassungen höchstens 10 cm breit und höchstens 15 cm aus dem Erdreich ragend (§ 22 Abs. 3)",
+    "Erdgrabstelle (Einzelgrabstelle) 3,00 m × 1,50 m, Abstand mind. 0,50 m (§ 17 Abs. 2)"
+  ],
+  "material": [
+    "Grabmale müssen sich in Art, Material, Form, Größe und Ausführung in das Erscheinungsbild des Friedhofs einfügen (§ 22 Abs. 1)",
+    "Grabeinfassungen nur aus natürlichem Stein oder Terrazzo (§ 22 Abs. 3)"
+  ],
+  "verbote": [
+    "Keine diskriminierenden, anstößigen oder politisch-extremistischen Inhalte in Gestaltung, Schrift und Symbolik (§ 22 Abs. 2)",
+    "Bäume und großwüchsige Sträucher auf Grabstätten (§ 19 Abs. 6)",
+    "Kein individuelles Schmücken oder Gestalten einzelner anonymer Urnengrabstellen (§ 18 Abs. 3, 4)",
+    "Störende Arbeiten insbesondere an Sonn- und Feiertagen sowie während Bestattungen und Trauerfeiern (§ 6 Abs. 3 c)",
+    "Werbung und Ansprechen von Friedhofsbesuchern zu gewerblichen Zwecken (§ 7 Abs. 5)"
+  ],
+  "genehmigung": [
+    "Errichtung, Veränderung oder Entfernung von Grabmalen und sonstigen baulichen Anlagen braucht die vorherige schriftliche Genehmigung der Friedhofsverwaltung (§ 21 Abs. 1)",
+    "Zuständige Friedhofsverwaltung ist die Stadtverwaltung Wittenburg (§ 2)",
+    "Alle gewerblichen Tätigkeiten brauchen eine vorherige schriftliche Zulassung; sie kann mit Auflagen verbunden werden, ein Anspruch besteht nicht; zugelassen werden nur fachlich, betrieblich und persönlich zuverlässige Betriebe (§ 7 Abs. 1, 2)",
+    "Gewerbetreibende müssen sich auf Verlangen ausweisen und die Arbeitsstelle nach Abschluss räumen und reinigen; Zulassung kann bei Verstößen widerrufen werden (§ 7 Abs. 4, 6)",
+    "Eine schriftliche Genehmigung ist auch für jede Mehrbelegung einer Grabstelle nötig (§ 17 Abs. 6)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den anerkannten Regeln des Handwerks, insbesondere der BIV-Richtlinie für das Fundamentieren und Versetzen von Grabdenkmälern in der jeweils geltenden Fassung; dauerhaft standsicher auch beim Öffnen benachbarter Gräber; gilt auch für sonstige bauliche Anlagen (§ 23 Abs. 1)",
+    "Nutzungsberechtigte halten Grabmale dauerhaft verkehrssicher; die Friedhofsverwaltung kann jederzeit prüfen, zur Instandsetzung auffordern oder bei akuter Gefahr auf deren Kosten sichern (§ 23 Abs. 3)",
+    "Verantwortung für die Standsicherheit liegt ausschließlich bei den Nutzungsberechtigten; sie haften für Schäden; die mindestens jährliche Prüfung durch die Friedhofsträgerin entbindet sie nicht davon (§ 26 Abs. 4)",
+    "Schäden an Grabmalen sind der Friedhofsverwaltung unverzüglich anzuzeigen (§ 26 Abs. 6)"
+  ],
+  "fristen": [
+    "Grabstätten innerhalb von sechs Monaten nach Erwerb oder Bestattung gärtnerisch anlegen (§ 19 Abs. 3)",
+    "Vor Ablauf der Nutzungszeit Grabmale nur mit vorheriger schriftlicher Zustimmung entfernen (§ 24 Abs. 1)",
+    "Nach Ablauf des Nutzungsrechts Grabmal einschließlich Sockel, Fundament und Aufbauten vollständig entfernen; sonst nach drei Monaten Ersatzvornahme auf Kosten der Nutzungsberechtigten, ohne Entschädigung oder Herausgabe (§ 24 Abs. 2–4, § 14 Abs. 2)",
+    "Vorzeitige Beräumung nach Verzicht frühestens nach 20 Jahren auf Antrag (§ 14 Abs. 5)",
+    "Bei mangelhafter Pflege: Instandsetzung innerhalb von fünf Wochen nach schriftlicher Aufforderung (§ 20 Abs. 1)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Gilt nur für den Friedhof Zühr; der Hauptfriedhof Wittenburg ist kirchlich (Kirchengemeinde St. Bartholomäus)",
+    "Gräber dürfen von Angehörigen selbst ausgehoben und verfüllt oder beauftragt werden (§ 10 Abs. 1)",
+    "Urnen müssen aus verrottbarem Material bestehen (§ 11 Abs. 3)",
+    "Kein Winterdienst auf dem Friedhof (§ 26 Abs. 2)"
+  ],
+  "kontakt": "Stadtverwaltung Wittenburg als Friedhofsverwaltung (§ 2); Anschrift in der Satzung nicht genannt",
+  "unsicher": [
+    "Das PDF ist ein Scan mit gedrehten Seiten; mit rotationsbewusster Texterkennung vollständig gelesen. Einzelne Zeilenenden (z. B. § 7 Abs. 5, § 8 Abs. 3, § 18 Abs. 4) sind leicht abgeschnitten, inhaltlich aber erkennbar."
+  ]
+}

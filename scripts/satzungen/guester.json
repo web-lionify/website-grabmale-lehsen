@@ -1,0 +1,80 @@
+{
+  "id": "guester",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen der Gemeinde Güster",
+  "orte": ["Güster"],
+  "traeger": "Gemeinde Güster (Amt Büchen)",
+  "art": "kommunal",
+  "fassung": "beschlossen von der Gemeindevertretung am 20.06.2022, ausgefertigt am 30.06.2022 (ersetzt die Satzung vom 05.10.1998)",
+  "quelle_url": "https://www.amt-buechen.de/fileadmin/user_upload/public/downloads/orts_verbandsrecht/guester/nutzung_oeffentlicher_einrichtungen/Satzung_Friedhofs-_u._Bestattungswesen.pdf",
+  "quelle_titel": "Friedhofssatzung Gemeinde Güster (PDF, Amt Büchen)",
+  "friedhoefe": ["Gemeindefriedhof Güster (Eigentum der Gemeinde, § 1)"],
+  "kurzfazit": "Grabmale und Einfassungen dürfen in Güster nur mit vorheriger Genehmigung der Friedhofsverwaltung (Bürgermeister) aufgestellt werden. Grabmale für Erwachsene dürfen bis 1,50 m hoch sein, für Kinder bis 1,20 m; je Grabstätte ist nur ein stehendes Grabmal erlaubt. Ausgeschlossen sind u. a. Zementguss, Terrazzo, Ölfarbe auf Stein und Fotos.",
+  "ruhezeit": "25 Jahre, bei Verstorbenen bis 5 Jahre 15 Jahre (§ 9); Nutzungszeit Eigengrab 25 Jahre (§ 13 Nr. 2)",
+  "grabarten": [
+    {"name": "Eigengrab (Wahlgrab)", "regel": "Grabstelle 3,00 × 1,25 m; nur ein stehendes Grabmal je Grabstätte, zusätzlich je Grabbreite ein liegendes, passend in Material, Schrift und Bearbeitung; bis zu 2 Urnen zusätzlich möglich (§ 13 Nr. 7, § 14 a, § 16 Nr. 5)"},
+    {"name": "Anonymes Grab (Sarg)", "regel": "Grabstelle 2,50 × 1,00 m; darf nicht gekennzeichnet und nicht bepflanzt werden (§ 13 Nr. 8–9)"},
+    {"name": "Urnengrab im Urnenfeld", "regel": "Beisetzung im ausgewiesenen Urnenfeld; Gestaltung nach allgemeinen Regeln (§ 14 a, § 16)"},
+    {"name": "Halbanonymes Urnengrab", "regel": "im nordöstlichen Viertel des Urnenfelds, 1,00 × 1,00 m; nur liegende Grabmale (§ 14 b, § 16 Nr. 6)"}
+  ],
+  "masse": [
+    "Höhe der Grabmale für Kinder bis 1,20 m, für Erwachsene bis 1,50 m (§ 19 Nr. 2)",
+    "Einfassung aus Naturstein max. 2,50 m, Steinhöhe 100 mm, Steinbreite 60 mm; alternativ buschähnliche Sträucher bis '0,40 cm' Höhe (so im Text) (§ 16 Nr. 2)",
+    "Grabbeete max. 20 cm hoch (§ 20 Nr. 2)",
+    "Bepflanzung max. 1,50 m hoch (§ 20 Nr. 3)",
+    "Grabgrößen: Eigengrab 3,00 × 1,25 m, anonymes Grab 2,50 × 1,00 m, halbanonymes Urnengrab 1,00 × 1,00 m (§ 13 Nr. 7 und 9, § 14 b)",
+    "Mindeststärken sind nicht geregelt"
+  ],
+  "material": [
+    "Friedhofsverwaltung kann Anordnungen zu Werkstoffen, Art und Größe von Grabmalen und Einfassungen treffen (§ 16 Nr. 1 und 4)",
+    "Einfassungen aus Naturstein (oder Sträuchern) (§ 16 Nr. 2)",
+    "Zusätzliches liegendes Grabmal muss dem stehenden in Material, Schrift und Bearbeitung entsprechen (§ 16 Nr. 5)",
+    "Firmenbezeichnungen nur unauffällig, möglichst seitlich am Grabmal (§ 17)"
+  ],
+  "verbote": [
+    "Sockel aus anderem Werkstoff als das Grabmal (§ 16 Nr. 6 a)",
+    "Kunststeinsockel unter Natursteingrabmal (§ 16 Nr. 6 b)",
+    "Grabmale und Einfassungen aus gegossenen Zementmassen (§ 16 Nr. 6 c)",
+    "Terrazzo (§ 16 Nr. 6 d)",
+    "In Zement aufgetragener ornamentaler oder figürlicher Schmuck (§ 16 Nr. 6 e)",
+    "Ölfarbanstriche auf Steingrabmalen (§ 16 Nr. 6 f)",
+    "Inschriften, die der Weihe des Ortes nicht entsprechen (§ 16 Nr. 6 g)",
+    "Lichtbilder (Fotos) (§ 16 Nr. 6 h)",
+    "Bestreuen der Grabstätte mit Kies oder Splitt; unwürdige Gefäße wie Konservendosen für Blumen (§ 20 Nr. 5)",
+    "Grabschmuck, Kränze und Gebinde mit Kunststoff (§ 20 Nr. 6)"
+  ],
+  "genehmigung": [
+    "Errichtung und Änderung von Grabmalen und Einfassungen nur mit Einwilligung der Friedhofsverwaltung (Bürgermeister) (§ 16 Nr. 1, § 1)",
+    "Genehmigung vor Beginn der Arbeiten einholen (§ 16 Nr. 3)",
+    "Genehmigung kann versagt werden, wenn das Grabmal den Anordnungen der Verwaltung zu Werkstoff, Art und Größe nicht entspricht (§ 16 Nr. 4)",
+    "Gewerbliche Arbeiten an Grabstellen nur nach vorheriger Anmeldung und Genehmigung; Verfahren auch über den Einheitlichen Ansprechpartner möglich (§ 6)",
+    "Welche Unterlagen einzureichen sind, ist nicht geregelt"
+  ],
+  "standsicherheit": [
+    "Jedes Grabmal muss seiner Größe entsprechend dauerhaft gegründet sein (§ 19 Nr. 1)",
+    "Nutzungsberechtigte haften für schuldhaft verursachte Schäden, insbesondere durch umfallende Grabmale oder herabstürzende Teile (§ 19 Nr. 2, § 27 Nr. 1)",
+    "Eine technische Richtlinie (TA Grabmal/BIV) wird nicht genannt"
+  ],
+  "fristen": [
+    "Eigengräber spätestens 3 Monate nach Erwerb des Nutzungsrechts bzw. nach der Beisetzung gärtnerisch anlegen (§ 13 Nr. 4)",
+    "Ohne Genehmigung aufgestellte Grabmale können auf Kosten des Verpflichteten entfernt werden (§ 16 Nr. 3)",
+    "Vor Ablauf des Nutzungsrechts Anlagen nicht ohne Einwilligung entfernen (§ 18 Nr. 1)",
+    "Nicht binnen 3 Monaten nach Ablauf des Nutzungsrechts bzw. der Ruhefrist entfernte Grabmale und Einfriedigungen gehen in das Eigentum der Gemeinde über (§ 18 Nr. 2)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung in der Satzung; schleswig-holsteinisches Landesrecht wird nicht genannt",
+  "besonderheiten": [
+    "Künstlerisch oder geschichtlich wertvolle Grabmale stehen unter besonderem Schutz, werden in einem Verzeichnis geführt und dürfen nicht ohne besondere Einwilligung entfernt oder geändert werden (§ 18 Nr. 3)",
+    "Bei Umbettung können Grabmale und Pflanzen mit umgesetzt werden, wenn das neue Grabfeld es zulässt (§ 11 Nr. 7)",
+    "Gepflanzte Bäume und Sträucher gehen in das Eigentum der Gemeinde über (§ 20 Nr. 3)",
+    "Aushubboden darf vorübergehend auf Nachbargräbern gelagert werden (§ 10 Nr. 2)",
+    "Gestaltungsplan wird erwähnt (§ 16 Nr. 5), ist aber nicht Teil des Dokuments"
+  ],
+  "kontakt": "Friedhofsverwaltung: Bürgermeister der Gemeinde Güster (§ 1); Adresse/Telefon in der Satzung nicht genannt (Verwaltung über Amt Büchen)",
+  "unsicher": [
+    "Das PDF ist ein Scan; Text wurde per Texterkennung und Sichtprüfung der Seitenbilder gelesen",
+    "§ 16 Nr. 2 nennt Sträucher 'bis zu 0,40 cm' Höhe – vermutlich Schreibfehler (0,40 m), hier wörtlich übernommen",
+    "§ 16 Nr. 6: Unklar, ob die Verbotsliste a)–h) nur für halbanonyme Gräber oder für alle Gräber gilt; sie steht im selben Absatz direkt nach dem Satz zu halbanonymen Gräbern",
+    "Anordnungen der Friedhofsverwaltung zu Werkstoffen und Größe (§ 16 Nr. 1) und der Gestaltungsplan (§ 16 Nr. 5) liegen nicht vor",
+    "Abschnittsnummerierung im Original doppelt ('VI.' zweimal); Paragrafen sind eindeutig"
+  ]
+}

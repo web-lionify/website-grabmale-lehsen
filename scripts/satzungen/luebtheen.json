@@ -1,0 +1,75 @@
+{
+  "id": "luebtheen",
+  "titel": "Friedhofsordnung für den Friedhof in Lübtheen (Ev.-Luth. Kirchengemeinde Lübtheen)",
+  "orte": ["Lübtheen"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Lübtheen",
+  "art": "kirchlich",
+  "fassung": "vom 02.03.2021",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Luebtheen/210302_Friedhofsordnung_Luebtheen.pdf",
+  "quelle_titel": "Friedhofsordnung Lübtheen vom 02.03.2021 (PDF, kirche-mv.de)",
+  "friedhoefe": ["Friedhof in Lübtheen im Eigentum der Ev.-Luth. Kirche zu Lübtheen (§ 1)"],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung; der Entwurf (Maßstab 1:10) ist zweifach einzureichen, die Zustimmung gilt ein Jahr. Auf Urnengräbern mit zusätzlichen Gestaltungsvorschriften sind Steine bis 80 cm Höhe (mit Fundament) erlaubt, auf Rasengräbern mit stehendem Grabmal bis 1,20 m inkl. Sockel; Liegesteine auf Rasengräbern müssen bündig eingelassen werden. Grabmale sollen mit christlichen Glaubensgrundsätzen vereinbar sein; Fundamentierung nach der Versetzrichtlinie des Bundesinnungsverbands.",
+  "ruhezeit": "Särge und Urnen 25 Jahre (§ 12 Abs. 1); Nutzungszeit Wahlgrab 25 Jahre (§ 18 Abs. 1)",
+  "grabarten": [
+    {"name": "Reihen- und Wahlgrab mit allgemeinen Gestaltungsvorschriften (Erde/Urne)", "regel": "Mindestmaße Erdgrab Kinder bis 5 Jahre 1,20 × 0,60 m, ab 5 Jahre 2,10 × 0,90 m; Mindeststärken für Grabmale nach § 24 (§ 9 Abs. 3, § 16)"},
+    {"name": "Urnenreihengrab / Urnenwahlgrab mit zusätzlichen Gestaltungsvorschriften", "regel": "Urnenreihengrab 0,60 × 0,80 m (1 Urne), Urnenwahlgrab 1,00 × 1,20 m (2 Urnen je Grabbreite); Einfassung aus Naturstein oder vollständige Natursteinabdeckung, keine Hecke, Zäune oder Kunststoff; Grabstein inkl. Fundament max. 80 cm hoch; Name und Geburts-/Sterbejahr in einfacher, lesbarer Schrift (§ 9 Abs. 3, § 19 Abs. 1-6)"},
+    {"name": "Urnengemeinschaftsanlage mit zentraler Namensnennung", "regel": "Rasenfeld im Raster 40 × 40 cm; keine Bepflanzung durch Angehörige; Namen auf einer zentralen Stele, keine anonyme Bestattung (§ 19 Abs. 8-10)"},
+    {"name": "Rasengrab mit stehendem Grabmal (Reihe/Wahl)", "regel": "Grabmal max. 1,20 m hoch inkl. Sockel, §§ 24-28 gelten; Name und Lebensjahre in einfacher Schrift; Bepflanzung nur in Grabmalbreite bis 50 cm vor dem Stein, Rest Rasen; Pflege und spätere Beräumung des Grabmals durch den Träger (§ 20)"},
+    {"name": "Rasengrab mit Liegestein (Reihe/Wahl)", "regel": "Liegestein nur durch Steinmetz, ins Erdreich eingelassen und bündig mit dem Rasen; Name und Lebensjahre eingraviert in einfacher Schrift; keine Bepflanzung nach Erstanlage (§ 21 Abs. 5-6)"}
+  ],
+  "masse": [
+    "Mindeststärke (allgemeine Gestaltungsvorschriften): 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; über 1,50 m Höhe 0,18 m – jeweils bei standsicherer Verdübelung (§ 24)",
+    "Grabsteine auf Urnengräbern mit zusätzlichen Gestaltungsvorschriften max. 80 cm hoch inkl. Fundament (§ 19 Abs. 5)",
+    "Stehende Grabmale auf Rasengräbern max. 1,20 m hoch inkl. Sockel (§ 20 Abs. 5)",
+    "Abdeckung von Erdgrabstätten mit Stein oder steinähnlichem Material höchstens 75 % (§ 31 Abs. 11)",
+    "Hecken max. 0,80 m hoch und nicht über die Grabgrenze (§ 31 Abs. 2)"
+  ],
+  "material": [
+    "Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 25 Abs. 1)",
+    "Urnengräber mit zusätzlichen Vorschriften: Einfassung bzw. Abdeckung aus Naturstein (§ 19 Abs. 4)",
+    "Schrift auf Urnen- und Rasengräbern: Name, Geburts- und Sterbejahr einfach und lesbar, auf Liegesteinen eingraviert (§ 19 Abs. 6, § 20 Abs. 6, § 21 Abs. 6)"
+  ],
+  "verbote": [
+    "Urnengräber mit zusätzlichen Vorschriften: keine Hecken, Zäune, Kunststoff- oder andere Einfassungen außer Naturstein (§ 19 Abs. 4)",
+    "Keine Kunststoffe oder nicht verrottbaren Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und Pflanzbehältern; ausgenommen Grabvasen, Markierungszeichen, Gießkannen (§ 31 Abs. 10)",
+    "Keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 31 Abs. 9)",
+    "Erdgräber nicht mehr als 75 % mit Stein abdecken (§ 31 Abs. 11)",
+    "Grabmale vor Ablauf der Nutzungszeit nur mit schriftlicher Zustimmung entfernen (§ 30 Abs. 1)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 25 Abs. 2)",
+    "Entwurf mit Grundriss und Seitenansicht 1:10 inkl. Material, Bearbeitung, Schrift, Ornamente, Symbole und Fundamentierung, zweifach; auf Verlangen Details 1:1, Modell 1:10 oder Attrappe in Originalgröße (§ 25 Abs. 3)",
+    "Für Urnen- und Rasengräber reicht der Steinmetz einen schriftlichen Antrag mit Skizze und Maßen ein (§ 19 Abs. 7, § 21 Abs. 7)",
+    "Zustimmung erlischt nach einem Jahr ohne Errichtung (§ 25 Abs. 4)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 25 Abs. 5)",
+    "Bei Anlieferung genehmigten Antrag vorlegen; Prüfung vor Aufstellung möglich (§ 26)",
+    "Steinmetze brauchen eine schriftliche Zulassung (Handwerksrolle, Haftpflichtversicherung); Arbeiten werktags 7–18 Uhr, nicht am Buß- und Bettag (§ 5 Abs. 1-3, 6)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung (§ 27 Abs. 1)",
+    "Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 27 Abs. 2)",
+    "Nutzungsberechtigter verantwortlich für verkehrssicheren Zustand und haftet für Schäden durch Umstürzen; bei Gefahr Umlegen durch die Verwaltung, Aufbewahrung entfernter Teile drei Monate (§ 28)"
+  ],
+  "fristen": [
+    "Zustimmung gilt ein Jahr (§ 25 Abs. 4)",
+    "Rasengräber: Ersteinrichtung und Einsaat durch den Träger in der Regel spätestens bis zum neunten Monat nach der Beisetzung (§ 20 Abs. 4, § 21 Abs. 4)",
+    "Wahlgräber binnen sechs Monaten nach Erwerb, Reihengräber binnen sechs Monaten nach Bestattung herrichten (§ 31 Abs. 7)",
+    "Nach Ablauf des Nutzungsrechts Grabmal mit Sockel/Fundament binnen drei Monaten entfernen, sonst Abräumung durch den Träger ohne Entschädigung (§ 30 Abs. 2)",
+    "Abräumen von Reihengrabfeldern wird sechs Monate vorher angekündigt (§ 17 Abs. 3)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Bei Erwerb Wahl zwischen Abteilungen mit allgemeinen und zusätzlichen Gestaltungsvorschriften; ohne Wahl allgemeine Abteilung (§ 8 Abs. 12, § 20 Abs. 8)",
+    "Auf Rasengräbern trägt der Träger Pflege und Beräumung des Grabmals nach Ablauf der Ruhezeit (§ 20 Abs. 3, § 21 Abs. 3)",
+    "Umgestaltung eines Erdgrabs in ein Rasengrab frühestens nach 10 Jahren auf Antrag; das Grabmal bleibt bis Ende der Ruhezeit stehen (§ 31 Abs. 12)",
+    "Wertvolle Grabmale werden verzeichnet; Änderungen nur mit Zustimmung, ggf. Denkmalschutz beteiligen (§ 29)",
+    "Pastorengrabstätten sollen erhalten bleiben (§ 35)"
+  ],
+  "kontakt": "Örtliche Verwaltung durch den Friedhofsmitarbeiter in Abstimmung mit dem Pastor (§ 2 Abs. 2); Widersprüche an den Friedhofsträger oder die Zentrale Friedhofsverwaltung Güstrow, Domstr. 16, 18273 Güstrow (§ 38)",
+  "unsicher": [
+    "Die Paragrafennummern im Inhaltsverzeichnis weichen ab dem Vierten Abschnitt vom Text ab (z. B. Rasengräber im Verzeichnis § 21, im Text §§ 20-21); verwendet wurde die Nummerierung im Text.",
+    "Absatznummern wurden aus dem PDF-Textlayer zugeordnet, in dem die Nummern vom Text getrennt stehen; einzelne Absatzangaben können um eins abweichen.",
+    "Mindestmaß Urnenreihengrab laut § 9 'Länge 0,60 m, Breite 0,80 m' – so im Text, wirkt vertauscht.",
+    "Die Ordnung bedurfte kirchenaufsichtlicher Genehmigung; Genehmigungs- bzw. Bekanntmachungsdatum steht nicht im PDF."
+  ]
+}

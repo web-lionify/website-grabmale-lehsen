@@ -1,0 +1,72 @@
+{
+  "id": "holdorf",
+  "titel": "Friedhofssatzung der Gemeinde Holdorf",
+  "orte": [
+    "Holdorf"
+  ],
+  "traeger": "Gemeinde Holdorf (Amt Rehna)",
+  "art": "kommunal",
+  "fassung": "vom 20.06.2018, geändert durch 1. Änderung vom 25.09.2020, 2. Änderung vom 24.06.2021 und 3. Änderung vom 12.12.2023",
+  "quelle_url": "https://www.rehna.de/portal/dokumenteplus-900000152-28460.html?ordner=1",
+  "quelle_titel": "Amt Rehna: Friedhofssatzung der Gemeinde Holdorf und 1.–3. Änderung (PDF)",
+  "friedhoefe": [
+    "Kommunaler Friedhof der Gemeinde Holdorf (§ 1)"
+  ],
+  "kurzfazit": "Grabmale dürfen höchstens 1,30 m hoch und nicht breiter als die Grabstätte sein; Kissensteine sind erlaubt. Darüber hinaus gibt es keine Vorgaben zu Material, Schrift oder Genehmigung. Gewerbliche Arbeiten sind werktags von 7 bis 18 Uhr erlaubt.",
+  "ruhezeit": "allgemein 30 Jahre (§ 15)",
+  "grabarten": [
+    {
+      "name": "Wahlgrabstätte für Erdbestattung (Einzel- oder Familiengrab)",
+      "regel": "je Grabbreite eine Erdbestattung, zusätzlich bis zu drei Urnen; Grabmal max. 1,30 m hoch, nicht breiter als die Grabstätte (§ 17 Abs. 1, 2, § 19 Abs. 1)"
+    },
+    {
+      "name": "Urnengrabstätte (Urnenreihe)",
+      "regel": "seit der 3. Änderung zwei Urnen je Grabbreite; Platz mindestens 1,00 × 1,00 m; Grabmal max. 1,30 m hoch, nicht breiter als die Grabstätte (§ 13, § 17 Abs. 2 i. d. F. der 3. Änderung, § 19 Abs. 1)"
+    },
+    {
+      "name": "Anonymes Urnenfeld",
+      "regel": "Gemeinschaftsgrabstätten, mind. 0,25 m² je Urne; Pflege durch die Friedhofsverwaltung; Bepflanzung und Grabschmuck nicht gestattet, Blumen nur auf den Ablageflächen (§ 17 Abs. 3)"
+    }
+  ],
+  "masse": [
+    "Grabmale max. 1,30 m hoch; Breite nicht größer als die Grabstätte (§ 19 Abs. 1 Nr. 1)",
+    "Kissensteine erlaubt, ebenfalls nicht breiter als die Grabstätte (§ 19 Abs. 1 Nr. 2)",
+    "Urnengrab mindestens 1,00 × 1,00 m (§ 13); anonymes Urnenfeld mind. 0,25 m² je Urne (§ 17 Abs. 3)",
+    "Hecken-Einfassungen max. 0,80 m, Solitärpflanzen max. 1,50 m (§ 20 Abs. 2)",
+    "Keine Mindeststärke festgelegt"
+  ],
+  "material": [],
+  "verbote": [
+    "Störende Arbeiten während Bestattungen (§ 7 Abs. 3)",
+    "Gewerbetreibende dürfen keinen Abraum auf dem Friedhof ablagern und Geräte nicht an der Wasserstelle reinigen; Material nur an genehmigten Stellen lagern (§ 8 Abs. 2)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 20 Abs. 5)",
+    "Bepflanzung und Grabschmuck auf dem anonymen Urnenfeld (§ 17 Abs. 3)"
+  ],
+  "genehmigung": [
+    "Ein Genehmigungsverfahren für Grabmale ist in der Satzung nicht geregelt",
+    "Gewerbliche Arbeiten außerhalb werktags 7.00–18.00 Uhr nur mit Genehmigung der Friedhofsverwaltung (§ 6 Abs. 2)",
+    "Entfernen von Grabmalen vor Ablauf der Ruhe-/Nutzungszeit ist der Friedhofsverwaltung schriftlich anzuzeigen (§ 19 Abs. 3 Nr. 1)"
+  ],
+  "standsicherheit": [
+    "Grabmale und Einfassungen dauernd würdig und verkehrssicher halten; verantwortlich ist der Nutzungsberechtigte, der für Schäden durch Umstürzen haftet (§ 19 Abs. 2 Nr. 1, 3)",
+    "Bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf Kosten des Verantwortlichen; nach Fristablauf Entfernung, Aufbewahrung drei Monate (§ 19 Abs. 2 Nr. 2)",
+    "Keine Richtlinie (TA Grabmal/BIV) und keine Fundamentvorgaben genannt"
+  ],
+  "fristen": [
+    "Nach Ablauf der Ruhe-/Nutzungszeit oder Entziehung Grabmale binnen drei Monaten entfernen, sonst durch die Friedhofsverwaltung; Grabmale gehen entschädigungslos an den Friedhofsträger, Kosten trägt der Nutzungsberechtigte (§ 19 Abs. 3 Nr. 2)",
+    "Nach Ablauf Grabstätte beräumen, ggf. einebnen und einsäen (§ 21 Abs. 4 i. d. F. der 1. Änderung)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Belegen der Grabstätte mit Schrittplatten oder Kieselsteinen erlaubt (§ 20 Abs. 2)",
+    "Beim Ausheben entfernte Grabmale/Fundamente: Kosten trägt der Nutzungsberechtigte; Grabzubehör vorher entfernen (§ 12 Abs. 3)",
+    "Gestaltung des Friedhofs nach Anlage mit Lageplänen (§ 22 Abs. 2)",
+    "Übernimmt der Friedhofsträger nach Beräumung die Pflege, wird eine Gebühr verlangt (§ 19 Abs. 3 Nr. 1 i. d. F. der 2. Änderung)"
+  ],
+  "kontakt": "Friedhofsverwaltung: Amt Rehna (§ 3), Freiheitsplatz 1, 19217 Rehna, Telefon 038872 929-0 (laut Amtsseite)",
+  "unsicher": [
+    "Grundsatzung nur als Scan vorhanden (per Texterkennung gelesen)",
+    "Die Download-Links des Amtes Rehna sind tokenbasiert; als Quelle ist daher die Ordnerseite angegeben",
+    "Im Ortsteil Meetzen gibt es einen kirchlichen Friedhof (Friedhofsordnung der Ev.-Luth. Kirchengemeinden Rehna, Kirch Grambow und Meetzen vom 11.11.2014 mit Änderungen, ebenfalls auf der Amtsseite) – nicht Teil dieser Zusammenfassung"
+  ]
+}

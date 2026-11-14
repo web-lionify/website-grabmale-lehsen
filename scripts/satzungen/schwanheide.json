@@ -1,0 +1,72 @@
+{
+  "id": "schwanheide",
+  "titel": "Satzung der Gemeinde Schwanheide über das Friedhofs- und Bestattungswesen (Friedhofssatzung)",
+  "orte": ["Schwanheide"],
+  "traeger": "Gemeinde Schwanheide (Amt Boizenburg-Land)",
+  "art": "kommunal",
+  "fassung": "beschlossen am 22.08.2011, bekannt gemacht am 28.12.2011, in Kraft seit 01.01.2012",
+  "quelle_url": "https://www.amtboizenburgland.de/amt-gemeinden/schwanheide/ortsrecht/",
+  "quelle_titel": "Amt Boizenburg-Land – Ortsrecht Schwanheide („Friedhofssatzung - Schwanheide“)",
+  "friedhoefe": ["Friedhof der Gemeinde Schwanheide mit Friedhofskapelle (§§ 1, 23 Abs. 2)"],
+  "kurzfazit": "Für jedes Grabmal ist vorher die schriftliche Zustimmung der Friedhofsverwaltung nötig; dem Antrag gehört ein Entwurf mit Grundriss, Seitenansicht, Material, Schrift und Fundamentierung bei. Je Grabstätte ist nur ein stehendes Grabmal erlaubt, dazu je Grabbreite eine passende Liegeplatte; Mindeststärken 14 bis 18 cm je nach Höhe. Fundamentiert wird nach der BIV-Richtlinie; verboten sind u. a. Sockel aus anderem Material, Kunststeinsockel unter Naturstein, Terrazzo und Zementguss.",
+  "ruhezeit": "Leichen und Aschen 25 Jahre (§ 10 Abs. 1)",
+  "grabarten": [
+    {"name": "Erdwahlgrab (Einzel- oder Doppelgrab)", "regel": "Einzelgrab 2,70 × 1,30 m, Doppelgrab 2,70 × 2,70 m; Reihenabstand 0,90 m, Grababstand 0,50 m; je Grabbreite zusätzlich eine Urne möglich (§ 13 Abs. 1-3, § 14 Abs. 4)"},
+    {"name": "Urnenwahlgrab", "regel": "auf dem Urnenfeld, max. zwei Urnen, 1,40 × 1,40 m; Reihenabstand 0,90 m, Grababstand 0,50 m (§ 14 Abs. 1-3)"},
+    {"name": "Anonymes Rasengrab (Sarg/Urne)", "regel": "keine Kennzeichnung; Sarggrab 2,20 × 1,00 m, Urnen je 0,70 × 0,70 m; Ersteinrichtung und Rasen durch die Friedhofsverwaltung, danach keine Bepflanzung (§ 15)"}
+  ],
+  "masse": [
+    "Mindeststärke: 0,40–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; ab 1,50 m Höhe 0,18 m – jeweils bei ordnungsgemäßer, standsicherer Verdübelung (§ 16 Abs. 1)",
+    "Grabhügel nicht über 0,20 m (§ 19 Abs. 3)",
+    "Bepflanzung max. 1,20 m hoch; Einfassungen nur mit bis zu 0,40 m hohen buschähnlichen Sträuchern bepflanzen (§ 19 Abs. 4, § 17 Abs. 5)",
+    "Keine Höchstmaße für Grabmale in der Satzung; Art und Größe kann die Gemeinde gesondert festlegen (§ 18 Abs. 5)"
+  ],
+  "material": [
+    "Stehende oder liegende Grabmale nach Maßgabe des Gestaltungsplans; nur ein stehendes Grabmal je Grabstätte (§ 17 Abs. 2)",
+    "Zusätzliches liegendes Grabmal (je Grabbreite) muss dem vorhandenen in Material, Schrift und Bearbeitung entsprechen (§ 17 Abs. 2)",
+    "Grabmale müssen sich in das Gesamtbild einfügen und der Würde des Friedhofs entsprechen (§ 18 Abs. 1)",
+    "Firmenbezeichnungen nur unauffällig, möglichst seitlich (§ 17 Abs. 4)"
+  ],
+  "verbote": [
+    "Sockel aus anderem Werkstoff als das Grabmal (§ 17 Abs. 3 lit. a)",
+    "Kunststeinsockel unter Natursteingrabmal (§ 17 Abs. 3 lit. b)",
+    "Grabmale und Einfassungen aus gegossenen Zementmassen (§ 17 Abs. 3 lit. c)",
+    "Terrazzo (§ 17 Abs. 3 lit. d)",
+    "In Zement aufgetragener ornamentaler oder figürlicher Schmuck (§ 17 Abs. 3 lit. e)",
+    "Ölfarbanstrich auf Steingrabmalen (§ 17 Abs. 3 lit. f)",
+    "Inschriften, die der Weihe des Ortes nicht entsprechen (§ 17 Abs. 3 lit. g)",
+    "Mehr als ein stehendes Grabmal je Grabstätte (§ 17 Abs. 2)",
+    "Ablagern von Grabsteinumrandungen, Gedenksteinen und Fundamenten auf dem Friedhof (§ 5 Abs. 3 lit. g); kein Erd- oder Gesteinsmaterial durch Gewerbetreibende lagern (§ 6 Abs. 3)"
+  ],
+  "genehmigung": [
+    "Errichtung oder Änderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 17 Abs. 1, § 18 Abs. 2)",
+    "Antrag mit Grabmalentwurf: Grundriss und Seitenansicht mit Material, Bearbeitung, Anordnung von Schrift, Ornamenten und Symbolen sowie Fundamentierung (§ 18 Abs. 4)",
+    "Genehmigung kann versagt werden, wenn Vorgaben der Gemeinde zu Werkstoff, Art und Größe nicht eingehalten sind (§ 18 Abs. 5)",
+    "Ohne Genehmigung aufgestellte Grabmale können auf Kosten des Verpflichteten entfernt werden (§ 18 Abs. 2)",
+    "Gewerbliche Arbeiten an Grabstellen nur mit vorheriger Genehmigung der Friedhofsverwaltung (§ 6 Abs. 1)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Richtlinien des Bundesinnungsverbands des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks in der jeweils geltenden Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 17 Abs. 9)",
+    "Mindeststärken setzen eine ordnungsgemäße, standsichere Verdübelung voraus (§ 16 Abs. 1)",
+    "Grabmale dauernd würdig und verkehrssicher halten; Nutzungsberechtigte haften für Schäden, insbesondere durch Umfallen (§ 17 Abs. 9-10)"
+  ],
+  "fristen": [
+    "Grabstätten spätestens 3 Monate nach Bestattung/Beisetzung gärtnerisch anlegen (§ 19 Abs. 2)",
+    "Nach Ablauf oder Entzug des Nutzungsrechts Grabmale samt Fundamenten entfernen; nach 3 Monaten und schriftlicher Aufforderung Abräumung durch die Verwaltung auf Kosten des Nutzungsberechtigten (§ 17 Abs. 7)",
+    "Grabmale vor Ablauf des Nutzungsrechts nur mit schriftlicher Zustimmung entfernen (§ 17 Abs. 6)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Künstlerisch oder geschichtlich wertvolle Grabmale stehen unter besonderem Schutz (im Einvernehmen mit dem Konservator) und dürfen nicht ohne Einwilligung entfernt oder geändert werden (§ 17 Abs. 8)",
+    "Nicht verrottbare Produkte (z. B. Blumentöpfe, Grablichter) nach Gebrauch entfernen bzw. getrennt entsorgen (§ 19 Abs. 6)",
+    "Anlagen außerhalb der Grabstätten gestaltet nur die Friedhofsverwaltung (§ 19 Abs. 9)",
+    "Für Altgräber gelten Nutzungsrecht und Gestaltung nach den bisherigen Vorschriften (§ 24)"
+  ],
+  "kontakt": "Gemeinde Schwanheide als Friedhofsverwaltung (§ 1); keine Adresse in der Satzung",
+  "unsicher": [
+    "Das PDF ist ein Scan; Text per Texterkennung gelesen. Einige Zeilen (§ 14 Abs. 5-6, § 15 Abs. 2, § 18 Abs. 5) sind nur teilweise lesbar und sinngemäß wiedergegeben.",
+    "Der in § 17 Abs. 2 genannte Gestaltungsplan und die Vorgaben nach § 18 Abs. 5 sind nicht veröffentlicht.",
+    "§ 18 springt von Abs. 2 auf Abs. 4 (Abs. 3 fehlt im Dokument oder in der Texterkennung).",
+    "Auf der Ortsrechtseite ist keine Änderungssatzung verlinkt; Fassung 2011 wird als aktuell angenommen."
+  ]
+}

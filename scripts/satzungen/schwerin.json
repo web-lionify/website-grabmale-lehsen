@@ -1,0 +1,91 @@
+{
+  "id": "schwerin",
+  "titel": "Friedhofssatzung für die kommunalen Friedhöfe in der Landeshauptstadt Schwerin",
+  "orte": ["Schwerin"],
+  "traeger": "Landeshauptstadt Schwerin (Friedhofsverwaltung: SDS – Stadtwirtschaftliche Dienstleistungen Schwerin, Eigenbetrieb)",
+  "art": "kommunal",
+  "fassung": "beschlossen am 08.07.2024, im Internet bekannt gemacht am 31.07.2024 (ersetzt die Friedhofsordnung vom 08.02.2001)",
+  "quelle_url": "https://www.schwerin.de/export/sites/default/.galleries/Dokumente/Ortsrecht/Friedhofssatzung.pdf",
+  "quelle_titel": "Friedhofssatzung Landeshauptstadt Schwerin (PDF)",
+  "friedhoefe": [
+    "Alter Friedhof (Obotritenring)",
+    "Waldfriedhof (Am Krebsbach)",
+    "Friedhof der Opfer des Faschismus (Obotritenring, Eingang Sandstraße)"
+  ],
+  "kurzfazit": "Für jedes Grabmal braucht es vorab die schriftliche Zustimmung der Friedhofsverwaltung; der Antrag muss u. a. Entwurf, Abnahmebescheinigung und Prüfdokumentation nach TA Grabmal enthalten. Die erlaubten Maße hängen stark von Friedhof und Grabfeld ab und stehen in Anlage 1 (z. B. Waldfriedhof stehend bis 140 cm, Alter Friedhof bis 200 cm). Aufstellen dürfen nur von der Friedhofsverwaltung zugelassene Fachbetriebe.",
+  "ruhezeit": "Erdbestattungen und Aschen 20 Jahre; totgeborene Kinder unter 1000 g 10 Jahre (§ 11)",
+  "grabarten": [
+    {"name": "Wahlgrabstätten Waldfriedhof (allgemein)", "regel": "stehendes Grabmal max. 140 cm hoch, liegendes Grabmal und Einfassung höchstens bis zur Größe der Pflanzfläche, Stele max. 170 cm hoch; keine Zäune, Bänke oder Hecken (Anlage 1, § 20 Abs. 2)"},
+    {"name": "Wahlgrabstätten Alter Friedhof (allgemein)", "regel": "stehendes Grabmal max. 200 cm hoch, liegendes Grabmal und Einfassung höchstens bis zur Größe der Pflanzfläche, Stele max. 200 cm hoch; Hecke zulässig, kein Zaun, keine Bank (Anlage 1)"},
+    {"name": "Alter Friedhof, Grabfeld LM", "regel": "stehendes Grabmal in Reihe 1–3 Breite 40–55 cm × Höhe 70–85 cm, in Reihe 4–7 Breite 40–60 cm × Höhe 90–110 cm, rötlich gefärbter Naturstein; liegendes Grabmal nur zusätzlich zu einem stehenden, rötlich gefärbter Naturstein; Einfassung 100 × 100 cm; keine Stele (Anlage 1)"},
+    {"name": "Alter Friedhof, Grabfeld O", "regel": "kein stehendes Grabmal; Stele Breite 25–35 cm, Höhe bis 90 cm, quadratisch; liegendes Grabmal nur zusätzlich; Einfassung 100 × 100 cm vor der Stele oder 100 × 130 cm inkl. Stele (Anlage 1)"},
+    {"name": "Baumgrabstätten (Alter Friedhof)", "regel": "pflegefrei; nur liegend, max. 3 Pultsteine, Seitenlänge max. 40 cm, Höhe 5–15 cm (§ 16 Abs. 4, Anlage 1)"},
+    {"name": "Baumgrabfeld (Waldfriedhof)", "regel": "kein eigenes Grabmal; je Verstorbenem eine Edelstahltafel 15 × 10 cm an der Gemeinschaftsstele, Anbringung durch zugelassenen Dienstleister (§ 20 Abs. 4, Anlage 1)"},
+    {"name": "Urnenwahlgrab in gestalteten Flächen (Alter Friedhof)", "regel": "pflegefrei; 1 Pultstein mittig, Seitenlänge max. 40 cm, Höhe 5–15 cm (§ 16 Abs. 4, Anlage 1)"},
+    {"name": "Wahlgrabstätte im Rasengrabfeld (Waldfriedhof)", "regel": "pflegefrei; nur liegendes Grabmal, Breite 60 cm × Höhe 60 cm (laut Tabelle), keine Einfassung, keine Stele (§ 16 Abs. 4, Anlage 1)"},
+    {"name": "Dauergepflegtes Grabfeld (Alter Friedhof und Waldfriedhof)", "regel": "nur ein Grabmal je Grabstätte (auf Erdwahlgräbern zusätzlich Liegesteine bei stehendem Grabmal); Naturstein mit mind. 60 % Steinanteil; alle Grabmalarbeiten nur durch den Ersteller (Arbeitsgemeinschaft); Maße je nach Grabstätte laut Anlage 1 (§ 18, § 20 Abs. 5)"},
+    {"name": "Friedhof der Opfer des Faschismus", "regel": "stehendes oder liegendes Grabmal 30 cm hoch, 40 cm breit, rötlich gefärbter Naturstein; keine Einfassung, keine Stele (Anlage 1)"},
+    {"name": "Gemeinschaftsgrabstätten, Kindergemeinschaftsgrab, Grabstätte für stillgeborene Kinder", "regel": "Grabmale werden von der Friedhofsverwaltung ausgewählt, aufgestellt und unterhalten; bei stillgeborenen Kindern Namenskennzeichnung in Abstimmung mit der Verwaltung auf Kosten der Angehörigen (§ 15 Abs. 4 und 6)"},
+    {"name": "Anonyme Grabfelder / Aschestreuwiese", "regel": "Rasenfelder ohne Grabzeichen, Gestaltung nur durch die Friedhofsverwaltung (§ 17, Anlage 1)"}
+  ],
+  "masse": [
+    "Grabgrößen auf Altem Friedhof und Waldfriedhof (soweit örtlich möglich): Einzelerdgrab 130 × 260 cm, Urnengrab zweistellig 80 × 80 cm, vierstellig 100 × 100 cm (§ 19 Abs. 3)",
+    "Dauergepflegtes Grabfeld, Urnenwahlgrab: stehend (Hochformat) 75 × 30 cm bei 14 cm Stärke oder max. 130 cm hoch, max. 45 cm breit, mind. 12 cm stark; liegend max. 0,25 m² (Anlage 1)",
+    "Dauergepflegtes Grabfeld, Erdwahlgrab einstellig: stehend (Hochformat) 75 × 30 cm oder max. 90 cm hoch und max. 60 cm breit; liegend max. 0,4 m²; Stele max. 130 cm hoch, max. 45 cm breit (Anlage 1)",
+    "Dauergepflegtes Grabfeld, Erdwahlgrab zwei- und mehrstellig: stehend (Querformat) max. 80 cm hoch oder 81–100 cm hoch, jeweils max. 150 cm breit; liegend je max. 0,4 m²; Stele max. 130 cm hoch, max. 45 cm breit (Anlage 1)",
+    "Provisorische Grabmale (Holztafel/-kreuz) max. 100 × 100 cm (§ 21 Abs. 6)",
+    "Bepflanzung max. 100 cm hoch (§ 19 Abs. 5)"
+  ],
+  "material": [
+    "Dauergepflegte Grabfelder: alle Grabmale aus Naturstein; Kombination mit Glas oder Metall nur bei mind. 60 % Natursteinanteil (§ 20 Abs. 5 Nr. 3)",
+    "Alter Friedhof Grabfeld LM und Friedhof der Opfer des Faschismus: rötlich gefärbter Naturstein (Anlage 1)",
+    "Edelstahltafel 15 × 10 cm an der Stele im Baumgrabfeld (§ 20 Abs. 4)"
+  ],
+  "verbote": [
+    "Keine Kunststoffe (u. a. Plastikblumen), kein Glas und keine sonstigen nicht verrottbaren Stoffe bei Gestaltung und Pflege; ausgenommen Steckvasen, Pflanzgefäße und Markierungszeichen von Dienstleistern (§ 19 Abs. 6)",
+    "Keine chemischen Pflanzenschutz- oder Unkrautmittel (§ 19 Abs. 7)",
+    "Grabmale nur innerhalb der Grabfläche (§ 19 Abs. 4)",
+    "Zäune und Bänke auf keinem der Grabfelder laut Anlage 1 vorgesehen; Hecken nur auf dem Alten Friedhof (Anlage 1)",
+    "Zustimmung wird versagt, wenn Grabmal oder Inschrift das sittliche Empfinden Dritter empfindlich stört, Persönlichkeitsrechte missachtet oder die freiheitlich demokratische Grundordnung gefährdet (§ 21 Abs. 4)",
+    "Keine Arbeiten an Samstagen, Sonn- und Feiertagen, die die Friedhofsruhe stören, und keine Tätigkeiten in der Nähe einer laufenden Trauerfeier (§ 5 Abs. 2 Nr. 2 und 3)"
+  ],
+  "genehmigung": [
+    "Errichtung, Veränderung und Entfernung von Grabmalen, Einfassungen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung; Antrag durch die/den Nutzungsberechtigten mit Nachweis des Nutzungsrechts (§ 21 Abs. 1)",
+    "Unterlagen jeweils zweifach: Entwurf mit Grundriss und Seitenansicht im geeigneten Maßstab mit Material, Bearbeitung, Inhalt, Form, Anordnung, Verankerung und Gründung; Angaben zu Schrift, Ornamenten und Symbolen; ggf. Ausführungszeichnungen; Abnahmebescheinigung und Dokumentation der Abnahmeprüfung nach TA Grabmal (§ 21 Abs. 2)",
+    "Zustimmung erlischt, wenn nicht binnen eines Jahres errichtet wird (§ 21 Abs. 3)",
+    "Genehmigung ist bei den Arbeiten mitzuführen (§ 21 Abs. 5)",
+    "Steinmetze und andere Errichter von Grabmalen brauchen eine vorherige schriftliche Zulassung der Friedhofsverwaltung (Nachweis z. B. Handwerksrolle oder Meisterprüfung); Tätigkeit vorher anzeigen (§ 6 Abs. 1–4)",
+    "Provisorische Holzgrabmale brauchen keine Zustimmung (§ 21 Abs. 6)"
+  ],
+  "standsicherheit": [
+    "Grabmale, Einfassungen und bauliche Anlagen nach anerkannten Regeln des Handwerks so bemessen, fundamentieren und befestigen, dass sie dauerhaft standsicher sind, auch beim Öffnen benachbarter Gräber; Standsicherheitsprobe nach TA Grabmal (§ 22 Abs. 1)",
+    "Fundamentieren und Versetzen nach den Richtlinien der TA Grabmal in der jeweils geltenden Fassung (§ 22 Abs. 2)",
+    "Stehende Grabmale und bauliche Anlagen dürfen nur nach § 6 zugelassene Gewerbetreibende aufstellen (§ 22 Abs. 3)",
+    "Verantwortlich für einen würdigen und verkehrssicheren Zustand ist die/der Nutzungsberechtigte; bei Gefahr kann die Verwaltung auf deren Kosten sichern (z. B. Grabmal hinlegen) oder nach Fristablauf entfernen (§ 23 Abs. 1–2)",
+    "Nutzungsberechtigte haften für Schäden durch mangelnde Unterhaltung (§ 23 Abs. 3)",
+    "Dienstleister haften für schuldhaft verursachte Schäden; Berufshaftpflicht auf Verlangen nachweisen; Fahrzeuge max. 4,5 t, nur befestigte Wege (§ 6 Abs. 6–7)"
+  ],
+  "fristen": [
+    "Grabstätte innerhalb von 12 Monaten nach jeder Bestattung herrichten (§ 19 Abs. 2)",
+    "Provisorische Holztafeln/-kreuze höchstens ein Jahr nach Bestattung oder Beisetzung (§ 21 Abs. 6)",
+    "Vor dem Grabaushub müssen Grabmale, Zubehör und Bepflanzung von der Grabstelle entfernt werden, sonst auf Kosten der Nutzungsberechtigten; keine Verwahrung (§ 10 Abs. 5)",
+    "Nach Ablauf des Nutzungsrechts Grabstätte binnen 3 Monaten beräumen (Grabmale, bauliche Anlagen, Pflanzen mit Wurzeln), sonst Abräumung durch die Verwaltung auf Kosten der Nutzungsberechtigten (§ 14 Abs. 9, § 24 Abs. 2)",
+    "Ohne Zustimmung oder satzungswidrig aufgestellte Grabmale können auf Kosten der Nutzungsberechtigten entfernt werden (§ 24 Abs. 1)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Rasengrabfelder, Baumgrabstätten, gestaltete Flächen und Kolumbarium sind pflegefrei; Blumen, Kränze und Lichter nur auf ausgewiesenen Ablageflächen (§ 16 Abs. 4)",
+    "Dauergepflegte Grabfelder: Herrichtung, Pflege und alle Steinmetzarbeiten ausschließlich durch eine Gärtnergenossenschaft (Arbeitsgemeinschaft aus Gärtnern und Steinmetzen) über einen Dauerpflegevertrag (§ 18)",
+    "Künstlerisch oder historisch wertvolle Grabmale stehen in einem Verzeichnis; Änderung oder Entfernung kann versagt werden (§ 14 Abs. 10)",
+    "Auf Alter Friedhof und Friedhof der Opfer des Faschismus gibt es Grabfelder mit und ohne zusätzliche Gestaltungsvorschriften, auf dem Waldfriedhof gelten sie überall (§ 20 Abs. 1–2)",
+    "Pflanzen dürfen Nachbargräber und Wege nicht beeinträchtigen (§ 19 Abs. 5)",
+    "Verstoß gegen die Zustimmungspflicht ist eine Ordnungswidrigkeit, Bußgeld bis 5.000 Euro (§ 29)"
+  ],
+  "kontakt": "SDS – Stadtwirtschaftliche Dienstleistungen Schwerin, Eigenbetrieb der Landeshauptstadt Schwerin (Friedhofsverwaltung, § 2 Abs. 1); Adresse/Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Anlage 1 ist eine Tabelle; die Zuordnung einzelner Zellen (z. B. Rasengrabfeld 'Breite 60 cm x Höhe 60 cm x') wurde anhand der Seitenansicht gelesen, die Angabe endet im Original unvollständig",
+    "Laut Tabelle gelten Liegegrabmal und Einfassung auf Wald- und Altem Friedhof als '= max. Größe der Pflanzfläche' – genaue Zahlen nicht angegeben",
+    "Ergänzende Regelungen der Friedhofsverwaltung (z. B. Arbeitszeiten für Gewerbetreibende nach § 6) sind nicht Teil des Dokuments und wurden nicht geprüft",
+    "Ob es nach dem 31.07.2024 Änderungssatzungen gibt, wurde nicht geprüft"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "doebbersen",
+  "titel": "Friedhofssatzung für die Friedhöfe in Döbbersen und Badow (Ev.-Luth. Kirchengemeinde Döbbersen)",
+  "orte": ["Döbbersen (Ortsteil der Gemeinde Wittendörp)", "Badow"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Döbbersen",
+  "art": "kirchlich",
+  "fassung": "vom 06.05.2026 (Beschluss des Kirchengemeinderates), kirchenaufsichtlich genehmigt am 27.05.2026; ersetzt die Satzung vom 11.09.2019",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Doebbersen/2026-05-06_Doebbersen__Badow_-_FS.pdf",
+  "quelle_titel": "Kirchengemeinde Döbbersen: Friedhofssatzung für die Friedhöfe Döbbersen und Badow vom 06.05.2026 (PDF)",
+  "friedhoefe": ["Friedhof Döbbersen", "Friedhof Badow (§ 1 Abs. 1)"],
+  "kurzfazit": "Die Satzung gilt nur für die kirchlichen Friedhöfe Döbbersen und Badow; Lassahn und Neuenkirchen haben eigene Satzungen. Jedes Grabmal braucht vorher die schriftliche Zustimmung (Entwurf 1:10, zweifach) und muss Namen sowie Geburts- und Sterbejahr eingraviert tragen; die Mindeststärke richtet sich nach der Höhe (12 bis 18 cm). Höchstens 25 % der Grabstätte dürfen mit Platten, Stein oder Folie abgedeckt werden, Einfassungen sind bis 6 cm Stärke erlaubt, und auf Rasenwahlgräbern ist nur ein liegendes Grabmal bis 60 × 80 cm zulässig.",
+  "ruhezeit": "Särge 25 Jahre, Urnen 20 Jahre (§ 12 Abs. 1); Nutzungszeit Wahlgrabstätten 25 Jahre (§ 17 Abs. 1)",
+  "grabarten": [
+    {"name": "Wahlgrabstätte (Einzel- oder Familiengrab)", "regel": "Erd- und Urnenbeisetzung, allgemeine Gestaltungsvorschriften; Mindeststärken nach § 24; in belegte Erdwahlgräber je Grabbreite eine Urne zusätzlich (§ 16, § 17, § 18 Abs. 2)"},
+    {"name": "Urnenwahlgrabstätte", "regel": "je Grabbreite zwei Urnen; Mindestmaß 1,00 × 1,00 m; allgemeine Gestaltungsvorschriften (§ 18 Abs. 1, § 9 Abs. 3)"},
+    {"name": "Urnengemeinschaftsanlage am Lebensbaum", "regel": "Rasenfeld mit 50 × 50 cm Raster je Urne; Namensnennung auf einer gemeinsamen Tafel, Auftrag durch den Friedhofsträger (kein eigenes Grabmal); Bepflanzung nur nach Rücksprache; Blumen nur auf dem Grabplatz (§ 19)"},
+    {"name": "Urnengemeinschaftsanlage im Rasen (nur Badow)", "regel": "Rasenfeld mit 50 × 50 cm Raster; Namensnennung auf gemeinsamer Tafel durch den Friedhofsträger; keine Bepflanzung und kein Grabschmuck (§ 20)"},
+    {"name": "Rasenwahlgrabstätte (Sarg oder Urne)", "regel": "nur liegendes Grabmal bis 60 cm × 80 cm, dazu optional anliegende Lochplatte für Steckvase bis 18 cm × 18 cm; Installation durch zugelassenen Steinmetz; Name, Geburts- und Sterbejahr eingraviert in einfacher Schrift; Steinmetz reicht vorher schriftlichen Antrag mit Skizze und Maßen ein; kein weiterer Grabschmuck (§ 21 Abs. 6–11)"}
+  ],
+  "masse": [
+    "Mindeststärke der Grabmale (allgemeine Gestaltungsvorschriften): 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; über 1,50 m Höhe 0,18 m – jeweils bei ordnungsgemäßer, standsicherer Verdübelung (§ 24)",
+    "Rasenwahlgrab: liegendes Grabmal max. 60 cm × 80 cm, Vasen-Lochplatte max. 18 cm × 18 cm (§ 21 Abs. 7)",
+    "Einfassungen von Grabstätten oder Grabhügeln höchstens 6 cm stark (§ 31 Abs. 13)",
+    "Abdeckung durch Grabplatten/Steinelemente/Folie höchstens 25 % der Grabstätte (§ 31 Abs. 11)",
+    "Hecken höchstens 0,60 m hoch, nicht über die Grabgrenze (§ 31 Abs. 2)"
+  ],
+  "material": [
+    "Name des Verstorbenen sowie Geburts- und Sterbejahr müssen lesbar eingraviert sein (§ 25 Abs. 2)",
+    "Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 25 Abs. 1)",
+    "Im Antrag sind Material, Bearbeitung, Schriftanordnung, Ornamente, Symbole und Fundamentierung anzugeben (§ 25 Abs. 4)"
+  ],
+  "verbote": [
+    "Vollständige Abdeckung der Grabstätte mit Grabplatten, Stein, steinähnlichen Materialien oder Folie (§ 31 Abs. 11)",
+    "Ganzjährige Abdeckung mit Tannengrün oder anderen natürlichen Materialien (§ 31 Abs. 12)",
+    "Pflanzen von Bäumen und Gehölzen jeglicher Art (§ 31 Abs. 2)",
+    "Kunststoffe und nicht verrottbare Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und verbleibenden Pflanzbehältern (ausgenommen Grabvasen, Markierungszeichen, Gießkannen) (§ 31 Abs. 10)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 31 Abs. 9)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 25 Abs. 6)",
+    "Gewerbliche Arbeiten an Sonn- und Feiertagen und am Buß- und Bettag (§ 5 Abs. 6)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen braucht die vorherige schriftliche Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 25 Abs. 3)",
+    "Antrag mit Grabmalentwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung, zweifach; auf Verlangen Zeichnungen 1:1, Modell 1:10 oder Attrappe (§ 25 Abs. 4)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 25 Abs. 5)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor Aufstellung möglich (§ 26)",
+    "Jede wesentliche Änderung der Grabgestaltung braucht vorherige schriftliche Zustimmung (§ 31 Abs. 4)",
+    "Steinmetze brauchen vorherige schriftliche Zulassung (Nachweis Handwerksrolle, Haftpflichtversicherung) und erkennen die Satzung schriftlich an (§ 5 Abs. 1–4, 8)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 27 Abs. 1)",
+    "Die Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 27 Abs. 2)",
+    "Nutzungsberechtigte sind dauerhaft für den verkehrssicheren Zustand verantwortlich; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf deren Kosten, nach erfolgloser Frist Instandsetzung oder Entfernung (§ 28 Abs. 1, 2)",
+    "Verantwortliche haften für Schäden durch umstürzende Grabmale (§ 28 Abs. 3)"
+  ],
+  "fristen": [
+    "Wahlgrabstätten innerhalb von sechs Monaten nach Erwerb, Reihengrabstätten innerhalb von sechs Monaten nach der Bestattung herrichten (§ 31 Abs. 7)",
+    "Rasenwahlgrab: Ersteinrichtung (Hügel beseitigen, Rasen einsäen) in der Regel bis spätestens zum neunten Monat nach der Beisetzung durch die Nutzungsberechtigten (§ 21 Abs. 5)",
+    "Bei Vorerwerb eines Rasenwahlgrabes muss die Grabstätte bereits mit einem Grabmal in der vorgeschriebenen Form gekennzeichnet werden (§ 21 Abs. 9)",
+    "Nach Ablauf des Nutzungsrechts alle Anlagen inkl. Grabmal, Sockel/Fundament, Grabschmuck und Pflanzen samt Wurzeln entfernen und außerhalb entsorgen, dann Mutterboden auffüllen und Rasen einsäen; sonst nach drei Monaten Abräumung ohne Entschädigung, Kosten können erhoben werden (§ 30 Abs. 2, 3)",
+    "Vor Ablauf der Nutzungszeit Grabmale nur mit schriftlicher Zustimmung entfernen (§ 30 Abs. 1)",
+    "Gewerbliche Arbeiten nur werktags 7.00–18.00 Uhr (§ 5 Abs. 6)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Einfassungen von Grabstätten oder Grabhügeln sind erlaubt (max. 6 cm stark) (§ 31 Abs. 13)",
+    "Rasenwahlgrab: Friedhofsträger kann ein Pfand für die spätere Beräumung des Grabmals erheben (§ 21 Abs. 13)",
+    "Wer ein Grab nicht mehr pflegen kann, kann die Umgestaltung in ein Wahlgrab in Rasenlage beantragen; das Grabmal bleibt bis zum Ende der Ruhefrist stehen (§ 31 Abs. 14)",
+    "Wer bei der Anmeldung keine Abteilung wählt, wird in einer Abteilung mit allgemeinen Gestaltungsvorschriften bestattet (§ 33 Abs. 3)",
+    "Bestehende Grabstätten: Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 35)"
+  ],
+  "kontakt": "Zentrale Friedhofsverwaltung des Kirchenkreises, Sachbearbeiterin Christin Kölzow, Sankt-Jürgens-Weg 23, 18273 Güstrow, Tel. 03843-4647-444, christin.koelzow@elkm.de; Ansprechpartner vor Ort über das Gemeindebüro Döbbersen (laut Friedhofsseite der Kirchengemeinde)",
+  "unsicher": [
+    "Die Kirchengemeinde Döbbersen verwaltet auch die Friedhöfe Lassahn und Neuenkirchen; diese haben eigene Satzungen (2026-05-07_Lassahn_-_FS.pdf, 2026-05-06_Neuenkirchen_-_FS.pdf) und sind hier nicht erfasst.",
+    "Laut Kirchengemeinde ist eine Teilschließung auf den Friedhöfen Döbbersen und Neuenkirchen bekanntgemacht (Dokument von 2018, nicht geprüft).",
+    "Absatznummern sind im PDF teils vom Text getrennt; Zuordnung aus der Reihenfolge erschlossen (§ 21, § 25, § 30).",
+    "§ 32 Abs. 1 verweist auf „§ 30 Absatz 4“, gemeint ist offenbar § 31 Abs. 4."
+  ]
+}

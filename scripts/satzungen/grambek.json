@@ -1,0 +1,76 @@
+{
+  "id": "grambek",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen in der Gemeinde Grambek",
+  "orte": ["Grambek"],
+  "traeger": "Gemeinde Grambek (Amt Breitenfelde)",
+  "art": "kommunal",
+  "fassung": "beschlossen am 11.12.2025, in Kraft seit 01.01.2026 (ersetzt die Satzung vom 01.05.2009)",
+  "quelle_url": "https://www.grambek.de/fileadmin/download/gemeinden/grambek/ortsrecht/finanzen/satzung_%C3%BCber_das_friedhofs-_und_bestattungswesen_in_der_gemeinde_grambek.pdf",
+  "quelle_titel": "Friedhofssatzung Gemeinde Grambek (PDF)",
+  "friedhoefe": ["Gemeindefriedhof Grambek (§ 1 Abs. 1)"],
+  "kurzfazit": "Grabmale in Grambek sollen aus Naturstein, Holz oder geschmiedetem bzw. gegossenem Metall sein, höchstens halb so breit wie die Grabstätte und nicht höher als 1,20 m. Auf Urnengräbern in Rasenlage ist nur eine bodenbündige Grabplatte von 40 × 30 cm erlaubt, auf anonymen Urnengräbern gar kein Grabmal. Jedes Grabmal braucht vorher die schriftliche Zustimmung der Gemeinde mit Zeichnung im Maßstab 1:10.",
+  "ruhezeit": "Leichen 25 Jahre, Aschen 20 Jahre (§ 10); Nutzungszeit Wahlgrab Erdbestattung 25 Jahre, Urne 20 Jahre (§ 14 Abs. 6)",
+  "grabarten": [
+    {"name": "Wahlgrabstätte (Sarg, auch Leichentuch und Reerdigung)", "regel": "ein stehendes Grabmal je Grabstätte, zusätzlich je Grabbreite ein liegendes; liegende Grabmale 0,40 × 0,30 m bis 0,60 × 0,45 m; Breite max. halbe Grabbreite, Höhe nicht über 1,20 m (§ 13 Abs. 5, § 21 Abs. 4–5)"},
+    {"name": "Urnenwahlgrabstätte", "regel": "allgemeine Grabmalvorschriften wie Wahlgrab (§ 14, § 21)"},
+    {"name": "Urnengrabstätte in Rasenlage", "regel": "100 × 100 cm, bis 2 Urnen; mindestens eine Grabplatte Pflicht, nur 0,40 × 0,30 m, bündig im Boden und mit dem Rasenmäher befahrbar; keine eigene Bepflanzung, keine Vasen oder Gegenstände (§ 15, § 20 Abs. 1, § 22 Abs. 1)"},
+    {"name": "Anonyme Urnengrabstätte", "regel": "Grabmale jeglicher Art unzulässig; Blumen nur am gekennzeichneten Gemeinschaftsort (§ 16, § 20 Abs. 2, § 22 Abs. 2)"},
+    {"name": "Baumgrabstätte (bis 8 Urnen)", "regel": "einheitliche Metallplatten mit Name, Geburts- und Sterbejahr am bzw. vor dem Baum, angebracht durch die Friedhofsverwaltung auf Kosten der Nutzungsberechtigten; keine Bepflanzung, keine abgelegten Gegenstände (§ 17, § 20 Abs. 3, § 22 Abs. 3)"}
+  ],
+  "masse": [
+    "Grabmalbreite höchstens die Hälfte der Grabstättenbreite; Höhe soll 1,20 m nicht überschreiten (§ 21 Abs. 5)",
+    "Liegende Grabmale auf Wahlgrabstätten 0,40 × 0,30 m bis 0,60 × 0,45 m (§ 21 Abs. 4)",
+    "Grabplatte auf Urnengrab in Rasenlage nur 0,40 × 0,30 m, Stärke so, dass ein Rasenmäherfahrzeug darüberfahren kann (§ 22 Abs. 1)",
+    "Mindestgrößen: Grabstätte für Erdbestattung 210 × 90 cm, Urnengrabstätte 90 × 90 cm (§ 13 Abs. 6); Urnengrab in Rasenlage 100 × 100 cm (§ 15 Abs. 2)",
+    "Mindeststärken für stehende Grabmale sind nicht geregelt"
+  ],
+  "material": [
+    "Grabmale sollen nur aus Naturstein, Holz oder geschmiedetem bzw. gegossenem Metall bestehen (§ 21 Abs. 1)",
+    "Bearbeitung, Form und Farbe müssen sich harmonisch in das Gesamtbild einfügen (§ 21 Abs. 2)",
+    "Baumgräber: einheitliche Metallplatten der Friedhofsverwaltung (§ 22 Abs. 3)"
+  ],
+  "verbote": [
+    "Geschweißte Ausführungen sind nicht statthaft (§ 21 Abs. 1)",
+    "Ausmauern von Grabstätten und Abdecken mit Steinplatten nicht gestattet (§ 19 Abs. 2)",
+    "Nur ein stehendes Grabmal je Grabstätte (§ 21 Abs. 4)",
+    "Keine Grabmale auf anonymen Urnengrabstätten (§ 22 Abs. 2)",
+    "Keine Arbeiten an Sonn- und Feiertagen und keine störenden Arbeiten nahe Bestattungsfeiern (§ 4 Abs. 2 c–d)",
+    "Gewerbetreibende dürfen keinen Abfall, Abraum oder abgelaufene Grabmale auf dem Friedhof entsorgen (§ 5 Abs. 3)",
+    "Keine Firmenschilder oder Plakate als Werbung (§ 4 Abs. 2 b)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen nur mit vorheriger schriftlicher Zustimmung der Gemeinde, zu beantragen vor Anfertigung durch die nutzungsberechtigte Person (§ 23 Abs. 1)",
+    "Antrag mit Entwurf (Grundriss, Vorder-, Rück- und Seitenansicht, Maßstab 1:10) mit Material, Bearbeitung und Fundamentierung sowie Wortlaut und Platzierung von Inschrift, Ornamenten und Symbolen; dazu 2–3 Buchstaben in Originalgröße 1:1 (§ 23 Abs. 2)",
+    "Zustimmung erlischt, wenn nicht binnen eines Jahres errichtet (§ 23 Abs. 3)",
+    "Steinmetze brauchen eine vorherige Zulassung der Gemeinde (Nachweis der fachlichen Qualifikation und Zuverlässigkeit) (§ 5 Abs. 1)",
+    "Ausnahmen für besondere künstlerische oder handwerkliche Ausführung möglich (§ 21 Abs. 6)"
+  ],
+  "standsicherheit": [
+    "Grabmale nach den allgemein anerkannten Regeln des Handwerks ihrer Größe entsprechend fundamentieren und befestigen, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 21 Abs. 3); eine bestimmte Richtlinie (TA Grabmal/BIV) wird nicht genannt",
+    "Grabmale dauerhaft in gutem, lesbarem und verkehrssicherem Zustand halten; verantwortlich und haftbar sind die Nutzungsberechtigten (§ 24 Abs. 1, § 27 Abs. 1)",
+    "Mängel unverzüglich durch Fachkundige beheben lassen, sonst Instandsetzung oder Beseitigung durch die Gemeinde auf deren Kosten (§ 24 Abs. 2)",
+    "Bei unmittelbarer Gefahr darf die Gemeinde das Grabmal ohne Vorwarnung umlegen (§ 24 Abs. 3)",
+    "Gewerbetreibende haften für Schäden, die sie bei ihrer Tätigkeit verursachen (§ 5 Abs. 2)"
+  ],
+  "fristen": [
+    "Zustimmung gilt ein Jahr (§ 23 Abs. 3)",
+    "Bei der Anlage der Grabstätte das Nachsacken des Grabaushubs beachten (§ 25 Abs. 1)",
+    "Zu provisorischen Grabzeichen und zur Frist für das Entfernen von Grabmalen nach Ablauf des Nutzungsrechts keine Regelung",
+    "Bei Vernachlässigung kann nach Aufforderung bzw. dreimonatigem Hinweis auf der Grabstätte das Nutzungsrecht entzogen werden; Grabmal und Anlagen fallen dann entschädigungslos an die Gemeinde (§ 26)"
+  ],
+  "kinderarbeit": "keine eigene Regelung in der Satzung; schleswig-holsteinisches Landesrecht wird dazu nicht genannt",
+  "besonderheiten": [
+    "Bewuchs darf die Inschrift des Grabmals nicht verdecken (§ 25 Abs. 6)",
+    "Gestaltung muss sich dem Gesamtcharakter des Friedhofs und der Umgebung anpassen (§ 18, § 25 Abs. 2)",
+    "Pflanzen dürfen Nachbargräber und Wege nicht beeinträchtigen; Gemeinde kann wuchernde Gehölze auf Kosten der Nutzungsberechtigten zurückschneiden (§ 19 Abs. 1, § 25 Abs. 4–5)",
+    "Ergänzend gilt ein Gestaltungsplan für den Friedhof (§ 13 Abs. 6)",
+    "Auswärtige dürfen laut Gemeindebeschluss anonym bestattet werden (§ 1 Abs. 6)"
+  ],
+  "kontakt": "Amt Breitenfelde als Friedhofsverwaltung für die Gemeinde Grambek (§ 1 Abs. 3); Adresse/Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Das PDF ist ein Scan; Text wurde per Texterkennung und Sichtprüfung aller Seitenbilder gelesen",
+    "§ 13 Abs. 6: Für anonyme Urnengrabstätten und Baumgrabstätten sind in der Tabelle keine Maße angegeben",
+    "Der in § 13 Abs. 6 genannte Gestaltungsplan liegt nicht vor",
+    "Der Dateipfad liegt im Ordner 'finanzen' der Gemeindeseite; inhaltlich ist es die Friedhofssatzung"
+  ]
+}

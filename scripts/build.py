@@ -128,7 +128,7 @@ LOCAL_BUSINESS = {
 }
 
 
-def page(filename, title, description, body, current=None, head_extra=""):
+def page(filename, title, description, body, current=None, head_extra="", prefix=""):
     nav_html = []
     for href, label in NAV:
         cur = ' aria-current="page"' if current == href or (href == "ratgeber.html" and current in RATGEBER_PAGES) else ""
@@ -213,7 +213,12 @@ def page(filename, title, description, body, current=None, head_extra=""):
 </body>
 </html>
 """
-    (ROOT / filename).write_text(html, encoding="utf-8")
+    if prefix:
+        # relative Pfade für Unterordner anpassen
+        html = re.sub(r'((?:href|src)=")(?!https?:|mailto:|tel:|#|/|data:)', r"\1" + prefix, html)
+    out = ROOT / filename
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html, encoding="utf-8")
     return filename
 
 
@@ -726,11 +731,13 @@ SATZUNGEN = [
             ("Städtische Satzung (Zühr)", "https://www.amt-wittenburg.de/output/download.php?fid=3627.2435.1.PDF"),
             ("Friedhofsordnung Körchow, Camin, Marsow", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Koerchow-Camin/20240813_Friedhofsordnung_fuer_die__Friedhoefe_Koerchow__Camin_und_Marsow.pdf"),
             ("Übersicht Kirchen & Friedhöfe im Amt", "https://www.amt-wittenburg.de/Familie-Soziales/Kirchen-und-Friedh%C3%B6fe/")]),
-        ("Wittendörp", "ca. 5 km", "Gemeindliche Satzung; Döbbersen, Lassahn und Neuenkirchen sind kirchlich.", [
+        ("Wittendörp", "ca. 5 km", "Gemeindliche Satzung für Dodow, Tessin und Pogreß; der Friedhof Döbbersen ist kirchlich.", [
             ("Ortsrecht der Gemeinde", "https://www.amt-wittenburg.de/Verwaltung-Aktuelles/Ortsrecht-Wittend%C3%B6rp/"),
             ("Kirchengemeinde Döbbersen", f"{KM}/doebbersen/friedhof")]),
-        ("Zarrentin am Schaalsee und Amt Zarrentin", "ca. 8 km", "Stadtfriedhof: Ev.-Luth. Kirchengemeinde. Gemeindliche Satzungen u. a. für Gallin und Vellahn.", [
+        ("Zarrentin am Schaalsee und Amt Zarrentin", "ca. 8 km", "Stadtfriedhof: Ev.-Luth. Kirchengemeinde; Lassahn und Neuenkirchen mit eigenen kirchlichen Satzungen. Gemeindliche Satzungen für Gallin und Vellahn.", [
             ("Friedhofsordnung Zarrentin", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Zarrentin/251118_Friedhofsordnung_Zarrentin.pdf"),
+            ("Friedhofssatzung Lassahn", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Lassahn/2026-05-07_Lassahn_-_FS.pdf"),
+            ("Friedhofssatzung Neuenkirchen", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Neuenkirchen/2026-05-06_Neuenkirchen_-_FS.pdf"),
             ("Satzungen des Amtes", "https://www.amt-zarrentin.de/portal/seiten/satzungen-900000012-29120.html")]),
         ("Hagenow", "ca. 10 km", "Der Friedhof wird von der Kirchengemeinde betrieben; eine Friedhofsordnung ist nicht online veröffentlicht.", [
             ("Kirchengemeinde Hagenow", f"{KM}/hagenow/friedhof")]),
@@ -784,8 +791,8 @@ ORTE = json.loads((ROOT / "scripts" / "orte.json").read_text(encoding="utf-8"))
 ENTRY_ORTE = {
     "Wittenburg": [("Wittenburg", None), ("Zühr", "Städtische Satzung (Zühr)"), ("Körchow", "Friedhofsordnung Körchow, Camin, Marsow"),
                    ("Camin", "Friedhofsordnung Körchow, Camin, Marsow"), ("Marsow", "Friedhofsordnung Körchow, Camin, Marsow")],
-    "Wittendörp": [("Wittendörp", None), ("Döbbersen", "Kirchengemeinde Döbbersen"), ("Lassahn", "Kirchengemeinde Döbbersen")],
-    "Zarrentin am Schaalsee und Amt Zarrentin": [("Zarrentin am Schaalsee", "Friedhofsordnung Zarrentin"), ("Gallin", "Satzungen des Amtes"), ("Vellahn", "Satzungen des Amtes")],
+    "Wittendörp": [("Wittendörp", "Ortsrecht der Gemeinde"), ("Döbbersen", "Kirchengemeinde Döbbersen")],
+    "Zarrentin am Schaalsee und Amt Zarrentin": [("Zarrentin am Schaalsee", "Friedhofsordnung Zarrentin"), ("Lassahn", "Friedhofssatzung Lassahn"), ("Neuenkirchen", "Friedhofssatzung Neuenkirchen"), ("Gallin", "Satzungen des Amtes"), ("Vellahn", "Satzungen des Amtes")],
     "Hagenow": [("Hagenow", None)],
     "Amt Hagenow-Land": [("Alt Zachun", "Alt Zachun"), ("Bresegard bei Picher", "Bresegard b. Picher"), ("Groß Krams", "Groß Krams"), ("Hoort", "Hoort"),
                          ("Hülseburg", "Hülseburg"), ("Kirch Jesar", "Kirch Jesar"), ("Kuhstorf", "Kuhstorf"), ("Moraas", "Moraas"),
@@ -802,7 +809,7 @@ ENTRY_ORTE = {
     "Mölln": [("Mölln", None)],
     "Güster (Amt Büchen)": [("Güster", None)],
     "Grambek (Amt Breitenfelde)": [("Grambek", None)],
-    "Amt Lauenburgische Seen": [("Gudow", None)],
+    "Amt Lauenburgische Seen": [("Seedorf (Lauenburg)", None), ("Sterley", None), ("Salem", None)],
 }
 
 
@@ -831,11 +838,33 @@ def build_satzungen():
             else:
                 km = _km
             eid = "ort-" + slug(name)
-            search = " ".join([name, note] + [o for o, _ in orte] + [t for t, _ in links]).lower()
+            extra = []
+            for o, _ in orte:
+                sid = ORT_SATZUNG.get(o)
+                if sid in SATZ:
+                    extra += SATZ[sid].get("orte", []) + SATZ[sid].get("friedhoefe", [])
+            search = " ".join([name, note] + [o for o, _ in orte] + [t for t, _ in links] + extra).lower()
             for o, lbl in orte:
                 if ORTE.get(o):
                     ll = [(t, u) for t, u in links if lbl is None or t == lbl]
-                    MARKERS.append({"n": o, "e": name, "id": eid, "p": ORTE[o], "l": ll})
+                    sid = ORT_SATZUNG.get(o)
+                    MARKERS.append({"n": o, "e": name, "id": eid, "p": ORTE[o], "l": ll,
+                                    "s": f"friedhofssatzungen/{sid}.html" if sid in SATZ else ""})
+            sids = []
+            for o, _ in orte:
+                sid = ORT_SATZUNG.get(o)
+                if sid and sid in SATZ and sid not in sids:
+                    sids.append(sid)
+            summ = ""
+            if sids:
+                if len(sids) == 1:
+                    summ = f'<a class="summ" href="friedhofssatzungen/{sids[0]}.html">Zusammenfassung lesen →</a>'
+                else:
+                    def short(x):
+                        names = [o for o, _ in orte if ORT_SATZUNG.get(o) == x]
+                        return "/".join(n.replace(" am Schaalsee", "") for n in names) or x
+                    summ = '<span class="summ-label">Zusammenfassungen:</span> ' + " ".join(
+                        f'<a class="summ" href="friedhofssatzungen/{x}.html">{esc(short(x))}</a>' for x in sids)
             if links:
                 lk = "<br>".join(f'<a class="dl" href="{u}" target="_blank" rel="noopener">{t} ↗</a>' for t, u in links)
             else:
@@ -843,7 +872,7 @@ def build_satzungen():
             many = len(links) > 4
             if many:
                 lk = " ".join(f'<a class="dl" href="{u}" target="_blank" rel="noopener">{t}</a>' for t, u in links)
-            lis.append(f"""<li id="{eid}" data-search="{esc(search)}"{' class="many"' if many else ""}><div class="ort"><strong>{name} <span class="km">· {km}</span></strong>{f"<small>{note}</small>" if note else ""}</div><div class="links">{lk}</div></li>""")
+            lis.append(f"""<li id="{eid}" data-search="{esc(search)}"{' class="many"' if many else ""}><div class="ort"><strong>{name} <span class="km">· {km}</span></strong>{f"<small>{note}</small>" if note else ""}{f'<div class="summ-row">{summ}</div>' if summ else ""}</div><div class="links">{lk}</div></li>""")
         regions.append(f"""<div class="region" data-region><h2>{region}</h2><ul class="satzungen">{"".join(lis)}</ul></div>""")
     body = f"""<section class="page-head">
   <div class="wrap">
@@ -925,6 +954,136 @@ def ratgeber_nav(active):
     ) + "</nav>"
 
 
+SATZ_DIR = ROOT / "scripts" / "satzungen"
+
+
+def load_satzungen():
+    data = {}
+    if SATZ_DIR.exists():
+        for f in sorted(SATZ_DIR.glob("*.json")):
+            d = json.loads(f.read_text(encoding="utf-8"))
+            data[d["id"]] = d
+    return data
+
+
+SATZ = {}
+
+# Welche Satzung gehört zu welchem Kartenpunkt / Listeneintrag
+ORT_SATZUNG = {
+    "Wittenburg": "wittenburg-st-bartholomaeus", "Zühr": "wittenburg-zuehr", "Körchow": "koerchow-camin-marsow",
+    "Camin": "koerchow-camin-marsow", "Marsow": "koerchow-camin-marsow", "Wittendörp": "wittendoerp",
+    "Döbbersen": "doebbersen", "Lassahn": "lassahn", "Neuenkirchen": "neuenkirchen", "Zarrentin am Schaalsee": "zarrentin", "Gallin": "gallin",
+    "Vellahn": "vellahn", "Hagenow": "hagenow", "Alt Zachun": "alt-zachun", "Bresegard bei Picher": "bresegard-bei-picher",
+    "Groß Krams": "gross-krams", "Hoort": "hoort", "Hülseburg": "huelseburg", "Kirch Jesar": "kirch-jesar",
+    "Kuhstorf": "kuhstorf", "Moraas": "moraas", "Pritzier": "pritzier", "Strohkirchen": "strohkirchen", "Warlitz": "warlitz",
+    "Holthusen": "holthusen", "Brahlstorf": "brahlstorf", "Dersenow": "dersenow", "Schwanheide": "schwanheide",
+    "Lübtheen": "luebtheen", "Gößlow": "goesslow", "Alt Krenzlin": "alt-krenzlin", "Göhlen": "goehlen", "Lüblow": "lueblow",
+    "Rastow": "rastow", "Sülstorf": "suelstorf", "Warlow": "warlow", "Boizenburg/Elbe": "boizenburg", "Schwerin": "schwerin",
+    "Lützow": "luetzow", "Gadebusch": "gadebusch", "Holdorf": "holdorf", "Mölln": "moelln", "Güster": "guester",
+    "Grambek": "grambek", "Seedorf (Lauenburg)": "lauenburgische-seen", "Sterley": "lauenburgische-seen", "Salem": "lauenburgische-seen",
+}
+
+SATZ_SECTIONS = [
+    ("masse", "Maße & Stärke"),
+    ("material", "Material & Bearbeitung"),
+    ("verbote", "Nicht erlaubt"),
+    ("genehmigung", "Genehmigung"),
+    ("standsicherheit", "Standsicherheit"),
+    ("fristen", "Fristen"),
+    ("besonderheiten", "Weitere Regeln zur Grabgestaltung"),
+]
+
+
+def lst(items):
+    items = [i for i in (items or []) if i and str(i).strip()]
+    if not items:
+        return '<p class="muted">In dieser Satzung nicht ausdrücklich geregelt.</p>'
+    return "<ul>" + "".join(f"<li>{esc(str(i))}</li>" for i in items) + "</ul>"
+
+
+def build_satzung_page(d):
+    sid = d["id"]
+    keine = d.get("art") == "keine_online"
+    art = {"kommunal": "Kommunaler Friedhof", "kirchlich": "Kirchlicher Friedhof", "keine_online": "Keine Satzung online"}.get(d.get("art"), "")
+    orte = d.get("orte") or []
+    chips = "".join(f"<span>{esc(o)}</span>" for o in orte)
+    meta = [("Friedhofsträger", d.get("traeger")), ("Fassung", d.get("fassung"))]
+    if d.get("friedhoefe"):
+        meta.append(("Friedhöfe", ", ".join(d["friedhoefe"])))
+    meta_html = "".join(f"<div><dt>{k}</dt><dd>{esc(str(v))}</dd></div>" for k, v in meta if v and not (keine and k == "Fassung"))
+    src = d.get("quelle_url")
+    src_btn = f'<a class="btn btn-ghost" href="{esc(src)}" target="_blank" rel="noopener">{"Zur Seite des Trägers" if keine else "Original-Satzung öffnen"} ↗</a>' if src else ""
+
+    if keine:
+        content = f"""<div class="satz-grid">
+  <div class="satz-main">
+    <div class="callout"><h3>Satzung liegt uns nicht vor</h3><p>{esc(d.get("kurzfazit") or "")}</p>
+    <p>Wir kennen die Gegebenheiten vor Ort und fragen die geltenden Vorgaben gern für Sie bei der Friedhofsverwaltung nach.</p></div>
+  </div>
+  {satz_aside(d)}
+</div>"""
+    else:
+        cards = []
+        cards.append(f"""<section class="satz-card satz-wide"><h2>Ruhezeit</h2><p>{esc(d.get("ruhezeit") or "nicht geregelt")}</p></section>""")
+        ga = d.get("grabarten") or []
+        if ga:
+            rows = "".join(f"<li><strong>{esc(g.get('name',''))}</strong><span>{esc(g.get('regel',''))}</span></li>" for g in ga)
+            cards.append(f"""<section class="satz-card satz-wide"><h2>Grabarten mit eigenen Regeln</h2><ul class="grabarten">{rows}</ul></section>""")
+        for key, label in SATZ_SECTIONS:
+            cards.append(f"""<section class="satz-card"><h2>{label}</h2>{lst(d.get(key))}</section>""")
+        cards.append(f"""<section class="satz-card"><h2>Natursteine ohne Kinderarbeit</h2><p>{esc(d.get("kinderarbeit") or "nicht geregelt")}</p></section>""")
+        content = f"""<div class="satz-grid">
+  <div class="satz-main">
+    <div class="callout satz-fazit"><h3>Das Wichtigste in Kürze</h3><p>{esc(d.get("kurzfazit") or "")}</p></div>
+    <div class="satz-cards">{"".join(cards)}</div>
+  </div>
+  {satz_aside(d)}
+</div>"""
+
+    body = f"""<section class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Start</a> / <a href="ratgeber.html">Ratgeber</a> / <a href="friedhofssatzungen.html">Friedhofssatzungen</a> / {esc(", ".join(orte[:3]))}</div>
+    <p class="eyebrow">{art}</p>
+    <h1>{esc(d.get("titel") or "")}</h1>
+    <div class="ort-chips">{chips}</div>
+    <dl class="satz-meta">{meta_html}</dl>
+    <div class="btn-row">{src_btn}<a class="btn" href="kontakt.html">Beratung zu diesem Friedhof</a></div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    {content}
+    <p class="satz-disclaimer">Zusammenfassung ohne Gewähr, erstellt nach der verlinkten Fassung (geprüft im November 2026). Maßgeblich ist allein die aktuelle Satzung bzw. Friedhofsordnung des Friedhofsträgers. Die Paragrafen-Angaben beziehen sich auf das verlinkte Original.</p>
+    <p><a href="friedhofssatzungen.html">← Alle Friedhofssatzungen in der Region</a></p>
+  </div>
+</section>
+{cta("Wir übernehmen den Antrag", "Wir kennen die Vorgaben dieses Friedhofs und stimmen Ihr Grabmal mit der Friedhofsverwaltung ab.")}"""
+    title = d.get("titel") or sid
+    desc = (f"{title}: Zusammenfassung der Regeln für Grabmale – Maße, Material, Genehmigung, Fristen. Für " + ", ".join(orte[:4]) + ".") if not keine else f"Friedhof {', '.join(orte)}: Träger, Kontakt und Hinweise für Grabmale."
+    return page(f"friedhofssatzungen/{sid}.html", title, desc, body, "friedhofssatzungen.html", prefix="../")
+
+
+def satz_aside(d):
+    kontakt = d.get("kontakt") or ""
+    unsicher = d.get("unsicher") or []
+    note = ""
+    if unsicher:
+        note = '<div class="satz-note"><h4>Hinweis</h4><p>Einzelne Angaben konnten im Original nicht eindeutig gelesen oder geprüft werden. Bitte im Zweifel die Original-Satzung prüfen oder uns fragen.</p></div>'
+    return f"""<aside class="satz-aside">
+    <div class="satz-box">
+      <h4>Friedhofsverwaltung</h4>
+      <p>{esc(kontakt) if kontakt else "Siehe Original-Satzung."}</p>
+    </div>
+    <div class="satz-box satz-box-dark">
+      <h4>Grabmal für diesen Friedhof?</h4>
+      <p>Wir beraten Sie zu den Vorgaben, erstellen den Entwurf und stellen den Genehmigungsantrag für Sie.</p>
+      <a class="btn" href="kontakt.html">Termin anfragen</a>
+      <p style="margin-top:14px"><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></p>
+    </div>
+    {note}
+  </aside>"""
+
+
 def build_sitemap(files):
     urls = []
     for f in files:
@@ -938,8 +1097,10 @@ def build_sitemap(files):
 
 
 if __name__ == "__main__":
+    SATZ.update(load_satzungen())
     files = [build_index(), build_overview()]
     files += [build_category(c) for c in CATEGORIES]
     files += [build_references(), build_faq(), build_satzungen(), build_stones(), build_contact(), build_imprint(), build_privacy()]
+    files += [build_satzung_page(d) for d in SATZ.values()]
     build_sitemap(files)
     print("Erstellt:", ", ".join(files), "+ sitemap.xml")

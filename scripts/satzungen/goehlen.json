@@ -1,0 +1,87 @@
+{
+  "id": "goehlen",
+  "titel": "Satzung der Gemeinde Göhlen über die Benutzung des örtlichen Friedhofes in Leussow (Friedhofsbenutzungssatzung)",
+  "orte": [
+    "Göhlen",
+    "Leussow"
+  ],
+  "traeger": "Gemeinde Göhlen (Amt Ludwigslust-Land)",
+  "art": "kommunal",
+  "fassung": "vom 15.04.2021, geändert durch 1. Änderungssatzung vom 26.01.2022 und 2. Änderungssatzung vom 26.07.2023 (Lesefassung)",
+  "quelle_url": "https://daten.verwaltungsportal.de/dateien/legalframework/3/0/0/1/Fried-B-LEU_2021_2AE.pdf",
+  "quelle_titel": "Amt Ludwigslust-Land: Friedhofs-Benutzungssatzung für den Friedhof Leussow inkl. 2. Änderung (PDF)",
+  "friedhoefe": [
+    "Friedhof Leussow in der Gemeinde Göhlen (§ 1)"
+  ],
+  "kurzfazit": "Auf Wahlgräbern gelten außer der Mindeststärke von 12 cm und der Grabgröße keine Gestaltungsvorgaben. Auf Rasenreihengräbern (Sarg) und Urnengräbern mit Grabplatte legt ein Steinmetz im Auftrag der Friedhofsverwaltung eine ebenerdige Platte (60 × 60 cm bzw. 30 × 30 cm) mit Name und Lebensdaten. Grabmale beantragt der Steinmetz vorab bei der Friedhofsverwaltung.",
+  "ruhezeit": "Erdbestattung und Urnen in Einzel-, Doppel- oder Wahlgrabstätten 25 Jahre; Urnen in anonymen Grabstätten und Urnengrabstätten mit Grabplatte 20 Jahre (§ 8)",
+  "grabarten": [
+    {
+      "name": "Einzelgrabstätte",
+      "regel": "ohne Gestaltungsvorschriften; Außenmaß 2,80 × 1,40 m (§ 12, § 20)"
+    },
+    {
+      "name": "Doppelgrabstätte",
+      "regel": "ohne Gestaltungsvorschriften; Außenmaß 2,80 × 2,80 m (§ 13, § 20)"
+    },
+    {
+      "name": "Wahlgrabstätte 3-fach / 4-fach",
+      "regel": "ohne Gestaltungsvorschriften; Außenmaß 2,80 × 4,20 m bzw. 2,80 × 5,60 m (§ 14, § 20)"
+    },
+    {
+      "name": "Rasenreihengrabstätte für Särge mit Grabplatte",
+      "regel": "Gemeinschaftsanlage, kein Nutzungsrecht; Steinmetz verlegt im Auftrag der Friedhofsverwaltung ebenerdig eine Grabplatte 0,60 × 0,60 m mit Vor-/Zuname, Geburts- und Sterbejahr; Grab 2,80 × 1,40 m; Pflege nur durch den Friedhofsträger (§ 15, § 18 Abs. 10, § 20)"
+    },
+    {
+      "name": "Urnengrabstätte mit Grabplatte in Urnengemeinschaftsgrabanlage",
+      "regel": "1 Urne, kein Nutzungsrecht; Steinmetz verlegt im Auftrag der Friedhofsverwaltung ebenerdig eine Grabplatte 0,30 × 0,30 m mit Vor-/Zuname, Geburts- und Sterbejahr; Grab 0,50 × 0,50 m (§ 16 Abs. 1, 2, 4, § 20)"
+    },
+    {
+      "name": "Anonyme Urnengrabstätte",
+      "regel": "Rasenfläche, kein Grabmal mit Namen; 0,50 × 0,50 m (§ 16 Abs. 3, § 20)"
+    }
+  ],
+  "masse": [
+    "Grabmale: Mindeststärke 12 cm (§ 19 Abs. 3)",
+    "Grabmale müssen die Grabgrößen nach § 20 einhalten (§ 19 Abs. 2)",
+    "Grabplatte Rasenreihengrab 0,60 × 0,60 m (§ 15); Grabplatte Urnengrab mit Grabplatte 0,30 × 0,30 m (§ 16 Abs. 4)"
+  ],
+  "material": [
+    "Grabplatten in den Gemeinschaftsanlagen: Inschrift Vor- und Zuname sowie Geburts- und Sterbejahr (§ 15, § 16 Abs. 4)"
+  ],
+  "verbote": [
+    "Gewerbliche Arbeiten außerhalb der üblichen Arbeitszeiten, an Sonn- und Feiertagen sowie während Trauerfeiern/Bestattungen (§ 5 Abs. 2 f, § 6 Abs. 5)",
+    "Pflanzen, die andere Gräber, Anlagen oder Wege beeinträchtigen (§ 18 Abs. 7)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 18 Abs. 8)",
+    "Ablage von Kränzen/Blumen an Gemeinschaftsanlagen nur auf den ausgewiesenen Flächen (§ 18 Abs. 10)",
+    "Registrierte wertvolle Grabmale nicht ohne Zustimmung entfernen (§ 19 Abs. 4)"
+  ],
+  "genehmigung": [
+    "Grabmale und andere bauliche Anlagen dürfen nur Steinmetze, Steinbildhauer, Holzbildhauer und Kunstschmiede herstellen und aufstellen, unabhängig von Wohnort/Betriebssitz (§ 6 Abs. 2)",
+    "Genehmigung vor Beginn der Arbeiten durch den Auftragnehmer des Nutzungsberechtigten (z. B. Steinmetz) bei der Friedhofsverwaltung beantragen (§ 6 Abs. 3)",
+    "Friedhofsverwaltung entscheidet innerhalb von 14 Tagen, ggf. mit Änderungsauflagen (§ 6 Abs. 3)",
+    "Ohne Genehmigung aufgestellte Grabmale können nach befristeter Aufforderung kostenpflichtig entfernt werden (§ 6 Abs. 3)",
+    "Welche Unterlagen beizufügen sind, regelt die Satzung nicht"
+  ],
+  "standsicherheit": [
+    "Grabmale handwerklich einwandfrei und statisch unbedenklich gründen und aufstellen; Nutzungsberechtigter haftet für Schäden durch mangelhafte Standfestigkeit (§ 19 Abs. 1)",
+    "Fundamentierung und Befestigung nach der Richtlinie des Bundesinnungsverbands des Steinmetz-, Stein- und Holzbildhauerhandwerks (BIV), dauerhaft standsicher, auch beim Öffnen benachbarter Gräber (§ 21 Abs. 1)",
+    "Jährliche Standsicherheitsprüfung durch die Friedhofsverwaltung nach TA Grabmal (§ 22 Abs. 2)",
+    "Grabmale dauernd verkehrssicher halten; bei Gefahr Sicherung (z. B. Umlegen) auf Kosten des Nutzungsberechtigten (§ 21 Abs. 2; § 22 Abs. 1, 3–5)"
+  ],
+  "fristen": [
+    "Grabstätte spätestens ein halbes Jahr nach der Bestattung gestalten (§ 18 Abs. 5)",
+    "Kränze spätestens nach 8 Wochen abräumen (§ 18 Abs. 4)",
+    "Bei Ende des Nutzungsrechts Grabstätte beräumen; bei Entziehung Grabmal und Anlagen binnen 3 Monaten entfernen (§ 17 Abs. 6, 7)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Grabstätte muss in ihrer Größe erkennbar sein, z. B. durch Umrahmung oder Umpflanzung (§ 18 Abs. 1)",
+    "Gestaltung und Pflege der Gemeinschaftsgrabanlagen nur durch den Friedhofsträger (§ 18 Abs. 10)"
+  ],
+  "kontakt": "Friedhofsverwaltung im Amt Ludwigslust-Land (§ 1); Telefon (03874) 4269-28 laut Friedhofsseite des Amtes",
+  "unsicher": [
+    "Text aus der Lesefassung des Amtes (nicht amtlich); Absatznummern wurden bei der Textextraktion teils verschoben und aus der Reihenfolge erschlossen",
+    "Das Amtsverzeichnis führt auch einen 'Friedhof in Göhlen' (mit Trauerhalle und anonymem Urnenfeld); dafür wurde keine eigene Benutzungssatzung gefunden. Der Geltungsbereich dieser Satzung nennt nur Leussow – ob für den Friedhof Göhlen eine andere Regelung gilt, ist offen"
+  ]
+}

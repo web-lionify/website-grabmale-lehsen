@@ -1,0 +1,88 @@
+{
+  "id": "goesslow",
+  "titel": "Friedhofssatzung der Stadt Lübtheen (Friedhof Ortsteil Gößlow)",
+  "orte": [
+    "Gößlow",
+    "Lübtheen"
+  ],
+  "traeger": "Stadt Lübtheen",
+  "art": "kommunal",
+  "fassung": "beschlossen am 21.09.2006 (ausgefertigt 11.12.2006), geändert durch Erste Änderungssatzung (beschlossen 17.02.2015, ausgefertigt 13.07.2015)",
+  "quelle_url": "https://www.luebtheen.de/portal/dokumenteplus-900000176-28870.html?ordner=1",
+  "quelle_titel": "Stadt Lübtheen – Dokumente Friedhof Gößlow (Satzung 2006 und 1. Änderung 2015)",
+  "friedhoefe": [
+    "Kommunaler Friedhof in Lübtheen, Ortsteil Gößlow (§ 1 Abs. 1 i. d. F. der 1. Änderung)"
+  ],
+  "kurzfazit": "Die Satzung enthält nur allgemeine Grabmalregeln: Grabmale müssen sich in das Gesamtbild einfügen und brauchen vorher eine Genehmigung der Friedhofsverwaltung. Zulässig sind stehende und liegende Steine, Pultsteine sowie Kreuze aus Stein, Holz oder Metall; auf Urnengräbern nur liegende Grabmale oder Pultsteine. Konkrete Maße für Grabmale nennt die Satzung nicht – weitere Gestaltungsvorschriften sind bei der Friedhofsverwaltung zu erfragen (§ 30).",
+  "ruhezeit": "Leichen und Aschen 20 Jahre (§ 10 i. d. F. der 1. Änderung 2015); Verlängerung des Nutzungsrechts auf Antrag möglich",
+  "grabarten": [
+    {
+      "name": "Reihengrab (Erdbestattung)",
+      "regel": "für die Dauer der Ruhefrist, Belegung der Reihe nach; Maße 3,00 m lang, 1,50 m breit, Abstand 0,50 m; nicht in Wahlgrab umwandelbar (§§ 15, 18)"
+    },
+    {
+      "name": "Wahlgrab (Einzel-, Doppel-, Familiengrab)",
+      "regel": "Nutzungsrecht auf Antrag für längere Dauer; Familiengrab mindestens dreistellig; je Grabfläche zusätzlich eine Urne zulässig (§ 20 Abs. 2, § 27 Abs. 2)"
+    },
+    {
+      "name": "Urnengrab",
+      "regel": "Maße 1,00 × 1,00 m, höchstens 2 Urnen einer Familie; nur liegende Grabmale oder Pultsteine (§ 26 Abs. 2, § 27 Abs. 1, § 36 Abs. 2)"
+    },
+    {
+      "name": "Urnenreihengrab mit Stein und Gravur",
+      "regel": "durch 1. Änderung 2015 eingeführt (§ 20 Abs. 2 lit. d); Gestaltungsregeln dazu enthält die Satzung nicht"
+    },
+    {
+      "name": "Urnengrab auf anonymer Grabstätte",
+      "regel": "durch 1. Änderung 2015 eingeführt (§ 20 Abs. 2 lit. e)"
+    }
+  ],
+  "masse": [
+    "Liegende Grabmale aus Stein höchstens 10 Grad geneigt (§ 36 Abs. 1 lit. c)",
+    "Pultsteine mit etwa 20 Grad geneigter Oberfläche (§ 36 Abs. 1 lit. d)",
+    "Grabhügel nicht über 20 cm hoch (§ 39 Abs. 1)",
+    "Keine Höchst- oder Mindestmaße bzw. Mindeststärken für Grabmale geregelt"
+  ],
+  "material": [
+    "Zulässig: stehende Grabmale aus Stein, Grabkreuze aus Stein, Holz oder Metall, liegende Grabmale aus Stein, Pultsteine (§ 36 Abs. 1)",
+    "Form und Werkstoff müssen sich in das Gesamtbild des Friedhofs einordnen; Pietät und Würde wahren (§ 31 Abs. 2)",
+    "Besondere Gestaltungsvorschriften für Grabmale und Grabanlagen sind bei der Friedhofsverwaltung zu erfragen (§ 30)"
+  ],
+  "verbote": [
+    "Errichtung von Gruften unzulässig (§ 31 Abs. 3)",
+    "Inschriften, Symbole und Darstellungen, die die Würde der Toten oder die Gefühle der Besucher verletzen, unzulässig (§ 37)",
+    "Auf Urnengräbern keine stehenden Grabmale – nur liegende Grabmale oder Pultsteine (§ 36 Abs. 2)",
+    "Ruhebänke stellt nur die Friedhofsverwaltung auf (§ 41)"
+  ],
+  "genehmigung": [
+    "Errichtung, Veränderung oder Beseitigung von Grabmalen, Einfassungen und sonstigen baulichen Anlagen bedarf der Genehmigung der Friedhofsverwaltung, auch wenn nur vorübergehend (§ 32 Abs. 1)",
+    "Genehmigung kann bei Verstößen gegen die Grabmalvorschrift versagt werden; Ausführung muss den Gestaltungsvorschriften entsprechen (§ 32 Abs. 2)",
+    "Steinmetze und Bildhauer brauchen eine vorherige Zulassung durch die Friedhofsverwaltung (§ 6 Abs. 1-2)",
+    "Arbeiten nur werktags in den Öffnungszeiten, Ende spätestens 19.00 Uhr, samstags und vor Feiertagen 13.00 Uhr (§ 6 Abs. 3)"
+  ],
+  "standsicherheit": [
+    "Grabmale und Steineinfassungen nach den allgemein anerkannten Regeln des Handwerks fundamentieren und dauerhaft standsicher befestigen, auch beim Öffnen von Nachbargräbern (§ 33)",
+    "Fundamente dürfen nicht über die Grabstätte hinausgehen (§ 33)",
+    "Ausführende Handwerker sind für die Einhaltung der Satzung mitverantwortlich (§ 43 Abs. 2)",
+    "Keine bestimmte Richtlinie (TA Grabmal o. ä.) und keine regelmäßige Prüfung genannt"
+  ],
+  "fristen": [
+    "Vorübergehende Grabmale müssen nach 5 Jahren durch ordentliche Grabmale ersetzt werden (§ 36 Abs. 3)",
+    "Bei Beisetzung entfernte Grabmale der Nachbarstellen spätestens binnen 4 Wochen wieder aufstellen (§ 34 Abs. 2)",
+    "Gräber spätestens 6 Monate nach der Beisetzung endgültig herrichten (§ 38 Abs. 2)",
+    "Nach Ablauf der Ruhefrist bzw. Nutzungszeit räumen die Nutzungsberechtigten die Grabanlage ab; Übertragung an die Friedhofsverwaltung auf eigene Kosten möglich (§ 35)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Einfassungen sind genehmigungspflichtig (§ 32 Abs. 1)",
+    "Bepflanzung nur innerhalb des Grabbeetes, nicht seitlich über die Grabstätte hinaus (§ 40 Abs. 1)",
+    "Wegeanteile bis zur Wegmitte sind zu pflegen (§ 39 Abs. 2)"
+  ],
+  "kontakt": "Stadt Lübtheen als Friedhofsverwaltung (§ 1 Abs. 3); keine Adresse in der Satzung",
+  "unsicher": [
+    "Auf der Seite der Stadt ist als 'Friedhofssatzung (2015)' tatsächlich die Gebührensatzung verlinkt; Grundlage ist daher die Satzung von 2006 plus 1. Änderung 2015.",
+    "Die Gestaltungsvorschriften nach § 30 sind nicht veröffentlicht und konnten nicht geprüft werden.",
+    "Laut Gebührensatzung 2015 übernimmt die Stadt beim Urnenreihengrab mit Stein Beschriftung und Verlegung des Grabsteins (nicht in der Friedhofssatzung selbst geregelt).",
+    "Die frühere Sonderregel von 30 Jahren Ruhe-/Nutzungszeit für Kinder bis 5 Jahre (§ 10, § 23 Abs. 1 alt) ist durch die 1. Änderung 2015 entfallen."
+  ]
+}

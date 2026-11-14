@@ -1,0 +1,67 @@
+{
+  "id": "wittenburg-st-bartholomaeus",
+  "titel": "Friedhofsordnung für den Friedhof in Wittenburg (Ev.-Luth. Kirchgemeinde St. Bartholomäus zu Wittenburg)",
+  "orte": ["Wittenburg"],
+  "traeger": "Ev.-Luth. Kirchengemeinde St. Bartholomäus Wittenburg",
+  "art": "kirchlich",
+  "fassung": "beschlossen vom Kirchgemeinderat am 10.04.2007, genehmigt vom Oberkirchenrat am 31.07.2007, veröffentlicht am 22.09.2007 (Wittenburger Stadt- und Landbote)",
+  "quelle_url": "https://www.kirche-mv.de/wittenburg-bartholomaeus/gemeinde/friedhof",
+  "quelle_titel": "Kirchengemeinde St. Bartholomäus Wittenburg: Seite „Friedhof“ (Friedhofsordnung als Webseitentext, kein PDF)",
+  "friedhoefe": ["Friedhof in Wittenburg (Eigentum der Ev.-Luth. Kirche zu Wittenburg, § 1 Abs. 1)"],
+  "kurzfazit": "Für den kirchlichen Friedhof Wittenburg ist online nur die Friedhofsordnung von 2007 als Text auf der Gemeindeseite veröffentlicht. Sinngemäß gilt: Grabmale brauchen vorher die schriftliche Zustimmung der Friedhofsverwaltung (Entwurf 1:10, zweifach), Mindeststärken je nach Höhe von 12 bis 18 cm, Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbands. Für den ganzen Friedhof gelten zusätzlich eine Grabmal- und Bepflanzungsordnung, die nur im Schaukasten bzw. in der Friedhofsverwaltung einsehbar ist – sie vor der Planung anfordern.",
+  "ruhezeit": "30 Jahre für Erdbestattung und Urnenbeisetzung (§ 12 Abs. 1); Nutzungszeit Wahlgräber 30 Jahre (§ 18 Abs. 1)",
+  "grabarten": [
+    {"name": "Reihengrabstätte (Erd- und Urnenbeisetzung)", "regel": "der Reihe nach vergeben, Nutzungsrecht für die Ruhezeit, Verlängerung möglich; mit allgemeinen oder zusätzlichen Gestaltungsvorschriften (§ 16 Abs. 1, § 17)"},
+    {"name": "Wahlgrabstätte (Einzel- oder Familiengrab)", "regel": "Lage wird abgestimmt, Nutzungszeit 30 Jahre, verlängerbar; je Grabbreite bis zu 2 Urnen zusätzlich (§ 18, § 19 Abs. 2)"},
+    {"name": "Urnenreihen-/Urnenwahlgrabstätte in Urnenfeldern", "regel": "je Grabbreite 2 Urnen; Platz mind. 0,80 m × 0,80 m (§ 19 Abs. 1, § 9 Abs. 4)"},
+    {"name": "Rasengrab", "regel": "Pflanzen auf dem Pflanzstreifen höchstens 100 cm hoch und 50 cm Durchmesser; keine Hecke, Koniferen oder Rosen als Umrandung (§ 28 Abs. 6); weitere Regeln in der Grabmal- und Bepflanzungsordnung"}
+  ],
+  "masse": [
+    "Mindeststärke der Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften: 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; ab 1,50 m Höhe 0,18 m – jeweils bei ordnungsgemäßer, standsicherer Verdübelung (§ 21 Abs. 1)",
+    "In Abteilungen mit zusätzlichen Gestaltungsvorschriften gelten die Maße der Grabmal- und Bepflanzungsordnung (§ 21 Abs. 2)",
+    "Hecken auf Grabstätten höchstens 0,60 m hoch und nicht über die Grabgrenzen (§ 28 Abs. 2)"
+  ],
+  "material": [
+    "Grabmale sollen sich in das Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 22 Abs. 1)",
+    "Im Antrag sind Material, Bearbeitung, Anordnung von Schrift, Ornamenten und Symbolen anzugeben (§ 22 Abs. 3)"
+  ],
+  "verbote": [
+    "Kunststoffe und nicht verrottbare Werkstoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und an der Pflanze verbleibenden Pflanzbehältern (ausgenommen Grabvasen, Markierungszeichen, Gießkannen) (§ 28 Abs. 9)",
+    "Steineinfassungen nur in den dafür vorgesehenen Bereichen des Friedhofs (§ 28 Abs. 9)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel bei der Grabpflege (§ 28 Abs. 8)",
+    "Gewerbliche Arbeiten an Sonn- und Feiertagen und in der Nähe einer Bestattung (§ 3 Abs. 4 d, e; § 5 Abs. 6)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 27 Abs. 3)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen braucht die vorherige schriftliche Zustimmung der Friedhofsverwaltung; Nutzungsrecht ist nachzuweisen (§ 22 Abs. 2)",
+    "Antrag mit Grabmalentwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung, zweifach; auf Verlangen Schriftzeichnungen 1:1, Modell 1:10 oder Attrappe in Originalgröße (§ 22 Abs. 3)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet wird (§ 22 Abs. 4)",
+    "Bei der Anlieferung ist der genehmigte Antrag vorzulegen; die Friedhofsverwaltung kann das Grabmal vor dem Aufstellen prüfen (§ 23)",
+    "Steinmetze brauchen eine Zulassung (Berechtigungskarte, max. 2 Jahre gültig) mit Nachweis der Handwerksrolle, Haftpflichtversicherung; Nichtmitglieder der Steinmetzinnung müssen Kenntnis der BIV-Versetzrichtlinien nachweisen; Friedhofsordnung und Grabmal-/Bepflanzungsordnung schriftlich anerkennen (§ 5 Abs. 2–5, 8; § 30 Abs. 4)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 24 Abs. 1)",
+    "Die Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 24 Abs. 2)",
+    "Nutzungsberechtigte sind dauerhaft für den verkehrssicheren Zustand verantwortlich; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf deren Kosten, nach erfolgloser Frist Entfernung (§ 25 Abs. 1, 2)",
+    "Verantwortliche haften für Schäden durch umstürzende Grabmale (§ 25 Abs. 3)"
+  ],
+  "fristen": [
+    "Wahlgräber innerhalb von sechs Monaten nach Erwerb, Reihengräber innerhalb von sechs Monaten nach der Bestattung herrichten (§ 28 Abs. 6)",
+    "Grabzubehör vor dem Ausheben eines Grabes entfernen lassen (§ 10 Abs. 1)",
+    "Vor Ablauf der Nutzungszeit Grabmale nur mit schriftlicher Zustimmung entfernen; nach Ende des Nutzungsrechts Grabmal mit Fundament binnen drei Monaten entfernen, sonst Abräumung auf Kosten des Nutzungsberechtigten ohne Aufbewahrung (§ 27 Abs. 1, 2)",
+    "Abräumen von Reihengrabfeldern wird sechs Monate vorher bekanntgegeben (§ 17 Abs. 3)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Auf dem gesamten Friedhof gelten zusätzlich zu den allgemeinen Vorschriften eine Grabmal- und Bepflanzungsordnung, einsehbar im Schaukasten neben der Friedhofskapelle bzw. vor dem Mitarbeitergebäude oder in der Friedhofsverwaltung (§ 30 Abs. 2, § 28 Abs. 10)",
+    "Bei Erwerb eines Nutzungsrechts kann zwischen Abteilungen mit allgemeinen und mit zusätzlichen Gestaltungsvorschriften gewählt werden (§ 8 Abs. 12)",
+    "Künstlerisch oder historisch wertvolle Grabmale werden in einem Verzeichnis geführt und dürfen nur mit Zustimmung verändert werden (§ 26)"
+  ],
+  "kontakt": "Kirchengemeindebüro und Friedhofsverwaltung St. Bartholomäus, Karina Voß, Kirchenstraße 2, 19243 Wittenburg, Tel. 038852/52677, friedhof-wittenburg-bartholomaeus@elkm.de; auf dem Friedhof Tel. 038852/53471 (laut Gemeindeseite „Kontakt und Mitarbeitende“)",
+  "unsicher": [
+    "Kein PDF gefunden: weder auf der Gemeindeseite noch unter kirche-mv.de/fileadmin/…/Propstei_Parchim/ (Ordner Wittenburg nicht auffindbar). Die Ordnung steht nur als Text auf der Webseite.",
+    "Stand 2007 (vor Gründung der Nordkirche); ob inzwischen eine neuere Friedhofsordnung/-satzung gilt, ist online nicht erkennbar – bei der Friedhofsverwaltung erfragen.",
+    "Der Webseitentext beginnt mit einer Präambel, die irrtümlich von „Friedhofsgebührenordnung“ spricht; der Inhalt ist aber die Friedhofsordnung.",
+    "Die für den ganzen Friedhof geltende Grabmal- und Bepflanzungsordnung (konkrete Maße, Materialien) ist nicht online veröffentlicht."
+  ]
+}

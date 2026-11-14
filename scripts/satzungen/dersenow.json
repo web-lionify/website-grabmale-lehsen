@@ -1,0 +1,60 @@
+{
+  "id": "dersenow",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen der Gemeinde Dersenow",
+  "orte": ["Dersenow"],
+  "traeger": "Gemeinde Dersenow (Amt Boizenburg-Land)",
+  "art": "kommunal",
+  "fassung": "beschlossen am 27.04.1995",
+  "quelle_url": "https://www.amtboizenburgland.de/amt-gemeinden/dersenow/ortsrecht/",
+  "quelle_titel": "Amt Boizenburg-Land – Ortsrecht Dersenow („Friedhofssatzung - Dersenow“)",
+  "friedhoefe": ["Friedhof der Gemeinde Dersenow (§ 1)"],
+  "kurzfazit": "Die sehr knappe Satzung von 1995 enthält keine Maße oder Materialvorgaben für Grabmale. Eine Genehmigung ist laut Satzung nur nötig, wenn ein Grabmal erheblich vom Gesamtbild abweicht; sonstige bauliche Anlagen brauchen immer eine schriftliche Genehmigung. Grabmale müssen fachgerecht gegründet und standsicher sein, Firmenzeichen nur unauffällig unten seitlich oder hinten.",
+  "ruhezeit": "30 Jahre, Kinder bis zum vollendeten 5. Lebensjahr 20 Jahre (§ 8)",
+  "grabarten": [
+    {"name": "Reihengrab (Erdbestattung)", "regel": "der Reihe nach im Todesfall für die Ruhezeit, Nutzungsrecht gegen Gebühr verlängerbar; Mindestgröße Erwachsene 2,10 × 0,90 m, Kinder 1,20 × 0,60 m (§ 10 Abs. 1, 6; § 11 Abs. 1)"},
+    {"name": "Urnengrabstelle", "regel": "Mindestgröße 1,00 m Länge, 0,80 m Breite; weitere Asche nur von nahen Verwandten (§ 10 Abs. 5-6)"}
+  ],
+  "masse": [
+    "Keine Maße oder Mindeststärken für Grabmale geregelt; im Einzelnen sollen die Gestaltungspläne für den Friedhof maßgebend sein (§ 10 Abs. 6)"
+  ],
+  "material": [
+    "Grabmale dürfen den Friedhof nicht verunstalten oder die Andacht der Besucher stören (§ 16 Abs. 1)",
+    "Werkstattbezeichnungen nur unten an der Seite oder auf der Rückseite, unauffällig (§ 16 Abs. 1)",
+    "Keine Vorgaben zu Material, Bearbeitung, Farbe oder Schrift"
+  ],
+  "verbote": [
+    "Grabgewölbe, Urnenkammern und Mausoleen dürfen nicht gebaut werden (§ 14)",
+    "Gärtnerische Anlagen neben der Grabstätte dürfen nicht verändert werden (§ 13 Abs. 5)",
+    "Grabmale während des Nutzungsrechts nur mit Genehmigung der Gemeinde entfernen (§ 17 Abs. 1)"
+  ],
+  "genehmigung": [
+    "Grabmale sind genehmigungspflichtig, wenn sie erheblich vom Gesamtbild abweichen (§ 15 Abs. 1)",
+    "Errichtung und Veränderung sonstiger baulicher Anlagen bedarf der vorherigen schriftlichen Genehmigung der Gemeinde (§ 15 Abs. 3)",
+    "Weicht ein Grabmal von der genehmigten Zeichnung ab und ist nicht genehmigungsfähig, setzt die Gemeinde eine Frist zur Änderung oder Beseitigung, danach Ersatzvornahme (§ 15 Abs. 2)",
+    "Steinmetze haben die Friedhofsbestimmungen zu beachten; bei wiederholten Verstößen kann die Tätigkeit untersagt werden (§ 5 Abs. 1-2)"
+  ],
+  "standsicherheit": [
+    "Grabmale ihrer Größe entsprechend nach den allgemein anerkannten Regeln des Handwerks gründen und befestigen, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 16 Abs. 2)",
+    "Nutzungsberechtigter ist für guten Zustand und Standsicherheit verantwortlich und haftet für Schäden (§ 16 Abs. 3-4)",
+    "Mängel unverzüglich beseitigen; sonst Instandsetzung oder Beseitigung durch die Gemeinde; bei unmittelbarer Gefahr Umlegen ohne vorherige Aufforderung (§ 16 Abs. 5)",
+    "Keine bestimmte Richtlinie (TA Grabmal o. ä.) genannt"
+  ],
+  "fristen": [
+    "Grabstätte innerhalb von 6 Monaten nach Belegung bzw. Erwerb herrichten (§ 13 Abs. 2)",
+    "Abräumen von Reihengrabfeldern wird 6 Monate vorher öffentlich bekanntgegeben (§ 11 Abs. 2)",
+    "Nach Ablauf des Nutzungsrechts können Grabmale binnen 3 Monaten nach Bekanntmachung des Abräumens entfernt werden, sonst Entfernung durch die Gemeinde ohne Ersatz und ohne Aufbewahrungspflicht (§ 17 Abs. 2)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Künstlerisch und geschichtlich wertvolle Grabmale werden nach Möglichkeit von der Gemeinde erhalten (§ 18)",
+    "Vernachlässigte Gräber (über ein Jahr) kann die Gemeinde nach Aufforderung einebnen und begrünen (§ 13 Abs. 4)"
+  ],
+  "kontakt": "Gemeinde Dersenow (Verwaltung des Friedhofswesens, § 2); keine Adresse in der Satzung",
+  "unsicher": [
+    "Das PDF ist ein schlecht lesbarer Schreibmaschinen-Scan von 1995; Texterkennung teils lückenhaft, zentrale Stellen (§§ 15-17) am Seitenbild geprüft.",
+    "Reihenfolge der Maße bei Urnengrabstellen (1,00 m / 0,80 m) aus der Texterkennung, nicht am Bild geprüft.",
+    "Die in § 10 Abs. 6 genannten Gestaltungspläne sind nicht veröffentlicht.",
+    "§ 17 Abs. 2 verweist auf 'Grabmale nach § 21' (Übergangsvorschriften) – Verweis inhaltlich unklar.",
+    "Die Satzung beruht noch auf DDR-Recht von 1980; ob eine neuere Fassung existiert, war auf der Ortsrechtseite nicht ersichtlich."
+  ]
+}

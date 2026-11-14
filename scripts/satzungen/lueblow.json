@@ -1,0 +1,81 @@
+{
+  "id": "lueblow",
+  "titel": "Satzung der Gemeinde Lüblow über die Benutzung des örtlichen Friedhofes in Neu Lüblow (Friedhofsbenutzungssatzung)",
+  "orte": [
+    "Lüblow",
+    "Neu Lüblow"
+  ],
+  "traeger": "Gemeinde Lüblow (Amt Ludwigslust-Land)",
+  "art": "kommunal",
+  "fassung": "vom 16.10.2018, in Kraft seit 01.01.2019 (§ 28)",
+  "quelle_url": "https://daten.verwaltungsportal.de/dateien/legalframework/7/8/7/Fried-_B_5_2019.pdf",
+  "quelle_titel": "Amt Ludwigslust-Land: Friedhofs-Benutzungssatzung Lüblow (PDF)",
+  "friedhoefe": [
+    "Friedhof Neu Lüblow (§ 1)"
+  ],
+  "kurzfazit": "Auf Einzel-, Doppel- und Wahlgräbern gelten außer der Mindeststärke von 12 cm und der Grabgröße keine Gestaltungsvorgaben. Auf Urnengräbern mit Grabplatte legt ein Steinmetz im Auftrag der Friedhofsverwaltung eine ebenerdige Platte mit Name und Lebensdaten. Grabmale beantragt der Steinmetz vorab bei der Friedhofsverwaltung, die binnen 14 Tagen entscheidet.",
+  "ruhezeit": "Erdbestattung und Urnen in Einzel-, Doppel- oder Wahlgrabstätten 25 Jahre; Urnen in anonymen Grabstätten und Urnengrabstätten mit Grabplatte 20 Jahre (§ 8)",
+  "grabarten": [
+    {
+      "name": "Einzelgrabstätte",
+      "regel": "ohne Gestaltungsvorschriften; Außenmaß 3,00 × 1,50 m (§ 12, § 19)"
+    },
+    {
+      "name": "Doppelgrabstätte",
+      "regel": "ohne Gestaltungsvorschriften; Außenmaß 3,00 × 3,00 m (§ 13, § 19)"
+    },
+    {
+      "name": "Wahlgrabstätte",
+      "regel": "ohne Gestaltungsvorschriften; Außenmaß 3,00 × 4,50 m (3) bzw. 3,00 × 6,00 m (4) (§ 14, § 19)"
+    },
+    {
+      "name": "Urnengrabstätte mit Grabplatte in Urnengemeinschaftsgrabanlage",
+      "regel": "1 Urne, kein Nutzungsrecht; Steinmetz verlegt im Auftrag der Friedhofsverwaltung ebenerdig eine Grabplatte mit Vor-/Zuname, Geburts- und Sterbejahr (Plattengröße nicht genannt); Grab 0,50 × 0,50 m (§ 15 Abs. 1, 2, 4, § 19)"
+    },
+    {
+      "name": "Anonyme Urnengrabstätte",
+      "regel": "Rasenfläche, kein Grabmal mit Namen; 0,50 × 0,50 m (§ 15 Abs. 3, § 19)"
+    }
+  ],
+  "masse": [
+    "Grabmale: Mindeststärke 12 cm (§ 18 Abs. 3)",
+    "Grabmale müssen die Grabgrößen nach § 19 einhalten (§ 18 Abs. 2)"
+  ],
+  "material": [
+    "Grabplatte Urnengemeinschaftsanlage: Inschrift Vor- und Zuname sowie Geburts- und Sterbejahr (§ 15 Abs. 4)"
+  ],
+  "verbote": [
+    "Gewerbliche Arbeiten außerhalb der üblichen Arbeitszeiten, an Sonn- und Feiertagen sowie während Trauerfeiern/Bestattungen (§ 5 Abs. 2 f, § 6 Abs. 5)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 17 Abs. 8)",
+    "Ablage von Kränzen/Blumen an der Urnengemeinschaftsanlage nur auf den ausgewiesenen Flächen (§ 17 Abs. 10)",
+    "Registrierte wertvolle Grabmale nicht ohne Zustimmung entfernen (§ 18 Abs. 4)"
+  ],
+  "genehmigung": [
+    "Grabmale und andere bauliche Anlagen dürfen nur Steinmetze, Steinbildhauer, Holzbildhauer und Kunstschmiede herstellen und aufstellen, unabhängig von Wohnort/Betriebssitz (§ 6 Abs. 2)",
+    "Genehmigung vor Beginn der Arbeiten durch den Auftragnehmer des Nutzungsberechtigten (z. B. Steinmetz) bei der Friedhofsverwaltung beantragen (§ 6 Abs. 3)",
+    "Friedhofsverwaltung entscheidet innerhalb von 14 Tagen, ggf. mit Änderungsauflagen (§ 6 Abs. 3)",
+    "Ohne Genehmigung aufgestellte Grabmale können nach befristeter Aufforderung kostenpflichtig entfernt werden (§ 6 Abs. 3)",
+    "Welche Unterlagen beizufügen sind, regelt die Satzung nicht"
+  ],
+  "standsicherheit": [
+    "Grabmale handwerklich einwandfrei und statisch unbedenklich gründen und aufstellen; Nutzungsberechtigter haftet für Schäden durch mangelhafte Standfestigkeit (§ 18 Abs. 1)",
+    "Fundamentierung und Befestigung nach der Richtlinie des Bundesinnungsverbands des Steinmetz-, Stein- und Holzbildhauerhandwerks (BIV), dauerhaft standsicher, auch beim Öffnen benachbarter Gräber (§ 20 Abs. 1)",
+    "Jährliche Standsicherheitsprüfung durch die Friedhofsverwaltung nach TA Grabmal (§ 21 Abs. 2)",
+    "Grabmale dauernd verkehrssicher halten; bei Gefahr Sicherung (z. B. Umlegen) auf Kosten des Nutzungsberechtigten (§ 20 Abs. 2; § 21 Abs. 1, 3–5)"
+  ],
+  "fristen": [
+    "Grabstätte spätestens ein halbes Jahr nach der Bestattung gestalten (§ 17 Abs. 5)",
+    "Kränze spätestens nach 8 Wochen abräumen (§ 17 Abs. 4)",
+    "Bei Ende des Nutzungsrechts Grabstätte beräumen; bei Entziehung Grabmal und Anlagen binnen 3 Monaten entfernen (§ 16 Abs. 6, 7)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Gestaltung und Pflege der Urnengemeinschaftsanlage nur durch den Friedhofsträger (§ 17 Abs. 10)",
+    "Gewerbetreibende haften für schuldhaft verursachte Schäden (§ 6 Abs. 4)"
+  ],
+  "kontakt": "Friedhofsverwaltung im Amt Ludwigslust-Land (§ 1); Telefon (03874) 4269-28 laut Friedhofsseite des Amtes",
+  "unsicher": [
+    "Absatznummern bei der Textextraktion teils verschoben, aus der Reihenfolge erschlossen",
+    "Keine Änderungssatzungen auf der Amtsseite gefunden; Geltungsbereich nur Friedhof Neu Lüblow – ob es im Ortsteil Lüblow einen weiteren (z. B. kirchlichen) Friedhof gibt, wurde nicht geprüft"
+  ]
+}

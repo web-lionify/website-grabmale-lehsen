@@ -1,0 +1,66 @@
+{
+  "id": "gross-krams",
+  "titel": "Friedhofssatzung der Gemeinde Groß Krams",
+  "orte": ["Groß Krams"],
+  "traeger": "Gemeinde Groß Krams (Amt Hagenow-Land)",
+  "art": "kommunal",
+  "fassung": "vom 28.02.2023 (beschlossen am 21.02.2023)",
+  "quelle_url": "https://www.amt-hagenow-land.de/portal/dokumenteplus-900000174-28990.html?ordner=1",
+  "quelle_titel": "Amt Hagenow-Land: Friedhofssatzung der Gemeinde Groß Krams (PDF)",
+  "friedhoefe": ["Friedhof der Gemeinde Groß Krams (der im Gemeindegebiet gelegene, von der Gemeinde verwaltete Friedhof, § 1 Abs. 1)"],
+  "kurzfazit": "In Groß Krams sind nur Natursteine und Holz erlaubt, ohne Farbanstrich und Firmenzeichen; für Erd- und Urnenwahlgräber gelten feste Breiten- und Höhenspannen (Höhe inkl. Sockel). Auf Rasengräbern sind nur liegende Natursteinplatten zulässig (1-stellig 40–50 × 40–50 cm, 2-stellig 60–70 × 60–70 cm). Abräumen nach Ablauf muss eine Fachfirma übernehmen.",
+  "ruhezeit": "Erdbestattung (Leichen) 30 Jahre, Urnen (Aschen) 25 Jahre (§ 8)",
+  "grabarten": [
+    {"name": "Erdwahlgrab 1-stellig", "regel": "stehendes Grabmal/Stele oben: Breite 30–50 cm, Höhe 65–95 cm; liegendes Grabmal: Breite 45–50 cm, Höhe 40–45 cm (§ 14 Abs. 4)"},
+    {"name": "Erdwahlgrab 2-stellig", "regel": "stehendes Grabmal/Stele oben: Breite 30–80 cm, Höhe 65–100 cm; liegendes Grabmal: Breite 60–70 cm, Höhe 45–55 cm (§ 14 Abs. 4)"},
+    {"name": "Urnenwahlgrab 1-stellig (Außenmaß 1,00 m × 1,00 m Einfassung)", "regel": "stehendes Grabmal/Stele Breite 18–45 cm, Höhe 50–80 cm; liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 14 Abs. 5)"},
+    {"name": "Urnenwahlgrab 2-stellig (Außenmaß 2,00 m × 1,00 m mit Einfassung)", "regel": "stehendes Grabmal/Stele 18–45 cm breit, 50–80 cm hoch; liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 14 Abs. 5)"},
+    {"name": "Rasenerdgrab (Wahlgrab für Rasenerdbestattung)", "regel": "nur liegende Grabmale aus Naturstein: 1-stellig Breite 40–50 cm × Länge 40–50 cm, 2-stellig 60–70 cm × 60–70 cm; Pflege durch den Friedhofsträger; Grabschmuck nur bis einen Monat nach der Beisetzung (§ 14 Abs. 3, 6; § 11 Abs. 3)"},
+    {"name": "Anonymes Urnenreihengrab", "regel": "keine Kennzeichnung; Grabschmuck nur im Bereich der anonymen Gräber auf der Steinplatte (§ 12 Abs. 2, 4)"}
+  ],
+  "masse": [
+    "Mindeststärken: bis 0,80 m Höhe 12,0 cm, bis 1,20 m Höhe 14,0 cm, bis 1,60 m Höhe 16,0 cm (§ 14 Abs. 2)",
+    "Höhenangaben der Grabmale schließen einen eventuellen Sockel ein (§ 14 Abs. 4)",
+    "Verhältnis Breite zu Höhe soll ca. 1:3 betragen (§ 14 Abs. 4)",
+    "Rasengrab liegend: 1-stellig 40–50 × 40–50 cm, 2-stellig 60–70 × 60–70 cm (§ 14 Abs. 6)",
+    "Bepflanzung: max. 1,50 m bei Einzelgewächsen, 0,75 m bei Hecken (§ 18 Abs. 2)"
+  ],
+  "material": [
+    "Nur Natursteine und Holz; auf Erd- und Urnenwahlgräbern stehend oder liegend (§ 14 Abs. 3)",
+    "Auf Rasengrabstätten nur liegende Grabmale aus Naturstein (§ 14 Abs. 3)",
+    "Vertiefte und erhabene Schriften sowie flache Metallschriften aus Bronze oder Alu erlaubt; bildliche Darstellung oder Porzellanbild erlaubt (§ 14 Abs. 4, 6)",
+    "Name sowie Geburts- und Sterbejahr sollen in einfacher Schrift lesbar sein (§ 14 Abs. 7)"
+  ],
+  "verbote": [
+    "Farbanstriche und Firmenbezeichnung auf Grabmalen (§ 14 Abs. 3)",
+    "Stehende Grabmale auf Rasengrabstätten (§ 14 Abs. 3)",
+    "Grüfte und Grabgebäude (§ 10 Abs. 4)",
+    "Rasengrab: Grabschmuck nach Ablauf eines Monats nach der Beisetzung (§ 11 Abs. 3)"
+  ],
+  "genehmigung": [
+    "Ausnahmen von den Gestaltungsvorschriften auf Antrag; Entscheidung durch den Träger; beizufügen: Grabmalentwurf mit Grundriss und Seitenansicht 1:10 (Material, Bearbeitung, Schrift, Ornamente, Symbole, Fundamentierung) und Zeichnungen von Schrift, Ornamenten und Symbolen 1:1 (§ 14 Abs. 8)",
+    "Entfernen vor Ablauf von Ruhezeit/Nutzungsrecht nur mit vorheriger schriftlicher Zustimmung und durch eine Fachfirma (§ 17 Abs. 1)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den anerkannten Regeln des Handwerks (Richtlinie des Bundesinnungsverbands des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks, jeweils geltende Fassung); dauerhaft standsicher, auch beim Öffnen benachbarter Gräber (§ 15 Abs. 1)",
+    "Friedhofsverwaltung prüft regelmäßig die Standsicherheit (§ 15 Abs. 2)",
+    "Verantwortlich ist der Nutzungsberechtigte; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf dessen Kosten; Haftung für Schäden durch Umfallen (§ 16 Abs. 1–3)"
+  ],
+  "fristen": [
+    "Wahlgrabstätten sind binnen 6 Monaten nach der Beisetzung herzurichten (§ 18 Abs. 4)",
+    "Nach Ablauf von Ruhezeit/Nutzungsrecht Grabmale und Fundamente durch eine Fachfirma entfernen und fachgerecht entsorgen, Grabstelle mit 5,0 cm Mutterboden ebenerdig verfüllen und Rasen einsäen; Zustimmung erforderlich; sonst Abräumung nach 3 Monaten auf Kosten des Nutzungsberechtigten (§ 17 Abs. 2)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Urnenwahlgräber mit Einfassung; liegende Grabmale/Abdeckplatten bis zum Innenmaß der Einfassung (§ 14 Abs. 5)",
+    "Erdgrab: eine Erdbestattung und zusätzlich bis zu 2 Urnen möglich (§ 11 Abs. 4)",
+    "Grabpflege selbst oder durch Dritte (§ 18 Abs. 3)",
+    "Vorzeitige Beräumung grundsätzlich frühestens nach 2/3 der Ruhezeit auf Antrag (§ 11 Abs. 12)"
+  ],
+  "kontakt": "Friedhofsverwaltung im Auftrag der Gemeinde: Amt Hagenow-Land (§ 1 Abs. 2), Bahnhofstr. 25, 19230 Hagenow (§ 24 Abs. 2)",
+  "unsicher": [
+    "Kein eigener Paragraf, der die Zustimmung vor dem Aufstellen eines Grabmals verlangt, und keine Regel zu provisorischen Grabzeichen; vor dem Aufstellen beim Amt nachfragen",
+    "§ 14 Abs. 3 spricht von „Rasenurnengrabstätten“, die Grabartenliste (§ 10) und Abs. 6 von Rasenerdbestattungen – vermutlich dieselbe Grabart",
+    "Größen der Erdwahlgrabstätten nicht angegeben (§ 14 Abs. 4)"
+  ]
+}

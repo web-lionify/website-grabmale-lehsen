@@ -1,0 +1,70 @@
+{
+  "id": "koerchow-camin-marsow",
+  "titel": "Friedhofsordnung für die Friedhöfe in Körchow, Camin und Marsow (Ev.-Luth. Kirchengemeinde Körchow-Camin)",
+  "orte": ["Körchow", "Camin", "Marsow"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Körchow-Camin",
+  "art": "kirchlich",
+  "fassung": "vom 13.08.2024 (Beschluss des Kirchengemeinderates)",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Koerchow-Camin/20240813_Friedhofsordnung_fuer_die__Friedhoefe_Koerchow__Camin_und_Marsow.pdf",
+  "quelle_titel": "Kirchengemeinde Körchow-Camin: Friedhofsordnung vom 13.08.2024 (PDF)",
+  "friedhoefe": ["Friedhof Körchow", "Friedhof Camin", "Friedhof Marsow (Friedhöfe der örtlichen Kirchen, § 1 Abs. 1)"],
+  "kurzfazit": "Auf den drei kirchlichen Friedhöfen der Gemeinde Körchow-Camin brauchen Grabmale vorher die schriftliche Zustimmung der Friedhofsverwaltung mit Entwurf im Maßstab 1:10; die Mindeststärke richtet sich nach der Höhe (12 bis 18 cm). Auf Rasengräbern für Särge ist nur ein stehender Stein bis 0,60 × 0,70 m auf einer ebenerdigen Sockelplatte erlaubt. Grabstätten dürfen nicht ganzflächig mit Stein abgedeckt werden – mindestens ein Viertel der Fläche bleibt für Bepflanzung frei.",
+  "ruhezeit": "Särge 30 Jahre, Urnen 30 Jahre (§ 12 Abs. 1); Nutzungszeit Wahlgrabstätten 30 Jahre (§ 17 Abs. 1)",
+  "grabarten": [
+    {"name": "Wahlgrabstätte (Einzel- oder Familiengrab)", "regel": "für Erd- und Urnenbeisetzung, allgemeine Gestaltungsvorschriften; Lage wird abgestimmt; in belegte Erdwahlgräber je Grabbreite eine Urne zusätzlich (§ 16, § 17, § 18 Abs. 3)"},
+    {"name": "Urnengrabstätte", "regel": "grundsätzlich eine Urne; in besonderen Urnenfeldern je Grabbreite 2 Urnen; Mindestmaß 1,00 × 1,00 m; allgemeine Gestaltungsvorschriften (§ 18 Abs. 1, 2; § 9 Abs. 3 c)"},
+    {"name": "Rasenwahlgrabstätte für Särge", "regel": "nur ein stehender Grabstein mit höchstens 0,60 m × 0,70 m auf einer ebenerdigen Sockelplatte 0,50 m × 0,65 m, gesetzt durch einen zugelassenen Steinmetz; Steinmetz legt vorher schriftlichen Antrag mit Skizze und Maßen vor; Name sowie Geburts- und Sterbejahr eingraviert in einfacher, lesbarer Schrift; nach Erstanlage keine Bepflanzung, nur eine handelsübliche Steckvase (§ 19)"},
+    {"name": "Rasengrabstätte für Urnen", "regel": "keine Bepflanzung durch Angehörige; Namen werden auf einem Findling mit kleinen blattförmigen Tafeln genannt; nicht anonym; zentraler Platz für Blumen (§ 19)"}
+  ],
+  "masse": [
+    "Mindeststärke der Grabmale (allgemeine Gestaltungsvorschriften): 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; über 1,50 m Höhe 0,18 m – jeweils bei ordnungsgemäßer, standsicherer Verdübelung (§ 22)",
+    "Rasenwahlgrab für Särge: Grabstein höchstens 0,60 m × 0,70 m, Sockelplatte ebenerdig 0,50 m × 0,65 m (§ 19)",
+    "Hecken höchstens 60 cm hoch und nicht über die Grabgrenze (§ 29 Abs. 2)",
+    "Mindestgrabmaße: Erwachsene 2,10 × 0,90 m, Kinder bis 5 Jahre 1,20 × 0,60 m, Urnengrab 1,00 × 1,00 m (§ 9 Abs. 3)"
+  ],
+  "material": [
+    "Grabmale sollen sich in das Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 23 Abs. 1)",
+    "Im Antrag sind Material, Bearbeitung, Schriftanordnung, Ornamente und Symbole anzugeben (§ 23 Abs. 3)",
+    "Rasengrab: Name, Geburts- und Sterbejahr eingraviert in einfacher Schrift (§ 19)"
+  ],
+  "verbote": [
+    "Ganzflächige Abdeckung der Grabstätte mit Stein oder steinähnlichem Material; mindestens 25 % der Grabfläche bleiben für Bepflanzung frei (§ 29 Abs. 10)",
+    "Ganzflächige Abdeckung mit Tannengrün o. Ä. (§ 29 Abs. 10)",
+    "Kunststoffe und nicht verrottbare Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und verbleibenden Pflanzbehältern (ausgenommen Grabvasen, Markierungszeichen, Gießkannen) (§ 29 Abs. 9)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 29 Abs. 8)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 23 Abs. 5)",
+    "Gewerbliche Arbeiten an Sonn- und Feiertagen und am Buß- und Bettag (§ 5 Abs. 6)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen braucht die vorherige schriftliche Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 23 Abs. 2)",
+    "Antrag mit Grabmalentwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung, zweifach; auf Verlangen Zeichnungen 1:1, Modell 1:10 oder Attrappe in Originalgröße (§ 23 Abs. 3)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 23 Abs. 4)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor Aufstellung möglich (§ 24)",
+    "Steinmetze brauchen eine vorherige schriftliche Zulassung (Nachweis Handwerksrolle, Haftpflichtversicherung) und erkennen die Friedhofsordnung schriftlich an (§ 5 Abs. 1–4, 8)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 25 Abs. 1)",
+    "Die Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 25 Abs. 2)",
+    "Nutzungsberechtigte sind dauerhaft für verkehrssicheren Zustand verantwortlich; bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf deren Kosten; nach erfolgloser Frist Instandsetzung oder Entfernung (§ 26 Abs. 1, 2)",
+    "Verantwortliche haften für Schäden durch umstürzende Grabmale (§ 26 Abs. 3)"
+  ],
+  "fristen": [
+    "Wahlgrabstätten innerhalb von sechs Monaten nach Erwerb, Reihengrabstätten innerhalb von sechs Monaten nach der Bestattung herrichten (§ 29 Abs. 6)",
+    "Rasenwahlgrab: Ersteinrichtung (Hügel beseitigen, Rasen einsäen) in der Regel bis spätestens zum neunten Monat nach der Beisetzung durch die Nutzungsberechtigten (§ 19)",
+    "Vor Ablauf der Nutzungszeit Grabmale nur mit schriftlicher Zustimmung entfernen; nach Ablauf Grabmal mit Sockel/Fundament innerhalb von drei Monaten entfernen, sonst Abräumung ohne Entschädigung, Kosten können erhoben werden (§ 28)",
+    "Gewerbliche Arbeiten nur werktags 7.00–18.00 Uhr (§ 5 Abs. 6)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Wer ein Grab nicht mehr pflegen kann, kann schriftlich die Umgestaltung in ein Rasengrab beantragen; das Grabmal bleibt dann bis zum Ende der Ruhefrist stehen (§ 29 Abs. 11)",
+    "Bei Rückgabe teilbelegter Wahlgräber Umgestaltung in Rasengrab; Grabmal erst nach Ablauf der letzten Ruhezeit entfernen (§ 17 Abs. 5)",
+    "LED-Grablichter dürfen nicht auf dem Friedhof entsorgt werden (§ 29 Abs. 9)",
+    "Bestehende Grabstätten: Nutzungszeit und Gestaltung richten sich nach den bisherigen Vorschriften (§ 32)"
+  ],
+  "kontakt": "Ev.-Luth. Kirchengemeinde Körchow-Camin, Theodor-Kliefoth-Str. 9, 19243 Körchow, Tel. 038852/23936, koerchow@elkm.de; vor Ort: Körchow Christiane Hausmann (038852-22804), Camin Jaqueline Redmann (0173-9596338) bzw. Helgrid Reinschmidt (038843-21963), Marsow Manuela Maas (01522-6396846) (laut Friedhofsseite der Kirchengemeinde); Widersprüche an Zentrale Friedhofsverwaltung Güstrow, St.-Jürgens-Weg 23, 18273 Güstrow (§ 36)",
+  "unsicher": [
+    "Im PDF sind die Absatznummern teils vom Text getrennt; die Zuordnung der Absätze in § 19 (Rasengrabstätte) ist nicht eindeutig, daher dort ohne Absatzangabe.",
+    "Datum der kirchenaufsichtlichen Genehmigung auf S. 15 handschriftlich und nicht lesbar.",
+    "In § 29 Abs. 6 werden Reihengrabstätten erwähnt, obwohl § 16 keine Reihengräber vorsieht."
+  ]
+}

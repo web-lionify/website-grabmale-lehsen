@@ -1,0 +1,90 @@
+{
+  "id": "wittendoerp",
+  "titel": "Satzung über das Friedhofswesen der Gemeinde Wittendörp",
+  "orte": ["Wittendörp", "Dodow", "Tessin", "Pogreß"],
+  "traeger": "Gemeinde Wittendörp (Amt Wittenburg)",
+  "art": "kommunal",
+  "fassung": "beschlossen am 10.11.2011, ausgefertigt am 05.06.2012; keine Änderungssatzung im Ortsrecht des Amtes Wittenburg veröffentlicht (Stand 11/2026)",
+  "quelle_url": "https://www.amt-wittenburg.de/output/download.php?fid=3627.129.1.PDF",
+  "quelle_titel": "Amt Wittenburg: Satzung über das Friedhofswesen der Gemeinde Wittendörp (2012, PDF)",
+  "friedhoefe": ["Friedhof Dodow", "Friedhof Tessin", "Friedhof Pogreß (§ 1)"],
+  "kurzfazit": "Auf den Gemeindefriedhöfen Dodow, Tessin und Pogreß gelten feste Richtmaße für stehende Grabmale (je nach Grabart 0,80 m bis 1,20 m hoch, ±15 % Spielraum) und Grabeinfassungen sind nicht erlaubt. Urnengräber bekommen nur liegende Grabmale oder Pultsteine. Jedes Grabmal muss vorher schriftlich mit Zeichnung, Material, Inschrift und Maßen bei der Friedhofsverwaltung beantragt werden; die Satzung schreibt zudem eine detaillierte Fundamentierung (Pfeiler und Grabmalträger) vor.",
+  "ruhezeit": "Leichen und Aschen 30 Jahre (§ 11); Nutzungszeit Wahlgräber 30 Jahre (§ 25 Abs. 1)",
+  "grabarten": [
+    {"name": "Grabstelle (Reihengrab) für Erdbestattung von Personen über 5 Jahre", "regel": "Grabstelle 3,00 m × 1,50 m, Abstand 0,50 m (§ 19 Abs. 3); stehendes Grabmal Höhe 0,80 m, Breite 0,50 m, Dicke 12–20 cm (§ 41 Abs. 2 a)"},
+    {"name": "Einstelliges Erdwahlgrab", "regel": "Grabstelle 3,00 m × 1,50 m (§ 22); stehendes Grabmal Höhe 1,00 m, Breite 0,65 m, Dicke 0,14–0,20 m (§ 41 Abs. 2 b)"},
+    {"name": "Mehrstelliges Erdwahlgrab", "regel": "Grabstellen nebeneinander, je 3,00 m × 1,50 m, Abstand zwischen Wahlgräbern 0,50 m (§ 22); stehendes Grabmal Höhe 1,00 m (breiter Typ) oder 1,20 m (schlanker Typ), Breite höchstens 0,65 m je Grabstelle, Dicke 0,14–0,25 m (§ 41 Abs. 2 c)"},
+    {"name": "Urnengrab", "regel": "nur liegende Grabmale und Pultsteine zulässig (§ 40 Abs. 2); höchstens 2 Aschenbehälter einer Familie (§ 29 Abs. 1)"},
+    {"name": "Anonyme Grabstelle", "regel": "Lage wird von der Friedhofsverwaltung festgesetzt (§ 16 Abs. 3); keine eigenen Gestaltungsregeln in der Satzung"}
+  ],
+  "masse": [
+    "Maße der stehenden Grabmale sind Richtmaße, die um 15 % über- oder unterschritten werden dürfen; Höhe zu Breite möglichst im goldenen Schnitt (§ 41 Abs. 2, zweiter Absatz 2)",
+    "Ein vorhandener Sockel zählt zur Höhe; Sockel höchstens 0,15 m hoch (§ 41 Abs. 6)",
+    "Grabkreuze dürfen die Höhen aus § 41 Abs. 2 nicht überschreiten; freistehende Steinkreuze dürfen auf einem angemessenen Sockel stehen (§ 41 Abs. 3)",
+    "Liegende Grabmale: Länge und Breite höchstens je 4/5 der Grabmaße, Dicke 10–25 cm (§ 41 Abs. 4)",
+    "Liegende Grabmale höchstens 10 Grad geneigt; Pultsteine mit etwa 20 Grad geneigter Oberfläche (§ 40 Abs. 1 c, d)",
+    "Pultsteine: Höhe 65 cm, Breite 35 cm (§ 41 Abs. 5)",
+    "Fluchthöhe richtet sich nach den Vermessungssteinen am Anfang und Ende der Reihe; Rückseite der Grabmale in der Flucht der Mitte der Vermessungssteine (§ 41 Abs. 1)",
+    "Grabhügel höchstens 20 cm hoch (§ 46 Abs. 1)"
+  ],
+  "material": [
+    "Grabmale aus Stein: wetterbeständiger, bearbeiteter Naturstein oder Betonwerkstein (Kunstbasalt, Kunstgranit, Kunstmarmor) (§ 42 Abs. 1)",
+    "Zulässige Grabmalarten: stehende Grabmale aus Stein, Grabkreuze aus Stein, Holz oder Metall, liegende Grabmale aus Stein, Pultsteine (§ 40 Abs. 1)",
+    "Holzkreuze möglichst naturlasiert, höchstens in bräunlichen Tönen gestrichen (§ 43 Abs. 1)",
+    "Metallkreuze ohne vorstehende Spitzen oder Haken, nur ganz dunkel gestrichen, nicht gold- oder silberbronziert (§ 43 Abs. 1)",
+    "Steinoberfläche handwerks- und werkstoffgerecht bearbeiten; Schmuck und Symbole möglichst aus dem Grabmalwerkstoff herausarbeiten (§ 43 Abs. 2)",
+    "Grabmal in allen Teilen einfach und harmonisch; für bestimmte Grabstätten kann der Belegungsplan Grabmalart und Gesteinsfarbe festlegen (§ 39 Abs. 2)",
+    "Hersteller darf Zeichen oder Namen unauffällig auf der Schmalseite einhauen (§ 44 Abs. 2)"
+  ],
+  "verbote": [
+    "Grabeinfassungen sind unzulässig (§ 39 Abs. 3)",
+    "Grundsätzlich nur ein Grabmal je Grabstätte; weitere Beisetzungen nur durch bescheidene liegende Grabmale kenntlich machen, wenn auf dem Grabmal kein Platz für Schrift ist (§ 39 Abs. 1)",
+    "Errichtung von Grüften unzulässig (§ 34 Abs. 3)",
+    "Inschriften, Symbole und Darstellungen, die die Würde der Toten oder die Gefühle der Besucher verletzen (§ 44 Abs. 1)",
+    "Anbringen von Schildern (§ 44 Abs. 2)",
+    "Grabflächen vollständig mit Platten belegen oder mit Kies bestreuen; Unterteilung in kleine Einzelflächen (§ 47 Abs. 2, § 46 Abs. 2)",
+    "Laut Bußgeldkatalog ordnungswidrig: nicht materialgerechte Bearbeitung, Nachahmungen, Ölfarbanstrich sowie Anbringen von Lichtbildern, Perlenkränzen, Glas-, Porzellan- und Blechgegenständen (§ 51 Abs. 1 Nr. 7)",
+    "Störende Arbeiten an Sonn- und Feiertagen und in der Nähe einer Bestattung (§ 6 Abs. 3 c)"
+  ],
+  "genehmigung": [
+    "Errichtung, Veränderung oder Beseitigung von Grabmalen, Einfassungen und sonstigen baulichen Anlagen braucht die Genehmigung der Friedhofsverwaltung, auch wenn nur vorübergehend (§ 35 Abs. 1)",
+    "Schriftlicher Antrag in zweifacher Ausfertigung mit: Grablage/Nummer, Name des Verstorbenen und Nutzungsberechtigten, Art des Grabmals, Maße aller Teile, Werkstoff/Farbton/Bearbeitung, vollständiger Inschrift, ausführender Firma, Zeichnung in geeignetem Maßstab, ggf. statischem Nachweis (§ 35 Abs. 3)",
+    "Eine genehmigte Ausfertigung ist vor Arbeitsbeginn abzuholen und bei der Aufstellung mitzuführen (§ 35 Abs. 3)",
+    "Auf Verlangen Detailzeichnungen für Schrift/Ornamente sowie Modelle oder Größenschablonen bei Figuren und größeren Grabmalen (§ 35 Abs. 3)",
+    "Ausführung muss den genehmigten Plänen entsprechen; Genehmigung kann bei Verstößen versagt werden (§ 35 Abs. 2)",
+    "Steinmetze brauchen eine vorherige Zulassung (Berechtigungskarte) der Friedhofsverwaltung; Nachweis der Eintragung in die Handwerksrolle bzw. das Verzeichnis nach § 19 HwO (§ 7 Abs. 1, 2, 4)",
+    "Ausnahmen von den §§ 40–45 kann die Gemeindevertretung auf Antrag durch Beschluss zulassen (§ 45 a)",
+    "Bei Anmeldung der Bestattung erhalten Angehörige ein Merkblatt mit Richtlinien zur Grab- und Grabmalgestaltung (§ 33 Abs. 2)"
+  ],
+  "standsicherheit": [
+    "Grabmale und Steineinfassungen nach den allgemein anerkannten Regeln des Handwerks fundamentieren, dauerhaft standsicher auch beim Öffnen von Nachbargräbern; Fundamente nicht über die Grabstätte hinaus (§ 36 Abs. 1)",
+    "Stehende Grabsteine: Pfeiler aus hartgebrannten Ringofensteinen oder gleichwertigen Formsteinen/Fertigteilen bis auf gewachsenen Boden; Pfeilerstärke Einzelgrab mind. 10 cm, mehrstellig seitlich je mind. 10 cm und in der Mitte 24 cm (§ 36 Abs. 2 a)",
+    "Grabmalträger auf den Pfeilern nur aus Beton- oder Natursteinschwellen oder Eisen-T-Trägern: Breite mind. 20 cm, Höhe mind. 10 cm, Länge mind. 90 cm (Personen über 5 Jahre); Oberkante mind. 15 cm unter Geländehöhe (§ 36 Abs. 2 b)",
+    "Zwischenstück zwischen Träger und Stein/Sockel aus Beton; Teile mit nichtrostenden Dübeln verbinden; einfache Zementverbindung unzulässig (§ 36 Abs. 2 c)",
+    "Liegende Grabmale und Pultsteine allseitig ohne Unterbau in die Erde einbetten (§ 36 Abs. 3)",
+    "Verantwortliche haften für Schäden durch nicht vorschriftsgemäß gesetzte Grabmale; bei mangelnder Standsicherheit kann die Friedhofsverwaltung das Grabmal entfernen (§ 36 Abs. 4)",
+    "Standfestigkeit wird mindestens einmal jährlich von der Friedhofsverwaltung geprüft (§ 36 Abs. 5)",
+    "Ausführende Handwerker sind für die Beachtung der Satzung mitverantwortlich (§ 50 Abs. 2)"
+  ],
+  "fristen": [
+    "Vorübergehende Grabmale müssen nach 5 Jahren durch ordentliche Grabmale ersetzt werden (§ 40 Abs. 3)",
+    "Gräber spätestens 6 Monate nach der Beisetzung endgültig herrichten (§ 45 Abs. 2)",
+    "Wegen einer Beisetzung entfernte Grabmale der Nachbargrabstellen sind unmittelbar danach, spätestens binnen 4 Wochen, wieder aufzustellen (§ 37 Abs. 2)",
+    "Nach Ablauf der Ruhefrist bzw. Nutzungszeit räumen die Nutzungsberechtigten ab; Abräumtermin wird 12 Monate vorher bekanntgemacht (§ 38 Abs. 1, 2)",
+    "Abgeräumte Anlagen können innerhalb von 6 Monaten bei der Friedhofsverwaltung abgeholt werden (§ 38 Abs. 3)",
+    "Gewerbliche Arbeiten nur werktags innerhalb der Öffnungszeiten, spätestens 19.00 Uhr, samstags und vor Feiertagen spätestens 13.00 Uhr beenden (§ 7 Abs. 6)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Grabhügel höchstens 20 cm; Wegeanteile bis zur Wegmitte pflegen (§ 46 Abs. 1, 3)",
+    "Bepflanzung nur innerhalb des Grabbeetes, nicht seitlich über die Grabstätte hinaus (§ 47 Abs. 1)",
+    "In bereits begonnenen Grabfeldern gelten die bisherigen Grabmaße und Gestaltungsvorschriften weiter (§ 52)",
+    "Künstlerisch oder geschichtlich wertvolle Grabmale stehen unter besonderem Schutz und dürfen nicht ohne Einwilligung entfernt werden (§ 38 Abs. 5)"
+  ],
+  "kontakt": "Friedhofsverwaltung der Gemeinde Wittendörp (die Satzung nennt keine Anschrift; die Kirchengemeinde Döbbersen verweist für den Friedhof Tessin auf das Amt Wittenburg)",
+  "unsicher": [
+    "Satzung von 2012; im Ortsrecht der Gemeinde Wittendörp auf amt-wittenburg.de ist keine Änderungssatzung zur Friedhofssatzung aufgeführt (Stand 11/2026).",
+    "Die Querverweise in der Satzung sind teils fehlerhaft (z. B. § 51 verweist auf §§ 44/45 für Inhalte, die in §§ 42–44 stehen; § 41 hat zweimal einen Absatz 2).",
+    "Laut Kirchengemeinde Döbbersen ist auch Neuhof kommunal (Stadt Zarrentin) – Neuhof gehört nicht zu dieser Satzung."
+  ]
+}

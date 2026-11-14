@@ -1,0 +1,76 @@
+{
+  "id": "huelseburg",
+  "titel": "Friedhofssatzung der Gemeinde Hülseburg",
+  "orte": ["Hülseburg"],
+  "traeger": "Gemeinde Hülseburg (Amt Hagenow-Land)",
+  "art": "kommunal",
+  "fassung": "vom 01.12.2011 (beschlossen am 20.10.2011); online keine Änderungssatzung veröffentlicht",
+  "quelle_url": "https://www.amt-hagenow-land.de/portal/dokumenteplus-900000192-28990.html?ordner=1",
+  "quelle_titel": "Amt Hagenow-Land: Friedhofssatzung der Gemeinde Hülseburg (PDF, Scan)",
+  "friedhoefe": ["Friedhof der Gemeinde Hülseburg (der im Gemeindegebiet gelegene, von der Gemeinde verwaltete Friedhof, § 1)"],
+  "kurzfazit": "In Hülseburg sind nur Natursteine (keine Findlinge) und Holz erlaubt; Kunststein, Beton, Kunststoff, Ölfarbe und Firmenzeichen sind verboten. Stehende Grabmale werden über die Ansichtsfläche begrenzt (z. B. 0,40 m² auf einstelligen Wahlgräbern) und müssen 10–25 cm stark sein. Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung; bis dahin sind naturlasierte Holzkreuze oder -tafeln für höchstens 2 Jahre erlaubt.",
+  "ruhezeit": "Erdbestattung (Leichen) 30 Jahre, Urnen (Aschen) 25 Jahre (§ 9)",
+  "grabarten": [
+    {"name": "Reihengrab (Erdbestattung)", "regel": "stehendes Natursteingrabmal bis 0,30 m² Ansichtsfläche; Abteilung ohne besondere Gestaltungsvorschriften (§ 19 Abs. 5 a, § 18 Abs. 3)"},
+    {"name": "Wahlgrab einstellig", "regel": "stehendes Natursteingrabmal bis 0,40 m² Ansichtsfläche (§ 19 Abs. 5 b)"},
+    {"name": "Wahlgrab zwei- und mehrstellig", "regel": "stehendes Natursteingrabmal bis 0,60 m² Ansichtsfläche; in besonderer Lage nach Festlegung der Friedhofsverwaltung (§ 19 Abs. 5 c, d)"},
+    {"name": "Urnenwahlgrab (1,0 m × 1,0 m)", "regel": "stehendes Natursteingrabmal bis 0,25 m² Ansichtsfläche; liegende Grabmale bis zur Größe des Grabbeetes (§ 19 Abs. 6, § 15 Abs. 2)"},
+    {"name": "Rasenwahlgrab", "regel": "nur ein Grabstein auf einem Sockel von max. 0,60 m × 0,80 m; Grabmal bzw. Pultstein beschafft der Nutzungsberechtigte; Pflege durch den Friedhofsträger; nach der Erstanlage keine weitere Bepflanzung, eine handelsübliche Steckvase erlaubt (§ 19 Abs. 8, § 14 Abs. 1, 5, 6)"},
+    {"name": "Anonymes Urnenreihengrab", "regel": "wird nicht gekennzeichnet; Abteilung ohne besondere Gestaltungsvorschriften (§ 15 Abs. 3, § 18 Abs. 3)"}
+  ],
+  "masse": [
+    "Stehende Natursteingrabmale: mindestens 10 cm, höchstens 25 cm stark (§ 19 Abs. 5, 6)",
+    "Ansichtsflächen stehender Grabmale: Reihengrab 0,30 m², einstelliges Wahlgrab 0,40 m², zwei- und mehrstelliges Wahlgrab 0,60 m², Urnenwahlgrab 0,25 m² (§ 19 Abs. 5, 6)",
+    "Rasenwahlgrab: Sockel max. 0,60 m × 0,80 m (§ 19 Abs. 8)",
+    "Abdeckung mit Steinplatten höchstens 30 % der Grabfläche (§ 19 Abs. 7)",
+    "Bepflanzung: max. 1,50 m bei Einzelgewächsen, 0,75 m bei Hecken (§ 25 Abs. 2)"
+  ],
+  "material": [
+    "Nur Natursteine (außer Findlinge) und Holz (§ 19 Abs. 2)",
+    "Stehende oder liegende Grabmale nach den Belegungsplänen; liegende Grabmale nur flach auf die Grabstätte gelegt (§ 19 Abs. 4)",
+    "Name sowie Geburts- und Sterbejahr sollen in einfacher Schrift lesbar sein (§ 19 Abs. 9)",
+    "In Abteilungen ohne besondere Gestaltungsvorschriften gelten nur die allgemeinen Anforderungen (Würde des Friedhofs) (§ 20, § 17)"
+  ],
+  "verbote": [
+    "Findlinge, Kunststeinsockel, Grabmale aus gegossener Betonmasse, Grabsteine aus Kunststoff (§ 19 Abs. 2)",
+    "Ölfarbanstrich, Firmenbezeichnungen, unwürdige Symbole und Inschriften (§ 19 Abs. 2)",
+    "Steinabdeckung über 30 % der Grabfläche (§ 19 Abs. 7)",
+    "Grüfte und Grabgebäude (§ 11 Abs. 3)",
+    "Abteilungen mit besonderen Gestaltungsvorschriften: keine Bäume, großwüchsigen Sträucher oder Bänke (§ 26 Abs. 2)",
+    "Rasenwahlgrab: weitere Bepflanzung nach der Erstanlage; mehr als eine Steckvase (§ 14 Abs. 5)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung; Nutzungsrecht ist nachzuweisen (§ 21 Abs. 2)",
+    "Unterlagen: Grabmalentwurf mit Grundriss und Seitenansicht 1:10 (Material, Bearbeitung, Schrift, Ornamente, Symbole, Fundamentierung) und Zeichnungen von Schrift, Ornamenten und Symbolen 1:1 (§ 21 Abs. 3)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet wird (§ 21 Abs. 4)",
+    "Steinmetze brauchen eine Zulassung der Friedhofsverwaltung (Berechtigungsschein, auf 5 Jahre befristet) (§ 5 Abs. 1, 2)",
+    "Wesentliche Änderungen der Grabgestaltung bedürfen der vorherigen schriftlichen Zustimmung; ggf. Zeichnung 1:20 (§ 25 Abs. 3)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach der Richtlinie des Bundesinnungsverbands des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks (jeweils geltende Fassung); dauerhaft standsicher, auch beim Öffnen benachbarter Gräber (§ 22 Abs. 1)",
+    "Mindeststärke, Art und Größe der Fundamente legt die Friedhofsverwaltung mit der Zustimmung fest und kann die Ausführung prüfen (§ 22 Abs. 2)",
+    "Verantwortlich ist bei Reihengräbern der Empfänger der Grabanweisung, bei Wahl-/Urnenwahlgräbern der Nutzungsberechtigte; bei Gefahr Sicherungsmaßnahmen auf dessen Kosten; Haftung für Schäden durch Umfallen (§ 23 Abs. 1–3)"
+  ],
+  "fristen": [
+    "Provisorische Grabmale (zustimmungsfrei) nur als naturlasierte Holztafeln oder -kreuze, höchstens 2 Jahre nach der Beisetzung (§ 21 Abs. 5)",
+    "Reihengräber binnen 6 Monaten nach der Beisetzung, Wahl-/Urnenwahlgräber binnen 6 Monaten nach Erwerb des Nutzungsrechts herrichten (§ 25 Abs. 5)",
+    "Rasenwahlgrab: Ersteinrichtung (Hügel beseitigen, Rasen einsäen) in der Regel spätestens bis zum sechsten Monat nach der Beisetzung (§ 14 Abs. 5)",
+    "Nach Ablauf von Ruhezeit/Nutzungsrecht Grabmale mit Erlaubnisschein der Friedhofsverwaltung entfernen; nach 3 Monaten fallen sie entschädigungslos an die Gemeinde, Abräumkosten trägt bei Wahlgräbern der Nutzungsberechtigte (§ 24 Abs. 2)",
+    "Entfernen vor Ablauf nur mit vorheriger schriftlicher Zustimmung (§ 24 Abs. 1)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Wahl zwischen Abteilungen mit und ohne besondere Gestaltungsvorschriften; ohne Wahl bei der Anmeldung erfolgt die Beisetzung in einer Abteilung mit besonderen Vorschriften (§ 18 Abs. 2)",
+    "In Abteilungen mit besonderen Gestaltungsvorschriften müssen Grabstätten bepflanzt werden; Belegungspläne können Näheres regeln (§ 26 Abs. 1, 2)",
+    "Wahl- und Rasenwahlgrab: ein Sarg und zusätzlich bis zu zwei Urnen (§ 13 Abs. 3, § 14 Abs. 4)",
+    "Grabpflege selbst, durch zugelassenen Friedhofsgärtner oder gegen Entgelt durch die Friedhofsverwaltung (§ 25 Abs. 4)",
+    "Für ältere Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 30 Abs. 1)"
+  ],
+  "kontakt": "Friedhofsverwaltung im Auftrag der Gemeinde: Amt Hagenow-Land (§ 1), Bahnhofstr. 25, 19230 Hagenow (§ 33 Abs. 2)",
+  "unsicher": [
+    "Satzung von 2011 – ob es eine neuere Fassung gibt, ist online nicht ersichtlich; vor Planung beim Amt Hagenow-Land nachfragen",
+    "§ 19 Abs. 3 sagt wörtlich, Grabmale in Abteilungen MIT besonderen Gestaltungsvorschriften unterlägen keinen zusätzlichen Anforderungen – vermutlich Schreibfehler (gemeint wohl „ohne“, vgl. § 20)",
+    "Für stehende Grabmale sind nur Ansichtsflächen, keine Höchsthöhen/-breiten angegeben (§ 19 Abs. 5, 6)",
+    "Gesamter Text ist ein Scan und wurde per Texterkennung (OCR, rotationskorrigiert) gelesen"
+  ]
+}
