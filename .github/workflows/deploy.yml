@@ -33,4 +33,7 @@ jobs:
             **/.github/**
             **/node_modules/**
             README.md
+            CLAUDE.md
+            ANLEITUNG-ZUGANGSDATEN.md
+            **/.DS_Store
             scripts/**
