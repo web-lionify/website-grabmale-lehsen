@@ -5,6 +5,7 @@ Aufruf (im Repo-Ordner):  python3 scripts/build.py
 Kopf, Navigation und Fußzeile stehen hier zentral, damit alle Seiten gleich bleiben.
 Bilder liegen in img/<kategorie>/<kategorie>-NN.jpg (groß) und -NN-k.jpg (Vorschau).
 """
+import hashlib
 import json
 import os
 import re
@@ -89,6 +90,12 @@ CATEGORIES = [
 ]
 
 
+def v(path):
+    """Hängt eine Versionsnummer an, damit Browser nach Änderungen neu laden."""
+    h = hashlib.md5((ROOT / path).read_bytes()).hexdigest()[:8]
+    return f"{path}?v={h}"
+
+
 def images(slug):
     files = sorted(p for p in (ROOT / "img" / slug).glob(f"{slug}-[0-9][0-9].jpg"))
     return [f"img/{slug}/{p.stem}" for p in files]
@@ -146,7 +153,7 @@ def page(filename, title, description, body, current=None, head_extra=""):
 <meta property="og:locale" content="de_DE">
 <meta name="theme-color" content="#26282b">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{v('style.css')}">
 {head_extra}</head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
@@ -202,7 +209,7 @@ def page(filename, title, description, body, current=None, head_extra=""):
     </div>
   </div>
 </footer>
-<script src="main.js" defer></script>
+<script src="{v('main.js')}" defer></script>
 </body>
 </html>
 """
@@ -521,7 +528,7 @@ def build_privacy():
 <h2>2. Das Wichtigste in Kürze</h2>
 <ul>
   <li>Diese Website verwendet <strong>keine Cookies</strong>, keine Analyse- oder Tracking-Werkzeuge und keine Social-Media-Plugins.</li>
-  <li>Es werden keine Schriften, Karten oder Skripte von fremden Servern geladen.</li>
+  <li>Es werden keine Schriften oder Skripte von fremden Servern geladen. Die Karte auf der Seite „Friedhofssatzungen“ lädt erst, wenn Sie dem ausdrücklich zustimmen (siehe Abschnitt 7).</li>
   <li>Personenbezogene Daten verarbeiten wir nur, wenn Sie uns über das Kontaktformular, per E-Mail oder telefonisch kontaktieren, sowie in technisch notwendigen Server-Logdateien.</li>
 </ul>
 
@@ -540,7 +547,12 @@ def build_privacy():
 <h2>6. Externe Links</h2>
 <p>Unsere Website enthält Links zu externen Angeboten, unter anderem zu unserem Shop bei eBay, zur Routenplanung bei OpenStreetMap sowie zu Satzungen und Informationen von Städten, Ämtern, Kirchengemeinden und Verbänden. Diese Inhalte werden nicht in unsere Website eingebunden; beim bloßen Aufruf unserer Seiten werden keine Daten an diese Anbieter übertragen. Erst wenn Sie einen Link anklicken, wird die jeweilige Seite geöffnet und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
 
-<h2>7. Ihre Rechte</h2>
+<h2 id="karte">7. Karte (OpenStreetMap)</h2>
+<p>Auf der Seite „Friedhofssatzungen“ bieten wir eine interaktive Karte an. Die Kartendarstellung (Kartenkacheln) wird von der OpenStreetMap Foundation (OSMF), St John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, Großbritannien, geladen. Die Programmbibliothek für die Karte (Leaflet) liegt auf unserem eigenen Server.</p>
+<p>Die Karte wird <strong>erst geladen, wenn Sie auf „Karte laden“ klicken</strong>. Erst dann stellt Ihr Browser eine Verbindung zu den Servern von OpenStreetMap her; dabei werden insbesondere Ihre IP-Adresse, der angefragte Kartenausschnitt sowie technische Angaben Ihres Browsers übertragen. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Für das Vereinigte Königreich besteht ein Angemessenheitsbeschluss der EU-Kommission.</p>
+<p>Wenn Sie „Karte künftig immer laden“ auswählen, wird diese Entscheidung ausschließlich lokal in Ihrem Browser gespeichert (Local Storage) und nicht an uns übertragen. Sie können die Einwilligung jederzeit widerrufen, indem Sie die gespeicherten Websitedaten in Ihrem Browser löschen. Weitere Informationen: <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">Datenschutzerklärung der OpenStreetMap Foundation</a>.</p>
+
+<h2>8. Ihre Rechte</h2>
 <p>Sie haben im Rahmen der gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
 <ul>
   <li>Auskunft über Ihre gespeicherten personenbezogenen Daten (Art. 15 DSGVO),</li>
@@ -552,7 +564,7 @@ def build_privacy():
 </ul>
 <p>Wenden Sie sich dazu einfach an die oben genannten Kontaktdaten.</p>
 
-<h2>8. Beschwerderecht bei der Aufsichtsbehörde</h2>
+<h2>9. Beschwerderecht bei der Aufsichtsbehörde</h2>
 <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig für uns ist der Landesbeauftragte für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern, Werderstraße 74a, 19055 Schwerin.</p>
 </div></section>"""
     return page("datenschutz.html", "Datenschutzerklärung", f"Datenschutzerklärung von {NAME}.", body)
@@ -734,26 +746,23 @@ SATZUNGEN = [
         ("Lübtheen", "18–25 km", "Stadtfriedhof: Kirchengemeinde. Gemeindliche Satzung für Gößlow.", [
             ("Friedhofsordnung Lübtheen", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Luebtheen/210302_Friedhofsordnung_Luebtheen.pdf"),
             ("Ortsrecht der Stadt (Gößlow)", "https://www.luebtheen.de/aktuelles-ortsrecht/ortsrecht/6-oeffentliche-einrichtungen/")]),
-        ("Amt Ludwigslust-Land", "18–30 km", "Satzungen u. a. für Alt Krenzlin, Göhlen, Lüblow, Rastow, Sülstorf und Warlow.", [
+        ("Amt Ludwigslust-Land", "18–30 km", "Gemeindliche Satzungen u. a. für Alt Krenzlin, Göhlen, Lüblow, Rastow, Sülstorf und Warlow.", [
             ("Satzungen des Amtes", "https://www.amt-ludwigslust-land.de/rechtsgrundlagen/index.php?typ=1")]),
         ("Boizenburg/Elbe", "ca. 25 km", "Friedhof der Kirchengemeinde St. Marien (Boizenburg und Rensdorf).", [
             ("Friedhofsordnung Boizenburg", f"{KM}/fileadmin/elkm/propstei_parchim/boizenburg/Friedhof/190618_Friedhofsordnung__Boizenburg.pdf")]),
-        ("Plate und Banzkow (Amt Crivitz)", "ca. 30 km", "", [
-            ("Ortsrecht Plate", "https://www.amt-crivitz.de/unsere-gemeinden/plate/ortsrecht-satzung/"),
-            ("Ortsrecht Banzkow", "https://www.amt-crivitz.de/unsere-gemeinden/banzkow/ortsrechtsatzung/")]),
     ]),
     ("Landeshauptstadt Schwerin", [
         ("Schwerin", "22–26 km", "Die Friedhöfe werden von der Stadt betrieben.", [
             ("Friedhofssatzung Schwerin", "https://www.schwerin.de/export/sites/default/.galleries/Dokumente/Ortsrecht/Friedhofssatzung.pdf")]),
     ]),
     ("Landkreis Nordwestmecklenburg", [
-        ("Amt Lützow-Lübstorf", "10–30 km", "Satzungen u. a. für Alt Meteln und Lützow.", [
+        ("Amt Lützow-Lübstorf", "10–30 km", "Gemeindliche Satzung u. a. für Lützow.", [
             ("Satzungen des Amtes", "https://www.luetzow-luebstorf.de/rechtsgrundlagen/index.php?typ=1")]),
-        ("Gadebusch und Amt Gadebusch", "17–24 km", "Der Stadtfriedhof wird seit 2024 von der Kirchengemeinde betrieben. Gemeindliche Satzung u. a. für Mühlen Eichsen.", [
+        ("Gadebusch und Amt Gadebusch", "17–24 km", "Der Stadtfriedhof wird seit 2024 von der Kirchengemeinde betrieben (auch Roggendorf, Groß Eichsen, Vietlübbe, Groß Salitz).", [
             ("Friedhofsordnung Gadebusch", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Gadebusch-Roggendorf/20240125_KG_Gadebusch-Roggendorf_Friedhofsordnung_fuer_den_FH_Gadebusch.pdf"),
             ("Satzungen von Stadt und Amt", "https://www.gadebusch.de/verwaltung/satzungen/")]),
-        ("Amt Rehna", "26–30 km", "Satzung Holdorf sowie kirchliche Friedhofsordnungen u. a. für Rehna und Carlow.", [
-            ("Satzungen des Amtes", "https://www.rehna.de/satzungen/")]),
+        ("Holdorf (Amt Rehna)", "26–30 km", "Gemeindliche Friedhofssatzung Holdorf auf der Satzungsseite des Amtes.", [
+            ("Satzungen des Amtes Rehna", "https://www.rehna.de/satzungen/")]),
     ]),
     ("Kreis Herzogtum Lauenburg (Schleswig-Holstein)", [
         ("Mölln", "ca. 26 km", "Friedhof der Ev.-Luth. Kirchengemeinde Mölln.", [
@@ -767,11 +776,66 @@ SATZUNGEN = [
 ]
 
 
+MARKERS = []
+ORTE = json.loads((ROOT / "scripts" / "orte.json").read_text(encoding="utf-8"))
+
+# Welche Orte (Kartenpunkte) gehören zu welchem Eintrag. Zweiter Wert: Linktext,
+# der für diesen Ort gilt (None = alle Links des Eintrags).
+ENTRY_ORTE = {
+    "Wittenburg": [("Wittenburg", None), ("Zühr", "Städtische Satzung (Zühr)"), ("Körchow", "Friedhofsordnung Körchow, Camin, Marsow"),
+                   ("Camin", "Friedhofsordnung Körchow, Camin, Marsow"), ("Marsow", "Friedhofsordnung Körchow, Camin, Marsow")],
+    "Wittendörp": [("Wittendörp", None), ("Döbbersen", "Kirchengemeinde Döbbersen"), ("Lassahn", "Kirchengemeinde Döbbersen")],
+    "Zarrentin am Schaalsee und Amt Zarrentin": [("Zarrentin am Schaalsee", "Friedhofsordnung Zarrentin"), ("Gallin", "Satzungen des Amtes"), ("Vellahn", "Satzungen des Amtes")],
+    "Hagenow": [("Hagenow", None)],
+    "Amt Hagenow-Land": [("Alt Zachun", "Alt Zachun"), ("Bresegard bei Picher", "Bresegard b. Picher"), ("Groß Krams", "Groß Krams"), ("Hoort", "Hoort"),
+                         ("Hülseburg", "Hülseburg"), ("Kirch Jesar", "Kirch Jesar"), ("Kuhstorf", "Kuhstorf"), ("Moraas", "Moraas"),
+                         ("Pritzier", "Pritzier"), ("Strohkirchen", "Strohkirchen"), ("Warlitz", "Warlitz")],
+    "Amt Stralendorf": [("Holthusen", None)],
+    "Amt Boizenburg-Land": [("Brahlstorf", "Brahlstorf"), ("Dersenow", "Dersenow"), ("Schwanheide", "Schwanheide")],
+    "Lübtheen": [("Lübtheen", "Friedhofsordnung Lübtheen"), ("Gößlow", "Ortsrecht der Stadt (Gößlow)")],
+    "Amt Ludwigslust-Land": [(o, None) for o in ("Alt Krenzlin", "Göhlen", "Lüblow", "Rastow", "Sülstorf", "Warlow")],
+    "Boizenburg/Elbe": [("Boizenburg/Elbe", None)],
+    "Schwerin": [("Schwerin", None)],
+    "Amt Lützow-Lübstorf": [("Lützow", None)],
+    "Gadebusch und Amt Gadebusch": [("Gadebusch", None)],
+    "Holdorf (Amt Rehna)": [("Holdorf", None)],
+    "Mölln": [("Mölln", None)],
+    "Güster (Amt Büchen)": [("Güster", None)],
+    "Grambek (Amt Breitenfelde)": [("Grambek", None)],
+    "Amt Lauenburgische Seen": [("Gudow", None)],
+}
+
+
+def dist_km(a, b):
+    import math
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    return 2 * 6371 * math.asin(math.sqrt(math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2))
+
+
+def slug(t):
+    t = t.lower().replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+
+
 def build_satzungen():
     regions = []
+    MARKERS.clear()
     for region, entries in SATZUNGEN:
         lis = []
-        for name, km, note, links in entries:
+        for name, _km, note, links in entries:
+            orte = ENTRY_ORTE.get(name, [])
+            ds = [dist_km(ORTE["Lehsen"], ORTE[o]) for o, _ in orte if ORTE.get(o)]
+            if ds:
+                lo, hi = round(min(ds)), round(max(ds))
+                km = f"ca. {lo} km" if lo == hi else f"{lo}–{hi} km"
+            else:
+                km = _km
+            eid = "ort-" + slug(name)
+            search = " ".join([name, note] + [o for o, _ in orte] + [t for t, _ in links]).lower()
+            for o, lbl in orte:
+                if ORTE.get(o):
+                    ll = [(t, u) for t, u in links if lbl is None or t == lbl]
+                    MARKERS.append({"n": o, "e": name, "id": eid, "p": ORTE[o], "l": ll})
             if links:
                 lk = "<br>".join(f'<a class="dl" href="{u}" target="_blank" rel="noopener">{t} ↗</a>' for t, u in links)
             else:
@@ -779,8 +843,8 @@ def build_satzungen():
             many = len(links) > 4
             if many:
                 lk = " ".join(f'<a class="dl" href="{u}" target="_blank" rel="noopener">{t}</a>' for t, u in links)
-            lis.append(f"""<li{' class="many"' if many else ""}><div class="ort"><strong>{name} <span class="km">· {km}</span></strong>{f"<small>{note}</small>" if note else ""}</div><div class="links">{lk}</div></li>""")
-        regions.append(f"""<div class="region"><h2>{region}</h2><ul class="satzungen">{"".join(lis)}</ul></div>""")
+            lis.append(f"""<li id="{eid}" data-search="{esc(search)}"{' class="many"' if many else ""}><div class="ort"><strong>{name} <span class="km">· {km}</span></strong>{f"<small>{note}</small>" if note else ""}</div><div class="links">{lk}</div></li>""")
+        regions.append(f"""<div class="region" data-region><h2>{region}</h2><ul class="satzungen">{"".join(lis)}</ul></div>""")
     body = f"""<section class="page-head">
   <div class="wrap">
     <div class="crumbs"><a href="index.html">Start</a> / <a href="ratgeber.html">Ratgeber</a> / Friedhofssatzungen</div>
@@ -810,6 +874,32 @@ def build_satzungen():
 </section>
 <section class="section section-alt">
   <div class="wrap">
+    <div class="finder">
+      <div class="finder-search">
+        <label for="ortsuche">Ihren Friedhof finden</label>
+        <div class="search-box">
+          <input id="ortsuche" type="search" placeholder="Ort eingeben, z. B. Hoort oder Zarrentin" autocomplete="off">
+        </div>
+        <p class="search-info" id="search-info" aria-live="polite"></p>
+        <div class="quick" aria-label="Schnellauswahl">
+          {"".join(f'<button type="button" data-quick="{q}">{q}</button>' for q in ("Wittenburg", "Hagenow", "Zarrentin", "Boizenburg", "Lübtheen", "Gadebusch", "Schwerin", "Mölln"))}
+        </div>
+        <p class="finder-hint">Tippen Sie den Namen Ihres Ortes ein oder klicken Sie auf einen Punkt in der Karte. Ein Klick auf einen Eintrag in der Liste zeigt ihn auf der Karte.</p>
+        <p class="search-empty" id="search-empty" hidden>Kein passender Ort gefunden. <a href="kontakt.html">Fragen Sie uns</a> – wir helfen gern weiter.</p>
+      </div>
+      <div class="map-wrap">
+        <div id="map" class="map" aria-label="Karte der Friedhöfe im Umkreis von 30 km um Lehsen"></div>
+        <div class="map-consent" id="map-consent">
+          <div>
+            <h3>Karte anzeigen</h3>
+            <p>Die Karte wird von OpenStreetMap geladen. Dabei wird Ihre IP-Adresse an die OpenStreetMap Foundation übertragen. Mehr dazu in der <a href="datenschutz.html#karte">Datenschutzerklärung</a>.</p>
+            <button class="btn" type="button" id="map-load">Karte laden</button>
+            <label class="check" style="justify-content:center;margin:14px 0 0"><input type="checkbox" id="map-remember"><span>Karte künftig immer laden</span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>window.SATZUNG_MARKERS = {json.dumps(MARKERS, ensure_ascii=False)}; window.LEHSEN = {json.dumps(ORTE["Lehsen"])};</script>
     {"".join(regions)}
     <div class="region">
       <h2>Kirchliche Friedhöfe in Mecklenburg</h2>
@@ -822,6 +912,7 @@ def build_satzungen():
   </div>
 </section>
 {cta()}"""
+    body += f'<script src="{v("satzungen.js")}" defer></script>'
     return page("friedhofssatzungen.html", "Friedhofssatzungen in der Region",
                 "Friedhofssatzungen und Friedhofsordnungen im Umkreis von 30 km um Wittenburg: Hagenow, Zarrentin, Boizenburg, Lübtheen, Gadebusch, Schwerin, Mölln und mehr.",
                 body, "friedhofssatzungen.html")
