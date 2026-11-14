@@ -3,30 +3,108 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kontakt &amp; Anfahrt | Schrift im Stein</title>
-<meta name="description" content="Kontakt und Anfahrt zu Schrift im Stein, Unter den Linden 14, 19243 Wittenburg OT Lehsen.">
+<title>Kontakt &amp; Anfahrt | Grabmale aus Lehsen</title>
+<meta name="description" content="Kontakt zu Grabmale aus Lehsen: Unter den Linden 14, 19243 Wittenburg OT Lehsen. Telefon 038852 / 509 54. Beratungstermine auch abends und samstags.">
+<link rel="canonical" href="https://grabmale.lionify.de/kontakt.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kontakt &amp; Anfahrt | Grabmale aus Lehsen">
+<meta property="og:description" content="Kontakt zu Grabmale aus Lehsen: Unter den Linden 14, 19243 Wittenburg OT Lehsen. Telefon 038852 / 509 54. Beratungstermine auch abends und samstags.">
+<meta property="og:url" content="https://grabmale.lionify.de/kontakt.html">
+<meta property="og:image" content="https://grabmale.lionify.de/img/breitsteine/breitsteine-03.jpg">
+<meta property="og:locale" content="de_DE">
+<meta name="theme-color" content="#26282b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><div class="wrap">
-<div class="brand"><strong>Schrift im Stein</strong><span>Grabmale aus Lehsen · Bernhard Gerdes</span></div>
-<nav>
-<a href="index.html">Home</a>
-<a href="kontakt.html" aria-current="page">Kontakt &amp; Anfahrt</a>
-</nav></div></header>
-<main><div class="wrap">
-<h1>Kontakt &amp; Anfahrt</h1>
-<p>Rufen Sie gern an und vereinbaren Sie einen Termin. Das ist auch abends und samstags möglich.</p>
-<div class="card">
-<h2 style="margin-top:0">Schrift im Stein</h2>
-<p>Bernhard Gerdes<br>Unter den Linden 14<br>19243 Wittenburg OT Lehsen</p>
-<p>Telefon: <a href="tel:+493885250954">+49 (0) 38852 – 50954</a></p>
-<p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Unter+den+Linden+14+19243+Wittenburg" rel="noopener">Route in Google Maps öffnen</a></p>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<div class="notice" id="winter" hidden>
+  <div class="wrap"><strong>Winterrabatt</strong><span>In den Wintermonaten bieten wir attraktive Rabatte auf Natursteine und Zubehör.</span><a href="kontakt.html">Unverbindliches Angebot anfragen</a></div>
 </div>
-</div></main>
-<footer><div class="wrap">
-<a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><br>
-© Grabmale aus Lehsen – Bernhard Gerdes
-</div></footer>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><strong>Grabmale aus Lehsen</strong><span>Bernhard Gerdes · Steinmetz</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav"><span></span>Menü</button>
+    <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="grabmale.html">Grabmale</a>
+      <a href="referenzen.html">Referenzen</a>
+      <a href="index.html#ablauf">Ablauf</a>
+      <a class="nav-cta" href="kontakt.html" aria-current="page">Kontakt</a>
+    </nav>
+  </div>
+</header>
+<main id="inhalt">
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Kontakt</p>
+    <h1>Wir sind für Sie da</h1>
+    <p class="lead">Rufen Sie an, schreiben Sie uns oder nutzen Sie das Formular. Wir melden uns zeitnah bei Ihnen.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap contact-grid">
+    <div>
+      <ul class="info-list">
+        <li><small>Adresse</small>Grabmale aus Lehsen<br>Bernhard Gerdes<br>Unter den Linden 14<br>19243 Wittenburg OT Lehsen</li>
+        <li><small>Telefon</small><a href="tel:+493885250954">038852 / 509 54</a></li>
+        <li><small>E-Mail</small><a href="mailto:steine@online.de">steine@online.de</a></li>
+        <li><small>Öffnungszeiten</small>Termine nach Vereinbarung – auch abends und samstags.<br><span class="muted">Terminabsprachen sind wünschenswert.</span></li>
+      </ul>
+      <a class="btn btn-ghost" href="https://www.openstreetmap.org/search?query=Unter%20den%20Linden%2014%2C%2019243%20Wittenburg" target="_blank" rel="noopener">Route planen (OpenStreetMap)</a>
+      <p class="muted" style="font-size:.85rem;margin-top:10px">Der Link öffnet OpenStreetMap in einem neuen Fenster.</p>
+    </div>
+    <form class="form" action="kontakt.php" method="post" novalidate>
+      <div class="msg msg-ok" id="msg-ok" hidden>Vielen Dank für Ihre Nachricht! Wir melden uns so bald wie möglich bei Ihnen.</div>
+      <div class="msg msg-err" id="msg-err" hidden>Ihre Nachricht konnte leider nicht gesendet werden. Bitte prüfen Sie Ihre Angaben oder rufen Sie uns an: <a href="tel:+493885250954">038852 / 509 54</a>.</div>
+      <h2 style="font-size:1.6rem">Nachricht senden</h2>
+      <div class="row">
+        <div class="field"><label for="name">Name <span class="req">*</span></label><input id="name" name="name" autocomplete="name" required maxlength="120"></div>
+        <div class="field"><label for="phone">Telefon</label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="60"></div>
+      </div>
+      <div class="field"><label for="email">E-Mail <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+      <div class="field"><label for="topic">Worum geht es?</label>
+        <select id="topic" name="topic"><option>Beratungstermin</option><option>Breitsteine</option><option>Reihensteine</option><option>Stelen</option><option>Liegesteine</option><option>Grabanlagen</option><option>Nachbeschriftung</option><option>Sonstiges</option></select></div>
+      <div class="field"><label for="message">Ihre Nachricht <span class="req">*</span></label><textarea id="message" name="message" required maxlength="5000"></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="website">Bitte leer lassen</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+      <input type="hidden" name="ts" id="ts" value="">
+      <label class="check"><input type="checkbox" name="consent" value="1" required><span>Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. Details in der <a href="datenschutz.html">Datenschutzerklärung</a>. <span class="req">*</span></span></label>
+      <button class="btn" type="submit">Nachricht senden</button>
+      <p class="muted" style="font-size:.82rem;margin:14px 0 0"><span class="req">*</span> Pflichtfeld</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><strong>Grabmale aus Lehsen</strong><span>Bernhard Gerdes · Steinmetz</span></a>
+        <p style="margin-top:16px">Grabmale, Grabsteine und Grabanlagen aus Naturstein – mit persönlicher Beratung und eigener Ausstellung in Lehsen.</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Unter den Linden 14<br>19243 Wittenburg OT Lehsen</li>
+          <li><a href="tel:+493885250954">038852 / 509 54</a></li>
+          <li><a href="mailto:steine@online.de">steine@online.de</a></li>
+          <li>Termine nach Vereinbarung – auch abends und samstags</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Grabmale</h4>
+        <ul>
+          <li><a href="breitsteine.html">Breitsteine</a></li><li><a href="reihensteine.html">Reihensteine</a></li><li><a href="stelen.html">Stelen</a></li><li><a href="liegesteine.html">Liegesteine</a></li><li><a href="grabanlagen.html">Grabanlagen</a></li>
+          <li><a href="referenzen.html">Referenzen</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Grabmale aus Lehsen – Bernhard Gerdes</span>
+      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </div>
+</footer>
+<script src="main.js" defer></script>
 </body>
 </html>

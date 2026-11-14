@@ -9,6 +9,13 @@ Statische Webseite, gehostet bei all-inkl. Repo: web-lionify/website-grabmale-le
 - Zugangsdaten liegen als Repository-Secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, `FTP_SERVER_DIR`.
   Einrichten mit `scripts/setup-secrets.sh`.
 
+## Aufbau
+- Seiten werden mit `python3 scripts/build.py` erzeugt (Kopf, Navigation, Fußzeile und Texte zentral dort). HTML-Dateien nicht von Hand bearbeiten, sondern im Script ändern und neu bauen.
+- `style.css` und `main.js` (Navigation, Lightbox, Winterrabatt Nov–Feb, Formular-Status) werden direkt bearbeitet.
+- Bilder: `img/<kategorie>/<kategorie>-NN.jpg` (max. 1200 px) und `-NN-k.jpg` (Vorschau, max. 480 px). Neue Bilder einfach mit der nächsten Nummer ablegen und neu bauen.
+- Kontaktformular: `kontakt.php` (PHP `mail()` an steine@online.de, Honeypot + Zeitprüfung). Lokal gibt es kein PHP, Test nur live.
+- Lokale Vorschau: `python3 -m http.server 8080` im Repo-Ordner.
+
 ## Arbeitsweise
 1. Änderungswünsche werden **nicht sofort umgesetzt**, sondern erst besprochen und in einer Liste gesammelt.
 2. Erst wenn ausdrücklich gesagt wird „Liste abarbeiten“, werden die Punkte umgesetzt.

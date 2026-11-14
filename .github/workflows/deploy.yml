@@ -37,3 +37,4 @@ jobs:
             ANLEITUNG-ZUGANGSDATEN.md
             **/.DS_Store
             scripts/**
+            .claude/**
