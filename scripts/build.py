@@ -1259,7 +1259,7 @@ def build_sitemap(files):
 
 def build_htaccess():
     csp = ("default-src 'self'; "
-           f"script-src 'self' '{WINTER_HASH}'; "
+           f"script-src 'self' '{WINTER_HASH}' 'unsafe-inline'; "
            "style-src 'self' 'unsafe-inline'; "
            "img-src 'self' data: https://tile.openstreetmap.org; "
            "font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; "
@@ -1286,7 +1286,7 @@ AddType image/webp .webp
 AddType application/manifest+json .webmanifest
 
 <IfModule mod_headers.c>
-  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
   Header always set Content-Security-Policy "{csp}"
   Header always set Cross-Origin-Opener-Policy "same-origin"
   Header always set X-Content-Type-Options "nosniff"

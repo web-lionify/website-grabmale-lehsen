@@ -496,3 +496,5 @@ picture { display: block; }
 .legal-sec { scroll-margin-top: 100px; padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
 .legal-sec h2 { display: flex; gap: 14px; align-items: baseline; margin-top: 0; }
 .legal-sec h2 span { font-size: 1rem; color: var(--accent); }
+.footer-bottom a:not(.credit) { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: #6b6d71; }
+.footer-bottom a:not(.credit):hover { text-decoration-color: currentColor; }
