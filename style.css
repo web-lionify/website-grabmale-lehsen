@@ -498,3 +498,22 @@ picture { display: block; }
 .legal-sec h2 span { font-size: 1rem; color: var(--accent); }
 .footer-bottom a:not(.credit) { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: #6b6d71; }
 .footer-bottom a:not(.credit):hover { text-decoration-color: currentColor; }
+
+/* Anfahrt */
+.anfahrt-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 32px; align-items: start; }
+@media (max-width: 900px) { .anfahrt-grid { grid-template-columns: 1fr; } }
+.address-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px 26px; }
+.address-card .box-title { font: 600 .75rem/1.4 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+.address-card p { margin: 0; }
+.address-big { font: 400 1.35rem/1.45 var(--serif); margin-bottom: 10px !important; }
+.routes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 760px) { .routes { grid-template-columns: 1fr; } }
+.route { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; }
+.route h3 { margin-bottom: 2px; }
+.route .muted { font-size: .9rem; margin-bottom: 12px; }
+.route ol { margin: 0; padding-left: 1.3em; }
+.route li { margin-bottom: .45em; }
+.drives { list-style: none; padding: 0; margin: 16px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 32px; border-top: 1px solid var(--line); }
+@media (max-width: 760px) { .drives { grid-template-columns: 1fr 1fr; } }
+.drives li { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.drives span { color: var(--muted); font-size: .92rem; }

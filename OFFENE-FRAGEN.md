@@ -21,6 +21,11 @@ Wird ausgegeben, wenn gesagt wird: „offene Fragen beantworten“. Beantwortete
 8. Warlitz: Laut Satzung ist die Gravur auf der Stele im anonymen Urnenfeld einem bestimmten Steinmetzbetrieb aus Hagenow zugewiesen – ist das bekannt / relevant?
 9. Friedhöfe mit nicht veröffentlichten Gestaltungsvorschriften (u. a. Wittenburg, Zarrentin, Gößlow, Boizenburg-Land): Liegen Herrn Gerdes diese Vorschriften vor?
 
+## Anfahrt
+15. Gibt es Parkplätze direkt an der Ausstellung (Anzahl, Hof, Straße)?
+16. Ist die Ausstellung frei zugänglich (auch außerhalb der Termine anschauen?) und barrierefrei erreichbar?
+17. Gibt es einen markanten Hinweis für die Anfahrt (z. B. Schild, Hofeinfahrt, Hausfarbe) und ein Foto vom Gelände/Eingang?
+
 ## Entscheidungen
 10. Alte Domain grabmale-aus-lehsen.de: auf die neue Seite umleiten, abschalten oder anders nutzen?
 11. Google-Unternehmensprofil anlegen (Maps-Eintrag, Bewertungen)?

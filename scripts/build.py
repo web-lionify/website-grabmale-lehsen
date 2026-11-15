@@ -34,6 +34,7 @@ NAV = [
     ("grabmale.html", "Grabmale"),
     ("referenzen.html", "Referenzen"),
     ("ratgeber.html", "Ratgeber"),
+    ("anfahrt.html", "Anfahrt"),
 ]
 SITEMAP_META = {}
 CSS = ""
@@ -237,9 +238,6 @@ def page(filename, title, description, body, current=None, head_extra="", prefix
       <a class="brand" href="index.html"><strong>{NAME}</strong><span>{OWNER} · Steinmetz</span></a>
       <p class="footer-contact">{STREET}, {ZIP_CITY}<span>·</span><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a><span>·</span><a href="mailto:{MAIL}">{MAIL}</a></p>
     </div>
-    <nav class="footer-nav" aria-label="Fußzeile">
-      <a href="grabmale.html">Grabmale</a><a href="referenzen.html">Referenzen</a><a href="ratgeber.html">Ratgeber</a><a href="friedhofssatzungen.html">Friedhofssatzungen</a><a href="{EBAY_URL}" target="_blank" rel="noopener">Online-Shop</a><a href="kontakt.html">Kontakt</a>
-    </nav>
     <div class="footer-bottom">
       <span>© <span id="year">2026</span> {NAME} · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
       <a class="credit" href="https://lionify.de" target="_blank" rel="noopener" title="Professionelle Websites für Handwerk und Mittelstand">Gestaltet &amp; umgesetzt von lionify.de</a>
@@ -527,11 +525,10 @@ def build_contact():
         <li><small>Telefon</small><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></li>
         <li><small>E-Mail</small><a href="mailto:{MAIL}">{MAIL}</a></li>
         <li><small>Öffnungszeiten</small>{HOURS}.<br><span class="muted">Terminabsprachen sind wünschenswert.</span></li>
-        <li><small>Anfahrt</small>Lehsen liegt direkt bei Wittenburg, nur wenige Minuten von der A24 (Anschlussstelle Wittenburg) entfernt – aus Schwerin, Hagenow und Hamburg gut erreichbar.</li>
+        <li><small>Anfahrt</small>Lehsen liegt direkt bei Wittenburg, nur wenige Minuten von der A24 entfernt. <a href="anfahrt.html">Wegbeschreibung &amp; Karte →</a></li>
         <li><small>Online-Shop</small><a href="{EBAY_URL}" target="_blank" rel="noopener">Liegesteine &amp; Grabherzen bei eBay ↗</a></li>
       </ul>
-      <a class="btn btn-ghost" href="{MAP_URL}" target="_blank" rel="noopener">Route planen (OpenStreetMap)</a>
-      <p class="muted" style="font-size:.85rem;margin-top:10px">Der Link öffnet OpenStreetMap in einem neuen Fenster.</p>
+      <a class="btn btn-ghost" href="anfahrt.html">So finden Sie zu uns</a>
     </div>
     <form class="form" action="kontakt.php" method="post" novalidate>
       <div class="msg msg-ok" id="msg-ok" hidden>Vielen Dank für Ihre Nachricht! Wir melden uns so bald wie möglich bei Ihnen.</div>
@@ -567,6 +564,78 @@ def legal_head(eyebrow, h1, lead, crumb_name, crumb_url):
     <p class="lead">{lead}</p>
   </div>
 </section>"""
+
+
+ROUTES = [
+    ("Über die A24 – Abfahrt Wittenburg", "aus Richtung Berlin und Schwerin, auch aus Richtung Hamburg möglich",
+     ["Nehmen Sie die Abfahrt <strong>Wittenburg</strong> und fahren Sie im Kreisverkehr auf die L 05 in Richtung Wittenburg.",
+      "Folgen Sie dem <strong>Südring</strong> um die Stadt herum.",
+      "Am nächsten Kreisverkehr biegen Sie auf die <strong>Lehsener Chaussee</strong> (L 05) ab.",
+      "Nach rund 3,5 km erreichen Sie Lehsen – die Ausstellung liegt an der Straße <strong>Unter den Linden</strong>."]),
+    ("Aus Richtung Hamburg – Abfahrt Zarrentin", "die kürzere Strecke von Westen",
+     ["Verlassen Sie die A24 an der Abfahrt <strong>Zarrentin</strong> (B 195) und fahren Sie Richtung Zarrentin.",
+      "Durch Zarrentin und dort rechts auf die <strong>L 04</strong> (Wittenburger Chaussee) in Richtung Wittenburg.",
+      "Nach etwa 6 km rechts auf die Kreisstraße <strong>K 11</strong> nach Lehsen abbiegen.",
+      "Nach rund 4 km am Ende der Straße links in <strong>Unter den Linden</strong>."]),
+]
+DRIVES = [("Wittenburg", "4 km", "5 Min."), ("Zarrentin", "12 km", "15 Min."), ("Hagenow", "19 km", "20 Min."),
+          ("Boizenburg", "28 km", "30 Min."), ("Schwerin", "39 km", "40 Min."), ("Hamburg", "79 km", "1 Std.")]
+
+
+def build_directions():
+    routes = "".join(f"""<article class="route"><h3>{t}</h3><p class="muted">{sub}</p><ol>{"".join(f"<li>{x}</li>" for x in steps)}</ol></article>""" for t, sub, steps in ROUTES)
+    drives = "".join(f"<li><strong>{n}</strong><span>{d} · ca. {t}</span></li>" for n, d, t in DRIVES)
+    body = f"""<section class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Start</a> / Anfahrt</div>
+    <p class="eyebrow">Anfahrt</p>
+    <h1>So finden Sie zu uns</h1>
+    <p class="lead">Unsere Ausstellung liegt in Lehsen, rund 4 km südwestlich der Wittenburger Innenstadt und nur wenige Minuten von der A24 entfernt.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap anfahrt-grid">
+    <div>
+      <div class="address-card">
+        <h2 class="box-title">Adresse</h2>
+        <p class="address-big">{NAME}<br>{STREET}<br>{ZIP_CITY}</p>
+        <p class="muted" style="font-size:.9rem">Tipp fürs Navi: „Lehsen, Unter den Linden 14“ eingeben.</p>
+        <div class="btn-row" style="margin-top:16px"><a class="btn" href="{MAP_URL}" target="_blank" rel="noopener">Route planen</a><a class="btn btn-ghost" href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></div>
+        <p class="muted" style="font-size:.8rem;margin-top:10px">„Route planen“ öffnet OpenStreetMap in einem neuen Fenster.</p>
+      </div>
+      <div class="address-card" style="margin-top:16px">
+        <h2 class="box-title">Besuch der Ausstellung</h2>
+        <p>{HOURS}. Damit wir uns ausreichend Zeit für Sie nehmen können, vereinbaren Sie bitte vorab einen Termin.</p>
+        <p style="margin-top:12px"><a href="kontakt.html">Termin anfragen →</a></p>
+      </div>
+    </div>
+    <div class="map-wrap">
+      <div id="map" class="map" aria-label="Karte: Lage der Ausstellung in Lehsen"></div>
+      <div class="map-consent" id="map-consent">
+        <div>
+          <h3>Karte anzeigen</h3>
+          <p>Die Karte wird von OpenStreetMap geladen. Dabei wird Ihre IP-Adresse an die OpenStreetMap Foundation übertragen. Mehr dazu in der <a href="datenschutz.html#karte">Datenschutzerklärung</a>.</p>
+          <button class="btn" type="button" id="map-load">Karte laden</button>
+          <label class="check" style="justify-content:center;margin:14px 0 0"><input type="checkbox" id="map-remember"><span>Karte künftig immer laden</span></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Wegbeschreibung</h2></div>
+    <div class="routes">{routes}</div>
+    <h2 class="h3" style="margin-top:48px">Entfernungen</h2>
+    <ul class="drives">{drives}</ul>
+    <p class="muted" style="font-size:.85rem;margin-top:12px">Ungefähre Fahrstrecken und -zeiten mit dem Auto, berechnet mit OpenStreetMap.</p>
+  </div>
+</section>
+{cta("Wir freuen uns auf Ihren Besuch", "Vereinbaren Sie einen Termin – auch abends und samstags.")}
+<script type="application/json" id="anfahrt-data">{json.dumps({"lehsen": ORTE["Lehsen"]})}</script>
+<script src="{v("anfahrt.js")}" defer></script>"""
+    return page("anfahrt.html", "Anfahrt", f"Anfahrt zu {NAME}: {STREET}, {ZIP_CITY} – wenige Minuten von der A24, Abfahrt Wittenburg. Wegbeschreibung, Karte und Entfernungen.",
+                body, "anfahrt.html", crumbs=[("Start", ""), ("Anfahrt", "anfahrt.html")])
 
 
 def build_imprint():
@@ -1324,7 +1393,7 @@ if __name__ == "__main__":
     SATZ.update(load_satzungen())
     files = [build_index(), build_overview()]
     files += [build_category(c) for c in CATEGORIES]
-    files += [build_references(), build_faq(), build_satzungen(), build_stones(), build_contact(), build_imprint(), build_privacy()]
+    files += [build_references(), build_faq(), build_satzungen(), build_stones(), build_directions(), build_contact(), build_imprint(), build_privacy()]
     files += [build_satzung_page(d) for d in SATZ.values()]
     build_sitemap(files)
     build_htaccess()
