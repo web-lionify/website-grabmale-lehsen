@@ -1,11 +1,12 @@
-// Friedhofssatzungen: Ortssuche und Karte (OpenStreetMap erst nach Einwilligung)
+// Friedhofssatzungen: Ortssuche mit Trefferliste und Karte (OpenStreetMap erst nach Einwilligung)
 (function () {
-  var markersData = window.SATZUNG_MARKERS || [];
+  var dataEl = document.getElementById('satz-data');
+  var DATA = dataEl ? JSON.parse(dataEl.textContent) : { markers: [], search: [], lehsen: [53.49, 11.03] };
+  var markersData = DATA.markers, LEHSEN = DATA.lehsen;
   var input = document.getElementById('ortsuche');
-  var info = document.getElementById('search-info');
+  var results = document.getElementById('search-results');
   var empty = document.getElementById('search-empty');
   var items = Array.prototype.slice.call(document.querySelectorAll('.satzungen li[data-search]'));
-  var regions = Array.prototype.slice.call(document.querySelectorAll('[data-region]'));
   var map = null, layers = {}, mapReady = false;
 
   function norm(s) {
@@ -13,52 +14,74 @@
       .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
       .replace(/[^a-z0-9]+/g, ' ').trim();
   }
-  items.forEach(function (li) { li._s = norm(li.getAttribute('data-search')); });
+  var index = DATA.search.map(function (e) { return { e: e, n: norm(e.n), k: norm(e.k) }; });
 
-  // ---------- Suche ----------
-  function search() {
+  // ---------- Trefferliste ----------
+  var hits = [], active = -1;
+
+  function score(it, q) {
+    if (it.n === q) return 0;
+    if (it.n.indexOf(q) === 0) return 1;
+    if ((' ' + it.n).indexOf(' ' + q) !== -1) return 2;
+    if (it.n.indexOf(q) !== -1) return 3;
+    if ((' ' + it.k).indexOf(' ' + q) !== -1) return 4;
+    if (it.k.indexOf(q) !== -1) return 5;
+    return -1;
+  }
+
+  function render() {
     var q = norm(input.value);
-    var hits = 0;
-    items.forEach(function (li) {
-      var ok = !q || li._s.indexOf(q) !== -1;
-      li.hidden = !ok;
-      li.classList.toggle('hit', !!q && ok);
-      if (ok) hits++;
+    results.textContent = '';
+    active = -1;
+    if (!q) { hits = []; results.hidden = true; empty.hidden = true; input.setAttribute('aria-expanded', 'false'); highlightMarkers(''); return; }
+    hits = index.map(function (it) { return { it: it, s: score(it, q) }; })
+      .filter(function (x) { return x.s >= 0; })
+      .sort(function (a, b) { return a.s - b.s || a.it.e.d - b.it.e.d; })
+      .slice(0, 8).map(function (x) { return x.it.e; });
+    hits.forEach(function (e, i) {
+      var li = document.createElement('li');
+      li.setAttribute('role', 'option');
+      li.id = 'treffer-' + i;
+      var a = document.createElement('a');
+      a.href = e.u;
+      var strong = document.createElement('strong'); strong.textContent = e.n;
+      var small = document.createElement('small'); small.textContent = e.sub;
+      a.appendChild(strong); a.appendChild(small);
+      li.appendChild(a);
+      results.appendChild(li);
     });
-    regions.forEach(function (r) {
-      if (!r.querySelector('.satzungen li[data-search]')) return; // Kirchenkreis-Block immer zeigen
-      r.hidden = !r.querySelector('.satzungen li[data-search]:not([hidden])');
-    });
-    empty.hidden = !q || hits > 0;
-    info.textContent = q ? (hits === 1 ? '1 Eintrag gefunden' : hits + ' Einträge gefunden') : '';
+    results.hidden = hits.length === 0;
+    empty.hidden = hits.length > 0;
+    input.setAttribute('aria-expanded', hits.length ? 'true' : 'false');
     highlightMarkers(q);
   }
-  Array.prototype.forEach.call(document.querySelectorAll('[data-quick]'), function (b) {
-    b.addEventListener('click', function () { input.value = b.getAttribute('data-quick'); search(); input.focus(); });
-  });
-  if (input) {
-    input.addEventListener('input', search);
-    input.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        var first = items.filter(function (li) { return !li.hidden; })[0];
-        if (first) focusEntry(first.id, true);
-      }
-    });
+
+  function setActive(i) {
+    var lis = results.children;
+    if (!lis.length) return;
+    active = (i + lis.length) % lis.length;
+    for (var j = 0; j < lis.length; j++) lis[j].classList.toggle('active', j === active);
+    input.setAttribute('aria-activedescendant', 'treffer-' + active);
   }
 
-  function focusEntry(id, fromSearch) {
-    var li = document.getElementById(id);
-    if (!li) return;
-    items.forEach(function (x) { x.classList.remove('active'); });
-    li.classList.add('active');
-    if (!fromSearch || window.innerWidth < 900) li.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    if (mapReady) {
-      var pts = markersData.filter(function (m) { return m.id === id; });
-      if (pts.length === 1) map.flyTo(pts[0].p, 12, { duration: 0.6 });
-      else if (pts.length > 1) map.flyToBounds(pts.map(function (m) { return m.p; }), { padding: [40, 40], maxZoom: 12, duration: 0.6 });
-    }
+  if (input) {
+    input.addEventListener('input', render);
+    input.addEventListener('focus', function () { if (input.value) render(); });
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') { e.preventDefault(); setActive(active + 1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); setActive(active - 1); }
+      else if (e.key === 'Enter') {
+        var target = hits[active >= 0 ? active : 0];
+        if (target) { e.preventDefault(); location.href = target.u; }
+      } else if (e.key === 'Escape') { results.hidden = true; input.setAttribute('aria-expanded', 'false'); }
+    });
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.search-box')) { results.hidden = true; input.setAttribute('aria-expanded', 'false'); }
+    });
   }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-quick]'), function (b) {
+    b.addEventListener('click', function (e) { e.stopPropagation(); input.value = b.getAttribute('data-quick'); render(); input.focus(); });
+  });
 
   // ---------- Karte ----------
   var consent = document.getElementById('map-consent');
@@ -81,19 +104,26 @@
 
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
+  function focusEntry(id) {
+    var li = document.getElementById(id);
+    if (!li) return;
+    items.forEach(function (x) { x.classList.remove('active'); });
+    li.classList.add('active');
+    li.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
   function initMap() {
     consent.hidden = true;
     loadLeaflet(function () {
       var L = window.L;
-      map = L.map('map', { scrollWheelZoom: false, zoomControl: true }).setView(window.LEHSEN, 9);
-      var ring = L.circle(window.LEHSEN, { radius: 30000 });
+      map = L.map('map', { scrollWheelZoom: false, zoomControl: true }).setView(LEHSEN, 9);
+      var ring = L.circle(LEHSEN, { radius: 30000 });
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>-Mitwirkende'
       }).addTo(map);
-
       ring.addTo(map); map.fitBounds(ring.getBounds(), { padding: [10, 10] }); map.removeLayer(ring);
-      L.circle(window.LEHSEN, { radius: 30000, color: '#8a6a3f', weight: 1.5, dashArray: '6 6', fill: true, fillColor: '#8a6a3f', fillOpacity: 0.04, interactive: false }).addTo(map);
+      L.circle(LEHSEN, { radius: 30000, color: '#8a6a3f', weight: 1.5, dashArray: '6 6', fill: true, fillColor: '#8a6a3f', fillOpacity: 0.04, interactive: false }).addTo(map);
 
       markersData.forEach(function (m) {
         var links = m.l.map(function (x) {
@@ -108,13 +138,12 @@
           .bindPopup(html, { maxWidth: 280 })
           .bindTooltip(m.n, { direction: 'top', offset: [0, -6] })
           .addTo(map);
-        mk.on('click', function () { items.forEach(function (x) { x.classList.toggle('active', x.id === m.id); }); });
         (layers[m.id] = layers[m.id] || []).push(mk);
-        mk._name = norm(m.n + ' ' + m.e);
         mk._own = norm(m.n);
+        mk._name = norm(m.n + ' ' + m.e);
       });
 
-      L.circleMarker(window.LEHSEN, { radius: 9, color: '#fff', weight: 3, fillColor: '#1f2124', fillOpacity: 1 })
+      L.circleMarker(LEHSEN, { radius: 9, color: '#fff', weight: 3, fillColor: '#1f2124', fillOpacity: 1 })
         .bindTooltip('Lehsen – Grabmale aus Lehsen', { permanent: true, direction: 'right', offset: [10, 0], className: 'tip-home' })
         .addTo(map);
 
@@ -122,7 +151,6 @@
         var a = e.popup.getElement().querySelector('.pop-more');
         if (a) a.addEventListener('click', function (ev) { ev.preventDefault(); focusEntry(a.getAttribute('data-id')); });
       });
-      // Scrollrad erst nach Klick in die Karte aktivieren
       map.on('click focus', function () { map.scrollWheelZoom.enable(); });
       map.on('mouseout', function () { map.scrollWheelZoom.disable(); });
 
@@ -134,13 +162,11 @@
   function highlightMarkers(q) {
     if (!mapReady) return;
     var hitPts = [];
-    // Erst nach Ortsnamen suchen; nur wenn kein Ort passt, ganze Einträge hervorheben
     var byName = false;
     if (q) Object.keys(layers).forEach(function (id) { layers[id].forEach(function (mk) { if (mk._own.indexOf(q) !== -1) byName = true; }); });
     Object.keys(layers).forEach(function (id) {
       layers[id].forEach(function (mk) {
-        var li = document.getElementById(id);
-        var on = !q || (byName ? mk._own.indexOf(q) !== -1 : (mk._name.indexOf(q) !== -1 || (li && li._s.indexOf(q) !== -1)));
+        var on = !q || (byName ? mk._own.indexOf(q) !== -1 : mk._name.indexOf(q) !== -1);
         mk.setStyle({ fillColor: on ? '#6f552f' : '#b9b2a6', fillOpacity: on ? 1 : 0.5, radius: q && on ? 9 : 7 });
         if (q && on) { mk.bringToFront(); hitPts.push(mk.getLatLng()); }
       });
@@ -159,16 +185,14 @@
   }
   if (consent && storedOk()) initMap();
 
-  // Klick auf Eintrag in der Liste -> Karte zentrieren
+  // Klick auf Eintrag in der Liste -> Karte zentrieren (falls geladen)
   items.forEach(function (li) {
     li.addEventListener('click', function (e) {
-      if (e.target.closest('a')) return;
-      focusEntry(li.id, true);
-      if (mapReady) {
-        var mk = (layers[li.id] || [])[0];
-        if (mk && (layers[li.id] || []).length === 1) mk.openPopup();
-        document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
+      if (e.target.closest('a') || !mapReady) return;
+      var mks = layers[li.id] || [];
+      if (mks.length === 1) { map.flyTo(mks[0].getLatLng(), 12, { duration: 0.6 }); mks[0].openPopup(); }
+      else if (mks.length > 1) map.flyToBounds(mks.map(function (m) { return m.getLatLng(); }), { padding: [40, 40], maxZoom: 12, duration: 0.6 });
+      document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   });
 })();

@@ -35,6 +35,7 @@ jobs:
             README.md
             CLAUDE.md
             ANLEITUNG-ZUGANGSDATEN.md
+            OFFENE-FRAGEN.md
             **/.DS_Store
             scripts/**
             .claude/**

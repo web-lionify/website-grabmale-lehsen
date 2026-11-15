@@ -10,14 +10,16 @@
     });
   }
 
+  // Ausklappmenü: per Tastatur schließen
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && document.activeElement && document.activeElement.closest('.has-sub')) document.activeElement.blur();
+  });
+
   // Jahr im Footer
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
 
-  // Winterrabatt: nur von November bis Februar anzeigen
-  var winter = document.getElementById('winter');
-  var m = new Date().getMonth(); // 0 = Januar
-  if (winter && (m >= 10 || m <= 1)) winter.hidden = false;
+  // Winterrabatt-Banner wird direkt im HTML (vor dem ersten Anzeigen) eingeblendet
 
   // Kontaktformular: Zeitstempel (Spam-Schutz) und Statusmeldung
   var ts = document.getElementById('ts');

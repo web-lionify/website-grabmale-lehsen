@@ -1,7 +1,10 @@
-# grabmale.lionify.de
+# grabmale.lionify.de – wird von scripts/build.py erzeugt, nicht von Hand bearbeiten
 
-# HTTPS erzwingen
 RewriteEngine On
+# www auf Hauptadresse umleiten
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+# HTTPS erzwingen
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
@@ -10,35 +13,32 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   Require all denied
 </FilesMatch>
 
-# Keine Verzeichnisauflistung
 Options -Indexes
-
-# Eigene Fehlerseite
 ErrorDocument 404 /404.html
-
-# Zeichensatz
 AddDefaultCharset UTF-8
+AddType image/webp .webp
+AddType application/manifest+json .webmanifest
 
-# Sicherheits-Header
 <IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-omXQKhGo3iIqYWsH+6tpjf7TAAvIvKZiWfnfrKp4up0='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  # versionierte Dateien (?v=…) dürfen lange gecacht werden
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(jpe?g|webp|png|svg)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
 </IfModule>
 
-# Komprimierung
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml
-</IfModule>
-
-# Caching
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresDefault "access plus 1 hour"
-  ExpiresByType text/html "access plus 0 seconds"
-  ExpiresByType text/css "access plus 1 week"
-  ExpiresByType application/javascript "access plus 1 week"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 month"
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml application/json application/manifest+json
 </IfModule>

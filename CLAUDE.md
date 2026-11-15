@@ -21,3 +21,4 @@ Statische Webseite, gehostet bei all-inkl. Repo: web-lionify/website-grabmale-le
 1. Änderungswünsche werden **nicht sofort umgesetzt**, sondern erst besprochen und in einer Liste gesammelt.
 2. Erst wenn ausdrücklich gesagt wird „Liste abarbeiten“, werden die Punkte umgesetzt.
 3. Danach Commit und Push auf `main` (= live, da kein Staging). Vor dem Push kurz zusammenfassen, was live geht.
+4. Fragen an Herrn Gerdes werden nicht sofort gestellt, sondern in `OFFENE-FRAGEN.md` gesammelt. Bei „offene Fragen beantworten“ alle Fragen daraus ausgeben.

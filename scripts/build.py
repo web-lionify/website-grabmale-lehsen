@@ -35,6 +35,8 @@ NAV = [
     ("referenzen.html", "Referenzen"),
     ("ratgeber.html", "Ratgeber"),
 ]
+SITEMAP_META = {}
+CSS = ""
 RATGEBER_PAGES = ("ratgeber.html", "friedhofssatzungen.html", "steinsorten.html")
 
 CATEGORIES = [
@@ -115,7 +117,7 @@ LOCAL_BUSINESS = {
     "url": SITE + "/",
     "telephone": PHONE,
     "email": MAIL,
-    "image": SITE + "/img/breitsteine/breitsteine-03.jpg",
+    "image": SITE + "/img/hero/ausstellung-960.jpg",
     "address": {
         "@type": "PostalAddress",
         "streetAddress": STREET,
@@ -125,18 +127,71 @@ LOCAL_BUSINESS = {
         "addressCountry": "DE",
     },
     "areaServed": "Westmecklenburg",
+    "geo": {"@type": "GeoCoordinates", "latitude": 53.4892, "longitude": 11.0274},
+    "priceRange": "Individuelles Angebot",
+    "sameAs": ["https://www.ebay.de/str/grabsteine"],
+    "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Leistungen", "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": n}} for n in
+        ("Grabsteine und Grabmale", "Stelen", "Liegesteine und Grabherzen", "Grabanlagen und Einfassungen", "Nachbeschriftung", "Aufarbeitung und Standsicherheit")]},
+    "knowsAbout": ["Grabmale", "Naturstein", "Friedhofssatzungen in Westmecklenburg"],
 }
 
 
-def page(filename, title, description, body, current=None, head_extra="", prefix=""):
-    nav_html = []
+WINTER_JS = "(function(){var m=new Date().getMonth();if(m>=10||m<=1){document.getElementById('winter').hidden=false;}})();"
+WINTER_HASH = "sha256-" + __import__("base64").b64encode(hashlib.sha256(WINTER_JS.encode()).digest()).decode()
+
+
+def css_min():
+    css = (ROOT / "style.css").read_text(encoding="utf-8")
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    css = re.sub(r"\s+", " ", css)
+    css = re.sub(r"\s*([{};:,>])\s*", r"\1", css)
+    return css.replace(";}", "}").strip()
+
+
+def to_picture(html):
+    """Ersetzt <img src="….jpg"> durch <picture> mit WebP-Quelle, sofern vorhanden."""
+    def rep(m):
+        tag = m.group(0)
+        if "srcset=" in tag:
+            return tag
+        src = re.search(r'src="([^"]+)\.jpg"', tag)
+        if not src:
+            return tag
+        base = src.group(1)
+        local = base.replace("../", "")
+        if not (ROOT / f"{local}.webp").exists():
+            return tag
+        return f'<picture><source type="image/webp" srcset="{base}.webp">{tag}</picture>'
+    html = re.sub(r"<img\b[^>]*>", rep, html)
+    # Lightbox-Links auf WebP
+    html = re.sub(r'(<a href="[^"]+?)\.jpg" data-lb', lambda m: (m.group(1) + '.webp" data-lb') if (ROOT / (m.group(1).split('"')[-1].replace("../", "") + ".webp")).exists() else m.group(0), html)
+    return html
+
+
+def page(filename, title, description, body, current=None, head_extra="", prefix="", noindex=False, crumbs=None, schema=None, full_title=None):
+    def nav_link(href, label):
+        cur = ' aria-current="page"' if current == href else ""
+        return f'<a href="{href}"{cur}>{label}</a>'
+    items = []
     for href, label in NAV:
-        cur = ' aria-current="page"' if current == href or (href == "ratgeber.html" and current in RATGEBER_PAGES) else ""
-        nav_html.append(f'<a href="{href}"{cur}>{label}</a>')
+        if href == "ratgeber.html":
+            active = current in RATGEBER_PAGES or current == "ratgeber.html"
+            sub = "".join(nav_link(h, t) for h, t in (("ratgeber.html", "Häufige Fragen"), ("friedhofssatzungen.html", "Friedhofssatzungen"), ("steinsorten.html", "Steinsorten")))
+            items.append(f'<div class="nav-item has-sub"><a href="ratgeber.html" class="nav-parent{" is-active" if active else ""}" aria-haspopup="true">Ratgeber</a><div class="sub">{sub}</div></div>')
+        else:
+            items.append(nav_link(href, label))
     cur = ' aria-current="page"' if current == "kontakt.html" else ""
-    nav_html.append(f'<a class="nav-cta" href="kontakt.html"{cur}>Kontakt</a>')
-    full_title = f"{title} | {NAME}" if title != NAME else f"{NAME} – Grabmale & Grabsteine bei Wittenburg"
+    items.append(f'<a class="nav-cta" href="kontakt.html"{cur}>Kontakt</a>')
+    if full_title is None:
+        full_title = f"{title} | {NAME}" if title != NAME else f"{NAME} – Grabmale & Grabsteine bei Wittenburg"
     canonical = SITE + "/" + ("" if filename == "index.html" else filename)
+    ld = list(schema or [])
+    if crumbs:
+        ld.append({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + "/" + u} for i, (n, u) in enumerate(crumbs)]})
+    ld_html = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
+    robots = '<meta name="robots" content="noindex, follow">\n' if noindex else ""
     html = f"""<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -144,28 +199,32 @@ def page(filename, title, description, body, current=None, head_extra="", prefix
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(full_title)}</title>
 <meta name="description" content="{esc(description)}">
-<link rel="canonical" href="{canonical}">
+{robots}<link rel="canonical" href="{canonical}">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="{NAME}">
 <meta property="og:title" content="{esc(full_title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{canonical}">
-<meta property="og:image" content="{SITE}/img/breitsteine/breitsteine-03.jpg">
+<meta property="og:image" content="{SITE}/img/hero/ausstellung-960.jpg">
 <meta property="og:locale" content="de_DE">
 <meta name="theme-color" content="#26282b">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{v('style.css')}">
-{head_extra}</head>
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<style>{CSS}</style>
+{head_extra}{ld_html}</head>
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 <div class="notice" id="winter" hidden>
   <div class="wrap"><strong>Winterrabatt</strong><span>In den Wintermonaten bieten wir attraktive Rabatte auf Natursteine und Zubehör.</span><a href="kontakt.html">Unverbindliches Angebot anfragen</a></div>
 </div>
+<script>{WINTER_JS}</script>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html"><strong>{NAME}</strong><span>{OWNER} · Steinmetz</span></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav"><span></span>Menü</button>
     <nav class="nav" id="nav" aria-label="Hauptnavigation">
-      {chr(10).join("      " + n if i else n for i, n in enumerate(nav_html))}
+      {"".join(items)}
     </nav>
   </div>
 </header>
@@ -174,38 +233,16 @@ def page(filename, title, description, body, current=None, head_extra="", prefix
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <a class="brand" href="index.html"><strong>{NAME}</strong><span>{OWNER} · Steinmetz</span></a>
-        <p style="margin-top:16px">Grabmale, Grabsteine und Grabanlagen aus Naturstein – mit persönlicher Beratung und eigener Ausstellung in Lehsen.</p>
-      </div>
-      <div>
-        <h4>Kontakt</h4>
-        <ul>
-          <li>{STREET}<br>{ZIP_CITY}</li>
-          <li><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></li>
-          <li><a href="mailto:{MAIL}">{MAIL}</a></li>
-          <li>{HOURS}</li>
-          <li><a href="{EBAY_URL}" target="_blank" rel="noopener">Online-Shop bei eBay ↗</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Grabmale</h4>
-        <ul>
-          {"".join(f'<li><a href="{c["slug"]}.html">{c["title"]}</a></li>' for c in CATEGORIES)}
-          <li><a href="referenzen.html">Referenzen</a></li>
-        </ul>
-        <h4 style="margin-top:22px">Ratgeber</h4>
-        <ul>
-          <li><a href="ratgeber.html">Häufige Fragen</a></li>
-          <li><a href="friedhofssatzungen.html">Friedhofssatzungen</a></li>
-          <li><a href="steinsorten.html">Steinsorten</a></li>
-        </ul>
-      </div>
+    <div class="footer-top">
+      <a class="brand" href="index.html"><strong>{NAME}</strong><span>{OWNER} · Steinmetz</span></a>
+      <p class="footer-contact">{STREET}, {ZIP_CITY}<span>·</span><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a><span>·</span><a href="mailto:{MAIL}">{MAIL}</a></p>
     </div>
+    <nav class="footer-nav" aria-label="Fußzeile">
+      <a href="grabmale.html">Grabmale</a><a href="referenzen.html">Referenzen</a><a href="ratgeber.html">Ratgeber</a><a href="friedhofssatzungen.html">Friedhofssatzungen</a><a href="{EBAY_URL}" target="_blank" rel="noopener">Online-Shop</a><a href="kontakt.html">Kontakt</a>
+    </nav>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> {NAME} – {OWNER}</span>
-      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+      <span>© <span id="year">2026</span> {NAME} · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+      <a class="credit" href="https://lionify.de" target="_blank" rel="noopener" title="Professionelle Websites für Handwerk und Mittelstand">Gestaltet &amp; umgesetzt von lionify.de</a>
     </div>
   </div>
 </footer>
@@ -213,12 +250,17 @@ def page(filename, title, description, body, current=None, head_extra="", prefix
 </body>
 </html>
 """
+    html = to_picture(html)
     if prefix:
-        # relative Pfade für Unterordner anpassen
-        html = re.sub(r'((?:href|src)=")(?!https?:|mailto:|tel:|#|/|data:)', r"\1" + prefix, html)
+        # relative Pfade für Unterordner anpassen (nicht im eingebetteten CSS)
+        head, sep, rest = html.partition("</style>")
+        rest = re.sub(r'((?:href|src|srcset)=")(?!https?:|mailto:|tel:|#|/|data:)', r"\1" + prefix, rest)
+        head = re.sub(r'((?:href|src)=")(?!https?:|mailto:|tel:|#|/|data:)', r"\1" + prefix, head.split("<style>")[0]) + "<style>" + head.split("<style>", 1)[1]
+        html = head + sep + rest
     out = ROOT / filename
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")
+    SITEMAP_META[filename] = {"noindex": noindex}
     return filename
 
 
@@ -297,7 +339,7 @@ def build_index():
       <div class="btn-row"><a class="btn" href="kontakt.html">Beratungstermin vereinbaren</a><a class="btn btn-ghost" href="grabmale.html">Grabmale ansehen</a></div>
     </div>
     <div class="hero-media">
-      <img src="img/breitsteine/breitsteine-03.jpg" alt="Ausstellung mit Grabsteinen aus verschiedenen Graniten in Lehsen" width="960" height="367" fetchpriority="high">
+      <picture><source type="image/webp" srcset="img/hero/ausstellung-640.webp 640w, img/hero/ausstellung-960.webp 960w" sizes="(max-width: 860px) calc(100vw - 50px), 600px"><img src="img/hero/ausstellung-960.jpg" srcset="img/hero/ausstellung-640.jpg 640w, img/hero/ausstellung-960.jpg 960w" sizes="(max-width: 860px) calc(100vw - 50px), 600px" alt="Ausstellung mit Grabsteinen aus verschiedenen Graniten in Lehsen" width="960" height="367" fetchpriority="high" decoding="async"></picture>
     </div>
   </div>
 </section>
@@ -359,11 +401,10 @@ def build_index():
   </div>
 </section>
 
-{cta()}
-<script type="application/ld+json">{json.dumps(LOCAL_BUSINESS, ensure_ascii=False)}</script>"""
+{cta()}"""
     return page("index.html", NAME,
-                "Grabmale aus Lehsen – Steinmetz Bernhard Gerdes bei Wittenburg: Grabsteine, Stelen, Liegesteine und Grabanlagen aus Naturstein. Persönliche Beratung und Ausstellung, auch abends und samstags.",
-                body, "index.html")
+                "Steinmetz Bernhard Gerdes in Lehsen bei Wittenburg: Grabsteine, Stelen, Liegesteine und Grabanlagen aus Naturstein. Beratung auch abends und samstags.",
+                body, "index.html", schema=[LOCAL_BUSINESS])
 
 
 def build_overview():
@@ -392,8 +433,8 @@ def build_overview():
 </section>
 {cta()}"""
     return page("grabmale.html", "Grabmale",
-                "Breitsteine, Reihensteine, Stelen, Liegesteine und Grabanlagen aus Naturstein – Beispiele und Beratung bei Grabmale aus Lehsen.",
-                body, "grabmale.html")
+                "Breitsteine, Reihensteine, Stelen, Liegesteine und Grabanlagen aus Naturstein – Beispiele aus unserer Werkstatt und persönliche Beratung in Lehsen.",
+                body, "grabmale.html", crumbs=[("Start", ""), ("Grabmale", "grabmale.html")])
 
 
 def subnav(active):
@@ -429,10 +470,24 @@ def build_category(c):
     {gallery(c["slug"], c["title"])}
   </div>
 </section>
+<section class="section">
+  <div class="wrap">
+    <div class="satz-more">
+      <section><h2 class="h3">Gut vorbereitet</h2><div class="more-links">
+        <a href="friedhofssatzungen.html"><strong>Friedhofssatzungen der Region</strong><span>Was auf Ihrem Friedhof für Grabmale gilt</span></a>
+        <a href="steinsorten.html"><strong>Steinsorten</strong><span>Farben, Herkunft und Wirkung von Naturstein</span></a>
+        <a href="ratgeber.html"><strong>Häufige Fragen</strong><span>Genehmigung, Fristen, Preis und Pflege</span></a>
+      </div></section>
+      <section><h2 class="h3">Weitere Grabmale</h2><div class="more-links">
+        {"".join(f'<a href="{o["slug"]}.html"><strong>{o["title"]}</strong><span>{o["short"]}</span></a>' for o in CATEGORIES if o["slug"] != c["slug"])}
+      </div></section>
+    </div>
+  </div>
+</section>
 {cta()}"""
     return page(f'{c["slug"]}.html', c["title"],
-                f'{c["title"]} aus Naturstein von Grabmale aus Lehsen: {c["short"]} Beispiele, Gestaltung und persönliche Beratung bei Wittenburg.',
-                body, "grabmale.html")
+                f'{c["title"]} aus Naturstein vom Steinmetz in Lehsen: {c["short"]} Beispiele aus unserer Werkstatt und Beratung.',
+                body, "grabmale.html", crumbs=[("Start", ""), ("Grabmale", "grabmale.html"), (c["title"], f'{c["slug"]}.html')])
 
 
 def build_references():
@@ -451,8 +506,8 @@ def build_references():
 </section>
 {cta()}"""
     return page("referenzen.html", "Referenzen",
-                "Referenzen von Grabmale aus Lehsen: gefertigte und aufgestellte Grabmale auf Friedhöfen in Westmecklenburg.",
-                body, "referenzen.html")
+                "Referenzen von Grabmale aus Lehsen: von uns gefertigte und aufgestellte Grabmale auf Friedhöfen in Westmecklenburg – Breitsteine, Stelen und mehr.",
+                body, "referenzen.html", crumbs=[("Start", ""), ("Referenzen", "referenzen.html")])
 
 
 def build_contact():
@@ -500,79 +555,99 @@ def build_contact():
 </section>"""
     return page("kontakt.html", "Kontakt & Anfahrt",
                 f"Kontakt zu Grabmale aus Lehsen: {STREET}, {ZIP_CITY}. Telefon {PHONE_SHOW}. Beratungstermine auch abends und samstags.",
-                body, "kontakt.html")
+                body, "kontakt.html", crumbs=[("Start", ""), ("Kontakt", "kontakt.html")])
+
+
+def legal_head(eyebrow, h1, lead, crumb_name, crumb_url):
+    return f"""<section class="page-head">
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Start</a> / {crumb_name}</div>
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{h1}</h1>
+    <p class="lead">{lead}</p>
+  </div>
+</section>"""
 
 
 def build_imprint():
-    body = f"""<section class="page-head"><div class="wrap"><h1>Impressum</h1></div></section>
-<section class="section"><div class="wrap prose">
-<h2>Angaben gemäß § 5 DDG</h2>
-<p>{OWNER}<br>{NAME} – Schrift im Stein<br>{STREET}<br>{ZIP_CITY}</p>
-<h2>Kontakt</h2>
-<p>Telefon: <a href="tel:{PHONE_HREF}">{PHONE}</a><br>Telefax: {PHONE}<br>E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p>
-<h2>Umsatzsteuer</h2>
-<p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>DE246444446</p>
-<h2>Verbraucherstreitbeilegung</h2>
-<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-<h2>Haftung für Inhalte</h2>
-<p>Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-<h2>Haftung für Links</h2>
-<p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-<h2>Urheberrecht</h2>
-<p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten – insbesondere Texte und Fotos – unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-</div></section>"""
-    return page("impressum.html", "Impressum", f"Impressum von {NAME} – {OWNER}, {ZIP_CITY}.", body)
+    body = legal_head("Rechtliches", "Impressum", "Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG).", "Impressum", "impressum.html") + f"""
+<section class="section">
+  <div class="wrap">
+    <div class="legal-cards">
+      <div class="legal-card">
+        <h2 class="box-title">Anbieter</h2>
+        <p><strong>{OWNER}</strong><br>{NAME} – Schrift im Stein<br>{STREET}<br>{ZIP_CITY}</p>
+      </div>
+      <div class="legal-card">
+        <h2 class="box-title">Kontakt</h2>
+        <p>Telefon: <a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a><br>Telefax: {PHONE_SHOW}<br>E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p>
+      </div>
+      <div class="legal-card">
+        <h2 class="box-title">Steuern</h2>
+        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br><strong>DE246444446</strong></p>
+      </div>
+    </div>
+    <div class="legal-text">
+      <h2>Verbraucherstreitbeilegung</h2>
+      <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+      <h2>Haftung für Inhalte</h2>
+      <p>Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben unberührt; eine Haftung ist erst ab Kenntnis einer konkreten Rechtsverletzung möglich. Entsprechende Inhalte entfernen wir dann umgehend.</p>
+      <p>Die Zusammenfassungen von Friedhofssatzungen auf dieser Website wurden mit größter Sorgfalt erstellt; verbindlich ist jedoch allein die jeweils aktuelle Satzung des Friedhofsträgers.</p>
+      <h2>Haftung für Links</h2>
+      <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft; rechtswidrige Inhalte waren nicht erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir derartige Links umgehend.</p>
+      <h2>Urheberrecht und Bildnachweis</h2>
+      <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten – insbesondere Texte und Fotos – unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung. Alle Fotos zeigen Arbeiten von {NAME} und stammen aus eigenem Bestand.</p>
+      <h2>Gestaltung und Umsetzung</h2>
+      <p><a href="https://lionify.de" target="_blank" rel="noopener">lionify.de</a></p>
+    </div>
+  </div>
+</section>"""
+    return page("impressum.html", "Impressum", f"Impressum von {NAME}: Steinmetz {OWNER}, {STREET}, {ZIP_CITY}. Kontakt und Angaben nach § 5 DDG.", body)
+
+
+PRIVACY_SECTIONS = [
+    ("verantwortlicher", "Verantwortlicher", f"""<p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+<div class="legal-card legal-inline"><p><strong>{OWNER}</strong><br>{NAME} – Schrift im Stein<br>{STREET}, {ZIP_CITY}<br>Telefon: <a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a> · E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p></div>"""),
+    ("hosting", "Hosting und Server-Logdateien", """<p>Diese Website wird bei der ALL-INKL.COM – Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf, gehostet. Beim Aufruf der Website erhebt der Server automatisch Informationen, die Ihr Browser übermittelt (Server-Logdateien): IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, übertragene Datenmenge, Referrer-URL, Browsertyp und Betriebssystem.</p>
+<p>Diese Daten werden ausschließlich benötigt, um die Website sicher und stabil bereitzustellen, und nicht mit anderen Daten zusammengeführt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt im sicheren Betrieb der Website. Mit dem Hoster besteht ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO. Die Logdateien werden nur für einen begrenzten Zeitraum gespeichert und anschließend gelöscht bzw. anonymisiert.</p>"""),
+    ("ssl", "SSL-/TLS-Verschlüsselung", """<p>Diese Seite nutzt aus Sicherheitsgründen eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie an „https://“ in der Adresszeile Ihres Browsers. Zusätzlich weisen wir Browser an, die Seite ausschließlich verschlüsselt aufzurufen (HSTS).</p>"""),
+    ("kontakt", "Kontaktformular, E-Mail und Telefon", """<p>Wenn Sie uns über das Kontaktformular, per E-Mail oder telefonisch kontaktieren, verarbeiten wir Ihre Angaben (Name, E-Mail-Adresse, ggf. Telefonnummer, Ihr Anliegen und Ihre Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage und für mögliche Anschlussfragen.</p>
+<p>Die Nachricht aus dem Kontaktformular wird per E-Mail an unser Postfach übermittelt, das bei einem externen E-Mail-Anbieter geführt wird; sie wird nicht in einer Datenbank auf dem Webserver gespeichert. Zum Schutz vor automatisiertem Spam nutzt das Formular ein unsichtbares Feld und eine Zeitprüfung; dabei werden keine zusätzlichen personenbezogenen Daten erhoben.</p>
+<p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Anbahnung oder Erfüllung eines Vertrages zusammenhängt, und im Übrigen Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen). Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+<p>Ihre Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten (z. B. bei Angeboten und Aufträgen) entgegenstehen. Eine Weitergabe an Dritte findet nicht statt. Die Angabe Ihrer Daten ist freiwillig; ohne sie können wir Ihre Anfrage jedoch nicht beantworten.</p>"""),
+    ("karte", "Karte (OpenStreetMap)", """<p>Auf der Seite „Friedhofssatzungen“ bieten wir eine interaktive Karte an. Die Kartendarstellung (Kartenkacheln) wird von der OpenStreetMap Foundation (OSMF), St John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, Großbritannien, geladen. Die Programmbibliothek für die Karte (Leaflet) liegt auf unserem eigenen Server.</p>
+<p>Die Karte wird <strong>erst geladen, wenn Sie auf „Karte laden“ klicken</strong>. Erst dann stellt Ihr Browser eine Verbindung zu den Servern von OpenStreetMap her; dabei werden insbesondere Ihre IP-Adresse, der angefragte Kartenausschnitt sowie technische Angaben Ihres Browsers übertragen. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Für das Vereinigte Königreich besteht ein Angemessenheitsbeschluss der EU-Kommission.</p>
+<p>Wenn Sie „Karte künftig immer laden“ auswählen, wird diese Entscheidung ausschließlich lokal in Ihrem Browser gespeichert (Local Storage) und nicht an uns übertragen. Sie können die Einwilligung jederzeit widerrufen, indem Sie die gespeicherten Websitedaten in Ihrem Browser löschen. Weitere Informationen: <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">Datenschutzerklärung der OpenStreetMap Foundation</a>.</p>"""),
+    ("links", "Externe Links", """<p>Unsere Website enthält Links zu externen Angeboten, unter anderem zu unserem Shop bei eBay sowie zu Satzungen und Informationen von Städten, Ämtern, Kirchengemeinden und Verbänden. Diese Inhalte werden nicht in unsere Website eingebunden; beim bloßen Aufruf unserer Seiten werden keine Daten an diese Anbieter übertragen. Erst wenn Sie einen Link anklicken, wird die jeweilige Seite geöffnet und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>"""),
+    ("rechte", "Ihre Rechte", """<p>Sie haben im Rahmen der gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
+<ul><li>Auskunft über Ihre gespeicherten personenbezogenen Daten (Art. 15 DSGVO),</li><li>Berichtigung unrichtiger Daten (Art. 16 DSGVO),</li><li>Löschung (Art. 17 DSGVO) und Einschränkung der Verarbeitung (Art. 18 DSGVO),</li><li>Datenübertragbarkeit (Art. 20 DSGVO),</li><li>Widerspruch gegen die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21 DSGVO),</li><li>Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO).</li></ul>
+<p>Wenden Sie sich dazu einfach an die oben genannten Kontaktdaten. Eine automatisierte Entscheidungsfindung einschließlich Profiling findet nicht statt.</p>"""),
+    ("beschwerde", "Beschwerderecht bei der Aufsichtsbehörde", """<p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig für uns ist:</p>
+<div class="legal-card legal-inline"><p><strong>Der Landesbeauftragte für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern</strong><br>Werderstraße 74a, 19055 Schwerin</p></div>"""),
+    ("aenderungen", "Änderungen dieser Erklärung", """<p>Wir passen diese Datenschutzerklärung an, wenn sich die Website oder die rechtlichen Anforderungen ändern. Es gilt die jeweils hier veröffentlichte Fassung.</p>"""),
+]
 
 
 def build_privacy():
-    body = f"""<section class="page-head"><div class="wrap"><h1>Datenschutzerklärung</h1><p class="lead">Stand: November 2026</p></div></section>
-<section class="section"><div class="wrap prose">
-<h2>1. Verantwortlicher</h2>
-<p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>{OWNER}, {NAME} – Schrift im Stein<br>{STREET}, {ZIP_CITY}<br>Telefon: {PHONE}<br>E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p>
-
-<h2>2. Das Wichtigste in Kürze</h2>
-<ul>
-  <li>Diese Website verwendet <strong>keine Cookies</strong>, keine Analyse- oder Tracking-Werkzeuge und keine Social-Media-Plugins.</li>
-  <li>Es werden keine Schriften oder Skripte von fremden Servern geladen. Die Karte auf der Seite „Friedhofssatzungen“ lädt erst, wenn Sie dem ausdrücklich zustimmen (siehe Abschnitt 7).</li>
-  <li>Personenbezogene Daten verarbeiten wir nur, wenn Sie uns über das Kontaktformular, per E-Mail oder telefonisch kontaktieren, sowie in technisch notwendigen Server-Logdateien.</li>
-</ul>
-
-<h2>3. Hosting und Server-Logdateien</h2>
-<p>Diese Website wird bei der ALL-INKL.COM – Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf, gehostet. Beim Aufruf der Website erhebt der Server automatisch Informationen, die Ihr Browser übermittelt (Server-Logdateien): IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, übertragene Datenmenge, Referrer-URL, Browsertyp und Betriebssystem.</p>
-<p>Diese Daten werden ausschließlich benötigt, um die Website sicher und stabil bereitzustellen, und nicht mit anderen Daten zusammengeführt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt im sicheren Betrieb der Website. Mit dem Hoster besteht ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO. Die Logdateien werden nach kurzer Zeit automatisch gelöscht.</p>
-
-<h2>4. SSL-/TLS-Verschlüsselung</h2>
-<p>Diese Seite nutzt aus Sicherheitsgründen eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie an „https://“ in der Adresszeile Ihres Browsers.</p>
-
-<h2>5. Kontaktformular, E-Mail und Telefon</h2>
-<p>Wenn Sie uns über das Kontaktformular, per E-Mail oder telefonisch kontaktieren, verarbeiten wir Ihre Angaben (Name, E-Mail-Adresse, ggf. Telefonnummer, Ihr Anliegen und Ihre Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage und für mögliche Anschlussfragen. Die Nachricht aus dem Kontaktformular wird per E-Mail an uns übermittelt; sie wird nicht in einer Datenbank auf dem Webserver gespeichert.</p>
-<p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Anbahnung oder Erfüllung eines Vertrages zusammenhängt, und im Übrigen Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen). Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</p>
-<p>Ihre Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten (z. B. bei Angeboten und Aufträgen) entgegenstehen. Eine Weitergabe an Dritte findet nicht statt.</p>
-
-<h2>6. Externe Links</h2>
-<p>Unsere Website enthält Links zu externen Angeboten, unter anderem zu unserem Shop bei eBay, zur Routenplanung bei OpenStreetMap sowie zu Satzungen und Informationen von Städten, Ämtern, Kirchengemeinden und Verbänden. Diese Inhalte werden nicht in unsere Website eingebunden; beim bloßen Aufruf unserer Seiten werden keine Daten an diese Anbieter übertragen. Erst wenn Sie einen Link anklicken, wird die jeweilige Seite geöffnet und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>
-
-<h2 id="karte">7. Karte (OpenStreetMap)</h2>
-<p>Auf der Seite „Friedhofssatzungen“ bieten wir eine interaktive Karte an. Die Kartendarstellung (Kartenkacheln) wird von der OpenStreetMap Foundation (OSMF), St John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, Großbritannien, geladen. Die Programmbibliothek für die Karte (Leaflet) liegt auf unserem eigenen Server.</p>
-<p>Die Karte wird <strong>erst geladen, wenn Sie auf „Karte laden“ klicken</strong>. Erst dann stellt Ihr Browser eine Verbindung zu den Servern von OpenStreetMap her; dabei werden insbesondere Ihre IP-Adresse, der angefragte Kartenausschnitt sowie technische Angaben Ihres Browsers übertragen. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Für das Vereinigte Königreich besteht ein Angemessenheitsbeschluss der EU-Kommission.</p>
-<p>Wenn Sie „Karte künftig immer laden“ auswählen, wird diese Entscheidung ausschließlich lokal in Ihrem Browser gespeichert (Local Storage) und nicht an uns übertragen. Sie können die Einwilligung jederzeit widerrufen, indem Sie die gespeicherten Websitedaten in Ihrem Browser löschen. Weitere Informationen: <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">Datenschutzerklärung der OpenStreetMap Foundation</a>.</p>
-
-<h2>8. Ihre Rechte</h2>
-<p>Sie haben im Rahmen der gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
-<ul>
-  <li>Auskunft über Ihre gespeicherten personenbezogenen Daten (Art. 15 DSGVO),</li>
-  <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO),</li>
-  <li>Löschung (Art. 17 DSGVO) und Einschränkung der Verarbeitung (Art. 18 DSGVO),</li>
-  <li>Datenübertragbarkeit (Art. 20 DSGVO),</li>
-  <li>Widerspruch gegen die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21 DSGVO),</li>
-  <li>Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO).</li>
-</ul>
-<p>Wenden Sie sich dazu einfach an die oben genannten Kontaktdaten.</p>
-
-<h2>9. Beschwerderecht bei der Aufsichtsbehörde</h2>
-<p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig für uns ist der Landesbeauftragte für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern, Werderstraße 74a, 19055 Schwerin.</p>
-</div></section>"""
-    return page("datenschutz.html", "Datenschutzerklärung", f"Datenschutzerklärung von {NAME}.", body)
+    glance = [("Keine Cookies", "Wir setzen keine Cookies und keine Analyse- oder Tracking-Werkzeuge ein."),
+              ("Keine fremden Dienste", "Schriften und Skripte liegen auf unserem eigenen Server."),
+              ("Karte nur nach Klick", "OpenStreetMap wird erst geladen, wenn Sie zustimmen."),
+              ("Nur für Ihre Anfrage", "Kontaktdaten nutzen wir ausschließlich zur Beantwortung.")]
+    cards = "".join(f'<div class="legal-card glance"><h2 class="box-title">{t}</h2><p>{d}</p></div>' for t, d in glance)
+    toc = "".join(f'<li><a href="#{a}">{t}</a></li>' for a, t, _ in PRIVACY_SECTIONS)
+    secs = "".join(f'<section class="legal-sec" id="{a}"><h2><span>{i:02d}</span>{t}</h2>{c}</section>' for i, (a, t, c) in enumerate(PRIVACY_SECTIONS, 1))
+    body = legal_head("Rechtliches", "Datenschutzerklärung", "Stand: November 2026", "Datenschutz", "datenschutz.html") + f"""
+<section class="section">
+  <div class="wrap">
+    <h2 class="glance-title">Auf einen Blick</h2>
+    <div class="legal-cards glance-cards">{cards}</div>
+    <div class="legal-layout">
+      <nav class="legal-toc" aria-label="Inhalt"><h2 class="box-title">Inhalt</h2><ol>{toc}</ol></nav>
+      <div class="legal-text">{secs}</div>
+    </div>
+  </div>
+</section>"""
+    return page("datenschutz.html", "Datenschutzerklärung", f"Datenschutzerklärung von {NAME}: keine Cookies, kein Tracking. Informationen zu Kontaktformular, Hosting, Karte und Ihren Rechten.", body, noindex=True)
 
 
 STONES = [
@@ -638,7 +713,9 @@ def build_stones():
 {cta()}"""
     return page("steinsorten.html", "Steinsorten",
                 "Steinsorten für Grabmale: Orion, Himalaya, Multicolor Red, Halmstad, Viscont White und Rainbow-Sandstein – Farben, Herkunft und Wirkung erklärt.",
-                body, "steinsorten.html")
+                body, "steinsorten.html", crumbs=[("Start", ""), ("Ratgeber", "ratgeber.html"), ("Steinsorten", "steinsorten.html")],
+                schema=[{"@context": "https://schema.org", "@type": "ItemList", "name": "Steinsorten für Grabmale", "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1, "name": st["name"], "description": f'{st["art"]} aus {st["herkunft"]}: {st["farbe"]}'} for i, st in enumerate(STONES)]}])
 
 
 SRC_BESTATTG = ("Bestattungsgesetz M-V (Landesrecht M-V)", "https://www.landesrecht-mv.de/bsmv/document/jlr-NNLMV00007941")
@@ -688,7 +765,7 @@ def build_faq():
     items = []
     for i, (q, a, srcs) in enumerate(FAQ, 1):
         src = " · ".join(f'<a href="{u}" target="_blank" rel="noopener">{t}</a>' for t, u in srcs)
-        items.append(f"""<details{" open" if i == 1 else ""}>
+        items.append(f"""<details>
   <summary><span class="num">{i:02d}</span>{q}</summary>
   <div class="answer">{a.strip()}
     <p class="src">Quellen: {src}</p>
@@ -712,11 +789,10 @@ def build_faq():
     <p class="muted" style="font-size:.85rem;margin-top:28px;max-width:760px">Diese Informationen ersetzen keine Rechtsberatung. Verbindlich sind das Bestattungsgesetz M-V und die Satzung des jeweiligen Friedhofs (Stand: November 2026).</p>
   </div>
 </section>
-{cta("Noch Fragen?", "Wir beraten Sie persönlich – auch zur Friedhofssatzung und zur Genehmigung.")}
-<script type="application/ld+json">{json.dumps(faq_ld, ensure_ascii=False)}</script>"""
+{cta("Noch Fragen?", "Wir beraten Sie persönlich – auch zur Friedhofssatzung und zur Genehmigung.")}"""
     return page("ratgeber.html", "Ratgeber Grabmal",
                 "Ratgeber Grabmal: Wann darf der Grabstein gesetzt werden, welche Genehmigung braucht es, was gilt zu Kinderarbeit in MV, wovon hängt der Preis ab?",
-                body, "ratgeber.html")
+                body, "ratgeber.html", crumbs=[("Start", ""), ("Ratgeber", "ratgeber.html")], schema=[faq_ld])
 
 
 KM = "https://www.kirche-mv.de"
@@ -784,6 +860,7 @@ SATZUNGEN = [
 
 
 MARKERS = []
+SEARCH = []
 ORTE = json.loads((ROOT / "scripts" / "orte.json").read_text(encoding="utf-8"))
 
 # Welche Orte (Kartenpunkte) gehören zu welchem Eintrag. Zweiter Wert: Linktext,
@@ -813,6 +890,10 @@ ENTRY_ORTE = {
 }
 
 
+def satz_data_json():
+    return json.dumps({"markers": MARKERS, "lehsen": ORTE["Lehsen"], "search": SEARCH}, ensure_ascii=False).replace("</", "<\\/")
+
+
 def dist_km(a, b):
     import math
     la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
@@ -827,6 +908,7 @@ def slug(t):
 def build_satzungen():
     regions = []
     MARKERS.clear()
+    SEARCH.clear()
     for region, entries in SATZUNGEN:
         lis = []
         for name, _km, note, links in entries:
@@ -848,6 +930,10 @@ def build_satzungen():
                 if ORTE.get(o):
                     ll = [(t, u) for t, u in links if lbl is None or t == lbl]
                     sid = ORT_SATZUNG.get(o)
+                    keys = [o, name] + (SATZ[sid].get("orte", []) + SATZ[sid].get("friedhoefe", []) if sid in SATZ else [])
+                    arttxt = {"kommunal": "kommunal", "kirchlich": "kirchlich", "keine_online": "keine Satzung online"}.get(SATZ.get(sid, {}).get("art"), "")
+                    sub = " · ".join(x for x in (name if name != o else "", arttxt, f"{round(dist_km(ORTE['Lehsen'], ORTE[o]))} km") if x)
+                    SEARCH.append({"n": o, "sub": sub, "u": satz_url(sid) if sid in SATZ else f"#{eid}", "k": " ".join(keys), "d": round(dist_km(ORTE['Lehsen'], ORTE[o]), 1)})
                     MARKERS.append({"n": o, "e": name, "id": eid, "p": ORTE[o], "l": ll,
                                     "s": f"friedhofssatzungen/{sid}.html" if sid in SATZ else ""})
             sids = []
@@ -907,14 +993,15 @@ def build_satzungen():
       <div class="finder-search">
         <label for="ortsuche">Ihren Friedhof finden</label>
         <div class="search-box">
-          <input id="ortsuche" type="search" placeholder="Ort eingeben, z. B. Hoort oder Zarrentin" autocomplete="off">
+          <input id="ortsuche" type="search" placeholder="Ort eingeben, z. B. Hoort oder Zarrentin" autocomplete="off"
+                 role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-results">
+          <ul class="search-results" id="search-results" role="listbox" aria-label="Treffer" hidden></ul>
         </div>
-        <p class="search-info" id="search-info" aria-live="polite"></p>
+        <p class="search-empty" id="search-empty" hidden>Kein passender Ort gefunden. <a href="kontakt.html">Fragen Sie uns</a> – wir helfen gern weiter.</p>
         <div class="quick" aria-label="Schnellauswahl">
           {"".join(f'<button type="button" data-quick="{q}">{q}</button>' for q in ("Wittenburg", "Hagenow", "Zarrentin", "Boizenburg", "Lübtheen", "Gadebusch", "Schwerin", "Mölln"))}
         </div>
-        <p class="finder-hint">Tippen Sie den Namen Ihres Ortes ein oder klicken Sie auf einen Punkt in der Karte. Ein Klick auf einen Eintrag in der Liste zeigt ihn auf der Karte.</p>
-        <p class="search-empty" id="search-empty" hidden>Kein passender Ort gefunden. <a href="kontakt.html">Fragen Sie uns</a> – wir helfen gern weiter.</p>
+        <p class="finder-hint">Geben Sie den Namen Ihres Ortes ein und wählen Sie ihn aus der Trefferliste – Sie gelangen direkt zur Zusammenfassung der Friedhofssatzung. Die Karte daneben können Sie zusätzlich zur Orientierung laden.</p>
       </div>
       <div class="map-wrap">
         <div id="map" class="map" aria-label="Karte der Friedhöfe im Umkreis von 30 km um Lehsen"></div>
@@ -928,7 +1015,7 @@ def build_satzungen():
         </div>
       </div>
     </div>
-    <script>window.SATZUNG_MARKERS = {json.dumps(MARKERS, ensure_ascii=False)}; window.LEHSEN = {json.dumps(ORTE["Lehsen"])};</script>
+    <script type="application/json" id="satz-data">{satz_data_json()}</script>
     {"".join(regions)}
     <div class="region">
       <h2>Kirchliche Friedhöfe in Mecklenburg</h2>
@@ -943,8 +1030,8 @@ def build_satzungen():
 {cta()}"""
     body += f'<script src="{v("satzungen.js")}" defer></script>'
     return page("friedhofssatzungen.html", "Friedhofssatzungen in der Region",
-                "Friedhofssatzungen und Friedhofsordnungen im Umkreis von 30 km um Wittenburg: Hagenow, Zarrentin, Boizenburg, Lübtheen, Gadebusch, Schwerin, Mölln und mehr.",
-                body, "friedhofssatzungen.html")
+                "Friedhofssatzungen im Umkreis von 30 km um Wittenburg – Hagenow, Zarrentin, Boizenburg, Lübtheen, Schwerin, Mölln u. v. m., verständlich zusammengefasst.",
+                body, "friedhofssatzungen.html", crumbs=[("Start", ""), ("Ratgeber", "ratgeber.html"), ("Friedhofssatzungen", "friedhofssatzungen.html")])
 
 
 def ratgeber_nav(active):
@@ -1001,9 +1088,65 @@ def lst(items):
     return "<ul>" + "".join(f"<li>{esc(str(i))}</li>" for i in items) + "</ul>"
 
 
+def satz_primary(sid):
+    names = [o for o, x in ORT_SATZUNG.items() if x == sid]
+    return names
+
+
+def satz_label(d):
+    sid = d["id"]
+    names = [n.replace(" am Schaalsee", "").replace("Seedorf (Lauenburg)", "Seedorf") for n in satz_primary(sid)]
+    if sid == "lauenburgische-seen":
+        ort = "Amt Lauenburgische Seen"
+    elif len(names) > 2:
+        ort = ", ".join(names[:-1]) + " & " + names[-1]
+    elif len(names) == 2:
+        ort = " & ".join(names)
+    else:
+        ort = names[0] if names else (d.get("orte") or [sid])[0]
+    art = d.get("art")
+    typ = "Friedhof" if art == "keine_online" else ("Friedhofsordnung" if art == "kirchlich" else "Friedhofssatzung")
+    return typ, ort
+
+
+def satz_url(sid):
+    return f"friedhofssatzungen/{sid}.html"
+
+
+def nearby(sid, n=3):
+    here = [ORTE[o] for o in satz_primary(sid) if ORTE.get(o)]
+    if not here:
+        return []
+    c = here[0]
+    out = []
+    for other in SATZ:
+        if other == sid:
+            continue
+        pts = [ORTE[o] for o in satz_primary(other) if ORTE.get(o)]
+        if pts:
+            out.append((min(dist_km(c, p) for p in pts), other))
+    return [o for _, o in sorted(out)[:n]]
+
+
+def related_cats(d):
+    txt = json.dumps(d, ensure_ascii=False).lower()
+    rel = []
+    if "rasen" in txt or "urne" in txt or "liegend" in txt:
+        rel.append(("liegesteine", "Liegesteine", "für Urnen- und Rasengräber"))
+    rel.append(("reihensteine", "Reihensteine", "für Einzelgrabstätten"))
+    rel.append(("breitsteine", "Breitsteine", "für Doppelgrabstätten"))
+    if "stele" in txt:
+        rel.append(("stelen", "Stelen", "schlank und zeitlos"))
+    if "einfassung" in txt or "abdeckung" in txt:
+        rel.append(("grabanlagen", "Grabanlagen", "Einfassung und Abdeckung"))
+    return rel[:4]
+
+
 def build_satzung_page(d):
     sid = d["id"]
     keine = d.get("art") == "keine_online"
+    typ, ort = satz_label(d)
+    h1 = f"{typ} {ort}"
     art = {"kommunal": "Kommunaler Friedhof", "kirchlich": "Kirchlicher Friedhof", "keine_online": "Keine Satzung online"}.get(d.get("art"), "")
     orte = d.get("orte") or []
     chips = "".join(f"<span>{esc(o)}</span>" for o in orte)
@@ -1012,19 +1155,13 @@ def build_satzung_page(d):
         meta.append(("Friedhöfe", ", ".join(d["friedhoefe"])))
     meta_html = "".join(f"<div><dt>{k}</dt><dd>{esc(str(v))}</dd></div>" for k, v in meta if v and not (keine and k == "Fassung"))
     src = d.get("quelle_url")
-    src_btn = f'<a class="btn btn-ghost" href="{esc(src)}" target="_blank" rel="noopener">{"Zur Seite des Trägers" if keine else "Original-Satzung öffnen"} ↗</a>' if src else ""
+    src_btn = f'<a class="btn btn-ghost" href="{esc(src)}" target="_blank" rel="noopener">{"Zur Seite des Trägers" if keine else "Original-Satzung öffnen"}</a>' if src else ""
 
     if keine:
-        content = f"""<div class="satz-grid">
-  <div class="satz-main">
-    <div class="callout"><h3>Satzung liegt uns nicht vor</h3><p>{esc(d.get("kurzfazit") or "")}</p>
-    <p>Wir kennen die Gegebenheiten vor Ort und fragen die geltenden Vorgaben gern für Sie bei der Friedhofsverwaltung nach.</p></div>
-  </div>
-  {satz_aside(d)}
-</div>"""
+        main = f"""<div class="callout"><h2 class="h3">Satzung liegt uns nicht vor</h2><p>{esc(d.get("kurzfazit") or "")}</p>
+    <p>Wir kennen die Gegebenheiten vor Ort und fragen die geltenden Vorgaben gern für Sie bei der Friedhofsverwaltung nach.</p></div>"""
     else:
-        cards = []
-        cards.append(f"""<section class="satz-card satz-wide"><h2>Ruhezeit</h2><p>{esc(d.get("ruhezeit") or "nicht geregelt")}</p></section>""")
+        cards = [f"""<section class="satz-card satz-wide"><h2>Ruhezeit</h2><p>{esc(d.get("ruhezeit") or "nicht geregelt")}</p></section>"""]
         ga = d.get("grabarten") or []
         if ga:
             rows = "".join(f"<li><strong>{esc(g.get('name',''))}</strong><span>{esc(g.get('regel',''))}</span></li>" for g in ga)
@@ -1032,19 +1169,22 @@ def build_satzung_page(d):
         for key, label in SATZ_SECTIONS:
             cards.append(f"""<section class="satz-card"><h2>{label}</h2>{lst(d.get(key))}</section>""")
         cards.append(f"""<section class="satz-card"><h2>Natursteine ohne Kinderarbeit</h2><p>{esc(d.get("kinderarbeit") or "nicht geregelt")}</p></section>""")
-        content = f"""<div class="satz-grid">
-  <div class="satz-main">
-    <div class="callout satz-fazit"><h3>Das Wichtigste in Kürze</h3><p>{esc(d.get("kurzfazit") or "")}</p></div>
-    <div class="satz-cards">{"".join(cards)}</div>
-  </div>
-  {satz_aside(d)}
-</div>"""
+        main = f"""<div class="callout satz-fazit"><h2 class="h3">Das Wichtigste in Kürze</h2><p>{esc(d.get("kurzfazit") or "")}</p></div>
+    <div class="satz-cards">{"".join(cards)}</div>"""
+
+    rel = "".join(f'<a href="{s_}.html"><strong>{t}</strong><span>{sub}</span></a>' for s_, t, sub in related_cats(d))
+    near = "".join(f'<a href="{satz_url(x)}"><strong>{esc(" ".join(satz_label(SATZ[x])))}</strong><span>{esc(SATZ[x].get("traeger") or "")}</span></a>' for x in nearby(sid))
+    extra = f"""<div class="satz-more">
+      <section><h2 class="h3">Passende Grabmale</h2><div class="more-links">{rel}</div></section>
+      <section><h2 class="h3">Friedhöfe in der Nähe</h2><div class="more-links">{near}</div></section>
+    </div>"""
 
     body = f"""<section class="page-head">
   <div class="wrap">
-    <div class="crumbs"><a href="index.html">Start</a> / <a href="ratgeber.html">Ratgeber</a> / <a href="friedhofssatzungen.html">Friedhofssatzungen</a> / {esc(", ".join(orte[:3]))}</div>
+    <div class="crumbs"><a href="index.html">Start</a> / <a href="ratgeber.html">Ratgeber</a> / <a href="friedhofssatzungen.html">Friedhofssatzungen</a> / {esc(ort)}</div>
     <p class="eyebrow">{art}</p>
-    <h1>{esc(d.get("titel") or "")}</h1>
+    <h1>{esc(h1)}</h1>
+    <p class="satz-official">{esc(d.get("titel") or "")}</p>
     <div class="ort-chips">{chips}</div>
     <dl class="satz-meta">{meta_html}</dl>
     <div class="btn-row">{src_btn}<a class="btn" href="kontakt.html">Beratung zu diesem Friedhof</a></div>
@@ -1052,55 +1192,141 @@ def build_satzung_page(d):
 </section>
 <section class="section">
   <div class="wrap">
-    {content}
-    <p class="satz-disclaimer">Zusammenfassung ohne Gewähr, erstellt nach der verlinkten Fassung (geprüft im November 2026). Maßgeblich ist allein die aktuelle Satzung bzw. Friedhofsordnung des Friedhofsträgers. Die Paragrafen-Angaben beziehen sich auf das verlinkte Original.</p>
+    <div class="satz-grid">
+      <div class="satz-main">{main}</div>
+      {satz_aside(d)}
+    </div>
+    {extra}
+    <p class="satz-disclaimer">Stand der Zusammenfassung: November 2026. Maßgeblich ist die jeweils aktuelle Fassung der Satzung; die Paragrafen-Angaben beziehen sich auf das verlinkte Original.</p>
     <p><a href="friedhofssatzungen.html">← Alle Friedhofssatzungen in der Region</a></p>
   </div>
 </section>
 {cta("Wir übernehmen den Antrag", "Wir kennen die Vorgaben dieses Friedhofs und stimmen Ihr Grabmal mit der Friedhofsverwaltung ab.")}"""
-    title = d.get("titel") or sid
-    desc = (f"{title}: Zusammenfassung der Regeln für Grabmale – Maße, Material, Genehmigung, Fristen. Für " + ", ".join(orte[:4]) + ".") if not keine else f"Friedhof {', '.join(orte)}: Träger, Kontakt und Hinweise für Grabmale."
-    return page(f"friedhofssatzungen/{sid}.html", title, desc, body, "friedhofssatzungen.html", prefix="../")
+    if keine:
+        desc = f"Friedhof {ort}: Träger, Ansprechpartner und Hinweise für Grabmale – der Steinmetz aus Lehsen fragt die Vorgaben gern für Sie nach."
+    else:
+        desc = f"Was gilt für Grabsteine auf dem Friedhof {ort}? Maße, Material, Genehmigung und Fristen – verständlich zusammengefasst vom Steinmetz aus Lehsen."
+        if len(desc) > 158:
+            desc = desc.replace("verständlich zusammengefasst", "zusammengefasst")
+    full_title = f"{h1} – Grabmal-Regeln"
+    if len(full_title) > 60:
+        full_title = h1
+    schema = [{"@context": "https://schema.org", "@type": "Article", "headline": h1, "alternativeHeadline": d.get("titel"),
+               "description": desc, "dateModified": "2026-11-15", "datePublished": "2026-11-14", "inLanguage": "de",
+               "author": {"@type": "Organization", "name": NAME, "url": SITE + "/"},
+               "publisher": {"@type": "Organization", "name": NAME},
+               "isBasedOn": src, "about": {"@type": "Place", "name": f"Friedhof {ort}"},
+               "mainEntityOfPage": SITE + "/" + satz_url(sid)}]
+    crumbs = [("Start", ""), ("Ratgeber", "ratgeber.html"), ("Friedhofssatzungen", "friedhofssatzungen.html"), (ort, satz_url(sid))]
+    return page(satz_url(sid), h1, desc, body, "friedhofssatzungen.html", prefix="../", crumbs=crumbs, schema=schema, full_title=full_title)
 
 
 def satz_aside(d):
     kontakt = d.get("kontakt") or ""
-    unsicher = d.get("unsicher") or []
-    note = ""
-    if unsicher:
-        note = '<div class="satz-note"><h4>Hinweis</h4><p>Einzelne Angaben konnten im Original nicht eindeutig gelesen oder geprüft werden. Bitte im Zweifel die Original-Satzung prüfen oder uns fragen.</p></div>'
     return f"""<aside class="satz-aside">
     <div class="satz-box">
-      <h4>Friedhofsverwaltung</h4>
+      <h2 class="box-title">Friedhofsverwaltung</h2>
       <p>{esc(kontakt) if kontakt else "Siehe Original-Satzung."}</p>
     </div>
     <div class="satz-box satz-box-dark">
-      <h4>Grabmal für diesen Friedhof?</h4>
+      <h2 class="box-title">Grabmal für diesen Friedhof?</h2>
       <p>Wir beraten Sie zu den Vorgaben, erstellen den Entwurf und stellen den Genehmigungsantrag für Sie.</p>
       <a class="btn" href="kontakt.html">Termin anfragen</a>
       <p style="margin-top:14px"><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></p>
     </div>
-    {note}
+    <div class="satz-box">
+      <h2 class="box-title">Gut zu wissen</h2>
+      <p>Diese Zusammenfassung haben wir mit größter Sorgfalt für Sie erstellt. Verbindlich ist allein die offizielle Satzung des Friedhofsträgers. Bei Fragen beraten wir Sie gern persönlich.</p>
+    </div>
   </aside>"""
 
 
 def build_sitemap(files):
+    import datetime
+    today = datetime.date.today().isoformat()
     urls = []
     for f in files:
+        if SITEMAP_META.get(f, {}).get("noindex"):
+            continue
         loc = SITE + "/" + ("" if f == "index.html" else f)
-        prio = "1.0" if f == "index.html" else ("0.3" if f in ("impressum.html", "datenschutz.html") else "0.8")
-        urls.append(f"  <url><loc>{loc}</loc><priority>{prio}</priority></url>")
+        prio = "1.0" if f == "index.html" else ("0.3" if f in ("impressum.html",) else ("0.6" if f.startswith("friedhofssatzungen/") else "0.8"))
+        urls.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod><priority>{prio}</priority></url>")
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n",
         encoding="utf-8",
     )
 
 
+def build_htaccess():
+    csp = ("default-src 'self'; "
+           f"script-src 'self' '{WINTER_HASH}'; "
+           "style-src 'self' 'unsafe-inline'; "
+           "img-src 'self' data: https://tile.openstreetmap.org; "
+           "font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; "
+           "form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests")
+    (ROOT / ".htaccess").write_text(f"""# grabmale.lionify.de – wird von scripts/build.py erzeugt, nicht von Hand bearbeiten
+
+RewriteEngine On
+# www auf Hauptadresse umleiten
+RewriteCond %{{HTTP_HOST}} ^www\\.(.+)$ [NC]
+RewriteRule ^ https://%1%{{REQUEST_URI}} [L,R=301]
+# HTTPS erzwingen
+RewriteCond %{{HTTPS}} !=on
+RewriteRule ^ https://%{{HTTP_HOST}}%{{REQUEST_URI}} [L,R=301]
+
+# Interne Dateien sperren
+<FilesMatch "^\\.ftp-deploy-sync-state\\.json$|\\.(md|py|sh|sql)$">
+  Require all denied
+</FilesMatch>
+
+Options -Indexes
+ErrorDocument 404 /404.html
+AddDefaultCharset UTF-8
+AddType image/webp .webp
+AddType application/manifest+json .webmanifest
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set Content-Security-Policy "{csp}"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  # versionierte Dateien (?v=…) dürfen lange gecacht werden
+  <FilesMatch "\\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\\.(jpe?g|webp|png|svg)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+  <FilesMatch "\\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml application/json application/manifest+json
+</IfModule>
+""", encoding="utf-8")
+
+
+def build_manifest():
+    (ROOT / "site.webmanifest").write_text(json.dumps({
+        "name": NAME, "short_name": "Grabmale Lehsen", "lang": "de", "start_url": "/",
+        "display": "browser", "background_color": "#f6f4f0", "theme_color": "#26282b",
+        "icons": [{"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"},
+                  {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml"}]}, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 if __name__ == "__main__":
+    CSS = css_min()
     SATZ.update(load_satzungen())
     files = [build_index(), build_overview()]
     files += [build_category(c) for c in CATEGORIES]
     files += [build_references(), build_faq(), build_satzungen(), build_stones(), build_contact(), build_imprint(), build_privacy()]
     files += [build_satzung_page(d) for d in SATZ.values()]
     build_sitemap(files)
+    build_htaccess()
+    build_manifest()
     print("Erstellt:", ", ".join(files), "+ sitemap.xml")
