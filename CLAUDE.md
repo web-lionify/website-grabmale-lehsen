@@ -15,6 +15,7 @@ Statische Webseite, gehostet bei all-inkl. Repo: web-lionify/website-grabmale-le
 - Bilder: `img/<kategorie>/<kategorie>-NN.jpg` (max. 1200 px) und `-NN-k.jpg` (Vorschau, max. 480 px). Neue Bilder einfach mit der nächsten Nummer ablegen und neu bauen.
 - Kontaktformular: `kontakt.php` (PHP `mail()` an steine@online.de, Honeypot + Zeitprüfung). Lokal gibt es kein PHP, Test nur live.
 - Friedhofssatzungen: Zusammenfassungen als JSON in `scripts/satzungen/<id>.json` (je Satzung eine Unterseite `friedhofssatzungen/<id>.html`), Koordinaten in `scripts/orte.json`, Zuordnung Ort → Satzung in `ORT_SATZUNG` (build.py). Jede Angabe mit §-Verweis; Stand der Prüfung: November 2026.
+- Suche (Lupe im Header): Index `suche.json` wird von build.py aus den fertigen Seiten erzeugt (plus FAQ, Steinsorten, Orte), Logik in `main.js`. Textbausteine, die auf ≥ 4 Seiten gleich sind, werden nicht indexiert.
 - Lokale Vorschau: `python3 -m http.server 8080` im Repo-Ordner.
 
 ## Arbeitsweise

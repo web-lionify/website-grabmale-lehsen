@@ -138,6 +138,7 @@ LOCAL_BUSINESS = {
 }
 
 
+SEARCH_ICON = '<svg class="ico-search" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
 WINTER_JS = "(function(){var m=new Date().getMonth();if(m>=10||m<=1){document.getElementById('winter').hidden=false;}})();"
 WINTER_HASH = "sha256-" + __import__("base64").b64encode(hashlib.sha256(WINTER_JS.encode()).digest()).decode()
 
@@ -227,6 +228,21 @@ def page(filename, title, description, body, current=None, head_extra="", prefix
     <nav class="nav" id="nav" aria-label="Hauptnavigation">
       {"".join(items)}
     </nav>
+    <button class="search-toggle" type="button" aria-expanded="false" aria-controls="suche" aria-label="Webseite durchsuchen" data-index="__SUCHINDEX__">{SEARCH_ICON}</button>
+  </div>
+  <div class="hsearch" id="suche" hidden>
+    <div class="wrap">
+      <form class="hsearch-form" role="search" action="#" autocomplete="off">
+        {SEARCH_ICON}
+        <label class="sr-only" for="q">Webseite durchsuchen</label>
+        <input id="q" type="search" placeholder="Suchen, z. B. Stele, Wittenburg, Genehmigung" role="combobox" aria-expanded="false" aria-controls="q-treffer" aria-autocomplete="list" enterkeyhint="search">
+        <button class="hsearch-close" type="button" aria-label="Suche schließen">×</button>
+      </form>
+      <div class="hsearch-drop" hidden>
+        <ul id="q-treffer" class="hsearch-results" role="listbox" aria-label="Suchergebnisse"></ul>
+        <p class="hsearch-empty" hidden>Nichts gefunden. <a href="kontakt.html">Fragen Sie uns direkt</a> – wir helfen gern weiter.</p>
+      </div>
+    </div>
   </div>
 </header>
 <main id="inhalt">
@@ -744,7 +760,7 @@ STONES = [
 def build_stones():
     items = []
     for st in STONES:
-        items.append(f"""<article class="stone">
+        items.append(f"""<article class="stone" id="stein-{slug(st["name"])}">
   <a href="img/{st["img"]}.jpg" data-lb><img src="img/{st["img"]}-k.jpg" alt="{st["name"]} – {st["art"]} aus {st["herkunft"]}" loading="lazy" width="480" height="480"></a>
   <div class="stone-body">
     <h3>{st["name"]}</h3>
@@ -834,7 +850,7 @@ def build_faq():
     items = []
     for i, (q, a, srcs) in enumerate(FAQ, 1):
         src = " · ".join(f'<a href="{u}" target="_blank" rel="noopener">{t}</a>' for t, u in srcs)
-        items.append(f"""<details>
+        items.append(f"""<details id="frage-{slug(q)}">
   <summary><span class="num">{i:02d}</span>{q}</summary>
   <div class="answer">{a.strip()}
     <p class="src">Quellen: {src}</p>
@@ -1310,6 +1326,66 @@ def satz_aside(d):
   </aside>"""
 
 
+GENERIC_ALT = re.compile(r"– Beispiel \d+$")
+
+
+def strip_tags(h):
+    import html as _h
+    h = re.sub(r"<(script|style|svg)\b.*?</\1>", " ", h, flags=re.S)
+    return re.sub(r"\s+", " ", _h.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
+
+
+def build_search_index(files):
+    """Suchindex für die Lupe im Header (wird erst beim ersten Öffnen geladen)."""
+    import html as _h
+    from collections import Counter
+    pages = []
+    for f in files:
+        if SITEMAP_META.get(f, {}).get("noindex"):
+            continue
+        html = (ROOT / f).read_text(encoding="utf-8")
+        main = html.split('<main id="inhalt">', 1)[1].split("</main>", 1)[0]
+        main = re.sub(r'<div class="crumbs">.*?</div>|<nav class="subnav".*?</nav>|<section class="cta">.*?</section>', " ", main, flags=re.S)
+        chunks = list(dict.fromkeys(c for c in (strip_tags(m[2]) for m in re.finditer(r"<(p|li|h2|h3|dt|dd|summary|figcaption)\b[^>]*>(.*?)</\1>", main, re.S)) if c))
+        pages.append((f, html, main, chunks))
+    # Textbausteine, die auf vielen Seiten gleich sind (Karten, Hinweise), nicht indexieren
+    freq = Counter(c for *_, chunks in pages for c in chunks)
+    entries = []
+    for f, html, main, chunks in pages:
+        own = [c for c in chunks if freq[c] < 4]
+        h1 = strip_tags((re.search(r"<h1[^>]*>(.*?)</h1>", main, re.S) or [None, f])[1])
+        h1 = re.sub(r"\s+([.,;:!?])", r"\1", h1)
+        desc = _h.unescape(re.search(r'<meta name="description" content="([^"]*)"', html).group(1))
+        heads = [x for x in (strip_tags(x) for x in re.findall(r"<h[23][^>]*>(.*?)</h[23]>", main, re.S)) if freq[x] < 4]
+        alts = sorted({_h.unescape(a) for a in re.findall(r'alt="([^"]+)"', main)})
+        alts = [a for a in alts if not GENERIC_ALT.search(a)] + sorted({GENERIC_ALT.sub("", a).strip() for a in alts if GENERIC_ALT.search(a)})
+        kind = "Friedhofssatzung" if f.startswith("friedhofssatzungen/") else ("Rechtliches" if f in ("impressum.html", "datenschutz.html") else "Seite")
+        lead = strip_tags((re.search(r'<p class="lead">(.*?)</p>', main, re.S) or [None, ""])[1])
+        entries.append({"t": h1, "u": f, "s": kind, "d": lead or desc, "h": " · ".join(heads), "a": " · ".join(alts), "x": " ".join([desc] + own)})
+    for q, a, _ in FAQ:
+        entries.append({"t": q, "u": f"ratgeber.html#frage-{slug(q)}", "s": "Häufige Frage", "d": strip_tags(a)[:160], "x": strip_tags(a)})
+    for st in STONES:
+        entries.append({"t": st["name"], "u": f"steinsorten.html#stein-{slug(st['name'])}", "s": "Steinsorte",
+                        "d": f'{st["art"]} aus {st["herkunft"]} – {st["farbe"]}', "x": st["text"]})
+    seen = set()
+    for e in SEARCH:
+        u = e["u"] if not e["u"].startswith("#") else "friedhofssatzungen.html" + e["u"]
+        if (e["n"], u) in seen:
+            continue
+        seen.add((e["n"], u))
+        entries.append({"t": e["n"], "u": u, "s": "Ort", "d": e["sub"], "h": e["k"]})
+    data = json.dumps(entries, ensure_ascii=False, separators=(",", ":"))
+    (ROOT / "suche.json").write_text(data, encoding="utf-8")
+    ver = v("suche.json")
+    for f in files + ["404.html"]:
+        fp = ROOT / f
+        if fp.exists():
+            t = fp.read_text(encoding="utf-8")
+            if "__SUCHINDEX__" in t:
+                fp.write_text(t.replace("__SUCHINDEX__", ver), encoding="utf-8")
+    return len(entries), len(data)
+
+
 def build_sitemap(files):
     import datetime
     today = datetime.date.today().isoformat()
@@ -1395,6 +1471,8 @@ if __name__ == "__main__":
     files += [build_category(c) for c in CATEGORIES]
     files += [build_references(), build_faq(), build_satzungen(), build_stones(), build_directions(), build_contact(), build_imprint(), build_privacy()]
     files += [build_satzung_page(d) for d in SATZ.values()]
+    n, size = build_search_index(files)
+    print(f"Suchindex: {n} Einträge, {size // 1024} KB")
     build_sitemap(files)
     build_htaccess()
     build_manifest()
