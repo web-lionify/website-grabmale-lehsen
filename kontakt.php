@@ -34,8 +34,8 @@ const MAIL_TEMPLATE = <<<'HTML'
     </td></tr>
     <tr><td style="padding:18px 32px 0;">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font:15px/1.5 Arial,Helvetica,sans-serif;color:#1d2125;border-top:1px solid #d5d9dd;">
-        <tr><td width="110" style="padding:11px 12px 11px 0;border-bottom:1px solid #e6e8ea;color:#4f565d;font-size:13px;vertical-align:middle;">Worum geht es?</td><td style="padding:11px 0;border-bottom:1px solid #e6e8ea;"><span style="display:inline-block;background:#e6e8ea;border:1px solid #d5d9dd;border-radius:3px;padding:3px 10px;font-weight:bold;color:#2c3238;">{{topic}}</span></td></tr>
         <tr><td width="110" style="padding:11px 12px 11px 0;border-bottom:1px solid #e6e8ea;color:#4f565d;font-size:13px;vertical-align:top;">Name</td><td style="padding:11px 0;border-bottom:1px solid #e6e8ea;font-weight:bold;">{{name}}</td></tr>
+        <tr><td width="110" style="padding:11px 12px 11px 0;border-bottom:1px solid #e6e8ea;color:#4f565d;font-size:13px;vertical-align:middle;">Worum geht es?</td><td style="padding:11px 0;border-bottom:1px solid #e6e8ea;"><span style="display:inline-block;background:#e6e8ea;border:1px solid #d5d9dd;border-radius:3px;padding:3px 10px;font-weight:bold;color:#2c3238;">{{topic}}</span></td></tr>
         <tr><td width="110" style="padding:11px 12px 11px 0;border-bottom:1px solid #e6e8ea;color:#4f565d;font-size:13px;vertical-align:top;">E-Mail</td><td style="padding:11px 0;border-bottom:1px solid #e6e8ea;"><a href="mailto:{{email}}" style="color:#3e4e5e;text-decoration:underline;">{{email}}</a></td></tr>
         <tr><td width="110" style="padding:11px 12px 11px 0;border-bottom:1px solid #e6e8ea;color:#4f565d;font-size:13px;vertical-align:top;">Telefon</td><td style="padding:11px 0;border-bottom:1px solid #e6e8ea;">{{phone}}</td></tr>
       </table>
@@ -117,8 +117,8 @@ $sentAt = date('d.m.Y \u\m H:i') . ' Uhr';
 // Textfassung (für Mailprogramme ohne HTML-Anzeige)
 $text  = "Neue Anfrage über das Kontaktformular von " . SITE_NAME . "\n";
 $text .= str_repeat('-', 50) . "\n\n";
-$text .= "Worum geht es? " . ($topic !== '' ? $topic : '–') . "\n\n";
 $text .= "Name:    {$name}\n";
+$text .= "Worum geht es? " . ($topic !== '' ? $topic : '–') . "\n";
 $text .= "E-Mail:  {$email}\n";
 $text .= "Telefon: " . ($phone !== '' ? $phone : '–') . "\n\n";
 $text .= "Nachricht:\n{$message}\n\n";
