@@ -8,6 +8,8 @@ Wird ausgegeben, wenn gesagt wird: „offene Fragen beantworten“. Beantwortete
 3. Telefax (gleiche Nummer wie Telefon): noch in Benutzung oder streichen?
 4. Firmenbezeichnung: „Schrift im Stein“ als Zusatz im Impressum behalten oder nur „Grabmale aus Lehsen“?
 
+18. Telefonnummer: Auf der Webseite steht 038852 / 509 54, im Google-Unternehmensprofil 0173 2032241. Welche Nummer soll auf die Webseite – oder beide (Festnetz und Mobil)?
+
 ## Datenschutz
 12. Welcher Anbieter steht hinter dem Postfach steine@online.de? (wird in der Datenschutzerklärung erwähnt)
 13. (an Lionify) Liegt die Seite im all-inkl-Konto von Lionify? Gibt es einen Auftragsverarbeitungsvertrag zwischen Lionify und Herrn Gerdes – oder ist Herr Gerdes selbst Kunde bei all-inkl?
