@@ -5,6 +5,7 @@ Aufruf (im Repo-Ordner):  python3 scripts/build.py
 Kopf, Navigation und Fußzeile stehen hier zentral, damit alle Seiten gleich bleiben.
 Bilder liegen in img/<kategorie>/<kategorie>-NN.jpg (groß) und -NN-k.jpg (Vorschau).
 """
+import functools
 import hashlib
 import json
 import os
@@ -150,6 +151,12 @@ def css_min():
     return css.replace(";}", "}").strip()
 
 
+@functools.lru_cache(maxsize=None)
+def img_hash(path):
+    f = ROOT / path
+    return hashlib.md5(f.read_bytes()).hexdigest()[:8] if f.is_file() else ""
+
+
 def to_picture(html):
     """Ersetzt <img src="….jpg"> durch <picture> mit WebP-Quelle, sofern vorhanden."""
     def rep(m):
@@ -167,6 +174,11 @@ def to_picture(html):
     html = re.sub(r"<img\b[^>]*>", rep, html)
     # Lightbox-Links auf WebP
     html = re.sub(r'(<a href="[^"]+?)\.jpg" data-lb', lambda m: (m.group(1) + '.webp" data-lb') if (ROOT / (m.group(1).split('"')[-1].replace("../", "") + ".webp")).exists() else m.group(0), html)
+    # Versionsnummer an Bildadressen, damit geänderte Bilder trotz langem Browser-Cache neu geladen werden
+    def ver(m):
+        h = img_hash(m.group(1))
+        return f"{m.group(0)}?v={h}" if h else m.group(0)
+    html = re.sub(r'(?<![\w/.])(?:\.\./)?(img/[\w/.-]+\.(?:jpg|webp|png))(?![?\w])', ver, html)
     return html
 
 
