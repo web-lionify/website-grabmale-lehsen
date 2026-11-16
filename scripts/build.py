@@ -669,41 +669,53 @@ def build_directions():
                 body, "anfahrt.html", crumbs=[("Start", ""), ("Anfahrt", "anfahrt.html")])
 
 
+IMPRINT_SECTIONS = [
+    ("Verbraucherstreitbeilegung", """<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>"""),
+    ("Haftung für Inhalte", """<p>Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben unberührt; eine Haftung ist erst ab Kenntnis einer konkreten Rechtsverletzung möglich. Entsprechende Inhalte entfernen wir dann umgehend.</p>
+<p>Die Zusammenfassungen von Friedhofssatzungen auf dieser Website wurden mit größter Sorgfalt erstellt; verbindlich ist jedoch allein die jeweils aktuelle Satzung des Friedhofsträgers.</p>"""),
+    ("Haftung für Links", """<p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft; rechtswidrige Inhalte waren nicht erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir derartige Links umgehend.</p>"""),
+    ("Urheberrecht und Bildnachweis", f"""<p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten – insbesondere Texte und Fotos – unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung. Alle Fotos zeigen Arbeiten von {NAME} und stammen aus eigenem Bestand.</p>"""),
+    ("Gestaltung und Umsetzung", """<p><a href="https://lionify.de" target="_blank" rel="noopener">lionify.de</a></p>"""),
+]
+
+
 def build_imprint():
+    secs = "".join(f'<section class="legal-sec"><h2><span>{i:02d}</span>{t}</h2>{c}</section>' for i, (t, c) in enumerate(IMPRINT_SECTIONS, 1))
     body = legal_head("Rechtliches", "Impressum", "Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG).", "Impressum", "impressum.html") + f"""
 <section class="section">
   <div class="wrap">
-    <div class="legal-cards">
-      <div class="legal-card">
+    <div class="imprint-grid">
+      <div class="legal-card imprint-main">
         <h2 class="box-title">Anbieter</h2>
-        <p><strong>{OWNER}</strong><br>{NAME}<br>{STREET}<br>{ZIP_CITY}</p>
-      </div>
-      <div class="legal-card">
-        <h2 class="box-title">Kontakt</h2>
-        <p>Telefon: <a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a><br>E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p>
-      </div>
-      <div class="legal-card">
-        <h2 class="box-title">Steuern</h2>
-        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br><strong>DE246444446</strong></p>
+        <p class="imprint-name">{OWNER}</p>
+        <p class="imprint-firm">{NAME} · Steinmetzmeister</p>
+        <address>{STREET}<br>{ZIP_CITY}</address>
+        <dl class="imprint-dl">
+          <dt>Telefon</dt><dd><a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></dd>
+          <dt>E-Mail</dt><dd><a href="mailto:{MAIL}">{MAIL}</a></dd>
+        </dl>
       </div>
       <div class="legal-card">
         <h2 class="box-title">Berufsrechtliche Angaben</h2>
-        <p>Berufsbezeichnung: <strong>Steinmetzmeister</strong> (verliehen in der Bundesrepublik Deutschland)<br>Zuständige Kammer: Handwerkskammer Schwerin, Friedensstraße 4a, 19053 Schwerin<br>Eingetragen in der Handwerksrolle, Betriebsnummer <strong>19-0117173</strong><br>Berufsrechtliche Regelung: Handwerksordnung (HwO), abrufbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener">gesetze-im-internet.de</a></p>
+        <dl class="imprint-dl">
+          <dt>Beruf</dt><dd><strong>Steinmetzmeister</strong>, verliehen in der Bundesrepublik Deutschland</dd>
+          <dt>Kammer</dt><dd>Handwerkskammer Schwerin<br>Friedensstraße 4a, 19053 Schwerin</dd>
+          <dt>Handwerksrolle</dt><dd>Betriebsnummer <strong>19-0117173</strong></dd>
+          <dt>Regelung</dt><dd>Handwerksordnung (HwO), abrufbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener">gesetze-im-internet.de</a></dd>
+        </dl>
+      </div>
+      <div class="legal-card">
+        <h2 class="box-title">Steuern</h2>
+        <dl class="imprint-dl">
+          <dt>USt-IdNr.</dt><dd><strong>DE246444446</strong><br><span class="muted">gemäß § 27 a Umsatzsteuergesetz</span></dd>
+        </dl>
       </div>
     </div>
-    <div class="legal-text">
-      <h2>Verbraucherstreitbeilegung</h2>
-      <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-      <h2>Haftung für Inhalte</h2>
-      <p>Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben unberührt; eine Haftung ist erst ab Kenntnis einer konkreten Rechtsverletzung möglich. Entsprechende Inhalte entfernen wir dann umgehend.</p>
-      <p>Die Zusammenfassungen von Friedhofssatzungen auf dieser Website wurden mit größter Sorgfalt erstellt; verbindlich ist jedoch allein die jeweils aktuelle Satzung des Friedhofsträgers.</p>
-      <h2>Haftung für Links</h2>
-      <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft; rechtswidrige Inhalte waren nicht erkennbar. Bei Bekanntwerden von Rechtsverletzungen entfernen wir derartige Links umgehend.</p>
-      <h2>Urheberrecht und Bildnachweis</h2>
-      <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten – insbesondere Texte und Fotos – unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung. Alle Fotos zeigen Arbeiten von {NAME} und stammen aus eigenem Bestand.</p>
-      <h2>Gestaltung und Umsetzung</h2>
-      <p><a href="https://lionify.de" target="_blank" rel="noopener">lionify.de</a></p>
-    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="legal-text imprint-text">{secs}</div>
   </div>
 </section>"""
     return page("impressum.html", "Impressum", f"Impressum von {NAME}: Steinmetz {OWNER}, {STREET}, {ZIP_CITY}. Kontakt und Angaben nach § 5 DDG.", body)

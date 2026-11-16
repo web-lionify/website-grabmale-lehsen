@@ -482,6 +482,19 @@ picture { display: block; }
 .glance { border-top: 3px solid var(--accent); }
 .glance .box-title { color: var(--ink); font-size: .8rem; }
 .glance-title { font-size: 1.5rem; margin-bottom: 16px; }
+.imprint-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 16px; }
+.imprint-main { grid-row: span 2; border-top: 3px solid var(--accent); padding: 28px 30px; }
+.legal-card .imprint-name { font: 400 1.9rem/1.2 var(--serif); margin: 4px 0 2px; }
+.legal-card .imprint-firm { color: var(--muted); margin: 0 0 20px; }
+.imprint-main address { font-style: normal; font-size: 1.02rem; margin: 0 0 20px; }
+.imprint-dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 8px 20px; margin: 0; font-size: .97rem; }
+.imprint-dl dt { color: var(--muted); font-size: .85rem; padding-top: 2px; }
+.imprint-dl dd { margin: 0; }
+.imprint-main .imprint-dl { border-top: 1px solid var(--line); padding-top: 18px; }
+.imprint-text { margin: 0 auto; }
+.imprint-text .legal-sec:last-child { border-bottom: 0; margin-bottom: 0; }
+@media (max-width: 760px) { .imprint-grid { grid-template-columns: 1fr; } .imprint-main { grid-row: auto; padding: 22px 22px; } }
+@media (max-width: 420px) { .imprint-dl { grid-template-columns: 1fr; gap: 0; } .imprint-dl dd { margin-bottom: 10px; } }
 .legal-inline { margin: 12px 0; max-width: 560px; }
 .legal-text { max-width: 760px; }
 .legal-text h2 { font-size: 1.4rem; margin: 2rem 0 .7rem; }
