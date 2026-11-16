@@ -24,7 +24,7 @@ PHONE_HREF = "+493885250954"
 PHONE_SHOW = "038852 / 509 54"
 MAIL = "steine@online.de"
 HOURS = "Termine nach Vereinbarung – auch abends und samstags"
-MAP_URL = "https://www.openstreetmap.org/search?query=Unter%20den%20Linden%2014%2C%2019243%20Wittenburg"
+MAP_URL = "https://www.google.com/maps/dir/?api=1&amp;destination=Unter+den+Linden+14%2C+19243+Wittenburg+OT+Lehsen"
 
 EBAY_URL = "https://www.ebay.de/str/grabsteine"
 EBAY_SOLD = "über 6.300"
@@ -632,7 +632,7 @@ def build_directions():
         <p class="address-big">{NAME}<br>{STREET}<br>{ZIP_CITY}</p>
         <p class="muted" style="font-size:.9rem">Tipp fürs Navi: „Lehsen, Unter den Linden 14“ eingeben.</p>
         <div class="btn-row" style="margin-top:16px"><a class="btn" href="{MAP_URL}" target="_blank" rel="noopener">Route planen</a><a class="btn btn-ghost" href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></div>
-        <p class="muted" style="font-size:.8rem;margin-top:10px">„Route planen“ öffnet OpenStreetMap in einem neuen Fenster.</p>
+        <p class="muted" style="font-size:.8rem;margin-top:10px">„Route planen“ öffnet Google Maps mit unserer Adresse als Ziel in einem neuen Fenster.</p>
       </div>
       <div class="address-card" style="margin-top:16px">
         <h2 class="box-title">Besuch der Ausstellung</h2>
@@ -734,7 +734,7 @@ PRIVACY_SECTIONS = [
     ("karte", "Karte (OpenStreetMap)", """<p>Auf der Seite „Friedhofssatzungen“ bieten wir eine interaktive Karte an. Die Kartendarstellung (Kartenkacheln) wird von der OpenStreetMap Foundation (OSMF), St John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, Großbritannien, geladen. Die Programmbibliothek für die Karte (Leaflet) liegt auf unserem eigenen Server.</p>
 <p>Die Karte wird <strong>erst geladen, wenn Sie auf „Karte laden“ klicken</strong>. Erst dann stellt Ihr Browser eine Verbindung zu den Servern von OpenStreetMap her; dabei werden insbesondere Ihre IP-Adresse, der angefragte Kartenausschnitt sowie technische Angaben Ihres Browsers übertragen. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Für das Vereinigte Königreich besteht ein Angemessenheitsbeschluss der EU-Kommission.</p>
 <p>Wenn Sie „Karte künftig immer laden“ auswählen, wird diese Entscheidung ausschließlich lokal in Ihrem Browser gespeichert (Local Storage) und nicht an uns übertragen. Sie können die Einwilligung jederzeit widerrufen, indem Sie die gespeicherten Websitedaten in Ihrem Browser löschen. Weitere Informationen: <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">Datenschutzerklärung der OpenStreetMap Foundation</a>.</p>"""),
-    ("links", "Externe Links", """<p>Unsere Website enthält Links zu externen Angeboten, unter anderem zu unserem Shop bei eBay sowie zu Satzungen und Informationen von Städten, Ämtern, Kirchengemeinden und Verbänden. Diese Inhalte werden nicht in unsere Website eingebunden; beim bloßen Aufruf unserer Seiten werden keine Daten an diese Anbieter übertragen. Erst wenn Sie einen Link anklicken, wird die jeweilige Seite geöffnet und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>"""),
+    ("links", "Externe Links", """<p>Unsere Website enthält Links zu externen Angeboten, unter anderem zu unserem Shop bei eBay, zu Google Maps für die Routenplanung sowie zu Satzungen und Informationen von Städten, Ämtern, Kirchengemeinden und Verbänden. Diese Inhalte werden nicht in unsere Website eingebunden; beim bloßen Aufruf unserer Seiten werden keine Daten an diese Anbieter übertragen. Erst wenn Sie einen Link anklicken, wird die jeweilige Seite geöffnet und es gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</p>"""),
     ("rechte", "Ihre Rechte", """<p>Sie haben im Rahmen der gesetzlichen Bestimmungen jederzeit das Recht auf:</p>
 <ul><li>Auskunft über Ihre gespeicherten personenbezogenen Daten (Art. 15 DSGVO),</li><li>Berichtigung unrichtiger Daten (Art. 16 DSGVO),</li><li>Löschung (Art. 17 DSGVO) und Einschränkung der Verarbeitung (Art. 18 DSGVO),</li><li>Datenübertragbarkeit (Art. 20 DSGVO),</li><li>Widerspruch gegen die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (Art. 21 DSGVO),</li><li>Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO).</li></ul>
 <p>Wenden Sie sich dazu einfach an die oben genannten Kontaktdaten. Eine automatisierte Entscheidungsfindung einschließlich Profiling findet nicht statt.</p>"""),
