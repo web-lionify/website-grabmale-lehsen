@@ -1,7 +1,9 @@
 {
   "id": "parchim",
   "titel": "Friedhofssatzung der Stadt Parchim (Lesefassung mit 1. Änderung)",
-  "orte": ["Parchim"],
+  "orte": [
+    "Parchim"
+  ],
   "traeger": "Stadt Parchim (Friedhofsverwaltung)",
   "art": "kommunal",
   "fassung": "Lesefassung mit der 1. Änderungssatzung, Beschluss der Stadtvertretung vom 23.02.2022, Stand März 2022",
@@ -13,17 +15,38 @@
   "kurzfazit": "In den meisten Grabfeldern gelten strenge Gestaltungsvorschriften: nur Naturstein (Findlinge, Schmiedeeisen und Bronze nur in bestimmten Feldern), allseitig bearbeitet, keine grellweißen Steine, Größe nach Ansichtsfläche. Stehende Grabmale müssen mindestens 12 cm stark sein, liegende mindestens 10 cm. Der Antrag wird zweifach mit Entwurf 1:10 und Buchstabenprobe 1:1 gestellt. Wer freier gestalten will, wählt die Felder 14 und 15.",
   "ruhezeit": "Leichen 25 Jahre, Kinder bis 5 Jahre und Urnen 20 Jahre (§ 11 Abs. 1)",
   "grabarten": [
-    {"name": "Reihengrab / Kindergrab", "regel": "einzeln der Reihe nach, keine Verlängerung; stehend bis 0,40 m², liegend bis 0,20 m² (Kindergrab stehend bis 0,40 m², liegend 0,25 m²) (§ 14, § 23 Abs. 6)"},
-    {"name": "Rasenreihengrab", "regel": "Pflicht: liegendes rechteckiges Granitgrabmal 40 × 30 × 10 cm mit ebener Oberfläche und vertiefter Schrift (Name, optional Daten), innerhalb von 6 Monaten zu legen; Pflege durch den Friedhof (§ 14 Abs. 5–6)"},
-    {"name": "Wahlgrab (Erdbestattung)", "regel": "25 Jahre; Einzelstelle stehend bis 0,40 m² (Stele bis 0,60 m²), liegend bis 0,40 m²; Doppelstelle stehend bis 0,80 m²; mehrstellig stehend bis 1,50 m², liegend bis 0,60 m² (§ 15, § 23 Abs. 6)"},
-    {"name": "Gepflegtes Wahlgrab", "regel": "Anlage und Pflege durch den Friedhofsträger; individuelles Grabmal, nur stehende Steine (§ 15 Abs. 6)"},
-    {"name": "Urnenwahlgrab", "regel": "0,80 × 0,80 m für 1–2 Urnen oder 1,00 × 1,00 m für bis 4 Urnen; stehend bis 0,30 m² (2 Urnen) bzw. 0,40 m² (4 Urnen), liegend bis 0,20 bzw. 0,25 m²; ggf. einheitliche Heckenrahmung (§ 16 Abs. 2–3, § 23 Abs. 6)"},
-    {"name": "Urnenrasenreihengrab (1 oder 2 Urnen)", "regel": "einheitliche namentliche Kennzeichnung durch den Friedhofsträger; beim Partnergrab gilt der Granitliegestein 40 × 30 × 10 cm (§ 16 Abs. 4–5)"},
-    {"name": "Baumhain, anonyme Urnengemeinschaftsanlage, Sternenkinder", "regel": "Pflege durch den Friedhofsträger; keine individuelle Gestaltung, keine Grablichter oder Dekorationen (§ 17)"}
+    {
+      "name": "Reihengrab / Kindergrab",
+      "regel": "einzeln der Reihe nach, keine Verlängerung; stehend bis 0,40 m² (in Stelenform), liegend bis 0,20 m²; Kindergrab stehend bis 0,40 m², liegend 0,25 m² (§ 14, § 23 Abs. 6)"
+    },
+    {
+      "name": "Rasenreihengrab",
+      "regel": "Pflicht: liegendes rechteckiges Granitgrabmal 40 × 30 × 10 cm mit ebener Oberfläche und vertiefter Schrift (Name, optional Daten), innerhalb von 6 Monaten zu legen; Pflege durch den Friedhof (§ 14 Abs. 5–6)"
+    },
+    {
+      "name": "Wahlgrab (Erdbestattung)",
+      "regel": "25 Jahre; Einzelstelle stehend bis 0,40 m² (in Stelenform), liegend bis 0,40 m²; Doppelstelle stehend bis 0,60 m²; mehrstellig stehend 0,80–1,50 m², liegend bis 0,60 m² (§ 15, § 23 Abs. 6)"
+    },
+    {
+      "name": "Gepflegtes Wahlgrab",
+      "regel": "Anlage und Pflege durch den Friedhofsträger; individuelles Grabmal, nur stehende Steine (§ 15 Abs. 6)"
+    },
+    {
+      "name": "Urnenwahlgrab",
+      "regel": "0,80 × 0,80 m für 1–2 Urnen oder 1,00 × 1,00 m für bis 4 Urnen; stehend bis 0,30 m² (2 Urnen) bzw. 0,40 m² (4 Urnen), liegend bis 0,20 bzw. 0,25 m²; ggf. einheitliche Heckenrahmung (§ 16 Abs. 2–3, § 23 Abs. 6)"
+    },
+    {
+      "name": "Urnenrasenreihengrab (1 oder 2 Urnen)",
+      "regel": "einheitliche namentliche Kennzeichnung durch den Friedhofsträger; beim Partnergrab gilt der Granitliegestein 40 × 30 × 10 cm (§ 16 Abs. 4–5)"
+    },
+    {
+      "name": "Baumhain, anonyme Urnengemeinschaftsanlage, Sternenkinder",
+      "regel": "Pflege durch den Friedhofsträger; keine individuelle Gestaltung, keine Grablichter oder Dekorationen (§ 17)"
+    }
   ],
   "masse": [
     "Mindeststärke stehend 12 cm, liegend 10 cm; mit keilförmiger Unterlage Grabplatten ab 8 cm (§ 23 Abs. 5)",
-    "Stehende Grabmale (Ansichtsfläche): Reihengrab und Wahlgrab-Einzelstelle bis 0,40 m², in Stelenform bis 0,60 m²; Doppelstelle 0,80 m²; mehrstellig bis 1,50 m²; Urnenwahlgrab 2 Urnen bis 0,30 m², 4 Urnen bis 0,40 m²; Kindergrab bis 0,40 m² (§ 23 Abs. 6)",
+    "Stehende Grabmale (Ansichtsfläche): Reihengrab und Wahlgrab-Einzelstelle bis 0,40 m² (in Stelenform); Doppelstelle bis 0,60 m²; mehrstellig 0,80–1,50 m²; Urnenwahlgrab 2 Urnen bis 0,30 m², 4 Urnen bis 0,40 m²; Kindergrab bis 0,40 m² (§ 23 Abs. 6)",
     "Liegende Grabmale: Reihengrab und Urnengrab für 2 Urnen bis 0,20 m²; Urnengrab für 4 Urnen bis 0,25 m²; Rasengrab 0,12 m²; Wahlgrab-Einzelstelle bis 0,40 m²; mehrstellig bis 0,60 m²; Kindergrab 0,25 m² (§ 23 Abs. 6)",
     "Sockel max. 15 cm über Erdoberkante und so breit wie der Stein (§ 23 Abs. 3 e)",
     "Hecken als Einfassung max. 30 cm hoch (§ 29 Abs. 5)"
@@ -69,7 +92,6 @@
   ],
   "kontakt": "Friedhofsverwaltung der Stadt Parchim, Neuer Friedhof Lübzer Chaussee; Telefon in der Satzung nicht genannt",
   "unsicher": [
-    "Die Maßtabelle in § 23 Abs. 6 ist im PDF verschoben gesetzt; die Zuordnung der Flächenwerte zu den Grabarten wurde nach der Reihenfolge rekonstruiert und sollte vor der Planung geprüft werden",
     "Die Belegungspläne und Richtlinien für einzelne Felder sind nicht Teil des Dokuments"
   ]
 }

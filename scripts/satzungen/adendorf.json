@@ -2,57 +2,71 @@
   "id": "adendorf",
   "titel": "Satzung über das Friedhofs- und Bestattungswesen in der Gemeinde Adendorf",
   "orte": [
-    "Adendorf"
+    "Adendorf",
+    "Erbstorf"
   ],
-  "traeger": "Gemeinde Adendorf",
+  "traeger": "Gemeinde Adendorf (Friedhofsverwaltung)",
   "art": "kommunal",
-  "fassung": "1. Änderung, Dateidatum 12.12.2025, in Kraft am Tag nach der Bekanntmachung",
+  "fassung": "mit 1. Änderung, Dateidatum 12.12.2025; in Kraft am Tag nach der Bekanntmachung (§ 37)",
   "quelle_url": "http://www.adendorf.de/1/wp-content/uploads/2026/01/2025-12-12-Friedhofsatzung.pdf",
   "quelle_titel": "Friedhofssatzung Gemeinde Adendorf (PDF)",
   "friedhoefe": [
-    "Kommunaler Friedhof der Gemeinde Adendorf (§ 1)"
+    "Kommunaler Friedhof im Ortsteil Erbstorf (§ 1)"
   ],
-  "kurzfazit": "Grabmale brauchen vorher die Genehmigung der Gemeinde, der Antrag braucht Zeichnungen 1:10. Grabsteine einschließlich Sockel sind auf Sarggräbern bis 1 m und auf Urnengräbern bis 0,80 m hoch erlaubt. Einfassungen höchstens 10 cm breit. Auf Rasengräbern nur liegende Platten 45 × 45 oder 45 × 65 cm. Schwarzer Kunststein, Farbanstrich, Glas, Porzellan und Kunststoff sind nicht erlaubt.",
-  "ruhezeit": "",
+  "kurzfazit": "Grabmale brauchen vorher die Genehmigung der Gemeinde, der Antrag braucht Zeichnungen 1:10 mit Werkstoff, Schrift, Fundamentierung und Verdübelung. Es gilt die TA Grabmal. Grabsteine inkl. Sockel sind auf Sarggräbern bis 1 m hoch erlaubt, auf Urnengräbern bis 0,80 m. Auf Rasengräbern nur rasenbündige Hartgesteinplatten 45 × 45 oder 45 × 65 cm. Schwarzer Kunststein, Farbanstrich, Glas, Porzellan und Kunststoff sind nicht erlaubt.",
+  "ruhezeit": "Leichen und Aschen 25 Jahre (§ 9)",
   "grabarten": [
     {
-      "name": "Sarggrab",
-      "regel": "Grabstein inkl. Sockel max. 1 m hoch; Grab 210 × 90 cm (Kinder 120–160 × 60 cm) (§ 29)"
+      "name": "Erdreihengrab",
+      "regel": "Grabmal und Umrandung mit Rasenkantensteinen o. Ä. innerhalb von 6 Monaten Pflicht (§ 23)"
+    },
+    {
+      "name": "Sarg-Wahlgrab",
+      "regel": "Grabstein inkl. Sockel max. 1 m hoch (§ 29 Abs. 3)"
     },
     {
       "name": "Urnengrab",
-      "regel": "Grabstein inkl. Sockel max. 0,80 m hoch; Grab 100 × 80 cm (§ 29)"
+      "regel": "Grabstein inkl. Sockel max. 0,80 m hoch (§ 29 Abs. 3)"
     },
     {
-      "name": "Rasengrab",
-      "regel": "nur liegende Inschriftplatten 45 × 45 cm oder 45 × 65 cm, vorgeschrieben (§ 29 Abs. 5)"
+      "name": "Erd- und Urnenrasengrab",
+      "regel": "nur rasenbündige, bruchsichere Platten aus Hartgestein, 45 × 45 oder 45 × 65 cm; keine Einfassungen, Pflanzen oder Vasen (§ 21, § 22, § 29 Abs. 5)"
+    },
+    {
+      "name": "Anonymes Urnenreihengrab",
+      "regel": "einheitliche Rasenfläche ohne Kennzeichnung (§ 24)"
     }
   ],
   "masse": [
-    "Höhe der Grabsteine einschließlich Sockel: Sarggrab bis 1 m, Urnengrab bis 0,80 m (§ 29 Abs. 3)",
+    "Grabsteinhöhe inkl. Sockel: Sarggrab bis 1 m, Urnengrab bis 0,80 m (§ 29 Abs. 3)",
     "Einfassungen max. 0,10 m Materialbreite (§ 29 Abs. 4)",
-    "Rasengrab: Platten 45 × 45 oder 45 × 65 cm (§ 29 Abs. 5)"
+    "Rasengrab: liegende Platten 45 × 45 oder 45 × 65 cm, rasenbündig (§ 29 Abs. 5)"
   ],
-  "material": [],
+  "material": [
+    "Grabmale müssen der Würde des Ortes entsprechen (§ 29 Abs. 1)",
+    "Auf Rasengräbern nur Hartgestein (§ 29 Abs. 5)",
+    "Andere Gestaltungen kann die Gemeinde zulassen (§ 29 Abs. 6)"
+  ],
   "verbote": [
-    "Keine Grabmale aus schwarzem Kunststein oder Gips, mit Farbanstrich, mit Glas, Emaille, Porzellan oder Kunststoff; keine Lichtbilder ab DIN A4 – gilt auch für sonstige Grabausstattung (§ 29 Abs. 2)",
-    "Kein nicht verrottbarer Grabschmuck wie Plastikblumen oder Kunststoffkranzunterlagen"
+    "Keine Grabmale aus schwarzem Kunststein oder Gips, mit Farbanstrich, mit Glas, Emaille, Porzellan oder Kunststoff; keine Lichtbilder ab DIN A4 – auch für sonstige Grabausstattung (§ 29 Abs. 2)",
+    "Auf Rasengräbern keine Pflanzen, Schalen, Vasen oder Einfassungen (§ 21 Abs. 5)"
   ],
   "genehmigung": [
     "Gedenksteine und Grabmale nur mit Genehmigung der Gemeinde errichten und verändern (§ 30 Abs. 1)",
-    "Antrag vor Beginn der Arbeiten mit Zeichnungen 1:10 in einfacher Ausfertigung (§ 30 Abs. 2)"
+    "Antrag vor Beginn mit Zeichnungen 1:10; Werkstoff, Bearbeitung, Schrift sowie konkrete Fundamentierung und Verdübelung angeben (§ 30 Abs. 2–3)",
+    "Genehmigung erlischt nach einem Jahr; abweichende oder ungenehmigte Grabmale müssen nach Aufforderung geändert oder entfernt werden (§ 30 Abs. 5–6)"
   ],
   "standsicherheit": [
-    "Standsicherheit nach § 31 der Satzung"
+    "Für Erstellung und Abnahmeprüfung gilt die TA Grabmal der Deutschen Naturstein-Akademie in der gültigen Fassung (§ 30 Abs. 3, § 31)",
+    "Nutzungsberechtigte tragen die Verantwortung für die Standsicherheit und lassen sie regelmäßig prüfen; die Gemeinde prüft ebenfalls; bei Gefahr Umlegen auf ihre Kosten (§ 32)"
   ],
   "fristen": [
-    "Grabstätte innerhalb von 6 Monaten nach Erwerb des Nutzungsrechts herrichten"
+    "Grabstätte innerhalb von 6 Monaten nach Erwerb herrichten; beim Erdreihengrab inkl. Grabmal und Umrandung (§ 23, § 28)",
+    "Nach Ablauf des Nutzungsrechts Grabstätte eingeebnet zurückgeben (Grabmal, Umrandung, Bewuchs entfernen); nach 6 Wochen ebnet die Gemeinde auf Kosten der Nutzungsberechtigten ein (§ 27 Abs. 7–8)",
+    "Zu provisorischen Grabzeichen keine Regelung"
   ],
-  "kinderarbeit": "Grabmale nur, wenn nachweislich ohne ausbeuterische Kinderarbeit im Sinne des ILO-Übereinkommens 182 hergestellt (§ 29)",
+  "kinderarbeit": "Grabmale, Holzkreuze o. Ä. sollen nachweislich ohne ausbeuterische Kinderarbeit im Sinne des ILO-Übereinkommens 182 hergestellt sein (§ 5 Abs. 7)",
   "besonderheiten": [],
   "kontakt": "Gemeinde Adendorf, Friedhofsverwaltung; Telefon in der Satzung nicht genannt",
-  "unsicher": [
-    "Ruhezeit und Regeln zur Entfernung wurden nicht vollständig ausgewertet",
-    "Paragrafenangaben zu Grabgrößen nicht eindeutig zugeordnet"
-  ]
+  "unsicher": []
 }

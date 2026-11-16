@@ -8,50 +8,71 @@
   ],
   "traeger": "Samtgemeinde Elbtalaue",
   "art": "kommunal",
-  "fassung": "Satzung von 2008 mit späteren Änderungen; Fassung laut Dateiname „ab 01.01.2021“",
+  "fassung": "Ursprungssatzung vom 18.12.2007 (in Kraft 01.01.2008) in der Fassung der 4. Änderung vom 17.12.2020, in Kraft seit 01.01.2021 (§ 27)",
   "quelle_url": "https://www.elbtalaue.de/downloads/datei/NDU1ZGEyY2FhMWE2MWVmMnNMTExYYUkwaGNWRy9LRWdkSDZxMU9HQmZnTWw5RTE4WjNMcE1ETkduT3EvYU5TR0sxWUx5eFVOakdpZnpNbkNrYUpyUjYrd051MHg4dVloaCtyc21xTGQwaVRNNndYUjBjTXIwQmhUWXhDZDBac0dTWTNlbVZRTzZ1aWwxckdUcDJhRlVLQnJmUUNXbE1QM0prckovQT09",
   "quelle_titel": "Friedhofsordnung Samtgemeinde Elbtalaue (PDF)",
   "friedhoefe": [
-    "Kommunale Friedhöfe der Samtgemeinde Elbtalaue in Ortsteilen von Dannenberg, Hitzacker und weiteren Mitgliedsgemeinden (§ 1)"
+    "Kommunale Friedhöfe der Samtgemeinde Elbtalaue in Ortsteilen von Dannenberg, Hitzacker und weiteren Mitgliedsgemeinden (§ 1); kirchliche Friedhöfe haben eigene Ordnungen"
   ],
-  "kurzfazit": "Grabmale dürfen höchstens 1,50 m hoch sein, der Sockel höchstens 20 cm. Auf Rasengräbern sind Steinkissen bis 0,28 m² und Grabmale bis 0,40 m² Ansichtsfläche erlaubt, jeweils auf einer Sockelplatte mit 15 cm Überstand und höchstens 0,80 m Gesamtbreite. Einfassungen höchstens 0,20 m hoch.",
-  "ruhezeit": "",
+  "kurzfazit": "Grabmale, Einfassungen und auch Hecken brauchen eine Genehmigung. Der Antrag braucht Zeichnungen in doppelter Ausfertigung (mind. 1:10) mit Maßen, Material und Farbe. Grabmale dürfen höchstens 1,50 m hoch sein, der Sockel höchstens 20 cm. Auf Rasengräbern gibt es Steinkissen bis 0,28 m² oder Grabmale bis 0,40 m² auf einer Sockelplatte. Grellweiße Steine, Glas, Porzellan, Terrazzo, Zementguss und Holzgrabmale sind nicht erlaubt.",
+  "ruhezeit": "Leichen und Aschen 20 Jahre, Kinder bis 5 Jahre 15 Jahre (§ 8)",
   "grabarten": [
     {
       "name": "Reihen- und Wahlgrab",
-      "regel": "2,10 × 0,90 m; Einfassungen max. 0,20 m hoch, Hecken max. 0,60 m (§ 26 Abs. 2)"
+      "regel": "2,10 × 0,90 m; Grabmal max. 1,50 m hoch, Sockel max. 20 cm; Einfassungen max. 0,20 m hoch, Hecken max. 0,60 m (§ 19 Abs. 2, § 21 Abs. 2)"
+    },
+    {
+      "name": "Urnengrab zur Pflege",
+      "regel": "Steinkissen bis 0,28 m² oder Grabmal bis 0,40 m² Ansichtsfläche; Bepflanzung max. 0,70 m (§ 19 Abs. 3, § 22 Abs. 6)"
     },
     {
       "name": "Wahl-, Reihen- und Urnengrab unter Rasen",
-      "regel": "Steinkissen bis 0,28 m², Grabmal bis 0,40 m² Ansichtsfläche; Sockelplatte mit 15 cm Überstand seitlich und hinten, Gesamtbreite max. 0,80 m; Pflanzfläche in Größe der Sockelplatte möglich"
+      "regel": "Steinkissen bis 0,28 m² bzw. Grabmal bis 0,40 m² auf einer Sockelplatte mit 15 cm Überstand seitlich und hinten, Gesamtbreite max. 0,80 m; Pflanzfläche in Plattengröße mit Natursteinkante max. 0,06 m möglich; keine Einfassungen (§ 19 Abs. 3–4, § 21 Abs. 5)"
     },
     {
-      "name": "Urnengrab unter Rasen",
-      "regel": "0,80 × 0,80 m; anonym 0,60 × 0,60 m"
+      "name": "Urnengrab unter Rasen / anonym",
+      "regel": "0,80 × 0,80 m bzw. 0,60 × 0,60 m anonym"
     },
     {
       "name": "Baumgrabstelle für Urnen",
-      "regel": "0,60 × 0,60 m"
+      "regel": "0,60 × 0,60 m; Urnenreihengrab für die Dauer der Ruhezeit"
     }
   ],
   "masse": [
-    "Grabmal max. 1,50 m hoch, Sockel max. 20 cm",
-    "Rasengräber: Steinkissen bis 0,28 m², Grabmal bis 0,40 m² Ansichtsfläche; Sockelplatte mit 15 cm Überstand, Gesamtbreite max. 0,80 m",
-    "Einfassungen max. 0,20 m hoch, Hecken max. 0,60 m; Bepflanzung Urnengräber max. 0,70 m"
+    "Grabmal max. 1,50 m hoch, Sockel max. 20 cm (§ 19 Abs. 2)",
+    "Rasen- und Urnengräber: Steinkissen bis 0,28 m², Grabmal bis 0,40 m² Ansichtsfläche (§ 19 Abs. 3)",
+    "Sockelplatte mit 15 cm Überstand, Gesamtbreite max. 0,80 m; Steinkante der Pflanzfläche max. 0,06 m breit (§ 19 Abs. 4)",
+    "Einfassungen max. 0,20 m, Hecken max. 0,60 m, Grabbeete max. 0,20 m hoch (§ 21 Abs. 2, § 22 Abs. 4)"
   ],
-  "material": [],
-  "verbote": [],
+  "material": [
+    "Grabmale sollen in Form und Werkstoff künstlerisch gut gestaltet sein und sich einfügen; Werkstoff wetterbeständig (§ 19 Abs. 1)",
+    "Firmenbezeichnungen nur unauffällig seitlich am Grabmal (§ 18 Abs. 4)",
+    "Abdeckungen nur aus unbehandeltem, nicht eingefärbtem Material (§ 22 Abs. 8)"
+  ],
+  "verbote": [
+    "Nicht gestattet: Grabmale und Sockel aus Zementguss, Terrazzo oder Holz; grellweiße Werkstoffe, Glas, Porzellan; in Zement aufgetragener Schmuck; Farbanstrich; Buchstaben aus Blech o. Ä. (§ 19 Abs. 7)",
+    "Keine Einfassungen aus Metall, Holz oder Kunststoff; keine Einfassungen bei Rasengräbern (§ 21 Abs. 1, 5)",
+    "Keine Abdeckung mit Kunststoff, Folie, Schreddergut, Holz, Metall, Pflastersteinen oder Gehwegplatten (§ 22 Abs. 8)"
+  ],
   "genehmigung": [
-    "Grabmale nach den Vorschriften der Satzung genehmigungspflichtig; Einzelheiten im Original prüfen"
+    "Grabmale, Einfriedungen (auch Hecken), Einfassungen und bauliche Anlagen sowie Änderungen nur mit Genehmigung (§ 18 Abs. 1)",
+    "Antrag rechtzeitig mit doppelten Zeichnungen mind. 1:10, mit Maßen, Material und Farbe (§ 18 Abs. 2)",
+    "Genehmigte Zeichnung beim Aufstellen mitführen; abweichende Grabmale können entfernt werden (§ 18 Abs. 5)"
   ],
-  "standsicherheit": [],
-  "fristen": [],
+  "standsicherheit": [
+    "Fundamentierung nach den anerkannten Regeln des Handwerks und der Technik (§ 19 Abs. 2)",
+    "Nutzungsberechtigte prüfen die Standsicherheit mehrmals im Jahr und haften für Schäden; bei Gefahr Umlegen ohne Frist (§ 19 Abs. 5–6)"
+  ],
+  "fristen": [
+    "Grabstätten spätestens 6 Monate nach Erwerb herrichten (§ 22 Abs. 2)",
+    "Nach Ablauf binnen 3 Monaten entfernen, sonst Einebnung auf Kosten der Nutzungsberechtigten ohne Verwahrung (§ 20 Abs. 2)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
   "kinderarbeit": "keine eigene Regelung gefunden (es gilt § 13a Nds. BestattG)",
-  "besonderheiten": [],
+  "besonderheiten": [
+    "Ab Hälfte der Nutzungsdauer Umwandlung in ein Rasengrab auf Antrag möglich (§ 22 Abs. 3)",
+    "Wertvolle Grabmale stehen unter besonderem Schutz (§ 20 Abs. 3)"
+  ],
   "kontakt": "Samtgemeinde Elbtalaue, Friedhofsverwaltung, Dannenberg; Telefon in der Satzung nicht genannt",
-  "unsicher": [
-    "Das Inkrafttreten und die geltende Fassung sind im Dokument nicht eindeutig lesbar",
-    "Paragrafenangaben zu den Maßen konnten nicht sicher zugeordnet werden",
-    "Kirchliche Friedhöfe in der Samtgemeinde haben eigene Ordnungen"
-  ]
+  "unsicher": []
 }

@@ -15,22 +15,35 @@
   "friedhoefe": [
     "Städtische Friedhöfe Seppensen, Sprötze und Trelde (§ 1); Waldfriedhof und Kirchfriedhof Buchholz werden von der Ev.-luth. Kirchengemeinde St. Paulus betrieben"
   ],
-  "kurzfazit": "Die Satzung gilt nur für die städtischen Friedhöfe Seppensen, Sprötze und Trelde. Natursteine brauchen einen Nachweis gegen Kinderarbeit. Für Grabmale, Grabplatten, Einfassungen und Abdeckungen gilt § 25, bei der Pflege sind die Gestaltungs- und Pflegerichtlinien zu beachten.",
+  "kurzfazit": "Die Satzung gilt nur für die städtischen Friedhöfe Seppensen, Sprötze und Trelde. Grabmale, Grabplatten, Einfassungen und Abdeckplatten brauchen die schriftliche Genehmigung der Stadt. Es gilt die TA Grabmal, und der Steinmetz legt 4 Wochen nach dem Aufstellen unaufgefordert eine Abnahmebescheinigung vor. Natursteine brauchen einen Nachweis gegen Kinderarbeit. Feste Maße stehen in der Satzung nicht, eine Gestaltungsrichtlinie der Stadt ist zu beachten.",
   "ruhezeit": "Leichen und Aschen 25 Jahre",
   "grabarten": [],
   "masse": [],
-  "material": [],
-  "verbote": [],
-  "genehmigung": [],
-  "standsicherheit": [],
-  "fristen": [],
-  "kinderarbeit": "Natursteine nur bei Herkunft aus einem Staat, der das ILO-Übereinkommen gegen die schlimmsten Formen der Kinderarbeit einhält, oder mit anerkanntem Nachweis (nach § 13a Nds. BestattG)",
+  "material": [
+    "Besteht eine Gestaltungsrichtlinie der Stadt, ist sie zu beachten (§ 24 Abs. 3)"
+  ],
+  "verbote": [
+    "Keine Kunststoffe oder nicht verrottbaren Werkstoffe in Trauerfloristik und Grabschmuck (§ 24 Abs. 2)"
+  ],
+  "genehmigung": [
+    "Errichtung und Veränderung von Grabmalen, Grabplatten, Grabeinfassungen und Grababdeckplatten nur mit schriftlicher Genehmigung der Stadt; versagt nur bei Verstoß gegen Satzung oder Gestaltungsrichtlinie (§ 25 Abs. 1)"
+  ],
+  "standsicherheit": [
+    "Grabmale dauerhaft standsicher befestigen, auch beim Öffnen benachbarter Gräber; die TA Grabmal ist zu beachten (§ 25 Abs. 2)",
+    "Abnahmebescheinigung 4 Wochen nach der Aufstellung unaufgefordert vorlegen; ebenso Nachweise über Reparaturen nach der Standsicherheitsprüfung (§ 25 Abs. 2)"
+  ],
+  "fristen": [
+    "Abnahmebescheinigung 4 Wochen nach der Grabmalaufstellung (§ 25 Abs. 2)",
+    "Nach Ablauf von Ruhezeit bzw. Nutzungsrecht Grabmale, Platten, Einfassungen und Abdeckplatten entfernen, sonst kostenpflichtige Abräumung durch die Stadt (§ 25 Abs. 4)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "Natursteine nur bei Herkunft aus einem Staat, der das ILO-Übereinkommen gegen die schlimmsten Formen der Kinderarbeit einhält, oder mit Zertifikat (Fair Stone, IGEP, WGDN, Xertifix) bzw. gleichwertiger Erklärung (§ 25a)",
   "besonderheiten": [
     "Bei der Grabpflege sind bestehende Gestaltungs- und Pflegerichtlinien zu beachten (§ 26 Abs. 3)"
   ],
   "kontakt": "Stadt Buchholz i. d. N., Friedhofsverwaltung; Telefon in der Satzung nicht genannt",
   "unsicher": [
-    "Der Text der Grabmalvorschriften (§ 25) ließ sich aus dem PDF nicht zuverlässig auslesen; bitte Maße und Material im Original prüfen",
+    "Maße und Material regelt eine Gestaltungsrichtlinie der Stadt, die nicht Teil der Satzung ist",
     "Für den Waldfriedhof Buchholz gilt die Ordnung der Kirchengemeinde St. Paulus"
   ]
 }

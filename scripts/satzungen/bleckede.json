@@ -7,48 +7,62 @@
   ],
   "traeger": "Stadt Bleckede",
   "art": "kommunal",
-  "fassung": "in Kraft am Tag der Bekanntmachung (§ 36); Datum im Dokument nicht eindeutig",
+  "fassung": "Ratsbeschluss vom 19.03.2026, in Kraft am Tag der Bekanntmachung; ersetzt die Satzung vom 13.12.2007 (§ 36)",
   "quelle_url": "https://www.bleckede.de/ResourceImage.aspx?raid=32691",
   "quelle_titel": "Friedhofssatzung Bleckede-Breetze (PDF)",
   "friedhoefe": [
     "Städtischer Friedhof im Ortsteil Breetze; für die übrigen Friedhöfe in Bleckede wurde keine städtische Satzung gefunden"
   ],
-  "kurzfazit": "Grabmale brauchen vorher die Zustimmung der Stadt, zusätzliche Inschriften ausgenommen. Provisorische Grabmale über 15 × 30 cm sind ebenfalls zustimmungspflichtig. Auf Rasengräbern sind nur liegende Inschriftplatten 45 × 45 oder 45 × 65 cm zulässig. Nicht erlaubt sind Kunststeinsockel, Betonguss, Kunststoff und Ölfarbe.",
-  "ruhezeit": "",
+  "kurzfazit": "Grabmale brauchen vorher die Zustimmung der Stadt (zusätzliche Inschriften ausgenommen), der Antrag braucht einen Entwurf 1:10. Für Erstellung und Abnahme gilt die TA Grabmal. Darüber hinaus gibt es kaum Gestaltungsvorgaben, aber eine Verbotsliste: kein Kunststeinsockel, kein Betonguss, kein Kunststoff, keine Glas- oder Emailleplatten und keine Firmenbezeichnungen am Grabmal. Auf Rasengräbern nur rasenbündige Hartgesteinplatten 45 × 45 oder 45 × 65 cm.",
+  "ruhezeit": "Leichen und Aschen 30 Jahre, auch im anonymen Urnengrab (§ 9)",
   "grabarten": [
     {
-      "name": "Rasengrab",
-      "regel": "nur liegende Inschriftplatten 45 × 45 cm oder 45 × 65 cm"
+      "name": "Reihen- und Wahlgrab",
+      "regel": "keine zusätzlichen Gestaltungsanforderungen außer der Verbotsliste; Wahlgrab-Nutzungsrecht 30 Jahre, verlängerbar (§ 16, § 21)"
     },
     {
-      "name": "Wahlgrab",
-      "regel": "Grabstellen mindestens 2,25 × 0,95 m, Urnengrabstellen 0,75 × 0,75 m"
+      "name": "Rasenreihen- und Rasenpartnergrab",
+      "regel": "nur liegende, rasenbündige Inschriftplatten aus Hartgestein 45 × 45 oder 45 × 65 cm; keine Bepflanzung; Unterhalt und Anheben abgesackter Platten durch die Stadt (§ 14, § 15, § 21 Abs. 2, § 24 Abs. 5)"
+    },
+    {
+      "name": "Urnengrab für Sozialbestattungen",
+      "regel": "Rasenfläche, Blumen nur an zentraler Stelle (§ 17 Abs. 4–5)"
     }
   ],
   "masse": [
-    "Rasengrab: Inschriftplatten 45 × 45 oder 45 × 65 cm",
-    "Grabstellen neu: Erwachsene 2,25 × 0,95 m, Urnen 0,75 × 0,75 m"
+    "Rasengräber: Inschriftplatten 45 × 45 oder 45 × 65 cm (§ 21 Abs. 2)",
+    "Porträtbild aus Porzellan max. 6 × 8 cm (§ 21 Abs. 1 f)",
+    "Provisorische Grabmale über 0,15 × 0,30 m sind zustimmungspflichtig (§ 22 Abs. 1)"
   ],
-  "material": [],
+  "material": [
+    "Keine zusätzlichen Anforderungen an Gestaltung und Bearbeitung über die Würde des Friedhofs hinaus (§ 21 Abs. 1)",
+    "Rasengräber nur Hartgestein (§ 21 Abs. 2)",
+    "Andere Gestaltungen kann die Stadt zulassen (§ 21 Abs. 3)"
+  ],
   "verbote": [
-    "Unzulässig: Kunststeinsockel unter Naturgrabmalen, Grabmale aus gegossener Betonmasse oder Kunststoff, in Beton aufgetragener Schmuck, Ölfarbanstrich, Lichtbilder (mit Ausnahmen)",
-    "Kein nicht verrottbarer Grabschmuck"
+    "Unzulässig: Kunststeinsockel unter Natursteingrabmalen, Grabmale aus Betonguss oder Kunststoff, in Beton aufgetragener Schmuck, Ölfarbanstrich (§ 21 Abs. 1 a–e)",
+    "Keine Lichtbilder außer Porzellan-Porträt bis 6 × 8 cm; keine Glas- oder Emailleplatten oder blinkenden Platten (§ 21 Abs. 1 f–g)",
+    "Keine Firmenbezeichnungen an Grabmalen (§ 21 Abs. 1 i)"
   ],
   "genehmigung": [
-    "Errichtung und jede Veränderung von Grabmalen (außer zusätzlichen Inschriften) nur mit vorheriger Zustimmung der Stadt (§ 22 Abs. 1)",
-    "Auch provisorische Grabmale über 15 × 30 cm sind zustimmungspflichtig (§ 22)",
-    "Zustimmung erlischt nach einem Jahr ohne Errichtung (§ 22 Abs. 4)"
+    "Errichtung und jede Veränderung von Grabmalen (außer zusätzlichen Inschriften) nur mit vorheriger Zustimmung der Stadt; Nutzungsrecht nachweisen (§ 22 Abs. 1)",
+    "Antrag mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Inhalt, Form und Anordnung; bei Bedarf Schrift und Ornamente 1:1 (§ 22 Abs. 2)",
+    "Zustimmung erlischt nach einem Jahr (§ 22 Abs. 4)"
   ],
   "standsicherheit": [
-    "Standsicherheit nach den Vorschriften der Satzung; Einzelheiten nicht ausgewertet"
+    "Fundamentierung nach den Regeln des Handwerks; für Erstellung und Abnahmeprüfung gilt die TA Grabmal der Deutschen Naturstein-Akademie (§ 23)",
+    "Bei Gefahr Umlegen auf Kosten der Verantwortlichen, Aufbewahrung drei Monate; Haftung für Schäden; regelmäßige Eigenprüfung (§ 24 Abs. 2–3)"
   ],
-  "fristen": [],
+  "fristen": [
+    "Grabstätte innerhalb von 6 Monaten nach Erwerb herrichten (§ 20 Abs. 2)",
+    "Provisorische Grabmale ohne Zustimmung nur als naturbelassene Holztafeln oder -kreuze, höchstens zwei Jahre (§ 22 Abs. 5)",
+    "Nach Ablauf binnen 3 Monaten entfernen, sonst Abräumung auf Kosten der Nutzungsberechtigten, Grabmale gehen entschädigungslos an die Stadt (§ 25 Abs. 2)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung entfernt werden (§ 25 Abs. 3)"
+  ],
   "kinderarbeit": "keine eigene Regelung gefunden (es gilt § 13a Nds. BestattG)",
   "besonderheiten": [],
   "kontakt": "Stadt Bleckede, Friedhofsverwaltung; Telefon in der Satzung nicht genannt",
   "unsicher": [
-    "Die Satzung gilt nur für den Friedhof Breetze",
-    "Datum der Fassung, Ruhezeit und Fristen wurden nicht vollständig ausgewertet",
-    "Die Maßangabe „0,15 x 0,30 cm“ steht so im Dokument; gemeint sind vermutlich Meter"
+    "Die Maßangabe „0,15 x 0,30 cm“ steht so in der Satzung; gemeint sind vermutlich Meter"
   ]
 }

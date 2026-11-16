@@ -1,7 +1,7 @@
 // Anfahrt: Karte (OpenStreetMap erst nach Einwilligung)
 (function () {
   var data = JSON.parse((document.getElementById('anfahrt-data') || {}).textContent || '{}');
-  var pos = data.lehsen || [53.4892, 11.0274];
+  var pos = data.lehsen || [53.4873, 11.0181];
   var consent = document.getElementById('map-consent');
   var loadBtn = document.getElementById('map-load');
   var remember = document.getElementById('map-remember');

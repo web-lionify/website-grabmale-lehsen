@@ -128,7 +128,7 @@ LOCAL_BUSINESS = {
         "addressCountry": "DE",
     },
     "areaServed": "Westmecklenburg",
-    "geo": {"@type": "GeoCoordinates", "latitude": 53.4892, "longitude": 11.0274},
+    "geo": {"@type": "GeoCoordinates", "latitude": 53.4873, "longitude": 11.0181},
     "priceRange": "Individuelles Angebot",
     "sameAs": ["https://www.ebay.de/str/grabsteine"],
     "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Leistungen", "itemListElement": [

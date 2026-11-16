@@ -8,7 +8,7 @@
   ],
   "traeger": "Ev.-Luth. Kirchengemeinde Lübz",
   "art": "kirchlich",
-  "fassung": "vom 21.09.2023; Änderung vom 09.10.2025",
+  "fassung": "vom 21.09.2023; 1. Änderung vom 09.10.2025 (neuer § 22 Baumgrabstätten)",
   "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Luebz/230921_Friedhofsordnung_Luebz_Lutheran_und_Benzin.pdf",
   "quelle_titel": "Friedhofsordnung Lübz (PDF)",
   "friedhoefe": [
@@ -26,8 +26,16 @@
       "regel": "Grabstein max. 0,75 m hoch und 0,45 m breit, Höhe ab Oberkante der Grabeinfassung (§ 20 Abs. 4)"
     },
     {
-      "name": "Rasenreihen- und Rasenwahlgrab, Baumgrab",
+      "name": "Rasenreihen- und Rasenwahlgrab",
       "regel": "besondere Grabarten nach § 16; Pflege durch den Friedhofsträger"
+    },
+    {
+      "name": "Baumgrab (Urnenwahlgrab mit besonderen Gestaltungsvorschriften)",
+      "regel": "Grabmal samt Beschriftung ist in der Gebühr enthalten und wird vom Friedhof beschafft; keine eigenen Beschriftungen, Pflanzen oder Schmuck; Blumen nur am zentralen Gedenkstein (§ 22 i. d. F. der 1. Änderung)"
+    },
+    {
+      "name": "Baumgrab für Sternenkinder",
+      "regel": "mit Absprache Abweichungen möglich, z. B. eingravierte persönliche Ornamente auf eigene Kosten (§ 22 Abs. 8–9 i. d. F. der 1. Änderung)"
     }
   ],
   "masse": [
@@ -66,7 +74,6 @@
   ],
   "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Lübz; Adresse und Telefon in der Satzung nicht genannt",
   "unsicher": [
-    "Die Änderung vom 09.10.2025 liegt nur als Scan vor; ihr Inhalt ist in dieser Zusammenfassung nicht berücksichtigt",
     "Die Ordnung ist ein Scan mit Texterkennung; einzelne Paragrafennummern können abweichen",
     "Höchsthöhen und -breiten für Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften sind nicht geregelt"
   ]
