@@ -112,7 +112,6 @@ LOCAL_BUSINESS = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": NAME,
-    "alternateName": "Schrift im Stein",
     "founder": {"@type": "Person", "name": OWNER},
     "description": "Grabmale, Grabsteine und Grabanlagen aus Naturstein – persönliche Beratung und Ausstellung in Lehsen bei Wittenburg.",
     "url": SITE + "/",
@@ -133,8 +132,8 @@ LOCAL_BUSINESS = {
     "sameAs": ["https://www.ebay.de/str/grabsteine"],
     "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Leistungen", "itemListElement": [
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": n}} for n in
-        ("Grabsteine und Grabmale", "Stelen", "Liegesteine und Grabherzen", "Grabanlagen und Einfassungen", "Nachbeschriftung", "Aufarbeitung und Standsicherheit")]},
-    "knowsAbout": ["Grabmale", "Naturstein", "Friedhofssatzungen in Westmecklenburg"],
+        ("Grabsteine und Grabmale", "Stelen", "Liegesteine und Grabherzen", "Grabanlagen und Einfassungen", "Nachbeschriftung", "Aufarbeitung und Standsicherheit", "Naturstein für Haus und Garten: Treppen, Fensterbänke, Abdeckungen")]},
+    "knowsAbout": ["Grabmale", "Naturstein", "Natursteinarbeiten für Haus und Garten", "Friedhofssatzungen in Westmecklenburg"],
 }
 
 
@@ -415,6 +414,22 @@ def build_index():
   </div>
 </section>
 
+<section class="section section-alt" id="haus-garten">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Auch für Haus und Garten</p>
+      <h2>Naturstein rund ums Haus</h2>
+      <p>Unser Handwerk endet nicht am Friedhof. Aus Granit und anderen Natursteinen fertigen wir auch Arbeiten für Haus und Garten – maßgenau, langlebig und passend zu Ihrem Zuhause.</p>
+      <p><a href="kontakt.html">Anfrage für Haus und Garten →</a></p>
+    </div>
+    <ul class="values">
+      <li><strong>Treppen und Stufen</strong><span>Für innen und außen, als Blockstufe oder Belag.</span></li>
+      <li><strong>Fensterbänke</strong><span>Innen- und Außenfensterbänke nach Maß.</span></li>
+      <li><strong>Abdeckungen und Platten</strong><span>Zum Beispiel für Mauern und Pfeiler.</span></li>
+    </ul>
+  </div>
+</section>
+
 {cta()}"""
     return page("index.html", NAME,
                 "Steinmetz Bernhard Gerdes in Lehsen bei Wittenburg: Grabsteine, Stelen, Liegesteine und Grabanlagen aus Naturstein. Beratung auch abends und samstags.",
@@ -556,7 +571,7 @@ def build_contact():
       </div>
       <div class="field"><label for="email">E-Mail <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
       <div class="field"><label for="topic">Worum geht es?</label>
-        <select id="topic" name="topic"><option>Beratungstermin</option>{options}<option>Nachbeschriftung</option><option>Sonstiges</option></select></div>
+        <select id="topic" name="topic"><option>Beratungstermin</option>{options}<option>Nachbeschriftung</option><option>Haus und Garten</option><option>Sonstiges</option></select></div>
       <div class="field"><label for="message">Ihre Nachricht <span class="req">*</span></label><textarea id="message" name="message" required maxlength="5000"></textarea></div>
       <div class="hp" aria-hidden="true"><label for="website">Bitte leer lassen</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
       <input type="hidden" name="ts" id="ts" value="">
@@ -661,15 +676,19 @@ def build_imprint():
     <div class="legal-cards">
       <div class="legal-card">
         <h2 class="box-title">Anbieter</h2>
-        <p><strong>{OWNER}</strong><br>{NAME} – Schrift im Stein<br>{STREET}<br>{ZIP_CITY}</p>
+        <p><strong>{OWNER}</strong><br>{NAME}<br>{STREET}<br>{ZIP_CITY}</p>
       </div>
       <div class="legal-card">
         <h2 class="box-title">Kontakt</h2>
-        <p>Telefon: <a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a><br>Telefax: {PHONE_SHOW}<br>E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p>
+        <p>Telefon: <a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a><br>E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p>
       </div>
       <div class="legal-card">
         <h2 class="box-title">Steuern</h2>
         <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br><strong>DE246444446</strong></p>
+      </div>
+      <div class="legal-card">
+        <h2 class="box-title">Berufsrechtliche Angaben</h2>
+        <p>Berufsbezeichnung: <strong>Steinmetzmeister</strong> (verliehen in der Bundesrepublik Deutschland)<br>Zuständige Kammer: Handwerkskammer Schwerin, Friedensstraße 4a, 19053 Schwerin<br>Eingetragen in der Handwerksrolle, Betriebsnummer <strong>19-0117173</strong><br>Berufsrechtliche Regelung: Handwerksordnung (HwO), abrufbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener">gesetze-im-internet.de</a></p>
       </div>
     </div>
     <div class="legal-text">
@@ -692,12 +711,12 @@ def build_imprint():
 
 PRIVACY_SECTIONS = [
     ("verantwortlicher", "Verantwortlicher", f"""<p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
-<div class="legal-card legal-inline"><p><strong>{OWNER}</strong><br>{NAME} – Schrift im Stein<br>{STREET}, {ZIP_CITY}<br>Telefon: <a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a> · E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p></div>"""),
-    ("hosting", "Hosting und Server-Logdateien", """<p>Diese Website wird bei der ALL-INKL.COM – Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf, gehostet. Beim Aufruf der Website erhebt der Server automatisch Informationen, die Ihr Browser übermittelt (Server-Logdateien): IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, übertragene Datenmenge, Referrer-URL, Browsertyp und Betriebssystem.</p>
-<p>Diese Daten werden ausschließlich benötigt, um die Website sicher und stabil bereitzustellen, und nicht mit anderen Daten zusammengeführt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt im sicheren Betrieb der Website. Mit dem Hoster besteht ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO. Die Logdateien werden nur für einen begrenzten Zeitraum gespeichert und anschließend gelöscht bzw. anonymisiert.</p>"""),
+<div class="legal-card legal-inline"><p><strong>{OWNER}</strong><br>{NAME}<br>{STREET}, {ZIP_CITY}<br>Telefon: <a href="tel:{PHONE_HREF}">{PHONE_SHOW}</a> · E-Mail: <a href="mailto:{MAIL}">{MAIL}</a></p></div>"""),
+    ("hosting", "Hosting", """<p>Die Website wird von Lionify (<a href="https://lionify.de" target="_blank" rel="noopener">lionify.de</a>) betreut. Sie liegt auf einem Server der ALL-INKL.COM – Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf.</p>
+<p>Beim Aufruf der Website muss Ihr Browser technisch bedingt Daten an den Server übermitteln, insbesondere Ihre IP-Adresse, damit die Seite ausgeliefert werden kann. Diese Daten werden nur für die Dauer der Verbindung verarbeitet. Server-Logdateien werden nicht gespeichert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt in der Bereitstellung der Website.</p>"""),
     ("ssl", "SSL-/TLS-Verschlüsselung", """<p>Diese Seite nutzt aus Sicherheitsgründen eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie an „https://“ in der Adresszeile Ihres Browsers. Zusätzlich weisen wir Browser an, die Seite ausschließlich verschlüsselt aufzurufen (HSTS).</p>"""),
     ("kontakt", "Kontaktformular, E-Mail und Telefon", """<p>Wenn Sie uns über das Kontaktformular, per E-Mail oder telefonisch kontaktieren, verarbeiten wir Ihre Angaben (Name, E-Mail-Adresse, ggf. Telefonnummer, Ihr Anliegen und Ihre Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage und für mögliche Anschlussfragen.</p>
-<p>Die Nachricht aus dem Kontaktformular wird per E-Mail an unser Postfach übermittelt, das bei einem externen E-Mail-Anbieter geführt wird; sie wird nicht in einer Datenbank auf dem Webserver gespeichert. Zum Schutz vor automatisiertem Spam nutzt das Formular ein unsichtbares Feld und eine Zeitprüfung; dabei werden keine zusätzlichen personenbezogenen Daten erhoben.</p>
+<p>Die Nachricht aus dem Kontaktformular wird per E-Mail an unser Postfach übermittelt; sie wird nicht in einer Datenbank auf dem Webserver gespeichert. Unser E-Mail-Postfach wird bei der Telekom Deutschland GmbH, Landgrabenweg 151, 53227 Bonn (T-Online), geführt; dort werden auch E-Mails gespeichert, die Sie uns direkt schreiben. Zum Schutz vor automatisiertem Spam nutzt das Formular ein unsichtbares Feld und eine Zeitprüfung; dabei werden keine zusätzlichen personenbezogenen Daten erhoben.</p>
 <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Anbahnung oder Erfüllung eines Vertrages zusammenhängt, und im Übrigen Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) bzw. lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen). Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</p>
 <p>Ihre Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten (z. B. bei Angeboten und Aufträgen) entgegenstehen. Eine Weitergabe an Dritte findet nicht statt. Die Angabe Ihrer Daten ist freiwillig; ohne sie können wir Ihre Anfrage jedoch nicht beantworten.</p>"""),
     ("karte", "Karte (OpenStreetMap)", """<p>Auf der Seite „Friedhofssatzungen“ bieten wir eine interaktive Karte an. Die Kartendarstellung (Kartenkacheln) wird von der OpenStreetMap Foundation (OSMF), St John’s Innovation Centre, Cowley Road, Cambridge, CB4 0WS, Großbritannien, geladen. Die Programmbibliothek für die Karte (Leaflet) liegt auf unserem eigenen Server.</p>
