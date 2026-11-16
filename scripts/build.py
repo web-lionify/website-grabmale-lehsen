@@ -306,7 +306,7 @@ def cards():
 
 
 def shop_section():
-    return f"""<section class="section shop">
+    return f"""<section class="section section-alt shop">
   <div class="wrap shop-grid">
     <div class="shop-media">
       <img src="img/liegesteine/liegesteine-10-k.jpg" alt="Grabherz aus Multicolor-Granit" loading="lazy" width="480" height="480">
@@ -389,7 +389,7 @@ def build_index():
 
 {shop_section()}
 
-<section class="section section-alt" id="ablauf">
+<section class="section" id="ablauf">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Ablauf</p>
@@ -400,7 +400,7 @@ def build_index():
   </div>
 </section>
 
-<section class="section">
+<section class="section section-alt">
   <div class="wrap split">
     <div class="callout">
       <h3>Gut zu wissen: die Friedhofssatzung</h3>
@@ -414,7 +414,7 @@ def build_index():
   </div>
 </section>
 
-<section class="section section-alt" id="haus-garten">
+<section class="section" id="haus-garten">
   <div class="wrap split">
     <div>
       <p class="eyebrow">Auch für Haus und Garten</p>
