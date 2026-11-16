@@ -1,0 +1,82 @@
+{
+  "id": "lueneburg",
+  "titel": "Friedhofssatzung der Hansestadt Lüneburg",
+  "orte": ["Lüneburg", "Häcklingen", "Oedeme", "Rettmer"],
+  "traeger": "Hansestadt Lüneburg (Friedhofsverwaltung)",
+  "art": "kommunal",
+  "fassung": "Ratsbeschluss vom 22.12.2022, in Kraft seit 01.01.2023; ersetzt die Satzung vom 26.11.2009",
+  "quelle_url": "https://www.hansestadt-lueneburg.de/_Resources/Persistent/2/7/0/6/2706b041a02f93f20445d8ac2af0073bb974c0da/67_01_friedhofssatzung.pdf",
+  "quelle_titel": "Friedhofssatzung Hansestadt Lüneburg (PDF)",
+  "friedhoefe": [
+    "Waldfriedhof, Zentralfriedhof, Michaelisfriedhof, Friedhof Häcklingen, Friedhof Nord-West, Friedhof Oedeme, Friedhof Rettmer und Ehrenfriedhof (Kriegsgräberstätte) (§ 1)"
+  ],
+  "kurzfazit": "Jedes Grabmal, auch provisorische Grabzeichen, braucht vorher einen genehmigten Grabmalantrag mit bemaßter Zeichnung. Stehende Steine müssen mindestens 12 cm stark sein, liegende mindestens 8 cm. Abdeckungen und Einfassungen dürfen höchstens 50 % (Urnengrab 70 %) der Grabfläche bedecken. Natursteine brauchen einen Nachweis gegen Kinderarbeit, und der Aufsteller muss die Standfestigkeit nach drei Monaten schriftlich nachweisen.",
+  "ruhezeit": "Leichen 25 Jahre, Kinder bis 5 Jahre und Tot-/Fehlgeborene 10 Jahre, Aschen 20 Jahre (§ 11)",
+  "grabarten": [
+    {"name": "Erdwahlgrab", "regel": "Grabstelle 1,25 × 2,50 m; bis vier Urnen zusätzlich; mindestens ein Liegestein ist Pflicht; Grabmal inkl. Einfassung und Abdeckung darf die Grabfläche nicht überragen (§ 15)"},
+    {"name": "Rasenwahlgrab", "regel": "Einzelgrab: Liege-/Unterplatte inkl. 15 cm Mähkante max. 70 × 100 cm, Stein max. 100 cm hoch; mehrstellig max. 140 × 100 cm, max. 100 cm hoch; umlaufende Mähkante mind. 15 cm stets freihalten (§ 16)"},
+    {"name": "Schmuckgrab", "regel": "1,50 × 3,00 m in repräsentativer Lage (Wald-, Zentral- und Michaelisfriedhof); Nutzungszeit 40 Jahre; mindestens ein Liegestein (§ 17)"},
+    {"name": "Urnenwahlgrab", "regel": "1,00 × 1,00 m für bis zu vier Urnen; Grabmal inkl. Einfassung und Abdeckung max. 80 cm hoch und nicht über die Grabfläche hinaus (§ 18)"},
+    {"name": "Baumgrab in Wiese", "regel": "eine Liegeplatte max. 50 × 50 cm, mind. 8 cm stark, bodenbündig ohne Fundament; keine aufgesetzte Schrift, keine stehenden Grabmale oder Holzkreuze (§ 19 Abs. 5 a)"},
+    {"name": "Baumgrab mit Staudenspiegel", "regel": "Liegeplatte max. 50 × 50 cm, mind. 8 cm stark, leicht gekippt verlegt; keine stehenden Grabmale (§ 19 Abs. 5 b)"},
+    {"name": "Wiesengrab", "regel": "Liegeplatte 40 × 35 cm mit Namen und Jahreszahlen wird von der Friedhofsverwaltung ca. 12 Wochen nach der Bestattung gesetzt (§ 21 Abs. 4)"},
+    {"name": "Gemeinschaftsgrab mit Namensnennung", "regel": "Namen setzt die Friedhofsverwaltung einheitlich auf Grabmal oder Tafel; Grabschmuck nur an Ablagestellen (§ 20)"},
+    {"name": "Kindergrab", "regel": "1,20 × 0,90 m, Grabbeet 0,70 × 0,40 m; Grabstein nicht breiter als das Grabbeet; Kunststoff-Einfassungen vermeiden (§ 23)"},
+    {"name": "Muslimisches Grab", "regel": "Ausrichtung nach Mekka; Grabstelle 1,25 × 2,50 m; mindestens ein Liegestein (§ 25)"},
+    {"name": "Anonymes Urnengrab (Waldfriedhof)", "regel": "keine Kennzeichnung; Gestaltung durch die Friedhofsverwaltung (§ 24)"}
+  ],
+  "masse": [
+    "Stehende Grabsteine mindestens 12 cm, liegende mindestens 8 cm stark (§ 27 Abs. 8)",
+    "Abdeckungen durch Grabplatten, Trittplatten, Kissensteine, Lampensockel und Einfassungen höchstens 50 % der Grabfläche (Wahl-, Schmuck- und muslimische Gräber) bzw. 70 % (Urnenwahlgrab); Kies auf Vlies oder Mulch vollflächig zulässig (§ 27 Abs. 9)",
+    "Rasenwahlgrab: Platte inkl. Mähkante max. 70 × 100 cm (einstellig) bzw. 140 × 100 cm (mehrstellig), Höhe max. 100 cm (§ 16 Abs. 5)",
+    "Urnenwahlgrab: Gesamtkonstruktion max. 80 cm hoch (§ 18 Abs. 4)",
+    "Baumgrab: Liegeplatte max. 50 × 50 cm, mind. 8 cm stark (§ 19 Abs. 5)",
+    "Grabgrößen: Erdwahlgrab 1,25 × 2,50 m, Schmuckgrab 1,50 × 3,00 m, Urnenwahlgrab 1,00 × 1,00 m, Kindergrab 1,20 × 0,90 m (§§ 15, 17, 18, 23)"
+  ],
+  "material": [
+    "Keine weiteren Vorgaben zu Gestaltung und Bearbeitung über die Würde des Friedhofs hinaus (§ 27 Abs. 6)",
+    "Porträtbilder in angemessenem Material und angemessener Größe zulässig (§ 27 Abs. 5)",
+    "Grabmale innerhalb der Grabstätte; bei Erdgräbern auf bzw. außerhalb der Grubenkante, mindestens das halbe Fundament auf gewachsenem Boden (§ 27 Abs. 2)"
+  ],
+  "verbote": [
+    "Unzulässig: Kunststeinsockel unter Natursteingrabmalen, Grabsteine aus Gussbeton oder Kunststoff, in Beton aufgetragener Schmuck, Ölfarbanstrich sowie Symbole und Inschriften, die der Würde des Ortes nicht entsprechen (§ 27 Abs. 4)",
+    "Keine provisorischen Grabmale auf Baumgräbern, Gemeinschaftsanlagen und anonymen Grabstätten (§ 28 Abs. 8)",
+    "Keine Bäume auf Grabstätten; Sträucher nicht mehr als 0,50 m über Nachbargräber; keine Pestizide (§ 34 Abs. 4, 7)",
+    "Werkzeug und Material nicht auf dem Friedhof lagern; Verpackung, Abfall und Betonreste abtransportieren (§ 7 Abs. 4, 6)"
+  ],
+  "genehmigung": [
+    "Errichtung, Fundamentierung und jede Veränderung (auch Umarbeiten oder Niederlegen) nur mit vorheriger schriftlicher Zustimmung (Grabmalantrag), schon vor der Anfertigung; gilt auch für provisorische Grabzeichen und Ergänzungsplatten (§ 28 Abs. 1)",
+    "Antrag: vollständige technische Zeichnung mit Grundriss, Seitenansicht und Bemaßung (ideal 1:10), Material, Bearbeitung, Anordnung und Inschrift; bei Bedarf Zeichnungen von Schrift und Ornamenten (§ 28 Abs. 2)",
+    "Einfassungen und sonstige bauliche Anlagen ebenfalls zustimmungspflichtig (§ 28 Abs. 3)",
+    "Denkmalgeschützte Grabmale: vorher denkmalrechtliche Genehmigung; Arbeiten nur durch Steinmetzmeister/in mit Zusatz „Restaurator/in im Steinmetzhandwerk“ (§ 28 Abs. 4)",
+    "Zustimmung erlischt nach einem Jahr ohne Errichtung (§ 28 Abs. 5)",
+    "Steinmetze brauchen einen jährlich zu erneuernden, gebührenpflichtigen Berechtigungsnachweis (Ausbildung oder Handwerksrolle, Berufshaftpflicht) (§ 7 Abs. 1–3)",
+    "Bei Anlieferung auf Verlangen genehmigten Antrag vorlegen und Prüfung am Eingang ermöglichen (§ 30)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den anerkannten Regeln des Handwerks und der Statik; Verwaltung kann sie überprüfen (§ 31 Abs. 1)",
+    "Aufsteller weist die Standfestigkeit stehender Steine 3 Monate nach dem Setzen unaufgefordert schriftlich nach (§ 31 Abs. 2)",
+    "Jährliche Prüfung nach der Anleitung des Verbandes der Friedhofsverwalter Deutschlands (VFD); ab 50 cm Höhe mit Kraftmessgerät, kleinere Steine und Aufsätze von Hand (§ 31 Abs. 3)",
+    "Bei Mängeln Sicherung oder Umlegen auf Kosten der Nutzungsberechtigten; Haftung für Schäden durch umfallende Grabmale (§ 31 Abs. 5, § 32)"
+  ],
+  "fristen": [
+    "Grabstätten innerhalb von 6 Monaten nach Beisetzung bzw. Erwerb herrichten (§ 34 Abs. 1)",
+    "Provisorische Grabmale nur als naturlasierte Holztafeln oder -kreuze, höchstens 6 Monate nach der Beisetzung (§ 28 Abs. 7)",
+    "Standfestigkeitsnachweis 3 Monate nach dem Aufstellen (§ 31 Abs. 2)",
+    "Nach Ablauf der Nutzungszeit Grabmale innerhalb von drei Monaten entfernen (§ 33 Abs. 2)",
+    "Vor Ablauf nur mit schriftlicher Zustimmung entfernen (§ 33 Abs. 1)"
+  ],
+  "kinderarbeit": "Natursteine nur mit Glaubhaftmachung der Herkunft aus einem Staat, der das ILO-Übereinkommen gegen Kinderarbeit einhält, oder mit Zertifikat (Fair Stone, IGEP, WGDN, Xertifix); Erklärung nach dem Formular des Landes zu § 13a BestattG (§ 29)",
+  "besonderheiten": [
+    "Jede Grabstätte ist mit einem Grabmal zu kennzeichnen, außer anonymen und Gemeinschaftsgräbern (§ 27 Abs. 3)",
+    "Rasenpartnergräber der alten Satzung können in Rasenwahlgräber umgewandelt werden (§ 16 Abs. 1)",
+    "Erinnerungsgarten auf dem Waldfriedhof wird von der Treuhandstelle für Dauergrabpflege gestaltet und vergeben (§ 22)",
+    "Erhaltenswerte und Ehrengräber gehen in das Eigentum der Stadt über (§ 26)",
+    "Herrichten von Wahlgräbern kann gegen Entgelt von der Friedhofsverwaltung übernommen werden (§ 34 Abs. 3)"
+  ],
+  "kontakt": "Friedhofsverwaltung der Hansestadt Lüneburg; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Liste der Staaten in § 29 gibt den Stand bei Erlass wieder",
+    "Die Prüflast in § 31 Abs. 3 steht im Dokument als „300 KN“ (vermutlich 300 N gemeint)"
+  ]
+}

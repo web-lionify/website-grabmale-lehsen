@@ -1,0 +1,50 @@
+{
+  "id": "amt-neuhaus",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen (Friedhofssatzung) der Gemeinde Amt Neuhaus",
+  "orte": [
+    "Amt Neuhaus",
+    "Neuhaus"
+  ],
+  "traeger": "Gemeinde Amt Neuhaus",
+  "art": "kommunal",
+  "fassung": "vom 27.03.2020 (in Kraft 15.05.2020) mit 1. Änderung vom 14.03.2025, in Kraft seit 15.04.2025 (Lesefassung)",
+  "quelle_url": "https://www.amt-neuhaus.de/ResourceImage.aspx?raid=28947",
+  "quelle_titel": "Friedhofssatzung Gemeinde Amt Neuhaus (PDF)",
+  "friedhoefe": [
+    "Kommunale Friedhöfe der Gemeinde Amt Neuhaus"
+  ],
+  "kurzfazit": "Grabmale, auch provisorische, dürfen nur nach vorheriger Abstimmung mit der Gemeinde errichtet oder verändert werden. Feste Maße nennt die Satzung kaum. Sie verlangt eine fachgerechte, standsichere Gründung und einen Nachweis gegen Kinderarbeit bei Natursteinen. Werkstattbezeichnungen nur unauffällig unten an der Seite oder Rückseite.",
+  "ruhezeit": "Leichen und Aschen 25 Jahre, Kinder bis 5 Jahre 20 Jahre (§ 9)",
+  "grabarten": [
+    {
+      "name": "Urnenwahlgrab",
+      "regel": "bis 2 Grabstellen, Nutzungsdauer 25 Jahre, verlängerbar (§ 15)"
+    }
+  ],
+  "masse": [],
+  "material": [
+    "Grabmale dürfen den Friedhof nicht verunstalten oder Besucher in ihrer Andacht stören (§ 24 Abs. 1)",
+    "Werkstattbezeichnungen nur unten an der Seite oder Rückseite in unauffälliger Weise (§ 24 Abs. 1)"
+  ],
+  "verbote": [],
+  "genehmigung": [
+    "Gedenksteine und Grabmale, auch provisorische, nur nach vorheriger Abstimmung mit der Gemeinde errichten oder verändern (§ 23 Abs. 1)",
+    "Sonstige bauliche Anlagen nur mit vorheriger schriftlicher Genehmigung (§ 23 Abs. 2)"
+  ],
+  "standsicherheit": [
+    "Gründung nach den allgemein anerkannten Regeln des Handwerks, standsicher auch beim Öffnen benachbarter Gräber (§ 24 Abs. 2)",
+    "Nutzungsberechtigte halten Grabmale in gutem Zustand; Mängel sonst auf ihre Kosten beseitigt (§ 24 Abs. 3–4)"
+  ],
+  "fristen": [
+    "Nach Ablauf können Grabmale binnen 3 Monaten entfernt werden, sonst entfernt die Gemeinde sie auf Kosten der bisherigen Nutzungsberechtigten ohne Ersatz (§ 25 Abs. 2)",
+    "Während des Nutzungsrechts nur nach Abstimmung entfernen (§ 25 Abs. 1)"
+  ],
+  "kinderarbeit": "Natursteine nur, wenn glaubhaft gemacht wird, dass sie aus einem Staat stammen, der das ILO-Übereinkommen 182 gegen die schlimmsten Formen der Kinderarbeit einhält, oder mit anerkanntem Zertifikat (§ 22)",
+  "besonderheiten": [
+    "Künstlerisch und geschichtlich wertvolle Grabmale werden nach Möglichkeit erhalten (§ 25 Abs. 3)"
+  ],
+  "kontakt": "Gemeinde Amt Neuhaus, Friedhofsverwaltung; Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Satzung enthält keine festen Höchst- oder Mindestmaße für Grabmale"
+  ]
+}

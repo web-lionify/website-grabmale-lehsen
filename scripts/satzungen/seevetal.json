@@ -1,0 +1,62 @@
+{
+  "id": "seevetal",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen in der Gemeinde Seevetal (Friedhofssatzung)",
+  "orte": [
+    "Seevetal",
+    "Maschen",
+    "Ramelsloh",
+    "Ohlendorf",
+    "Holtorfsloh"
+  ],
+  "traeger": "Gemeinde Seevetal",
+  "art": "kommunal",
+  "fassung": "vom 21.12.2023, gültig seit 01.01.2024",
+  "quelle_url": "https://www.seevetal.de/downloads/datei/MGQxYTNlYTljZDcyMzM3NEJDVmE0UGVmUytZSnNtQU5XSFM4aUM5UHFsdHpXaS9jQ2NNcjRMSWllOWNCSkJLV3RCOTdSR05WR2VWSjdFMFpnditocnhtY1VzQlFFbXh1MDR0cG9kMkdDZTZyRTVUeVROZ1pqbHIwLzU1U29RNGpHb05BeDdWd0FONmR6STRPSXFiTkRqRHRpZkdxSWtVS0ZZMDg5UT09",
+  "quelle_titel": "Friedhofssatzung Gemeinde Seevetal (PDF)",
+  "friedhoefe": [
+    "Kommunale Friedhöfe Maschen, Ramelsloh, Ohlendorf und Holtorfsloh (§ 1); die Friedhöfe in Hittfeld und Meckelfeld/Over sind kirchlich"
+  ],
+  "kurzfazit": "Grabmale brauchen eine Genehmigung, der Antrag braucht Zeichnungen 1:10 in zweifacher Ausfertigung samt Angaben zur Fundamentierung. Für Rasen- und Gemeinschaftsgräber schreibt die Satzung verbindliche Plattenmaße vor (30 × 30, 50 × 40 oder 60 × 40 cm, jeweils 10 cm stark), bündig im Kiesbett verlegt. Auf einigen Grabarten sind Findlinge bis 60 × 50 × 25 cm erlaubt.",
+  "ruhezeit": "Leichen ab 6 Jahren 25 Jahre, bis 5 Jahre 10 Jahre; Aschen ab 6 Jahren 20 Jahre, bis 5 Jahre 10 Jahre; prä- und perinatal verstorbene Kinder 10 Jahre",
+  "grabarten": [
+    {
+      "name": "Rasengrab",
+      "regel": "plan liegende Grabplatte 50 cm breit × 40 cm hoch × 10 cm stark, bündig im Kiesbett (Maße bindend)"
+    },
+    {
+      "name": "Rasenreihengrab (Urne)",
+      "regel": "plan liegende Grabplatte 30 × 30 × 10 cm (Maße bindend)"
+    },
+    {
+      "name": "Weitere Gemeinschafts- und Rasengrabarten",
+      "regel": "plan liegende Grabplatte 60 cm breit × 40 cm hoch × 10 cm stark, bündig im Kiesbett durch einen zugelassenen Steinmetz verlegt"
+    },
+    {
+      "name": "Grabarten mit Findling",
+      "regel": "Findling bis 60 × 50 × 25 cm bzw. 50 × 40 × 25 cm; vor dem Grabmal eine bodenbündige Einfassung mit mind. 10 cm Tiefe"
+    }
+  ],
+  "masse": [
+    "Grabplatten auf Rasen- und Gemeinschaftsgräbern 30 × 30, 50 × 40 oder 60 × 40 cm, jeweils 10 cm stark (Maße bindend)",
+    "Findlinge bis 60 × 50 × 25 cm bzw. 50 × 40 × 25 cm"
+  ],
+  "material": [
+    "Schrift auf Rasenplatten auch mit Bronze-, Metall- oder Kunststoffbuchstaben möglich (je nach Grabart)"
+  ],
+  "verbote": [
+    "Keine nicht kompostierbaren Abfälle und Pflanzgefäße in die Sammelstellen"
+  ],
+  "genehmigung": [
+    "Schriftlicher Antrag auf Genehmigung mit Zeichnungen 1:10 in zweifacher Ausfertigung",
+    "Der Unternehmer gibt im Antrag Art und Umfang der Fundamentierung und Befestigung an"
+  ],
+  "standsicherheit": [],
+  "fristen": [],
+  "kinderarbeit": "keine eigene Regelung gefunden (es gilt § 13a Nds. BestattG)",
+  "besonderheiten": [],
+  "kontakt": "Gemeinde Seevetal, Friedhofsverwaltung; Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Satzung ist umfangreich (45 Paragrafen); Paragrafenangaben und die genaue Zuordnung der Plattenmaße zu den Grabarten bitte im Original prüfen",
+    "Regeln für Wahlgräber ohne besondere Gestaltung wurden nicht vollständig ausgewertet"
+  ]
+}

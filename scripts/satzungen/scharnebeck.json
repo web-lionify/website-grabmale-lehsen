@@ -1,0 +1,72 @@
+{
+  "id": "scharnebeck",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen der Samtgemeinde Scharnebeck",
+  "orte": [
+    "Scharnebeck",
+    "Echem",
+    "Hohnstorf (Elbe)"
+  ],
+  "traeger": "Samtgemeinde Scharnebeck",
+  "art": "kommunal",
+  "fassung": "vom 20.02.2025, in Kraft seit 01.04.2025; ersetzt die Satzung vom 08.02.2017 (§ 36)",
+  "quelle_url": "https://www.scharnebeck.de/ResourceImage.aspx?raid=31740",
+  "quelle_titel": "Friedhofssatzung Samtgemeinde Scharnebeck (PDF)",
+  "friedhoefe": [
+    "Friedhöfe im Bereich der Samtgemeinde Scharnebeck, u. a. Echem und Hohnstorf/Elbe (§ 1, § 19, § 22)"
+  ],
+  "kurzfazit": "Grabmale brauchen vorher die Genehmigung der Samtgemeinde, der Antrag braucht eine Zeichnung 1:10. Auf Rasenreihengräbern mit stehendem Grabmal gehört eine Unterplatte von höchstens 0,80 × 0,80 m (Doppelgrab 1,20 × 0,80 m) mit 15 cm Mähkante dazu. Im Kiesbett in Hohnstorf sind Rasenliegeplatten in festen Maßen und stehende Grabmale bis 0,60 m Höhe erlaubt.",
+  "ruhezeit": "Leichen und Aschen 25 Jahre, Kinder bis 5 Jahre 20 Jahre (§ 8)",
+  "grabarten": [
+    {
+      "name": "Urnenwahlgrab",
+      "regel": "bis 2 Grabstellen, 25 Jahre, verlängerbar (§ 15)"
+    },
+    {
+      "name": "Rasenreihengrab mit stehendem Grabmal (Sarg/Urne)",
+      "regel": "Unterplatte max. 0,80 × 0,80 m (Einzel) bzw. 1,20 × 0,80 m (Doppel), Mähkante 15 cm; keine Bepflanzung (§ 18)"
+    },
+    {
+      "name": "Rasenreihengrab im Kiesbett (Hohnstorf)",
+      "regel": "Rasenliegeplatte spätestens nach 3 Monaten: Urne 0,40–0,50 × 0,40–0,60 m, Sarg 0,40–0,50 × 0,60–0,80 m; stehendes Grabmal max. 0,60 m hoch; Mähkante 20 cm (§ 19)"
+    },
+    {
+      "name": "Gemeinschaftsurnengrab mit Säule (Echem, Hohnstorf)",
+      "regel": "keine individuelle Kennzeichnung; Namen auf einer Stele durch die Samtgemeinde (§ 22)"
+    },
+    {
+      "name": "Gemeinschaftsurnengrab mit Baum (Echem, Hohnstorf)",
+      "regel": "Liegeplatte Einzelgrab 0,40 × 0,30 × 0,12 m, Doppelgrab 0,50 × 0,40 × 0,12 m, poliert, gesprengt, Ecken abgerundet (§ 23)"
+    }
+  ],
+  "masse": [
+    "Rasenreihengrab: Unterplatte max. 0,80 × 0,80 m bzw. 1,20 × 0,80 m, Mähkante 15 cm (§ 18 Abs. 3)",
+    "Kiesbett-Rasengrab: Liegeplatte Urne 0,40–0,50 × 0,40–0,60 m, Sarg 0,40–0,50 × 0,60–0,80 m; stehend max. 0,60 m hoch (§ 19 Abs. 3)",
+    "Gemeinschaftsgrab mit Baum: Liegeplatte 0,40 × 0,30 × 0,12 m bzw. 0,50 × 0,40 × 0,12 m (§ 23 Abs. 3)"
+  ],
+  "material": [
+    "Grabmale dürfen den Friedhof nicht verunstalten; Werkstattbezeichnungen nur unauffällig unten seitlich oder hinten (§ 29 Abs. 1)"
+  ],
+  "verbote": [
+    "Keine Grabgewölbe, Urnenkammern oder Mausoleen (§ 26)",
+    "Rasenreihengräber dürfen nicht bepflanzt werden (§ 18 Abs. 4)"
+  ],
+  "genehmigung": [
+    "Gedenksteine und Grabmale nur mit Genehmigung errichten oder verändern (§ 28 Abs. 1)",
+    "Antrag vor Beginn der Arbeiten mit Zeichnungen 1:10, aus denen die Anordnung von Schrift und Symbolen hervorgeht (§ 28 Abs. 2)",
+    "Abweichende, nicht genehmigungsfähige Ausführung muss nach Fristsetzung geändert oder beseitigt werden (§ 28 Abs. 3)"
+  ],
+  "standsicherheit": [
+    "Gründung nach den allgemein anerkannten Regeln des Handwerks, standsicher auch beim Öffnen benachbarter Gräber (§ 29 Abs. 2)",
+    "Mängel beseitigen die Nutzungsberechtigten, sonst die Samtgemeinde auf ihre Kosten (§ 29 Abs. 3–4)"
+  ],
+  "fristen": [
+    "Kiesbett-Rasengrab: Liegeplatte spätestens nach 3 Monaten (§ 19 Abs. 3)",
+    "Nach Ablauf binnen 3 Monaten entfernen, sonst Entfernung durch die Samtgemeinde auf Kosten der bisherigen Nutzungsberechtigten (§ 30 Abs. 2)"
+  ],
+  "kinderarbeit": "keine eigene Regelung gefunden (es gilt § 13a Nds. BestattG)",
+  "besonderheiten": [],
+  "kontakt": "Samtgemeinde Scharnebeck, Friedhofsverwaltung; Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Paragrafen zu Rasenreihengräbern mit Liegeplatte (§ 16, § 17) wurden nicht vollständig ausgewertet"
+  ]
+}

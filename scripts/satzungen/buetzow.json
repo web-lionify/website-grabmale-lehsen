@@ -1,0 +1,77 @@
+{
+  "id": "buetzow",
+  "titel": "Friedhofsordnung für die Friedhöfe der Ev.-Luth. Kirchengemeinde Bützow",
+  "orte": [
+    "Bützow",
+    "Langen Trechow",
+    "Passin",
+    "Zepelin"
+  ],
+  "traeger": "Ev.-Luth. Kirchengemeinde Bützow",
+  "art": "kirchlich",
+  "fassung": "vom 15.08.2017; 2. Änderung vom 15.10.2025",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Rostock/Buetzow/Buetzow/170815_Friedhofsordnung_Buetzow.pdf",
+  "quelle_titel": "Friedhofsordnung Bützow (PDF)",
+  "friedhoefe": [
+    "Friedhöfe Bützow, Langen Trechow, Passin und Zepelin der Ev.-Luth. Kirchengemeinde Bützow (Titel)"
+  ],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Die Mindeststärke steigt mit der Höhe von 12 auf 18 cm. Es gibt Reihen- und Wahlgräber mit allgemeinen oder zusätzlichen Gestaltungsvorschriften sowie Urnen- und Rasengräber.",
+  "ruhezeit": "Särge und Urnen 25 Jahre (§ 12 Abs. 1)",
+  "grabarten": [
+    {
+      "name": "Reihen- und Wahlgrab mit allgemeinen oder zusätzlichen Gestaltungsvorschriften",
+      "regel": "Wahl der Abteilung möglich (§ 16, § 32)"
+    },
+    {
+      "name": "Urnengrab / Urnengemeinschaftsfeld",
+      "regel": "Rasenfeld mit Raster 50 × 50 cm je Urne (§ 19)"
+    },
+    {
+      "name": "Rasengrab",
+      "regel": "zusätzliche Gestaltungsvorschriften (§ 16)"
+    }
+  ],
+  "masse": [
+    "Mindeststärke in Abteilungen mit allgemeinen Gestaltungsvorschriften: Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; über 1,50 m = 0,18 m, jeweils mit standsicherer Verdübelung (§ 23)",
+    "Grab-Mindestmaße: Kinder bis 5 Jahre 1,20 × 0,60 m, über 5 Jahre 2,10 × 0,90 m, Urnengrab 1,00 × 0,60 m (§ 9 Abs. 3)",
+    "Hecken max. 1,20 m hoch und nicht über die Grabgrenze (§ 30 Abs. 2)"
+  ],
+  "material": [
+    "Keine Vorgaben zu Gesteinsart oder Bearbeitung; Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 24 Abs. 1)",
+    "Keine Kunststoffe oder nicht verrottbaren Werkstoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und Anzuchtbehältern (§ 30)"
+  ],
+  "verbote": [
+    "Keine Grabeinfassungen aus Kunststoff oder nicht verrottbaren Werkstoffen (§ 30)",
+    "Keine Bäume auf Grabstätten; keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 30)",
+    "Gewerbliche Arbeiten nur an Werktagen zu den festgesetzten Zeiten, nicht an Sonn- und Feiertagen und nicht am Buß- und Bettag (§ 5)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung, Nutzungsrecht nachweisen (§ 24)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung; auf Verlangen Schrift 1:1, in besonderen Fällen Modell oder Attrappe (§ 24)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor der Aufstellung möglich (§ 25)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 24)",
+    "Schriftliche Zulassung der Steinmetze mit Nachweis Handwerksrolle bzw. Verzeichnis und Haftpflichtversicherung (§ 5)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung; Verwaltung kann sie überprüfen (§ 26)",
+    "Jährliche Standsicherheitsprüfung durch den Friedhofsträger; bei Gefahr Sicherung (z. B. Umlegen) auf Kosten der Verantwortlichen, entfernte Teile werden drei Monate aufbewahrt (§ 27)",
+    "Nutzungsberechtigte haften für Schäden durch umstürzende Grabmale (§ 27)"
+  ],
+  "fristen": [
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung entfernt werden (§ 24)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel und Fundament durch die Nutzungsberechtigten entfernen und Fläche einsäen; sonst nach drei Monaten Abräumung ohne Entschädigung, ggf. auf ihre Kosten (§ 29)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Wahl zwischen Abteilungen mit allgemeinen und zusätzlichen Gestaltungsvorschriften (§ 32)",
+    "Künstlerisch oder historisch wertvolle Grabmale stehen in einem Verzeichnis; Änderungen nur mit Zustimmung, ggf. unter Beteiligung des Denkmalschutzes",
+    "Für bestehende Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Bützow; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die 1. und 2. Änderung (zuletzt 15.10.2025) sind in dieser Zusammenfassung nicht berücksichtigt",
+    "Für die Friedhöfe Baumgarten und Tarnow gelten eigene Ordnungen",
+    "Höchsthöhen und -breiten für Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften sind nicht geregelt"
+  ]
+}

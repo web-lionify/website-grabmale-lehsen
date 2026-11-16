@@ -1,0 +1,89 @@
+{
+  "id": "wismar",
+  "titel": "Friedhofssatzung der Hansestadt Wismar",
+  "orte": ["Wismar"],
+  "traeger": "Hansestadt Wismar (Friedhofsverwaltung)",
+  "art": "kommunal",
+  "fassung": "vom 29.09.2025 (Bürgerschaftsbeschluss 25.09.2025), bekanntgemacht 30.09.2025, in Kraft seit 01.10.2025; ersetzt die Satzung vom 11.12.2013 (§ 35)",
+  "quelle_url": "https://www.wismar.de/loadDocument.phtml?FID=2634.12595.1&Ext=PDF",
+  "quelle_titel": "Friedhofssatzung Hansestadt Wismar (PDF)",
+  "friedhoefe": [
+    "Städtischer Friedhof Wismar mit Altem Friedhof und Westfriedhof sowie Grabfeldern mit und ohne besondere Gestaltungsvorschriften (§ 1, § 18, § 20)"
+  ],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung, der Antrag braucht einen bemaßten Entwurf im Maßstab 1:10. Erlaubt sind nur Naturstein, Holz, Schmiedeeisen und Bronze. Stehende Grabmale sind nach Ansichtsfläche begrenzt (0,30–0,50 m²) und müssen mindestens 12 cm stark sein. Grababdeckungen mit Steinplatten und Einfassungen außer Hecken sind grundsätzlich nicht erlaubt.",
+  "ruhezeit": "Erdbestattung ab 6 Jahren 25 Jahre, bis 6 Jahre 20 Jahre, Urnen 20 Jahre, stillgeborene Kinder 4 Jahre (§ 11)",
+  "grabarten": [
+    {"name": "Erdreihengrab", "regel": "1,25 × 2,50 m; stehendes Grabmal bis 0,30 m² Ansichtsfläche; Nutzungsrecht nur für die Ruhezeit, keine Verlängerung (§ 14 Abs. 2–3, § 19 Abs. 4 a)"},
+    {"name": "Erdwahlgrab ein- / mehrstellig", "regel": "1,25 × 2,50 m je Stelle; stehendes Grabmal bis 0,40 m² (einstellig) bzw. 0,50 m² (zwei- und mehrstellig) Ansichtsfläche; bis zu zwei zusätzliche Urnen je Erdbestattung (§ 15 Abs. 2–3, § 19 Abs. 4)"},
+    {"name": "Urnenreihen- und Urnenwahlgrab", "regel": "mind. 1,00 × 1,00 m; liegende Grabmale bis 0,20 m² (Reihengrab) bzw. 0,25 m² (Wahlgrab); Urnenwahlgrab zwei- oder vierstellig (§ 14, § 15, § 19 Abs. 5)"},
+    {"name": "Urnenfelder 1 und 12 / Felder 10 und 13", "regel": "In den Feldern 1 und 12 nur liegende Grabsteine; in den Feldern 10 und 13 stehende und liegende Steine je nach Gestaltungsgrundsatz (§ 20 Abs. 1–2)"},
+    {"name": "Urnen-Gemeinschaftsanlage Rasen/Rabatte (zwei Urnen)", "regel": "Liegestein 0,50 m breit und 0,45 m tief (je ± 0,05 m), mind. 0,12 m stark; Stein bleibt Eigentum der Nutzungsberechtigten (§ 15 Abs. 7 b, § 20 Abs. 6 a)"},
+    {"name": "Naturnahe Baumgrabgemeinschaft (zwei Urnen)", "regel": "Pultstein 0,12–0,20 m stark; Standort so, dass Baumwurzeln nicht beschädigt werden (§ 15 Abs. 7 c, § 20 Abs. 6 b)"},
+    {"name": "Erdwahlgrab in Grabgemeinschaft mit Rasen/Rabatte", "regel": "25 Jahre inkl. Grabstein, Beschriftung und Pflege; zusätzlich zwei Urnen möglich (§ 15 Abs. 7 a)"},
+    {"name": "Urnengräber als Baumgrabstätten (Felder 11, 14, 24, 27)", "regel": "keine Grabsteine; nur Steckvasen; Kennzeichnung nur mit leichten Schildern am Gehölz (§ 20 Abs. 3, § 27 Abs. 2 c)"},
+    {"name": "Urnengemeinschaftsgrab mit Namensnennung", "regel": "Grabmal und Namensplaketten legt die Friedhofsverwaltung fest; Auswahl, Aufstellung und Unterhaltung nur durch Verwaltung oder zugelassenen Gewerbetreibenden (§ 14 Abs. 7, § 20 Abs. 7)"},
+    {"name": "Anonyme Erd- und Urnengemeinschaftsanlage", "regel": "keine Einzelgrabmale, kein persönlicher Grabschmuck; Gedenkstein legt die Verwaltung fest (§ 14 Abs. 5, § 20 Abs. 8)"},
+    {"name": "Gemeinschaftsgrab für stillgeborene Kinder", "regel": "Findlinge bis 0,20 × 0,15 × 0,15 m (B/H/T) (§ 14 Abs. 6, § 20 Abs. 5)"},
+    {"name": "Bestattungsgärten", "regel": "nur mit Dauergrabpflegevertrag der vertraglich gebundenen Genossenschaft; Einzelgrabmale in Abstimmung mit der Verwaltung vorgegeben (§ 15 Abs. 7 d, § 20 Abs. 9)"}
+  ],
+  "masse": [
+    "Stehende Natursteingrabmale auf Erdgräbern: Reihengrab bis 0,30 m², Wahlgrab einstellig bis 0,40 m², zwei- und mehrstellig bis 0,50 m² Ansichtsfläche; in besonderer Lage nach Festlegung der Verwaltung (§ 19 Abs. 4)",
+    "Stehende Natursteingrabmale mindestens 12 cm stark (§ 19 Abs. 4)",
+    "Liegende Grabmale auf Urnengräbern: Reihengrab bis 0,20 m², Wahlgrab bis 0,25 m² Ansichtsfläche (§ 19 Abs. 5)",
+    "In den Belegungsplänen können Höchst- und Mindestmaße vorgeschrieben werden (§ 19 Abs. 6)",
+    "Grabgrößen: Erdgrab 1,25 × 2,50 m je Stelle, Kindergrab bis 6 Jahre 1,20 × 1,80 m, Urnengrab mind. 1,00 × 1,00 m (§ 14 Abs. 2, § 15 Abs. 2)",
+    "Gemeinschaftsanlage Rasen/Rabatte: Liegestein 0,50 × 0,45 m (± 0,05 m), mind. 0,12 m stark; Baumgrabgemeinschaft: Pultstein 0,12–0,20 m stark (§ 20 Abs. 6)",
+    "Provisorische Grabmale bis 0,15 × 0,30 m ohne Zustimmung (§ 21 Abs. 1)"
+  ],
+  "material": [
+    "Nur Natursteine, Holz, Schmiedeeisen sowie geschmiedete oder gegossene Bronze (§ 19 Abs. 2)",
+    "Stehende oder liegende Grabmale nach den Belegungsplänen; liegende Grabmale nur flach auf die Grabstätte gelegt (§ 19 Abs. 3)",
+    "Alter Friedhof und Westfriedhof: Grabsteine müssen dem historischen Charakter in Form, Maßen, Material und Schrift/Ornamentik entsprechen (§ 20 Abs. 4)",
+    "Keine Sinnbilder oder Inschriften, die die Gefühle anderer verletzen können (§ 19 Abs. 1)",
+    "Ausnahmen von Material und Maßen kann die Verwaltung zulassen; in besonderer Lage kann sie höhere Anforderungen an Material, Entwurf und Ausführung stellen (§ 19 Abs. 8)"
+  ],
+  "verbote": [
+    "Abdeckung der Gräber mit Steinplatten ist unzulässig (§ 19 Abs. 7)",
+    "Einfassungen nur pflanzlicher Art; Ausnahmen: Grabfelder 6/8/26 (Steinplatten-Einfassung in vorgegebenen Größen) und 20/21/25 (Plattenstreifen) sowie historische Grabzäune (§ 26 Abs. 7, § 27 Abs. 2 a–b)",
+    "Kein Marmorkies, Splitt, Beton, Kunststoff, Glas oder andere nicht verrottbare Werkstoffe bei Grabgestaltung und -pflege (§ 26 Abs. 11)",
+    "Keine chemischen Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 26 Abs. 12)",
+    "Keine Einzelgrabmale auf anonymen Anlagen, keine Grabsteine auf Baumgrabstätten (§ 20 Abs. 3, 8)",
+    "Keine störenden Arbeiten an Sonn- und Feiertagen oder in der Nähe von Bestattungen; Gewerbetreibende lagern keinen Abfall und Abraum auf dem Friedhof ab (§ 6 Abs. 3 c, § 7 Abs. 6)"
+  ],
+  "genehmigung": [
+    "Grabmale und sonstige bauliche Anlagen nur mit vorheriger schriftlicher Zustimmung; Antrag durch die Nutzungsberechtigten mit Nachweis des Nutzungsrechts (§ 21 Abs. 1)",
+    "Dem Antrag beifügen: bemaßter Entwurf mit Grundriss und Seitenansicht 1:10 mit Material, Bearbeitung, Inhalt, Form, Anordnung und Befestigung; Angaben zu Schrift, Ornamenten und Symbolen inkl. Farbgestaltung (§ 21 Abs. 2)",
+    "Auch provisorische Grabmale über 0,15 × 0,30 m sind zustimmungspflichtig (§ 21 Abs. 1)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 21 Abs. 6)",
+    "Bei Anlieferung genehmigten Entwurf und Schriftzeichnung vorlegen; Grabmale am Friedhofseingang zur Prüfung bereitstellen (§ 22)",
+    "Steinmetze brauchen eine Zulassung (Meisterprüfung oder Handwerksrolle bzw. gleichwertige Qualifikation, Berufshaftpflicht), gültig max. drei Jahre, gebührenpflichtig (§ 7 Abs. 1–3)",
+    "Jede wesentliche Änderung der Grabgestaltung bedarf vorheriger schriftlicher Zustimmung; ggf. Zeichnung 1:20 (§ 26 Abs. 4)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den anerkannten Regeln des Handwerks, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 23 Abs. 1)",
+    "Jährliche Druckprobe nach der Unfallverhütungsvorschrift „Friedhöfe und Krematorien“; in Zweifelsfällen Nachweis durch Sachverständigen vor der Aufstellung (§ 23 Abs. 1)",
+    "Es gilt die TA Grabmal in der jeweils geltenden Fassung, auch für Mindeststärke und Fundamentgröße (§ 23 Abs. 2–3)",
+    "Nutzungsberechtigte halten Grabmale verkehrssicher und haften für Schäden durch umstürzende Grabmale; bei Gefahr Sicherung (z. B. Umlegen) auf ihre Kosten (§ 24)"
+  ],
+  "fristen": [
+    "Grabstätten innerhalb von 12 Monaten nach der Bestattung gärtnerisch herrichten (§ 26 Abs. 6)",
+    "Provisorische Grabmale (nur naturlasierte Holztafeln oder -kreuze) höchstens zwei Jahre nach der Beisetzung (§ 21 Abs. 7)",
+    "Nach Ablauf von Ruhezeit oder Nutzungsrecht Grabmale mit Zustimmung entfernen; nach drei Monaten fallen sie entschädigungslos an die Stadt, Abräumkosten tragen die Nutzungsberechtigten (§ 25 Abs. 2)",
+    "Vor Ablauf nur mit schriftlicher Zustimmung entfernen (§ 25 Abs. 1)",
+    "Baufreiheit (Grabmal entfernt) bis 24 Stunden vor einer Bestattung, sonst Entfernung auf Kosten der Nutzungsberechtigten (§ 10 Abs. 5)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Wahlmöglichkeit zwischen Grabfeldern mit und ohne Gestaltungsvorschriften; Abgrenzung nach Belegungsplänen (§ 18)",
+    "Alter Friedhof und Westfriedhof: Erdwahlgräber mit mind. 0,40 m hohen immergrünen Hecken einfassen, sofern keine historischen Zäune wiederverwendet werden (§ 27 Abs. 2 d)",
+    "Grabfelder 6/8/26: Steinplatten-Einfassung in vorgegebenen Größen erlaubt; Felder 20/21/25: Plattenstreifen durch den Friedhof (§ 27 Abs. 2 a–b)",
+    "Künstlerisch oder historisch wertvolle Grabmale und alle schmiedeeisernen Grabzäune stehen im Verzeichnis und dürfen nicht entfernt werden (§ 25 Abs. 4)",
+    "Ohne Zustimmung errichtete Grabmale können auf Kosten der Nutzungsberechtigten entfernt werden (§ 21 Abs. 5, § 25 Abs. 3)",
+    "Für ältere Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 31 Abs. 1)"
+  ],
+  "kontakt": "Friedhofsverwaltung der Hansestadt Wismar; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Konkrete Höchst- und Mindestmaße je Grabfeld stehen in den Belegungsplänen, nicht in der Satzung (§ 19 Abs. 6)",
+    "Höhen- oder Breitenmaße stehender Grabmale sind nur als Ansichtsfläche geregelt"
+  ]
+}

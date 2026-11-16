@@ -1,0 +1,77 @@
+{
+  "id": "brueel",
+  "titel": "Friedhofsordnung für die Friedhöfe der örtlichen Kirchen zu Penzin und Tempzin",
+  "orte": [
+    "Penzin",
+    "Tempzin",
+    "Brüel"
+  ],
+  "traeger": "Ev.-Luth. Kirchengemeinde Brüel",
+  "art": "kirchlich",
+  "fassung": "vom 30.01.2018; 1. Änderung vom 23.01.2024",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/elkm/propstei_wismar/KR_Sternberg/Brueel/180130_Friedhofsordnung_Brueel.pdf",
+  "quelle_titel": "Friedhofsordnung Kirchengemeinde Brüel (PDF)",
+  "friedhoefe": [
+    "Kirchliche Friedhöfe Penzin und Tempzin der Ev.-Luth. Kirchengemeinde Brüel (Präambel)"
+  ],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Die Mindeststärke steigt mit der Höhe von 12 auf 18 cm. Für die spätere Beräumung des Grabsteins ist eine Kaution zu zahlen.",
+  "ruhezeit": "Särge 25 Jahre, Urnen 20 Jahre (§ 12 Abs. 1)",
+  "grabarten": [
+    {
+      "name": "Reihen- und Wahlgrab (Erd- und Urnenbestattung)",
+      "regel": "allgemeine Gestaltungsvorschriften (§ 16)"
+    },
+    {
+      "name": "Urnengemeinschaftsanlage Tempzin",
+      "regel": "Rasenfeld, Raster 50 × 50 cm je Urne (§ 19)"
+    },
+    {
+      "name": "Rasenwahlgrab",
+      "regel": "zusätzliche Gestaltungsvorschriften (§ 16)"
+    }
+  ],
+  "masse": [
+    "Mindeststärke in Abteilungen mit allgemeinen Gestaltungsvorschriften: Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; über 1,50 m = 0,18 m, jeweils mit standsicherer Verdübelung (§ 23)",
+    "Hecken max. 0,40 m hoch und nicht über die Grabgrenze (§ 30 Abs. 2)"
+  ],
+  "material": [
+    "Keine Vorgaben zu Gesteinsart oder Bearbeitung; Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 24 Abs. 1)",
+    "Keine Kunststoffe oder nicht verrottbaren Werkstoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und Anzuchtbehältern (§ 30)"
+  ],
+  "verbote": [
+    "Keine Grabeinfassungen aus Kunststoff oder nicht verrottbaren Werkstoffen (§ 30)",
+    "Keine Bäume auf Grabstätten; keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 30)",
+    "Gewerbliche Arbeiten nur an Werktagen zu den festgesetzten Zeiten, nicht an Sonn- und Feiertagen und nicht am Buß- und Bettag (§ 5)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung, Nutzungsrecht nachweisen (§ 24)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung; auf Verlangen Schrift 1:1, in besonderen Fällen Modell oder Attrappe (§ 24)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor der Aufstellung möglich (§ 25)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 24)",
+    "Schriftliche Zulassung der Steinmetze mit Nachweis Handwerksrolle bzw. Verzeichnis und Haftpflichtversicherung (§ 5)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung; Verwaltung kann sie überprüfen (§ 26)",
+    "Jährliche Standsicherheitsprüfung durch den Friedhofsträger; bei Gefahr Sicherung (z. B. Umlegen) auf Kosten der Verantwortlichen, entfernte Teile werden drei Monate aufbewahrt (§ 27)",
+    "Nutzungsberechtigte haften für Schäden durch umstürzende Grabmale (§ 27)"
+  ],
+  "fristen": [
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung entfernt werden (§ 24)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel und Fundament durch die Nutzungsberechtigten entfernen und Fläche einsäen; sonst nach drei Monaten Abräumung ohne Entschädigung, ggf. auf ihre Kosten (§ 29)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Bereits vorhandene Bäume und Koniferen sind auf 1,00 m zu kürzen (§ 30)",
+    "Für die Beräumung des Grabsteins nach Ende der Ruhezeit ist eine Kaution zu entrichten (§ 30)",
+    "Wahl zwischen Abteilungen mit allgemeinen und zusätzlichen Gestaltungsvorschriften (§ 32)",
+    "Künstlerisch oder historisch wertvolle Grabmale stehen in einem Verzeichnis; Änderungen nur mit Zustimmung, ggf. unter Beteiligung des Denkmalschutzes",
+    "Für bestehende Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Brüel; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Ordnung gilt für die kirchlichen Friedhöfe Penzin und Tempzin; ob sie auch für einen Friedhof in der Stadt Brüel gilt, geht aus dem Titel nicht hervor",
+    "Die 1. Änderung vom 23.01.2024 ist in dieser Zusammenfassung nicht berücksichtigt",
+    "Höchsthöhen und -breiten für Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften sind nicht geregelt"
+  ]
+}

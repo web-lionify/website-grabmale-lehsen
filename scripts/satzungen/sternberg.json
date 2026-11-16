@@ -1,0 +1,59 @@
+{
+  "id": "sternberg",
+  "titel": "Satzung über das Friedhofs- und Bestattungswesen der Stadt Sternberg (Friedhofssatzung)",
+  "orte": ["Sternberg"],
+  "traeger": "Stadt Sternberg",
+  "art": "kommunal",
+  "fassung": "vom 03.11.2006, veröffentlicht im Amtsblatt Sternberger Seenlandschaft Nr. 11/06 vom 18.11.2006; ersetzt die Satzung vom 23.11.2000 (§ 34)",
+  "quelle_url": "https://www.stadt-sternberg.de/satzungen/1Sternberg_Friedhofssatzung_vom_03_11_2006.pdf",
+  "quelle_titel": "Friedhofssatzung Stadt Sternberg (PDF)",
+  "friedhoefe": ["Städtischer Friedhof Sternberg (§ 1)"],
+  "kurzfazit": "Grabmale brauchen vorher die schriftliche Zustimmung, der Antrag wird zweifach mit Entwurf 1:10 und Fundamentierung gestellt. Die Mindeststärke steigt mit der Höhe von 12 auf 18 cm. Kissensteine und Grabplatten sind auf 0,40 × 0,50 m begrenzt, Stelen und Säulen brauchen eine Sondergenehmigung. Kunststoff, Gips, Glas und Porzellan sind nicht erlaubt.",
+  "ruhezeit": "25 Jahre (§ 8 Abs. 1)",
+  "grabarten": [
+    {"name": "Wahl- und Reihengrab", "regel": "allgemeine Grabmalvorschriften nach § 23; Wahlgrab mit bis zu 2 Urnen (§ 16)"},
+    {"name": "Urnenwahlgrab", "regel": "1,00 × 1,00 m für bis zu 4 Urnen; Urneneinfassung bis 0,30 m stark (§ 16, § 23 Abs. 10)"},
+    {"name": "Rasenreihengrab (Urnen)", "regel": "Anlage und Pflege durch die Friedhofsverwaltung; Gedenkplatten und Grabsteine können Angehörige auf eigene Kosten mit Namen und Daten versehen (§ 19)"},
+    {"name": "Urnengemeinschaftsanlage", "regel": "Rasenfeld, Raster 0,50 × 0,50 m, ohne individuelle Kennzeichnung (§ 17)"},
+    {"name": "Gemeinschaftsanlage für Erdbestattungen", "regel": "Rasenfeld, Blumen nur am zentralen Platz (§ 18)"}
+  ],
+  "masse": [
+    "Mindeststärke: Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; ab 1,50 m = 0,18 m, mit standsicherer Verdübelung (§ 23 Abs. 5)",
+    "Kissensteine 0,40 m hoch × 0,50 m breit; Grabplatten 2,0–5,0 cm stark, 0,40 × 0,50 m (§ 23 Abs. 7)",
+    "Gruftplatten max. 0,60 m breit und 1,50 m lang (§ 23 Abs. 8)",
+    "Grabeinfassungen 0,06–0,10 m stark, bei Urnengräbern bis 0,30 m (§ 23 Abs. 9–10)",
+    "Pflanzen max. 2,00 m hoch (§ 22 Abs. 4)"
+  ],
+  "material": [
+    "Wetterbeständiger Werkstoff, handwerksgerecht, schlicht und dem Werkstoff gemäß bearbeitet; Grabmale sollen sich ins Gesamtbild einfügen (§ 23 Abs. 2–3)",
+    "Stelen und Säulen nur mit Sondergenehmigung (§ 23 Abs. 6)"
+  ],
+  "verbote": [
+    "Keine Grabmale aus Kunststoff, Gips, Glas, Porzellan, Kork- oder Topfgestein (§ 23 Abs. 4)",
+    "Keine Inschriften und Sinnbilder, die der Würde des Ortes nicht entsprechen (§ 23 Abs. 4)",
+    "Keine Einzäunung mit Gittern, Draht- oder Holzzäunen; keine festen Sitzgelegenheiten (§ 22 Abs. 5)",
+    "Keine Bäume, größeren Sträucher oder Hecken neu pflanzen, umsetzen oder beseitigen (§ 22 Abs. 4)"
+  ],
+  "genehmigung": [
+    "Aufstellung, Errichtung und jede Veränderung nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung (§ 23 Abs. 1, § 24 Abs. 1)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung (§ 24 Abs. 2)",
+    "Zustimmung erlischt nach einem Jahr ohne Errichtung (§ 24 Abs. 3)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung, standsicher auch beim Öffnen benachbarter Gräber (§ 24 Abs. 4)"
+  ],
+  "fristen": [
+    "Wahl-, Reihen- und Urnengräber spätestens 6 Monate nach der Bestattung anlegen (§ 22 Abs. 1)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Keine unwürdigen Gefäße für Blumen (§ 22 Abs. 2)",
+    "Ist die Grabpflege nicht durch Privatpersonen gesichert, übernimmt sie die Friedhofsverwaltung (§ 8 Abs. 2)"
+  ],
+  "kontakt": "Stadt Sternberg, Friedhofsverwaltung (Amt Sternberger Seenlandschaft); Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Satzung stammt von 2006; spätere Änderungen wurden nicht gefunden",
+    "Regeln zur Entfernung der Grabmale nach Ablauf und zur Standsicherheitsprüfung wurden im Text nicht gesondert gefunden"
+  ]
+}

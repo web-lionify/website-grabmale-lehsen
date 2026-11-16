@@ -1,0 +1,73 @@
+{
+  "id": "luebz",
+  "titel": "Friedhofsordnung für die Friedhöfe der örtlichen Kirchen zu Lübz, Lutheran und Benzin",
+  "orte": [
+    "Lübz",
+    "Lutheran",
+    "Benzin"
+  ],
+  "traeger": "Ev.-Luth. Kirchengemeinde Lübz",
+  "art": "kirchlich",
+  "fassung": "vom 21.09.2023; Änderung vom 09.10.2025",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Luebz/230921_Friedhofsordnung_Luebz_Lutheran_und_Benzin.pdf",
+  "quelle_titel": "Friedhofsordnung Lübz (PDF)",
+  "friedhoefe": [
+    "Friedhöfe Lübz, Lutheran und Benzin der Ev.-Luth. Kirchengemeinde Lübz (Präambel)"
+  ],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Die Mindeststärke steigt mit der Höhe von 12 auf 18 cm. Auf Urnenwahlgräbern mit besonderen Gestaltungsvorschriften sind Grabsteine höchstens 0,75 m hoch und 0,45 m breit, gemessen ab Oberkante der Einfassung.",
+  "ruhezeit": "25 Jahre (§ 12)",
+  "grabarten": [
+    {
+      "name": "Reihen- und Wahlgrab (Erd- und Urnenbestattung)",
+      "regel": "allgemeine Gestaltungsvorschriften (§ 16)"
+    },
+    {
+      "name": "Urnenwahlgrab mit Einfassung / mit besonderen Gestaltungsvorschriften",
+      "regel": "Grabstein max. 0,75 m hoch und 0,45 m breit, Höhe ab Oberkante der Grabeinfassung (§ 20 Abs. 4)"
+    },
+    {
+      "name": "Rasenreihen- und Rasenwahlgrab, Baumgrab",
+      "regel": "besondere Grabarten nach § 16; Pflege durch den Friedhofsträger"
+    }
+  ],
+  "masse": [
+    "Mindeststärke in Abteilungen mit allgemeinen Gestaltungsvorschriften: Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; über 1,50 m = 0,18 m, jeweils mit standsicherer Verdübelung (§ 25)",
+    "Urnenwahlgrab mit besonderen Gestaltungsvorschriften: Grabstein max. 0,75 m hoch, 0,45 m breit (§ 20 Abs. 4)"
+  ],
+  "material": [
+    "Keine Vorgaben zu Gesteinsart oder Bearbeitung; Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 26 Abs. 1)",
+    "Keine Kunststoffe oder nicht verrottbaren Werkstoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und Anzuchtbehältern (§ 32)"
+  ],
+  "verbote": [
+    "Keine Grabeinfassungen aus Kunststoff oder nicht verrottbaren Werkstoffen (§ 32)",
+    "Keine Bäume auf Grabstätten; keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 32)",
+    "Gewerbliche Arbeiten nur an Werktagen zu den festgesetzten Zeiten, nicht an Sonn- und Feiertagen und nicht am Buß- und Bettag (§ 5)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung, Nutzungsrecht nachweisen (§ 26)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung; auf Verlangen Schrift 1:1, in besonderen Fällen Modell oder Attrappe (§ 26)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor der Aufstellung möglich (§ 27)",
+    "Schriftliche Zulassung der Steinmetze mit Nachweis Handwerksrolle bzw. Verzeichnis und Haftpflichtversicherung (§ 5)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung; Verwaltung kann sie überprüfen (§ 28)",
+    "Jährliche Standsicherheitsprüfung durch den Friedhofsträger; bei Gefahr Sicherung (z. B. Umlegen) auf Kosten der Verantwortlichen, entfernte Teile werden drei Monate aufbewahrt (§ 29)",
+    "Nutzungsberechtigte haften für Schäden durch umstürzende Grabmale (§ 29)"
+  ],
+  "fristen": [
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung entfernt werden (§ 26)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel und Fundament durch die Nutzungsberechtigten entfernen und Fläche einsäen; sonst nach drei Monaten Abräumung ohne Entschädigung, ggf. auf ihre Kosten (§ 31)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Künstlerisch oder historisch wertvolle Grabmale stehen in einem Verzeichnis; Änderungen nur mit Zustimmung, ggf. unter Beteiligung des Denkmalschutzes",
+    "Für bestehende Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Lübz; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Änderung vom 09.10.2025 liegt nur als Scan vor; ihr Inhalt ist in dieser Zusammenfassung nicht berücksichtigt",
+    "Die Ordnung ist ein Scan mit Texterkennung; einzelne Paragrafennummern können abweichen",
+    "Höchsthöhen und -breiten für Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften sind nicht geregelt"
+  ]
+}

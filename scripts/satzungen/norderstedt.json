@@ -1,0 +1,87 @@
+{
+  "id": "norderstedt",
+  "titel": "Satzung für die kommunalen Friedhöfe der Stadt Norderstedt",
+  "orte": [
+    "Norderstedt",
+    "Friedrichsgabe",
+    "Glashütte",
+    "Harksheide"
+  ],
+  "traeger": "Stadt Norderstedt",
+  "art": "kommunal",
+  "fassung": "vom 21.12.2022 unter Berücksichtigung der zweiten Nachtragssatzung (in Kraft 01.01.2026)",
+  "quelle_url": "https://www.norderstedt.de/media/custom/1087_6234_1.PDF?1767606584",
+  "quelle_titel": "Friedhofssatzung Stadt Norderstedt (PDF)",
+  "friedhoefe": [
+    "Kommunale Friedhöfe Friedrichsgabe, Glashütte und Harksheide (§ 1)"
+  ],
+  "kurzfazit": "Grabmale, Umrandungen und Einfassungen brauchen vorher die schriftliche Zustimmung der Stadt, erteilt erst nach Zahlung der Gebühren. Der Antrag braucht einen Entwurf 1:10 mit Fundamentierung. Die Höchstmaße hängen von der Grabart ab (z. B. einstelliges Erdwahlgrab bis 100 × 80 × 20 cm). Liegende Grabmale dürfen höchstens 0,25 m² groß sein, die Mindeststärke beträgt 10 cm. Es gilt die TA Grabmal.",
+  "ruhezeit": "Kinder bis 5 Jahre 15 Jahre, ab 5 Jahre 20 Jahre (§ 10)",
+  "grabarten": [
+    {
+      "name": "Reihengrab für Erdbestattung",
+      "regel": "stehendes Grabmal max. 0,5 m² Ansichtsfläche, z. B. 100 × 50 oder 80 × 60 cm (§ 18 Abs. 6)"
+    },
+    {
+      "name": "Kindergrab bis 5 Jahre",
+      "regel": "stehend bis 70 cm hoch, 40 cm breit, 15 cm stark (§ 18 Abs. 6)"
+    },
+    {
+      "name": "Urnenwahlgrab",
+      "regel": "stehend bis 80 cm hoch, 50 cm breit, 15 cm stark (§ 18 Abs. 6)"
+    },
+    {
+      "name": "Einstelliges Erdwahlgrab",
+      "regel": "stehend bis 100 cm hoch, 80 cm breit, 20 cm stark (§ 18 Abs. 6)"
+    },
+    {
+      "name": "Mehrstelliges Erdwahlgrab",
+      "regel": "stehend bis 120 cm hoch, 140 cm breit, 25 cm stark (§ 18 Abs. 6)"
+    },
+    {
+      "name": "Alle Grabarten – liegendes Grabmal",
+      "regel": "max. 0,25 m² Fläche und max. 15 cm stark (§ 18 Abs. 6)"
+    },
+    {
+      "name": "Anonyme, pflegeleichte und gemeinschaftlich gestaltete Gräber",
+      "regel": "keine Umrandungen oder Einfassungen (§ 18 Abs. 7)"
+    }
+  ],
+  "masse": [
+    "Mindeststärke liegender und stehender Grabmale 10 cm (§ 18 Abs. 6)",
+    "Liegende Grabmale max. 0,25 m² und 15 cm stark (§ 18 Abs. 6)",
+    "Höchstmaße stehender Grabmale je Grabart von 70 × 40 × 15 cm (Kindergrab) bis 120 × 140 × 25 cm (mehrstelliges Erdwahlgrab) (§ 18 Abs. 6)",
+    "Einfassungen aus Naturstein ohne Fundament, 5–10 cm stark, höchstens so groß wie die Beetfläche (§ 18 Abs. 7)"
+  ],
+  "material": [
+    "Grabmale nur aus Naturstein, Hartholz oder geschmiedetem bzw. gegossenem Metall in massiver Ausführung; Ausnahmen entscheidet die Friedhofsverwaltung (§ 18 Abs. 2)",
+    "Zusätzliche Bauwerke nur innerhalb des Beetes und nicht größer als das Grabmal; Rosenbögen nur in Randlagen (§ 19 Abs. 3)"
+  ],
+  "verbote": [
+    "Keine ganzflächigen Grababdeckungen; Ausnahme Liegeplatten für Namen weiterer Verstorbener, nicht auf allen Grabarten (§ 19 Abs. 3)",
+    "Keine Einfassungen bei anonymen, pflegeleichten und gemeinschaftlich gestalteten Gräbern (§ 18 Abs. 7)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen, Umrandungen und Einfassungen nur mit schriftlicher Zustimmung, vor der Anfertigung einzuholen; Genehmigung erst nach Zahlung der Grabnutzungs- und Bestattungsgebühren (§ 19 Abs. 1)",
+    "Antrag mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Symbolen und Fundamentierung sowie Schriftzeichnung 1:10 (§ 19 Abs. 2)",
+    "Abweichend oder ohne Erlaubnis errichtete Anlagen müssen angepasst oder entfernt werden (§ 19 Abs. 4)"
+  ],
+  "standsicherheit": [
+    "Für Grabmale gilt die TA Grabmal der Deutschen Natursteinakademie (DENAK) in der geltenden Fassung, auch für die Fundamentierung (§ 18 Abs. 1, § 21 Abs. 1)",
+    "Die Stadt kann die Fundamentierung prüfen; mangelhafte Fundamente sind nachzubessern (§ 21 Abs. 3)",
+    "Jährliche Druckprobe nach TA Grabmal und VFD-Prüfanleitung; bei Gefahr Sicherung auf Kosten der Nutzungsberechtigten, Aufbewahrung drei Monate (§ 22)"
+  ],
+  "fristen": [
+    "Nach Ablauf der Nutzungszeit Grabmale samt Fundamenten binnen drei Monaten entfernen, sonst Abräumung auf Kosten der Nutzungsberechtigten; nicht abgeholte Teile gehen nach drei Monaten an die Stadt (§ 23 Abs. 2)",
+    "Entfernung vorher nur mit Zustimmung (§ 23 Abs. 1)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung",
+  "besonderheiten": [
+    "Für ältere Grabstätten gelten Ruhe- bzw. Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 30)"
+  ],
+  "kontakt": "Stadt Norderstedt, Friedhofsverwaltung; Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Einige Absätze (z. B. zur Anlieferung) wurden durch die Nachtragssatzungen gestrichen"
+  ]
+}

@@ -117,13 +117,13 @@
     loadLeaflet(function () {
       var L = window.L;
       map = L.map('map', { scrollWheelZoom: false, zoomControl: true }).setView(LEHSEN, 9);
-      var ring = L.circle(LEHSEN, { radius: 30000 });
+      var ring = L.circle(LEHSEN, { radius: 80000 });
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>-Mitwirkende'
       }).addTo(map);
       ring.addTo(map); map.fitBounds(ring.getBounds(), { padding: [10, 10] }); map.removeLayer(ring);
-      L.circle(LEHSEN, { radius: 30000, color: '#8a6a3f', weight: 1.5, dashArray: '6 6', fill: true, fillColor: '#8a6a3f', fillOpacity: 0.04, interactive: false }).addTo(map);
+      L.circle(LEHSEN, { radius: 80000, color: '#8a6a3f', weight: 1.5, dashArray: '6 6', fill: true, fillColor: '#8a6a3f', fillOpacity: 0.04, interactive: false }).addTo(map);
 
       markersData.forEach(function (m) {
         var links = m.l.map(function (x) {

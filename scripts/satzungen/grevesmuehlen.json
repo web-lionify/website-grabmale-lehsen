@@ -1,0 +1,76 @@
+{
+  "id": "grevesmuehlen",
+  "titel": "Friedhofssatzung für den Friedhof der örtlichen Kirchen zu Grevesmühlen",
+  "orte": ["Grevesmühlen"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Grevesmühlen",
+  "art": "kirchlich",
+  "fassung": "vom 05.03.2026, kirchenaufsichtlich genehmigt im März 2026; ersetzt die Satzung vom 01.01.2025 (§ 44)",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Grevesmuehlen/2026-03-05_Grevesmuehlen_-_FS.pdf",
+  "quelle_titel": "Friedhofssatzung Grevesmühlen (PDF)",
+  "friedhoefe": [
+    "Friedhof der Ev.-Luth. Kirchengemeinde Grevesmühlen mit Abteilungen mit allgemeinen und mit zusätzlichen Gestaltungsvorschriften (Präambel, § 36)"
+  ],
+  "kurzfazit": "Grabmale dürfen nur zugelassene Steinmetzbetriebe setzen, und zwar nach schriftlicher Zustimmung auf einen zweifachen Antrag mit Entwurf 1:10. Die Breite ist begrenzt (Einzelgrab 0,60 m, Doppelgrab 1,10 m, ab drei Grabbreiten 1,60 m), die Mindeststärke steigt mit der Höhe von 12 auf 18 cm. Auf Rasen- und Urnengemeinschaftsanlagen gelten feste Maße für Sockel- und Grabplatten.",
+  "ruhezeit": "Särge 25 Jahre, Urnen 20 Jahre (§ 12 Abs. 1); Nutzungszeit Wahlgrab 25 Jahre (§ 17 Abs. 1)",
+  "grabarten": [
+    {"name": "Wahlgrab (Einzel- oder Familiengrab)", "regel": "allgemeine Gestaltungsvorschriften; Grabmal max. 0,60 m (Einzel), 1,10 m (Doppel) bzw. 1,60 m (ab drei Grabbreiten) breit; bis zwei Urnen je Grabbreite zusätzlich (§ 17, § 18 Abs. 2, § 28 Abs. 2)"},
+    {"name": "Urnenwahlgrab", "regel": "1,00 × 1,00 m, zwei Urnen je Grabbreite; allgemeine Gestaltungsvorschriften (§ 9 Abs. 3, § 18)"},
+    {"name": "Rasenreihengrab (Sarg)", "regel": "Grabmal auf Sockelplatte max. 80 × 60 cm, mind. 3 cm stark; stehend max. 45 × 60 cm, mind. 12 cm stark; liegend 40 × 50 cm; Grabplatte 35 × 45 cm, 4–5 cm stark; Antrag des Steinmetzes mit Skizze und Maßen; keine anonyme Bestattung (§ 22 Abs. 7–11)"},
+    {"name": "Rasenwahlgrab (zwei Grabbreiten)", "regel": "Sockelplatte max. 80 × 60 cm (eine Grabbreite) bzw. 100 × 60 cm (mehrere); stehend max. 45 × 60 cm bzw. 80 × 100 cm, Stärke 12 cm (40–70 cm Höhe) bzw. 14 cm (70–100 cm); liegend 40 × 50 cm; Grabplatte 35 × 45 cm bzw. 40 × 50 cm, 4–5 cm stark (§ 23 Abs. 7)"},
+    {"name": "Urnengemeinschaftsanlage Einzel", "regel": "Raster 70 × 70 cm; Grabplatte 45 × 35 cm, 4–5 cm stark, Gestaltung individuell, Name in einfacher Schrift; Antrag des Steinmetzes mit Skizze (§ 20)"},
+    {"name": "Urnengemeinschaftsanlage Doppel", "regel": "Raster 90 × 90 cm für zwei Urnen; Grabplatte 50 × 40 cm, 4–5 cm stark; Antrag des Steinmetzes mit Skizze (§ 21)"},
+    {"name": "Urnengemeinschaftsanlage mit zentraler Namensnennung", "regel": "Raster 40 × 40 cm im Rasen; Gravur auf einer Stele, beauftragt halbjährlich durch den Friedhofsträger (§ 19)"},
+    {"name": "Grabstätte für Sternenkinder", "regel": "Grabmal ist Pflicht, Gestaltung individuell; vorher Antrag des Steinmetzes mit Skizze und Maßen (§ 24)"}
+  ],
+  "masse": [
+    "Grabmalbreite max. 0,60 m (Einzelwahlgrab), 1,10 m (Doppelwahlgrab), 1,60 m (ab drei Grabbreiten) (§ 28 Abs. 2)",
+    "Mindeststärke (allgemeine Gestaltungsvorschriften): Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; über 1,50 m = 0,18 m, jeweils mit standsicherer Verdübelung (§ 27)",
+    "Rasengräber: Sockelplatte max. 80 × 60 cm bzw. 100 × 60 cm, mind. 3 cm; stehend max. 45 × 60 cm bzw. 80 × 100 cm; liegend 40 × 50 cm; Grabplatte 35 × 45 cm bzw. 40 × 50 cm, 4–5 cm stark (§ 22 Abs. 7, § 23 Abs. 7)",
+    "Grabplatten in Urnengemeinschaftsanlagen: 45 × 35 cm (Einzel) bzw. 50 × 40 cm (Doppel), 4–5 cm stark (§ 20 Abs. 7, § 21 Abs. 6)",
+    "Grab-Mindestmaße: Kinder bis 5 Jahre 1,20 × 0,90 m, über 5 Jahre 2,50 × 1,20 m, Urnengrab 1,00 × 1,00 m (§ 9 Abs. 3)",
+    "Hecken max. 0,60 m hoch und nicht über die Grabgrenze (§ 34 Abs. 2)"
+  ],
+  "material": [
+    "Keine Vorgaben zu Gesteinsart oder Bearbeitung; Grabmale sollen sich ins Gesamtbild einfügen und mit christlichen Glaubensgrundsätzen vereinbar sein (§ 28 Abs. 1)",
+    "Kunststoffe und nicht verrottbare Werkstoffe nicht in Trauerfloristik, Grabschmuck, Grabeinfassungen und Anzuchtbehältern (§ 34 Abs. 11)"
+  ],
+  "verbote": [
+    "Keine Grabeinfassungen aus Kunststoff oder nicht verrottbaren Stoffen (§ 34 Abs. 11)",
+    "Keine Bäume auf Grabstätten; keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 34 Abs. 2, 10)",
+    "Keine Bepflanzung auf Rasen- und Gemeinschaftsgräbern nach der Erstanlage; Grabschmuck nur auf Sockel- bzw. Grabplatte (§ 20–23)",
+    "Gewerbliche Arbeiten nur an Werktagen zu festgesetzten Zeiten, nicht am Buß- und Bettag, nicht an Sonn- und Feiertagen (§ 5 Abs. 6)"
+  ],
+  "genehmigung": [
+    "Grabmale und bauliche Anlagen nur durch zugelassene Steinmetzbetriebe (§ 28 Abs. 3)",
+    "Errichtung und jede Veränderung nur mit vorheriger schriftlicher Zustimmung; Nutzungsrecht nachweisen (§ 28 Abs. 4)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung; auf Verlangen Schrift 1:1, in besonderen Fällen Modell oder Attrappe (§ 28 Abs. 5)",
+    "Zustimmung erlischt nach einem Jahr ohne Errichtung (§ 28 Abs. 6)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor der Aufstellung möglich (§ 29)",
+    "Zulassung der Steinmetze schriftlich mit Nachweis Handwerksrolle bzw. Verzeichnis und Haftpflichtversicherung (§ 5 Abs. 1–4)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung (§ 30 Abs. 1)",
+    "Friedhofsverwaltung kann die Fundamentierung überprüfen; jährliche Standsicherheitsprüfung durch den Friedhofsträger (§ 30 Abs. 2, § 31 Abs. 2)",
+    "Bei Gefahr Sicherung (z. B. Umlegen) auf Kosten der Verantwortlichen; entfernte Teile werden drei Monate aufbewahrt; Haftung für Schäden durch umstürzende Grabmale (§ 31 Abs. 3–4)"
+  ],
+  "fristen": [
+    "Rasengräber: Einebnung und Raseneinsaat durch den Träger in der Regel bis spätestens zum sechsten Monat nach der Beisetzung (§ 22 Abs. 5, § 23 Abs. 5)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung entfernt werden (§ 28 Abs. 7)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel und Fundament durch die Nutzungsberechtigten entfernen, Mutterboden auffüllen und Rasen einsäen; sonst nach drei Monaten Abräumung ohne Entschädigung, ggf. auf ihre Kosten (§ 33 Abs. 2–3)",
+    "Einebnung auch durch beauftragten Steinmetz mit schriftlichem Auftrag möglich; Abnahme durch die Friedhofsverwaltung (§ 33 Abs. 5)",
+    "Abräumen abgelaufener Reihengrabfelder wird sechs Monate vorher bekanntgegeben (§ 22 Abs. 12)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Wahl zwischen Abteilungen mit allgemeinen und mit zusätzlichen Gestaltungsvorschriften; ohne Wahl gelten die allgemeinen Vorschriften (§ 36 Abs. 3)",
+    "Ist ein Wahlgrab zuerst mit einer Urne belegt, ist keine Sargbestattung mehr möglich (§ 18 Abs. 3)",
+    "Wertvolle Grabmale stehen in einem Verzeichnis; Änderungen nur mit Zustimmung, ggf. mit Denkmalschutz (§ 32)",
+    "Für bestehende Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 38)"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Grevesmühlen; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Ob die Angaben „45 cm x 60 cm“ für stehende Grabmale Breite × Höhe bedeuten, sagt die Satzung nicht ausdrücklich",
+    "Höchsthöhen für Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften sind nicht geregelt"
+  ]
+}

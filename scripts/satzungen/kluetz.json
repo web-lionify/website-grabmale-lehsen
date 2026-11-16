@@ -1,0 +1,77 @@
+{
+  "id": "kluetz",
+  "titel": "Friedhofsordnung für den Alten Friedhof Klütz",
+  "orte": [
+    "Klütz"
+  ],
+  "traeger": "Ev.-Luth. Kirchengemeinde Klütz",
+  "art": "kirchlich",
+  "fassung": "vom 25.05.2021 (Kirchengemeinderatsbeschluss, kirchenaufsichtlich genehmigungspflichtig)",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Kluetz/210525_Friedhofsordnung_Alter_Friedhof_Kluetz.pdf",
+  "quelle_titel": "Friedhofsordnung Alter Friedhof Klütz (PDF)",
+  "friedhoefe": [
+    "Alter Friedhof der Ev.-Luth. Kirchengemeinde Klütz (Präambel)"
+  ],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Die Mindeststärke steigt mit der Höhe von 12 auf 18 cm. Neben Wahl- und Urnengräbern gibt es Urnengemeinschaftsanlagen, Rasen- und Kindergräber.",
+  "ruhezeit": "Särge 30 Jahre, Urnen 25 Jahre (§ 12 Abs. 1)",
+  "grabarten": [
+    {
+      "name": "Wahlgrab (Erd- und Urnenbestattung) und Urnengrab",
+      "regel": "allgemeine Gestaltungsvorschriften (§ 16)"
+    },
+    {
+      "name": "Urnengemeinschaftsanlage",
+      "regel": "Raster 0,50 × 0,50 m je Urne (§ 18)"
+    },
+    {
+      "name": "Rasengrab",
+      "regel": "zusätzliche Gestaltungsvorschriften (§ 16)"
+    },
+    {
+      "name": "Kindergrab",
+      "regel": "eigene Grabart nach § 16"
+    }
+  ],
+  "masse": [
+    "Mindeststärke in Abteilungen mit allgemeinen Gestaltungsvorschriften: Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; über 1,50 m = 0,18 m, jeweils mit standsicherer Verdübelung (§ 23)",
+    "Grab-Mindestmaße: Kinder bis 5 Jahre 1,20 × 0,60 m, über 5 Jahre 2,10 × 0,90 m, Urnengrab 1,00 × 1,00 m (§ 9 Abs. 3)",
+    "Hecken max. 0,60 m hoch und nicht über die Grabgrenze (§ 30 Abs. 2)"
+  ],
+  "material": [
+    "Keine Vorgaben zu Gesteinsart oder Bearbeitung; Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 24 Abs. 1)",
+    "Keine Kunststoffe oder nicht verrottbaren Werkstoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und Anzuchtbehältern (§ 30)"
+  ],
+  "verbote": [
+    "Keine Grabeinfassungen aus Kunststoff oder nicht verrottbaren Werkstoffen (§ 30)",
+    "Keine Bäume auf Grabstätten; keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 30)",
+    "Gewerbliche Arbeiten nur an Werktagen zu den festgesetzten Zeiten, nicht an Sonn- und Feiertagen und nicht am Buß- und Bettag (§ 5)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung, Nutzungsrecht nachweisen (§ 24)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung; auf Verlangen Schrift 1:1, in besonderen Fällen Modell oder Attrappe (§ 24)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor der Aufstellung möglich (§ 25)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 24)",
+    "Schriftliche Zulassung der Steinmetze mit Nachweis Handwerksrolle bzw. Verzeichnis und Haftpflichtversicherung (§ 5)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung; Verwaltung kann sie überprüfen (§ 26)",
+    "Jährliche Standsicherheitsprüfung durch den Friedhofsträger; bei Gefahr Sicherung (z. B. Umlegen) auf Kosten der Verantwortlichen, entfernte Teile werden drei Monate aufbewahrt (§ 27)",
+    "Nutzungsberechtigte haften für Schäden durch umstürzende Grabmale (§ 27)"
+  ],
+  "fristen": [
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung entfernt werden (§ 24)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel und Fundament durch die Nutzungsberechtigten entfernen und Fläche einsäen; sonst nach drei Monaten Abräumung ohne Entschädigung, ggf. auf ihre Kosten (§ 29)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Künstlerisch oder historisch wertvolle Grabmale stehen in einem Verzeichnis; Änderungen nur mit Zustimmung, ggf. unter Beteiligung des Denkmalschutzes",
+    "Für bestehende Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Klütz; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Ordnung gilt nur für den Alten Friedhof Klütz; für den Friedhof in Boltenhagen wurde keine Ordnung gefunden",
+    "Die zusätzlichen Gestaltungsvorschriften für Rasengräber sind nicht mit Maßen beziffert",
+    "Höchsthöhen und -breiten für Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften sind nicht geregelt"
+  ]
+}

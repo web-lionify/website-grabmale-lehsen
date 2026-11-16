@@ -1,0 +1,73 @@
+{
+  "id": "neukloster",
+  "titel": "Friedhofssatzung für den Friedhof der örtlichen Kirche zu Neukloster",
+  "orte": [
+    "Neukloster"
+  ],
+  "traeger": "Ev.-Luth. Sonnenkamp-Kirchengemeinde Neukloster",
+  "art": "kirchlich",
+  "fassung": "Fassung 2025 (Dateidatum 28.10.2025); Beschluss- und Genehmigungsdatum im PDF nicht eingetragen",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Neukloster/251028_Friedhofssatzung_Friedhof_Neukloster.pdf",
+  "quelle_titel": "Friedhofssatzung Neukloster (PDF)",
+  "friedhoefe": [
+    "Friedhof der Ev.-Luth. Sonnenkamp-Kirchengemeinde Neukloster (Präambel)"
+  ],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Die Mindeststärke steigt mit der Höhe von 12 auf 18 cm. Auf Rasenwahlgräbern ist ein Grabstein Pflicht, gesetzt von einem zugelassenen Steinmetz nach schriftlichem Antrag mit Skizze.",
+  "ruhezeit": "Särge und Urnen 25 Jahre (§ 12 Abs. 1)",
+  "grabarten": [
+    {
+      "name": "Wahlgrab (Erd- und Urnenbestattung)",
+      "regel": "allgemeine Gestaltungsvorschriften (§ 16, § 17)"
+    },
+    {
+      "name": "Rasenwahlgrab",
+      "regel": "Grabstein ist Pflicht, gesetzt durch einen zugelassenen Steinmetz nach Antrag mit Skizze und Maßen; Einebnung und Einsaat durch den Träger bis zum neunten Monat (§ 19)"
+    },
+    {
+      "name": "Urnengemeinschaftsanlage ohne / mit Namensnennung",
+      "regel": "Rasenfeld mit Raster 50 × 50 cm je Urne; keine Bepflanzung durch Angehörige (§ 18 Abs. 5–6)"
+    }
+  ],
+  "masse": [
+    "Mindeststärke in Abteilungen mit allgemeinen Gestaltungsvorschriften: Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; über 1,50 m = 0,18 m, jeweils mit standsicherer Verdübelung (§ 22)",
+    "Grab-Mindestmaße: Kinder bis 5 Jahre 1,20 × 0,60 m, über 5 Jahre 2,10–2,50 × 0,90–1,50 m, Urnengrab 1,00 × 1,00 m (§ 9)",
+    "Hecken max. 0,30 m hoch und nicht über die Grabgrenze (§ 29 Abs. 2)"
+  ],
+  "material": [
+    "Keine Vorgaben zu Gesteinsart oder Bearbeitung; Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 23 Abs. 1)",
+    "Keine Kunststoffe oder nicht verrottbaren Werkstoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und Anzuchtbehältern (§ 29)"
+  ],
+  "verbote": [
+    "Keine Grabeinfassungen aus Kunststoff oder nicht verrottbaren Werkstoffen (§ 29)",
+    "Keine Bäume auf Grabstätten; keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 29)",
+    "Gewerbliche Arbeiten nur an Werktagen zu den festgesetzten Zeiten, nicht an Sonn- und Feiertagen und nicht am Buß- und Bettag (§ 5)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung, Nutzungsrecht nachweisen (§ 23)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung; auf Verlangen Schrift 1:1, in besonderen Fällen Modell oder Attrappe (§ 23)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor der Aufstellung möglich (§ 24)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 23)",
+    "Schriftliche Zulassung der Steinmetze mit Nachweis Handwerksrolle bzw. Verzeichnis und Haftpflichtversicherung (§ 5)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung; Verwaltung kann sie überprüfen (§ 25)",
+    "Jährliche Standsicherheitsprüfung durch den Friedhofsträger; bei Gefahr Sicherung (z. B. Umlegen) auf Kosten der Verantwortlichen, entfernte Teile werden drei Monate aufbewahrt (§ 26)",
+    "Nutzungsberechtigte haften für Schäden durch umstürzende Grabmale (§ 26)"
+  ],
+  "fristen": [
+    "Rasenwahlgrab: Einebnung und Raseneinsaat durch den Träger bis spätestens zum neunten Monat nach der Beisetzung (§ 19)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung entfernt werden (§ 23)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel und Fundament durch die Nutzungsberechtigten entfernen und Fläche einsäen; sonst nach drei Monaten Abräumung ohne Entschädigung, ggf. auf ihre Kosten (§ 28)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Künstlerisch oder historisch wertvolle Grabmale stehen in einem Verzeichnis; Änderungen nur mit Zustimmung, ggf. unter Beteiligung des Denkmalschutzes",
+    "Für bestehende Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Sonnenkamp-Kirchengemeinde Neukloster; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Beschluss- und Genehmigungsdatum sind im PDF nicht eingetragen",
+    "Höchsthöhen und -breiten für Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften sind nicht geregelt"
+  ]
+}

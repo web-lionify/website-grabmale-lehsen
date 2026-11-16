@@ -1,0 +1,80 @@
+{
+  "id": "lauenburg",
+  "titel": "Satzung der Ev.-Luth. Kirchengemeinde Lauenburg für den Friedhof Lauenburg/Elbe",
+  "orte": [
+    "Lauenburg/Elbe",
+    "Schnakenbek"
+  ],
+  "traeger": "Ev.-Luth. Kirchengemeinde Lauenburg",
+  "art": "kirchlich",
+  "fassung": "vom 11.03.2021, kirchenaufsichtlich genehmigt am 25.05.2021, veröffentlicht am 01.06.2021; ersetzt die Satzung vom 17.02.2004 (§ 42)",
+  "quelle_url": "https://www.friedhof-lauenburg.de/fileadmin/user_upload/Downloads/FriedhofsSATZUNG.pdf",
+  "quelle_titel": "Friedhofssatzung Lauenburg/Elbe (PDF)",
+  "friedhoefe": [
+    "Friedhof Lauenburg/Elbe mit den Friedhofsteilen Lauenburg und Schnakenbek (Titel)"
+  ],
+  "kurzfazit": "Grabmale brauchen vorher die schriftliche Zustimmung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Erlaubt sind Naturstein, Holz und Metall, Glas nur auf Antrag. Ein Grabmal darf höchstens halb so breit sein wie die Grabstätte und muss mindestens 12 cm stark sein (über 100 cm Höhe 15 cm). Die Ansichtsfläche ist je Grabart begrenzt. Grababdeckungen sind nicht erlaubt, Einfassungen aus Naturstein schon.",
+  "ruhezeit": "Leichen 25 Jahre, Aschen 20 Jahre, Kinder bis 5 Jahre 15 Jahre (§ 9)",
+  "grabarten": [
+    {
+      "name": "Reihengrab (Erdbestattung)",
+      "regel": "stehendes Grabmal in Stelenform 0,30–0,40 m² Ansichtsfläche (§ 26 Abs. 7)"
+    },
+    {
+      "name": "Einstelliges Wahlgrab",
+      "regel": "0,40–0,60 m² bei einer Breite von höchstens 60 cm (§ 26 Abs. 7)"
+    },
+    {
+      "name": "Mehrstelliges Wahlgrab",
+      "regel": "0,50–0,90 m²; ab 3 m Breite oder in besonderer Lage nach Festlegung der Verwaltung (§ 26 Abs. 7)"
+    },
+    {
+      "name": "Urnenreihen- und Urnenwahlgrab",
+      "regel": "Urnengräber für eine oder mehrere Urnen (§ 19)"
+    },
+    {
+      "name": "Gemeinschaftsgrab",
+      "regel": "gemeinsames Grabmal durch den Friedhofsträger (§ 20 Abs. 1)"
+    },
+    {
+      "name": "Baumgrab",
+      "regel": "nur liegende Grabmale ohne Fundament oder wurzelschonende Gedenktafeln (§ 20 Abs. 2)"
+    }
+  ],
+  "masse": [
+    "Mindeststärke stehend bis 100 cm Höhe 12 cm, darüber 15 cm; liegend mindestens 12 cm (§ 26 Abs. 2–3)",
+    "Breite höchstens die Hälfte der Grabstättenbreite (§ 26 Abs. 4)",
+    "Ansichtsflächen: Reihengrab 0,30–0,40 m², einstelliges Wahlgrab 0,40–0,60 m² (max. 60 cm breit), mehrstellig 0,50–0,90 m² (§ 26 Abs. 7)"
+  ],
+  "material": [
+    "Nur Naturstein, Holz, geschmiedetes oder gegossenes Metall; Glas in Verbindung damit auf Antrag (§ 26 Abs. 1)",
+    "Bearbeitung, Form und Farbe müssen sich harmonisch ins Gesamtbild einfügen (§ 26 Abs. 5)",
+    "Nur ein stehendes Grabmal je Grabstätte, zusätzlich je Grabbreite ein passender Liegestein (§ 26 Abs. 6)"
+  ],
+  "verbote": [
+    "Keine Grababdeckungen mit Naturstein, Beton, Terrazzo, Teerpappe oder Kunststoff; Einfassungen aus Naturstein sind zulässig (§ 25 Abs. 3)",
+    "Keine Schrittplatten, keine Grabgebinde aus künstlichem Werkstoff, keine Bäume oder großwüchsigen Gehölze (§ 25 Abs. 2–3)"
+  ],
+  "genehmigung": [
+    "Errichtung und Veränderung von Grabmalen nur mit vorheriger schriftlicher Zustimmung, vor der Anfertigung zu beantragen (§ 31 Abs. 1)",
+    "Antrag zweifach mit Entwurf (Grundriss, Vorder- und Seitenansicht 1:10) mit Material, Bearbeitung und Fundamentierung sowie Wortlaut und Anordnung von Inschrift, Ornamenten und Symbolen; in besonderen Fällen Modell 1:5 oder Attrappe in Originalgröße (§ 31 Abs. 2)",
+    "Auch Einfriedungen (Steineinfassungen), Bänke und provisorische Tafeln sind zustimmungspflichtig (§ 31 Abs. 3)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Richtlinien des Bundesinnungsverbandes des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks in der jeweils geltenden Fassung (§ 33 Abs. 1)",
+    "Nutzungsberechtigte halten Grabmale verkehrssicher und haften für Schäden; Mängel durch zugelassene Gewerbetreibende beseitigen; bei unmittelbarer Gefahr Umlegen ohne Vorwarnung (§ 35)"
+  ],
+  "fristen": [
+    "Vor Ablauf nur mit Zustimmung entfernen (§ 36 Abs. 1)",
+    "Nach Ablauf kann das Grabmal binnen drei Monaten entfernt werden; danach fällt es entschädigungslos an den Friedhofsträger, Kosten können erhoben werden (§ 36 Abs. 2)"
+  ],
+  "kinderarbeit": "Es sollen keine importierten Grabsteine verwendet werden, die nicht unter fairen Arbeitsbedingungen und mit Kinderarbeit produziert worden sind (§ 26 Abs. 1)",
+  "besonderheiten": [
+    "Wertvolle Grabmale stehen in einer Liste und sollen erhalten bleiben; Patenschaften möglich (§ 37)",
+    "Erbbegräbnisse in Schnakenbek sind von der Ein-Grabmal-Regel ausgenommen (§ 26 Abs. 6)"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Lauenburg, Lütauer Chaussee 2, Lauenburg/Elbe",
+  "unsicher": [
+    "Die Ansichtsflächen für Urnengräber und der Gestaltungsplan wurden nicht vollständig ausgewertet"
+  ]
+}

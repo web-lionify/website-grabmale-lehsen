@@ -1,0 +1,79 @@
+{
+  "id": "schoenberg",
+  "titel": "Friedhofssatzung für die Friedhöfe der örtlichen Kirchen zu Schönberg",
+  "orte": [
+    "Schönberg"
+  ],
+  "traeger": "Ev.-Luth. Kirchengemeinde Schönberg",
+  "art": "kirchlich",
+  "fassung": "Fassung 2025 (Dateidatum 03.12.2025); Beschluss- und Genehmigungsdatum im PDF nicht lesbar",
+  "quelle_url": "https://www.kirche-mv.de/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Schoenberg/251203_Friedhofssatzung_Schoenberg.pdf",
+  "quelle_titel": "Friedhofssatzung Schönberg (PDF)",
+  "friedhoefe": [
+    "Friedhöfe der Ev.-Luth. Kirchengemeinde Schönberg (Präambel)"
+  ],
+  "kurzfazit": "Jedes Grabmal braucht vorher die schriftliche Zustimmung der Friedhofsverwaltung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Die Mindeststärke steigt mit der Höhe von 12 auf 18 cm. Auf Rasengräbern wählt man ein liegendes oder ein stehendes Grabmal, Form, Farbe und Größe gibt die Anlage vor. Für die spätere Beräumung ist ein Pfand zu hinterlegen.",
+  "ruhezeit": "Särge 30 Jahre, Urnen 20 Jahre (§ 12 Abs. 1); Nutzungszeit Wahlgrab 30 bzw. 20 Jahre (§ 17 Abs. 1)",
+  "grabarten": [
+    {
+      "name": "Wahlgrab (Erd- und Urnenbestattung)",
+      "regel": "allgemeine Gestaltungsvorschriften (§ 16, § 17)"
+    },
+    {
+      "name": "Rasenreihen- und Rasenwahlgrab",
+      "regel": "Wahl zwischen Anlage mit liegendem oder stehendem Stein; Form, Farbe und Steingröße legt die Anlage fest; Antrag des Steinmetzes mit Skizze und Maßen; Pfand für spätere Beräumung des Grabmals (Abschnitt Rasengrabstätten, Abs. 5–7)"
+    },
+    {
+      "name": "Urnengemeinschaftsanlage mit zentraler Namensnennung / unter dem Baum",
+      "regel": "Namensnennung an Stele, Platte oder Stein in vorgegebener Form (§ 19 Abs. 5–6)"
+    },
+    {
+      "name": "Urnengemeinschaftsanlage mit Namensplatte und Bodendecker",
+      "regel": "Namensplatte 30 × 30 × 2 cm, multicolor rot, mit Vorname, Nachname, Geburts- und Sterbejahr (§ 19 Abs. 5 c)"
+    }
+  ],
+  "masse": [
+    "Mindeststärke in Abteilungen mit allgemeinen Gestaltungsvorschriften: Höhe 0,40–0,70 m = 0,12 m; 0,70–1,00 m = 0,14 m; 1,00–1,50 m = 0,16 m; über 1,50 m = 0,18 m, jeweils mit standsicherer Verdübelung (§ 23)",
+    "Namensplatte Urnengemeinschaftsanlage: 30 × 30 × 2 cm, multicolor rot (§ 19 Abs. 5 c)",
+    "Grab-Mindestmaße: Kinder bis 5 Jahre 1,20 × 0,60 m, über 5 Jahre 2,10 × 0,90 m, Urnengrab 1,00 × 1,00 m (§ 9 Abs. 3)",
+    "Hecken max. 0,40 m hoch und nicht über die Grabgrenze (§ 30 Abs. 2)"
+  ],
+  "material": [
+    "Keine Vorgaben zu Gesteinsart oder Bearbeitung; Grabmale sollen sich ins Gesamtbild einfügen und in Gestaltung und Aussage mit christlichen Glaubensgrundsätzen vereinbar sein (§ 24 Abs. 1)",
+    "Keine Kunststoffe oder nicht verrottbaren Werkstoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und Anzuchtbehältern (§ 30)"
+  ],
+  "verbote": [
+    "Keine Grabeinfassungen aus Kunststoff oder nicht verrottbaren Werkstoffen (§ 30)",
+    "Keine Bäume auf Grabstätten; keine Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 30)",
+    "Gewerbliche Arbeiten nur an Werktagen zu den festgesetzten Zeiten, nicht an Sonn- und Feiertagen und nicht am Buß- und Bettag (§ 5)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung, Nutzungsrecht nachweisen (§ 24)",
+    "Antrag zweifach mit Entwurf (Grundriss und Seitenansicht 1:10) mit Material, Bearbeitung, Schrift, Ornamenten, Symbolen und Fundamentierung; auf Verlangen Schrift 1:1, in besonderen Fällen Modell oder Attrappe (§ 24)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor der Aufstellung möglich (§ 25)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 24)",
+    "Schriftliche Zulassung der Steinmetze mit Nachweis Handwerksrolle bzw. Verzeichnis und Haftpflichtversicherung (§ 5)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung; Verwaltung kann sie überprüfen (§ 26)",
+    "Jährliche Standsicherheitsprüfung durch den Friedhofsträger; bei Gefahr Sicherung (z. B. Umlegen) auf Kosten der Verantwortlichen, entfernte Teile werden drei Monate aufbewahrt (§ 27)",
+    "Nutzungsberechtigte haften für Schäden durch umstürzende Grabmale (§ 27)"
+  ],
+  "fristen": [
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung entfernt werden (§ 24)",
+    "Nach Ablauf des Nutzungsrechts Grabmal samt Sockel und Fundament durch die Nutzungsberechtigten entfernen und Fläche einsäen; sonst nach drei Monaten Abräumung ohne Entschädigung, ggf. auf ihre Kosten (§ 29)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Rasengräber: Einebnung und Raseneinsaat durch den Träger bis spätestens zum neunten Monat nach der Beisetzung",
+    "Künstlerisch oder historisch wertvolle Grabmale stehen in einem Verzeichnis; Änderungen nur mit Zustimmung, ggf. unter Beteiligung des Denkmalschutzes",
+    "Für bestehende Grabstätten gelten Nutzungszeit und Gestaltung nach den bisherigen Vorschriften"
+  ],
+  "kontakt": "Friedhofsverwaltung der Ev.-Luth. Kirchengemeinde Schönberg; Adresse und Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die genauen Steinmaße auf den Rasengräbern sind nicht in der Satzung beziffert, sondern werden von der Anlage vorgegeben",
+    "Beschlussdatum und Genehmigungsvermerk sind im PDF nicht lesbar",
+    "Höchsthöhen und -breiten für Grabmale in Abteilungen mit allgemeinen Gestaltungsvorschriften sind nicht geregelt"
+  ]
+}

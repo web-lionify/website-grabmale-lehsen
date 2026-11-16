@@ -1,0 +1,65 @@
+{
+  "id": "crivitz",
+  "titel": "Friedhofssatzung der Stadt Crivitz",
+  "orte": ["Crivitz"],
+  "traeger": "Stadt Crivitz (Friedhofsverwaltung beim Amt Crivitz)",
+  "art": "kommunal",
+  "fassung": "vom 26.01.2024, öffentlich bekanntgemacht am 19.02.2024; 1. Änderung vom 30.04.2025",
+  "quelle_url": "https://www.amt-crivitz.de/export/sites/crivitz/pdf/crivitz/satzungen/Friedhofssatzung-der-Stadt-Crivitz-26.01.2024.pdf",
+  "quelle_titel": "Friedhofssatzung Stadt Crivitz (PDF)",
+  "friedhoefe": ["Städtischer Friedhof Crivitz mit Wahlsarg-, Rasensarg-, Reihenurnen-, Rasenurnen- und anonymen Wiesenurnengräbern (§§ 12–16)"],
+  "kurzfazit": "Grabmale brauchen die Genehmigung der Friedhofsverwaltung. Vor Arbeitsbeginn reicht der Steinmetz eine Skizze mit Grundriss, Ansichten, Text, Material, Farbe und Bearbeitung ein, spätestens 6 Wochen nach Fertigstellung folgt die Fertigstellungsmeldung. Auf Wahlsarggräbern sind Grabmale bis 1 × 1 × 1 m erlaubt, auf Rasengräbern bodengleiche Natursteinplatten 40 × 60 cm. Einfassungen, Farbanstriche und vollflächige Abdeckungen von Sarggräbern sind nicht erlaubt.",
+  "ruhezeit": "Leichen und Totenaschen 25 Jahre; Nutzungsrecht 25 Jahre, verlängerbar (§ 9)",
+  "grabarten": [
+    {"name": "Wahlsarggrab", "regel": "stehendes Grabmal, Figur oder Findling bis 1 × 1 × 1 m; Platte bis zur Hälfte bzw. 2/3 der Grabfläche, mind. 4 cm stark (§ 24 Abs. 10 a)"},
+    {"name": "Wahlmehrfachsarggrab", "regel": "stehendes Grabmal bis 2 × 1 m; Platte bis zur Hälfte bzw. 2/3 der Fläche, mind. 4 cm (§ 24 Abs. 10 b)"},
+    {"name": "Reihenurnengrab (bis 4 Urnen)", "regel": "Grabmal kein Muss; Grabmal/Figur bis 50 × 60 cm, ein Kissenstein je Grabstelle; vollflächige Grabplatte zulässig (§ 14, § 24 Abs. 10 c)"},
+    {"name": "Rasensarggrab (Gemeinschaftsanlage)", "regel": "bodengleiche Natursteinplatte, einzeln 40 × 60 cm, doppelt 40 × 90 cm, mind. 4 cm, nicht einseitig angehoben; Beschriftung frei (§ 13, § 24 Abs. 11)"},
+    {"name": "Rasenurnengrab (Gemeinschaftsanlage)", "regel": "bodengleiche Natursteinplatte 40 × 60 cm, mind. 4 cm; Abstand 60 cm in der Reihe, 100 cm zur nächsten Reihe (§ 15, § 24 Abs. 12)"},
+    {"name": "Anonymes Wiesenurnengrab", "regel": "keine Grabmale und keine Kennzeichnung (§ 16)"}
+  ],
+  "masse": [
+    "Wahlsarggrab: stehendes Grabmal bis 1 × 1 × 1 m; Mehrfachgrab bis 2 × 1 m (§ 24 Abs. 10)",
+    "Reihenurnengrab: Grabmal bis 50 × 60 cm (§ 24 Abs. 10 c)",
+    "Abdeckplatten höchstens zur Hälfte bzw. auf 2/3 der Grabfläche, mind. 4 cm stark (§ 24 Abs. 10)",
+    "Rasengräber: Natursteinplatte 40 × 60 cm (Doppelgrab 40 × 90 cm), mind. 4 cm (§ 24 Abs. 11–12)"
+  ],
+  "material": [
+    "Die Friedhofsverwaltung kann für einzelne Teile Form, Material, Bearbeitung und Grenzmaße vorschreiben (§ 24 Abs. 2)",
+    "Platten auf Rasengrabanlagen aus Naturstein, ebenerdig gelegt (§ 24 Abs. 11–12)",
+    "Aufstellen dürfen Steinmetzbetriebe, Stein- und Holzbildhauer, Kunstschmiede und Künstler; andere nur mit besonderer Genehmigung (§ 24 Abs. 3)"
+  ],
+  "verbote": [
+    "Keine Einfassungen, Rasenkantensteine oder Schrittplatten zwischen den Grabstätten (§ 24 Abs. 9 a)",
+    "Keine Abdeckungen mit Beton, Terrazzo, Teerpappe, Splitt, Kies oder Holzspänen (§ 24 Abs. 9 b)",
+    "Keine Farbanstriche auf Grabsteinen einschließlich Schriftflächen (§ 24 Abs. 9 c)",
+    "Keine vollflächige Abdeckung einer Grabstelle mit einer Grabplatte (außer Reihenurnengrab) (§ 24 Abs. 9 e, § 14)",
+    "Keine Grabgewölbe, Urnenkammern oder Mausoleen (§ 23)"
+  ],
+  "genehmigung": [
+    "Errichtung, Veränderung oder Entfernung von Grabmalen nur mit Genehmigung; Voraussetzung ist die Einhaltung von § 14a BestattG M-V (§ 24 Abs. 1)",
+    "Anzeigeunterlagen vor Arbeitsbeginn durch den Auftragnehmer: Skizze mit Grundriss, Vorder- und Seitenansicht, Text, Symbolen sowie Angaben zu Material, Farbe, Oberfläche und Form (§ 24 Abs. 4)",
+    "Fertigstellungsmeldung spätestens 6 Wochen nach Fertigstellung (§ 25 Abs. 2)",
+    "Ohne Genehmigung aufgestellte Grabmale werden nach Fristsetzung auf Kosten der Nutzungsberechtigten entfernt (§ 24 Abs. 5)"
+  ],
+  "standsicherheit": [
+    "Fundamente durch Fachfirmen nach der BIV-Richtlinie „Erstellung und Prüfung von Grabmalanlagen“ in der aktuellen Fassung (§ 25 Abs. 1)",
+    "Jährliche Standsicherheitsprüfung nach VSG 4.7 und BIV-Richtlinie (§ 26 Abs. 1)",
+    "Bei Gefahr Sicherung ohne vorherigen Bescheid auf Kosten der Nutzungsberechtigten; Aufbewahrung entfernter Teile drei Monate (§ 26 Abs. 2)"
+  ],
+  "fristen": [
+    "Fertigstellungsmeldung binnen 6 Wochen nach Fertigstellung (§ 25 Abs. 2)",
+    "Nach Ablauf des Nutzungsrechts oberirdische Beräumung durch die Inhaber; nicht entfernte Grabmale gehen nach 6 Monaten in das Eigentum der Stadt über (§ 24 Abs. 7)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "Voraussetzung für jedes Grabmal ist die Einhaltung von § 14a BestattG M-V (Grabsteine aus Kinderarbeit) (§ 24 Abs. 1)",
+  "besonderheiten": [
+    "Wertvolle oder denkmalgeschützte Grabmale werden registriert und dürfen ohne Zustimmung nicht entfernt werden (§ 24 Abs. 8)",
+    "Grabschmuck auf Rasenanlagen nur am zentralen Ablageplatz, zwischen Mai und Oktober nicht auf den Platten (§ 13, § 15)"
+  ],
+  "kontakt": "Friedhofsverwaltung der Stadt Crivitz (Amt Crivitz); Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die 1. Änderung vom 30.04.2025 ist in dieser Zusammenfassung nicht berücksichtigt",
+    "Mindeststärken stehender Grabmale nennt die Satzung nicht ausdrücklich"
+  ]
+}

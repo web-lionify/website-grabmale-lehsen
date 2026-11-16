@@ -1,0 +1,36 @@
+{
+  "id": "buchholz",
+  "titel": "Satzung über die Ordnung auf den Friedhöfen der Stadt Buchholz i. d. N. (Friedhofssatzung)",
+  "orte": [
+    "Buchholz in der Nordheide",
+    "Seppensen",
+    "Sprötze",
+    "Trelde"
+  ],
+  "traeger": "Stadt Buchholz i. d. N.",
+  "art": "kommunal",
+  "fassung": "vom 02.12.1975 in der Fassung vom 01.01.2020",
+  "quelle_url": "https://www.buchholz.de/downloads/datei/OGMwZDBhYTM5Y2YyMDY3OVY4dUZodG5veWp2K1NrQVFHYUY5SFYyR012ekwyL3ZZOFh5TC92cEpoR25MQytPQ0ExM0U3UGdaT09yQzkyTFFTY3RhZzhUN3RvRGh5dEdUMW9RN216R3BoTjFvdFhYUktxbXBmbEoxeWJ2SGZ0TU5wdk1aSks5QkFhRFhuMG9TZ2dxY05ITG5iS2lKbzRRcmttNDVPUT09",
+  "quelle_titel": "Friedhofssatzung Stadt Buchholz i. d. N. (PDF)",
+  "friedhoefe": [
+    "Städtische Friedhöfe Seppensen, Sprötze und Trelde (§ 1); Waldfriedhof und Kirchfriedhof Buchholz werden von der Ev.-luth. Kirchengemeinde St. Paulus betrieben"
+  ],
+  "kurzfazit": "Die Satzung gilt nur für die städtischen Friedhöfe Seppensen, Sprötze und Trelde. Natursteine brauchen einen Nachweis gegen Kinderarbeit. Für Grabmale, Grabplatten, Einfassungen und Abdeckungen gilt § 25, bei der Pflege sind die Gestaltungs- und Pflegerichtlinien zu beachten.",
+  "ruhezeit": "Leichen und Aschen 25 Jahre",
+  "grabarten": [],
+  "masse": [],
+  "material": [],
+  "verbote": [],
+  "genehmigung": [],
+  "standsicherheit": [],
+  "fristen": [],
+  "kinderarbeit": "Natursteine nur bei Herkunft aus einem Staat, der das ILO-Übereinkommen gegen die schlimmsten Formen der Kinderarbeit einhält, oder mit anerkanntem Nachweis (nach § 13a Nds. BestattG)",
+  "besonderheiten": [
+    "Bei der Grabpflege sind bestehende Gestaltungs- und Pflegerichtlinien zu beachten (§ 26 Abs. 3)"
+  ],
+  "kontakt": "Stadt Buchholz i. d. N., Friedhofsverwaltung; Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Der Text der Grabmalvorschriften (§ 25) ließ sich aus dem PDF nicht zuverlässig auslesen; bitte Maße und Material im Original prüfen",
+    "Für den Waldfriedhof Buchholz gilt die Ordnung der Kirchengemeinde St. Paulus"
+  ]
+}

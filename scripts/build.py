@@ -918,6 +918,26 @@ SATZUNGEN = [
             ("Satzungen des Amtes", "https://www.amt-ludwigslust-land.de/rechtsgrundlagen/index.php?typ=1")]),
         ("Boizenburg/Elbe", "ca. 25 km", "Friedhof der Kirchengemeinde St. Marien (Boizenburg und Rensdorf).", [
             ("Friedhofsordnung Boizenburg", f"{KM}/fileadmin/elkm/propstei_parchim/boizenburg/Friedhof/190618_Friedhofsordnung__Boizenburg.pdf")]),
+        # --- Erweiterung 30–80 km (November 2026) ---
+        ("Ludwigslust", "ca. 36 km", "Friedhof der Ev.-Luth. Stadtkirchengemeinde Ludwigslust.", [
+            ("Friedhofsordnung Ludwigslust", f"{KM}/fileadmin/projektseiten/friedhof-ludwigslust/Aktuelles/3.Aenderung_FO_Lesefassung.pdf")]),
+        ("Neustadt-Glewe", "ca. 39 km", "Kirchlicher Friedhof; eine Friedhofsordnung für die Stadt ist nicht online veröffentlicht (online nur Brenz, Blievenstorf und Stolpe).", [
+            ("Friedhof der Kirchengemeinde", f"{KM}/neustadt-glewe/kirche-im-leben/beerdigung-und-friedhof")]),
+        ("Dömitz", "ca. 41 km", "Kirchlicher Friedhof; online nur Gebührenregelungen, keine Friedhofsordnung.", [
+            ("Friedhof der Kirchengemeinde", f"{KM}/doemitz/friedhof")]),
+        ("Crivitz und Amt Crivitz", "ca. 42 km", "Städtischer Friedhof Crivitz; Satzungen weiterer Amtsgemeinden (u. a. Raben Steinfeld, Banzkow, Leezen) auf der Ortsrechtsseite des Amtes.", [
+            ("Friedhofssatzung Stadt Crivitz", "https://www.amt-crivitz.de/export/sites/crivitz/pdf/crivitz/satzungen/Friedhofssatzung-der-Stadt-Crivitz-26.01.2024.pdf"),
+            ("Ortsrecht Amt Crivitz", "https://www.amt-crivitz.de/das-amt/ihre-amtsverwaltung/ortsrecht-satzungen/")]),
+        ("Grabow", "ca. 43 km", "Friedhof der Ev.-Luth. Kirchengemeinde Grabow.", [
+            ("Friedhofsordnung Grabow", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Grabow/20200101_Friedhofsordnung_Grabow_.pdf")]),
+        ("Parchim", "ca. 55 km", "Städtischer Neuer Friedhof an der Lübzer Chaussee.", [
+            ("Friedhofssatzung Parchim", "https://www.parchim.de/de/buergerservice-1/ortsrecht-bekanntmachungen/ortsrecht/friedhof/2022-03-14-1.-aenderung-der-friedhofssatzung-der-stadt-parchim-lesefassung.pdf?cid=kqd")]),
+        ("Brüel (Penzin, Tempzin)", "ca. 57 km", "Kirchliche Friedhöfe Penzin und Tempzin der Kirchengemeinde Brüel.", [
+            ("Friedhofsordnung Brüel", f"{KM}/fileadmin/elkm/propstei_wismar/KR_Sternberg/Brueel/180130_Friedhofsordnung_Brueel.pdf")]),
+        ("Sternberg", "ca. 58 km", "Städtischer Friedhof.", [
+            ("Friedhofssatzung Sternberg", "https://www.stadt-sternberg.de/satzungen/1Sternberg_Friedhofssatzung_vom_03_11_2006.pdf")]),
+        ("Lübz", "ca. 66 km", "Friedhöfe der Ev.-Luth. Kirchengemeinde Lübz (Lübz, Lutheran, Benzin).", [
+            ("Friedhofsordnung Lübz", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Luebz/230921_Friedhofsordnung_Luebz_Lutheran_und_Benzin.pdf")]),
     ]),
     ("Landeshauptstadt Schwerin", [
         ("Schwerin", "22–26 km", "Die Friedhöfe werden von der Stadt betrieben.", [
@@ -931,6 +951,24 @@ SATZUNGEN = [
             ("Satzungen von Stadt und Amt", "https://www.gadebusch.de/verwaltung/satzungen/")]),
         ("Holdorf (Amt Rehna)", "26–30 km", "Gemeindliche Friedhofssatzung Holdorf auf der Satzungsseite des Amtes.", [
             ("Satzungen des Amtes Rehna", "https://www.rehna.de/satzungen/")]),
+        ("Rehna", "ca. 32 km", "Kirchliche Friedhöfe Rehna, Meetzen und Kirch Grambow.", [
+            ("Friedhofssatzung Rehna", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Rehna/2026-01-27_Rehna__Meetzen_und_Kirch_Grambow_-_FS.pdf")]),
+        ("Schönberg", "ca. 41 km", "Friedhöfe der Ev.-Luth. Kirchengemeinde Schönberg.", [
+            ("Friedhofssatzung Schönberg", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Schoenberg/251203_Friedhofssatzung_Schoenberg.pdf")]),
+        ("Grevesmühlen", "ca. 43 km", "Friedhof der Ev.-Luth. Kirchengemeinde Grevesmühlen.", [
+            ("Friedhofssatzung Grevesmühlen", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Grevesmuehlen/2026-03-05_Grevesmuehlen_-_FS.pdf")]),
+        ("Dassow", "ca. 47 km", "Friedhöfe der Ev.-Luth. Kirchengemeinde Dassow.", [
+            ("Friedhofssatzung Dassow", f"{KM}/fileadmin/Gemeindeseiten/mecklenburg/dassow/Dassow_Friedhofssatzung_2025.pdf")]),
+        ("Hansestadt Wismar", "ca. 53 km", "Städtischer Friedhof mit Altem Friedhof und Westfriedhof.", [
+            ("Friedhofssatzung Wismar", "https://www.wismar.de/loadDocument.phtml?FID=2634.12595.1&Ext=PDF")]),
+        ("Klütz", "ca. 54 km", "Alter Friedhof der Ev.-Luth. Kirchengemeinde Klütz.", [
+            ("Friedhofsordnung Klütz", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Kluetz/210525_Friedhofsordnung_Alter_Friedhof_Kluetz.pdf")]),
+        ("Neukloster", "ca. 60 km", "Friedhof der Ev.-Luth. Sonnenkamp-Kirchengemeinde.", [
+            ("Friedhofssatzung Neukloster", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Wismar/Neukloster/251028_Friedhofssatzung_Friedhof_Neukloster.pdf")]),
+    ]),
+    ("Landkreis Rostock", [
+        ("Bützow", "ca. 75 km", "Friedhöfe der Ev.-Luth. Kirchengemeinde (Bützow, Langen Trechow, Passin, Zepelin).", [
+            ("Friedhofsordnung Bützow", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Rostock/Buetzow/Buetzow/170815_Friedhofsordnung_Buetzow.pdf")]),
     ]),
     ("Kreis Herzogtum Lauenburg (Schleswig-Holstein)", [
         ("Mölln", "ca. 26 km", "Friedhof der Ev.-Luth. Kirchengemeinde Mölln.", [
@@ -940,6 +978,48 @@ SATZUNGEN = [
         ("Grambek (Amt Breitenfelde)", "ca. 28 km", "", [
             ("Friedhofssatzung Grambek", "https://www.grambek.de/fileadmin/download/gemeinden/grambek/ortsrecht/finanzen/satzung_%C3%BCber_das_friedhofs-_und_bestattungswesen_in_der_gemeinde_grambek.pdf")]),
         ("Amt Lauenburgische Seen", "18–30 km", "Keine Satzungen online – die Friedhöfe sind überwiegend kirchlich. Bitte bei der Kirchengemeinde erfragen.", []),
+        ("Ratzeburg", "ca. 29 km", "Friedhof St. Georg auf dem Berge der Kirchengemeinde St. Georgsberg; für den Domfriedhof ist keine Satzung online.", [
+            ("Friedhofssatzung St. Georgsberg", "http://www.st-georgsberg.de/uploads/kp3AtX6B/Friedhofssatzung.pdf")]),
+        ("Lauenburg/Elbe", "ca. 34 km", "Friedhof der Ev.-Luth. Kirchengemeinde Lauenburg (mit Schnakenbek).", [
+            ("Friedhofssatzung Lauenburg", "https://www.friedhof-lauenburg.de/fileadmin/user_upload/Downloads/FriedhofsSATZUNG.pdf")]),
+        ("Geesthacht", "ca. 44 km", "Städtische Friedhöfe Alter Friedhof und Waldfriedhof.", [
+            ("Friedhofssatzung Geesthacht", "https://www.geesthacht.de/output/download.php?fid=3777.883.1.PDF")]),
+    ]),
+    ("Hansestadt Lübeck (Schleswig-Holstein)", [
+        ("Lübeck", "ca. 48 km", "Städtische Friedhöfe Vorwerk, Burgtor, Waldhusen, St. Jürgen und Ehrenfriedhof.", [
+            ("Friedhofssatzung Lübeck", "https://www.luebeck.de/file/6_12_friedhofssatzung_der_hansestadt_luebeck.pdf")]),
+    ]),
+    ("Kreise Stormarn und Segeberg (Schleswig-Holstein)", [
+        ("Trittau", "ca. 44 km", "Südfriedhof der Gemeinde.", [
+            ("Friedhofssatzung Trittau", "https://www.trittau.de/downloads/datei/MTU2NzEyYTA3NmRiZDhmZGFKZFV0SW9EUUhBVmI4bGdmc2xzUTNEU1lxeUcwSlZlQTZwS25XWHhMb0NOdG9VQ0QzYXdhTVQ5ZE9vNWcvaU8ya0U5K04ra29hdEs0ZDN2dGt5bEMvNHV0bzJvaHJDQ0lNSDFoNTdOdjdoQ2FhSmRKQXhOMUpNMFZYUXEwMmxyN0RrTzRlRGR3WUdLOVZhUmh4bGI4RGpIMUFkek9YSjc2aDR0S1FsQ1lBST0")]),
+        ("Ahrensburg", "ca. 56 km", "Friedhof der Kirchengemeinde (Alter Teil) und der Stadt (Neuer Teil), verwaltet von der Kirchengemeinde.", [
+            ("Friedhofssatzung Ahrensburg", "https://friedhof-ahrensburg.com/wp-content/uploads/2024/02/Friedhofssatzung-Ahrensburg-2023.pdf")]),
+        ("Norderstedt", "ca. 72 km", "Kommunale Friedhöfe Friedrichsgabe, Glashütte und Harksheide.", [
+            ("Friedhofssatzung Norderstedt", "https://www.norderstedt.de/media/custom/1087_6234_1.PDF?1767606584")]),
+    ]),
+    ("Hamburg", [
+        ("Hamburg", "ca. 66 km", "Die großen Friedhöfe (u. a. Ohlsdorf und Öjendorf) betreibt die Hamburger Friedhöfe AöR; eine Friedhofsordnung ist dort nicht als Dokument veröffentlicht. Bitte bei der Friedhofsverwaltung erfragen.", [
+            ("Hamburger Friedhöfe AöR", "https://www.friedhof-hamburg.de/")]),
+    ]),
+    ("Niedersachsen: Landkreise Lüneburg, Lüchow-Dannenberg und Harburg", [
+        ("Amt Neuhaus", "ca. 24 km", "Kommunale Friedhöfe der Gemeinde.", [
+            ("Friedhofssatzung Amt Neuhaus", "https://www.amt-neuhaus.de/ResourceImage.aspx?raid=28947")]),
+        ("Bleckede (Breetze)", "ca. 29 km", "Online nur die städtische Satzung für den Friedhof Breetze.", [
+            ("Friedhofssatzung Breetze", "https://www.bleckede.de/ResourceImage.aspx?raid=32691")]),
+        ("Samtgemeinde Elbtalaue (Hitzacker, Dannenberg)", "38–44 km", "Kommunale Friedhöfe der Samtgemeinde; kirchliche Friedhöfe haben eigene Ordnungen.", [
+            ("Friedhofsordnung Elbtalaue", "https://www.elbtalaue.de/downloads/datei/NDU1ZGEyY2FhMWE2MWVmMnNMTExYYUkwaGNWRy9LRWdkSDZxMU9HQmZnTWw5RTE4WjNMcE1ETkduT3EvYU5TR0sxWUx5eFVOakdpZnpNbkNrYUpyUjYrd051MHg4dVloaCtyc21xTGQwaVRNNndYUjBjTXIwQmhUWXhDZDBac0dTWTNlbVZRTzZ1aWwxckdUcDJhRlVLQnJmUUNXbE1QM0prckovQT09")]),
+        ("Samtgemeinde Scharnebeck", "ca. 41 km", "Kommunale Friedhöfe der Samtgemeinde, u. a. Echem und Hohnstorf/Elbe.", [
+            ("Friedhofssatzung Scharnebeck", "https://www.scharnebeck.de/ResourceImage.aspx?raid=31740")]),
+        ("Adendorf", "ca. 45 km", "Kommunaler Friedhof der Gemeinde.", [
+            ("Friedhofssatzung Adendorf", "http://www.adendorf.de/1/wp-content/uploads/2026/01/2025-12-12-Friedhofsatzung.pdf")]),
+        ("Hansestadt Lüneburg", "ca. 49 km", "Städtische Friedhöfe, u. a. Wald-, Zentral- und Michaelisfriedhof.", [
+            ("Friedhofssatzung Lüneburg", "https://www.hansestadt-lueneburg.de/_Resources/Persistent/2/7/0/6/2706b041a02f93f20445d8ac2af0073bb974c0da/67_01_friedhofssatzung.pdf")]),
+        ("Winsen (Luhe)", "ca. 56 km", "Städtische Friedhofssatzung (in Kraft seit 01.01.2026); eine Zusammenfassung folgt.", [
+            ("Friedhofssatzung Winsen", "https://www.winsen.de/portal/seiten/19-satzung-ueber-das-friedhofs-und-bestattungswesen-in-der-stadt-winsen-luhe-friedhofssatzung-902000500-20260.html?rubrik=902000117")]),
+        ("Seevetal", "ca. 65 km", "Kommunale Friedhöfe Maschen, Ramelsloh, Ohlendorf und Holtorfsloh; Hittfeld und Meckelfeld/Over sind kirchlich.", [
+            ("Friedhofssatzung Seevetal", "https://www.seevetal.de/downloads/datei/MGQxYTNlYTljZDcyMzM3NEJDVmE0UGVmUytZSnNtQU5XSFM4aUM5UHFsdHpXaS9jQ2NNcjRMSWllOWNCSkJLV3RCOTdSR05WR2VWSjdFMFpnditocnhtY1VzQlFFbXh1MDR0cG9kMkdDZTZyRTVUeVROZ1pqbHIwLzU1U29RNGpHb05BeDdWd0FONmR6STRPSXFiTkRqRHRpZkdxSWtVS0ZZMDg5UT09")]),
+        ("Buchholz in der Nordheide", "ca. 78 km", "Städtische Friedhöfe Seppensen, Sprötze und Trelde; Waldfriedhof Buchholz ist kirchlich.", [
+            ("Friedhofssatzung Buchholz", "https://www.buchholz.de/downloads/datei/OGMwZDBhYTM5Y2YyMDY3OVY4dUZodG5veWp2K1NrQVFHYUY5SFYyR012ekwyL3ZZOFh5TC92cEpoR25MQytPQ0ExM0U3UGdaT09yQzkyTFFTY3RhZzhUN3RvRGh5dEdUMW9RN216R3BoTjFvdFhYUktxbXBmbEoxeWJ2SGZ0TU5wdk1aSks5QkFhRFhuMG9TZ2dxY05ITG5iS2lKbzRRcmttNDVPUT09")]),
     ]),
 ]
 
@@ -972,6 +1052,41 @@ ENTRY_ORTE = {
     "Güster (Amt Büchen)": [("Güster", None)],
     "Grambek (Amt Breitenfelde)": [("Grambek", None)],
     "Amt Lauenburgische Seen": [("Seedorf (Lauenburg)", None), ("Sterley", None), ("Salem", None)],
+    # --- Erweiterung 30–80 km ---
+    "Ludwigslust": [("Ludwigslust", None)],
+    "Neustadt-Glewe": [("Neustadt-Glewe", None)],
+    "Dömitz": [("Dömitz", None)],
+    "Crivitz und Amt Crivitz": [("Crivitz", None)],
+    "Grabow": [("Grabow", None)],
+    "Parchim": [("Parchim", None)],
+    "Brüel (Penzin, Tempzin)": [("Penzin", None), ("Tempzin", None)],
+    "Sternberg": [("Sternberg", None)],
+    "Lübz": [("Lübz", None)],
+    "Rehna": [("Rehna", None)],
+    "Schönberg": [("Schönberg", None)],
+    "Grevesmühlen": [("Grevesmühlen", None)],
+    "Dassow": [("Dassow", None)],
+    "Hansestadt Wismar": [("Wismar", None)],
+    "Klütz": [("Klütz", None)],
+    "Neukloster": [("Neukloster", None)],
+    "Bützow": [("Bützow", None)],
+    "Ratzeburg": [("Ratzeburg", None)],
+    "Lauenburg/Elbe": [("Lauenburg/Elbe", None)],
+    "Geesthacht": [("Geesthacht", None)],
+    "Lübeck": [("Lübeck", None)],
+    "Trittau": [("Trittau", None)],
+    "Ahrensburg": [("Ahrensburg", None)],
+    "Norderstedt": [("Norderstedt", None)],
+    "Hamburg": [("Hamburg-Ohlsdorf", None)],
+    "Amt Neuhaus": [("Amt Neuhaus", None)],
+    "Bleckede (Breetze)": [("Breetze", None)],
+    "Samtgemeinde Elbtalaue (Hitzacker, Dannenberg)": [("Hitzacker (Elbe)", None), ("Dannenberg (Elbe)", None)],
+    "Samtgemeinde Scharnebeck": [("Scharnebeck", None)],
+    "Adendorf": [("Adendorf", None)],
+    "Hansestadt Lüneburg": [("Lüneburg", None)],
+    "Winsen (Luhe)": [("Winsen (Luhe)", None)],
+    "Seevetal": [("Seevetal", None)],
+    "Buchholz in der Nordheide": [("Buchholz i. d. N.", None)],
 }
 
 
@@ -1049,7 +1164,7 @@ def build_satzungen():
   <div class="wrap">
     <div class="crumbs"><a href="index.html">Start</a> / <a href="ratgeber.html">Ratgeber</a> / Friedhofssatzungen</div>
     <h1>Friedhofssatzungen</h1>
-    <p class="lead">Jeder Friedhof legt eigene Regeln für Grabmale fest. Hier finden Sie die Satzungen und Friedhofsordnungen im Umkreis von etwa 30 km um Lehsen – sortiert nach Landkreis und Entfernung.</p>
+    <p class="lead">Jeder Friedhof legt eigene Regeln für Grabmale fest. Hier finden Sie die Satzungen und Friedhofsordnungen im Umkreis von etwa 80 km um Lehsen – sortiert nach Landkreis und Entfernung.</p>
     {ratgeber_nav("friedhofssatzungen.html")}
   </div>
 </section>
@@ -1084,12 +1199,12 @@ def build_satzungen():
         </div>
         <p class="search-empty" id="search-empty" hidden>Kein passender Ort gefunden. <a href="kontakt.html">Fragen Sie uns</a> – wir helfen gern weiter.</p>
         <div class="quick" aria-label="Schnellauswahl">
-          {"".join(f'<button type="button" data-quick="{q}">{q}</button>' for q in ("Wittenburg", "Hagenow", "Zarrentin", "Boizenburg", "Lübtheen", "Gadebusch", "Schwerin", "Mölln"))}
+          {"".join(f'<button type="button" data-quick="{q}">{q}</button>' for q in ("Wittenburg", "Hagenow", "Zarrentin", "Boizenburg", "Schwerin", "Wismar", "Lübeck", "Lüneburg", "Ludwigslust", "Parchim"))}
         </div>
         <p class="finder-hint">Geben Sie den Namen Ihres Ortes ein und wählen Sie ihn aus der Trefferliste – Sie gelangen direkt zur Zusammenfassung der Friedhofssatzung. Die Karte daneben können Sie zusätzlich zur Orientierung laden.</p>
       </div>
       <div class="map-wrap">
-        <div id="map" class="map" aria-label="Karte der Friedhöfe im Umkreis von 30 km um Lehsen"></div>
+        <div id="map" class="map" aria-label="Karte der Friedhöfe im Umkreis von 80 km um Lehsen"></div>
         <div class="map-consent" id="map-consent">
           <div>
             <h3>Karte anzeigen</h3>
@@ -1115,7 +1230,7 @@ def build_satzungen():
 {cta()}"""
     body += f'<script src="{v("satzungen.js")}" defer></script>'
     return page("friedhofssatzungen.html", "Friedhofssatzungen in der Region",
-                "Friedhofssatzungen im Umkreis von 30 km um Wittenburg – Hagenow, Zarrentin, Boizenburg, Lübtheen, Schwerin, Mölln u. v. m., verständlich zusammengefasst.",
+                "Friedhofssatzungen im Umkreis von 80 km um Wittenburg – Hagenow, Schwerin, Wismar, Lübeck, Lüneburg, Parchim u. v. m., verständlich zusammengefasst.",
                 body, "friedhofssatzungen.html", crumbs=[("Start", ""), ("Ratgeber", "ratgeber.html"), ("Friedhofssatzungen", "friedhofssatzungen.html")])
 
 
@@ -1153,7 +1268,22 @@ ORT_SATZUNG = {
     "Rastow": "rastow", "Sülstorf": "suelstorf", "Warlow": "warlow", "Boizenburg/Elbe": "boizenburg", "Schwerin": "schwerin",
     "Lützow": "luetzow", "Gadebusch": "gadebusch", "Holdorf": "holdorf", "Mölln": "moelln", "Güster": "guester",
     "Grambek": "grambek", "Seedorf (Lauenburg)": "lauenburgische-seen", "Sterley": "lauenburgische-seen", "Salem": "lauenburgische-seen",
+    # --- Erweiterung 30–80 km ---
+    "Ludwigslust": "ludwigslust", "Crivitz": "crivitz", "Grabow": "grabow", "Parchim": "parchim", "Penzin": "brueel", "Tempzin": "brueel",
+    "Sternberg": "sternberg", "Lübz": "luebz", "Rehna": "rehna", "Schönberg": "schoenberg", "Grevesmühlen": "grevesmuehlen",
+    "Dassow": "dassow", "Wismar": "wismar", "Klütz": "kluetz", "Neukloster": "neukloster", "Bützow": "buetzow",
+    "Ratzeburg": "ratzeburg", "Lauenburg/Elbe": "lauenburg", "Geesthacht": "geesthacht", "Lübeck": "luebeck",
+    "Trittau": "trittau", "Ahrensburg": "ahrensburg", "Norderstedt": "norderstedt", "Amt Neuhaus": "amt-neuhaus",
+    "Breetze": "bleckede", "Hitzacker (Elbe)": "elbtalaue", "Dannenberg (Elbe)": "elbtalaue", "Scharnebeck": "scharnebeck",
+    "Adendorf": "adendorf", "Lüneburg": "lueneburg", "Seevetal": "seevetal", "Buchholz i. d. N.": "buchholz",
 }
+
+# Satzungen der Erweiterung auf 80 km. Bestehende Seiten verlinken unter „Friedhöfe in der Nähe“
+# weiterhin nur die bisherigen Satzungen, damit sie unverändert bleiben.
+NEW_SATZ = {"ludwigslust", "crivitz", "grabow", "parchim", "brueel", "sternberg", "luebz", "rehna", "schoenberg",
+            "grevesmuehlen", "dassow", "wismar", "kluetz", "neukloster", "buetzow", "ratzeburg", "lauenburg",
+            "geesthacht", "luebeck", "trittau", "ahrensburg", "norderstedt", "amt-neuhaus", "bleckede", "elbtalaue",
+            "scharnebeck", "adendorf", "lueneburg", "seevetal", "buchholz"}
 
 SATZ_SECTIONS = [
     ("masse", "Maße & Stärke"),
@@ -1205,7 +1335,7 @@ def nearby(sid, n=3):
     c = here[0]
     out = []
     for other in SATZ:
-        if other == sid:
+        if other == sid or (sid not in NEW_SATZ and other in NEW_SATZ):
             continue
         pts = [ORTE[o] for o in satz_primary(other) if ORTE.get(o)]
         if pts:

@@ -1,0 +1,83 @@
+{
+  "id": "luebeck",
+  "titel": "Friedhofssatzung der Hansestadt Lübeck",
+  "orte": ["Lübeck"],
+  "traeger": "Hansestadt Lübeck (Bereich Stadtgrün und Verkehr)",
+  "art": "kommunal",
+  "fassung": "vom 31.03.2015 in der Fassung der 1. Änderungssatzung vom 08.07.2019 (nichtamtliche Zusammenfassung der Stadt)",
+  "quelle_url": "https://www.luebeck.de/file/6_12_friedhofssatzung_der_hansestadt_luebeck.pdf",
+  "quelle_titel": "Friedhofssatzung Hansestadt Lübeck (PDF)",
+  "friedhoefe": [
+    "Vorwerker Friedhof, Burgtor-Friedhof, Ehrenfriedhof, Friedhof Waldhusen und St.-Jürgen-Friedhof (§ 1)",
+    "Vorwerker Friedhof und Waldhusen mit Grabfeldern mit und ohne Gestaltungsvorschriften; Burgtor-Friedhof und St. Jürgen nur mit Gestaltungsvorschriften (§ 30 Abs. 2–3)"
+  ],
+  "kurzfazit": "Grabmale, Grababdeckungen und Einfassungen brauchen vorher die schriftliche Zustimmung, der Antrag braucht einen Entwurf 1:10 in zweifacher Ausfertigung. Die Größe wird über die Summe aus Höhe, Breite und Stärke begrenzt (z. B. 230 cm stehend auf einem Sarggrab). Erlaubt sind Naturstein, Metall, Glas, Holz und gebrannter Ton. Grabmale müssen mindestens 12 cm stark sein, liegende Steine und Abdeckungen mindestens 10 cm.",
+  "ruhezeit": "Leichen und Aschen 20 Jahre, Verstorbene bis 6 Jahre 15 Jahre (§ 10 Abs. 1); Nutzungsrecht entsprechend 20 bzw. 15 Jahre (§ 12 Abs. 2)",
+  "grabarten": [
+    {"name": "Sarggrab (Reihen- und Wahlgrab)", "regel": "Summe aus Höhe, Breite und Stärke max. 230 cm stehend bzw. 180 cm liegend; zweistellig nebeneinander 300 / 250 cm (§ 31 Abs. 8 a–b)"},
+    {"name": "Kinder- und Urnengrab", "regel": "Summe aus Höhe, Breite und Stärke max. 180 cm stehend bzw. 120 cm liegend (§ 31 Abs. 8 c)"},
+    {"name": "Rasengrab für Särge", "regel": "als Reihengrab nur liegendes Grabmal, als Wahlgrab ohne diese Einschränkung; am Kopfende 1 × 1 m Pflegefläche (§ 19, § 31 Abs. 2)"},
+    {"name": "Urnen-Rasengrab", "regel": "Grabmal höchstens höhengleich mit dem Erdboden; keine gärtnerische Pflege, Blumen nur an zentraler Stelle (§ 21, § 31 Abs. 3)"},
+    {"name": "Urnen-Stelengrab", "regel": "Grabmal als Stele: max. 100 cm hoch, 30 cm breit, 30 cm stark (§ 31 Abs. 4, Abs. 9 b)"},
+    {"name": "Abgedecktes Urnengrab", "regel": "nach der Beisetzung vollflächig mit Grabplatte abdecken, max. Öffnung 20 × 20 cm; keine weiteren Grabmale (§ 25, § 31 Abs. 6, Abs. 9 c)"},
+    {"name": "Bepflanztes Urnengrab", "regel": "Grabmal max. 40 × 40 × 40 cm (H × B × T) (§ 31 Abs. 9 d)"},
+    {"name": "Baumgrab (Wahlgrab)", "regel": "bis acht Urnen; je zwei Urnen ein bodengleiches Grabmal im Kronenbereich, 60–100 cm lang, max. 45 cm breit, max. 20 cm stark; keine Schilder oder QR-Codes am Baum (§ 27, § 31 Abs. 5, Abs. 9 a)"},
+    {"name": "Gemeinschaftsgräber, namenlose Urnengräber, Kolumbarium", "regel": "kein eigenes Grabmal; Namen auf gemeinsamem Grabmal bzw. Namenstafel, im Kolumbarium auf Glas- oder Steinplatte (§ 23, § 24, § 28, § 31 Abs. 1)"},
+    {"name": "Dauergrabgepflegte Gemeinschaftsfelder", "regel": "Gemeinschafts- und/oder Einzelgrabsteine zulässig, auf Antrag des Erstellers auch abweichend von der Satzung; nur mit gesichertem Dauergrabpflegevertrag (§ 29)"}
+  ],
+  "masse": [
+    "Summe der größten Ausdehnungen (Höhe + Breite + Stärke): Sarggrab einstellig/übereinander stehend 230 cm, liegend 180 cm; Sarggrab nebeneinander stehend 300 cm, liegend 250 cm; Kinder- und Urnengrab stehend 180 cm, liegend 120 cm (§ 31 Abs. 8)",
+    "Mindeststärke stehend 12 cm, liegend und Grababdeckung 10 cm; Höhen ab Erdniveau (§ 31 Abs. 11)",
+    "Grabmal und Abdeckung dürfen nicht über die Außenkante der Grabstätte ragen (§ 31 Abs. 12)",
+    "Baumgrab 60–100 × max. 45 × max. 20 cm; Urnenstele max. 100 × 30 × 30 cm; bepflanztes Urnengrab max. 40 × 40 × 40 cm; abgedecktes Urnengrab vollflächig, Öffnung max. 20 × 20 cm (§ 31 Abs. 9)"
+  ],
+  "material": [
+    "Grabmale nur aus Naturstein, Metall, Glas, Holz oder gebranntem Ton; Holz nur bei stehenden Grabmalen (§ 31 Abs. 7)",
+    "Findlinge, nachgebildete Findlinge und Spaltfelsen nur in ausgewiesenen Grabanlagen (§ 31 Abs. 7)",
+    "Sichtbare Grabmalsockel nur aus Naturstein (§ 31 Abs. 7)",
+    "Grababdeckungen nur aus Naturstein, teil- oder ganzflächig auf Antrag bei bestimmten Wahlgräbern, wenn die spätere Abräumung treuhänderisch abgesichert ist (§ 31 Abs. 10)",
+    "Einfassungen nicht aus Kunststoff, fest verankert und gegen Verkippen gesichert (§ 33 Abs. 2)"
+  ],
+  "verbote": [
+    "Kein Kies oder kieselartiges Material in Grabfeldern mit Gestaltungsvorschriften (§ 36 Abs. 4 c)",
+    "Kein Kunststoff und keine nicht verrottenden Werkstoffe für Kränze, Gebinde und Grabschmuck (§ 36 Abs. 5)",
+    "Keine Grabmale auf Gemeinschaftsgräbern, namenlosen Urnengräbern und im Kolumbarium; keine weiteren Grabmale auf abgedeckten Urnengräbern (§ 31 Abs. 1, 6)",
+    "Keine Hinweise, Schilder, QR-Codes oder Tafeln am Baum bei Baumgräbern (§ 27 Abs. 4)",
+    "Vorausbeschriftung mit Namen lebender Personen nur mit Geburtsdatum (§ 31 Abs. 14)"
+  ],
+  "genehmigung": [
+    "Errichtung und Veränderung von Grabmalen und Grababdeckungen (außer ergänzenden Inschriften) sowie Grabeinfassungen nur mit vorheriger schriftlicher Zustimmung (§ 33 Abs. 1)",
+    "Antrag zweifach mit Gestaltungsentwurf (Grundriss und Ansichten 1:10), Material, Bearbeitung, Anordnung von Schrift, Ornamenten und Symbolen, auch QR-Code (§ 33 Abs. 3)",
+    "Zustimmung erst nach vollständiger Zahlung der Friedhofsgebühr für das Nutzungsrecht (§ 12 Abs. 4)",
+    "Einfassungen: Hersteller ermittelt Maße vor Ort, exakte Maße im Einvernehmen mit der Verwaltung, Auspflockung beachten; eine bündige Kante am Fußende ohne Zustimmung möglich (§ 33 Abs. 2, 4)",
+    "QR-Codes sind genehmigungspflichtiger Teil der Inschrift; Inhalt angeben und Verantwortung schriftlich bestätigen (§ 33 Abs. 5)",
+    "Nachweis der fachlichen Eignung kann verlangt werden; Arbeiten nur zu den festgesetzten Zeiten (§ 37 Abs. 2, 4)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach der Richtlinie des Bundesverbandes Deutscher Steinmetze (BIV-Richtlinie) in der aktuellen Fassung, standsicher auch beim Öffnen benachbarter Gräber (§ 34 Abs. 1)",
+    "Bei Verschieben oder mangelnder Standsicherheit sofort Abhilfe; nach schriftlicher Aufforderung Frist ein Monat, danach Instandsetzung oder Abräumung auf Kosten der Nutzungsberechtigten, Aufbewahrung zwei Monate (§ 34 Abs. 2)",
+    "Nutzungsberechtigte haften für alle Schäden durch Grabmal, Einfassung oder Abdeckung (§ 34 Abs. 3)"
+  ],
+  "fristen": [
+    "Vor Ablauf des Nutzungsrechts Entfernung nur mit schriftlicher Zustimmung (§ 35 Abs. 1)",
+    "Nach Ablauf entfernt die Friedhofsverwaltung Grabmal, Abdeckung und Einfassung kostenpflichtig; Befreiung möglich mit Nachweis der Abräumung, z. B. Auftrag an eine Steinmetzfirma (§ 35 Abs. 2–3)",
+    "Ohne schriftliche Mitteilung bis Ablauf fallen Grabmale entschädigungslos an die Friedhofsverwaltung (§ 35 Abs. 4)",
+    "Entfernen des Grabmals bei einer weiteren Bestattung ist Sache der Nutzungsberechtigten (§ 35 Abs. 5)",
+    "Zu provisorischen Grabzeichen keine Regelung"
+  ],
+  "kinderarbeit": "keine eigene Regelung",
+  "besonderheiten": [
+    "Wahl zwischen Feldern mit und ohne Gestaltungsvorschriften auf Vorwerk und Waldhusen; ohne Wahl gilt das Feld mit Gestaltungsvorschrift (§ 30 Abs. 2)",
+    "Grabmale und Abdeckungen dürfen auch auf noch nicht belegten Grabstätten errichtet werden (§ 31 Abs. 13)",
+    "Gedenkschriften sind als solche zu kennzeichnen (§ 31 Abs. 15)",
+    "In Feldern mit Gestaltungsvorschriften Pflanzen höchstens etwa 1 m hoch; Bänke nur mit Zustimmung (§ 36 Abs. 4)",
+    "Patenschaften für historische Gruften möglich, Messingschild 10 × 15 cm (§ 32)",
+    "Ausnahmen und weitergehende Anforderungen an Material, Entwurf und Ausführung durch die Verwaltung möglich (§ 31 Abs. 16)"
+  ],
+  "kontakt": "Hansestadt Lübeck, Bereich Stadtgrün und Verkehr (Friedhofsverwaltung); Adresse und Telefon im Dokument nicht genannt",
+  "unsicher": [
+    "Die Stadt veröffentlicht die Satzung als „nichtamtliche Zusammenfassung“; maßgeblich ist die amtlich bekanntgemachte Fassung",
+    "Seit 2019 kann es weitere Änderungen gegeben haben, die in dieser Fassung fehlen",
+    "Für Grabfelder ohne Gestaltungsvorschriften enthält der Text keine gesonderten Grabmalregeln"
+  ]
+}

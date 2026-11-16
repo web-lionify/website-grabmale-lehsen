@@ -1,0 +1,74 @@
+{
+  "id": "ahrensburg",
+  "titel": "Friedhofssatzung für die Friedhöfe der Ev.-Luth. Kirchengemeinde Ahrensburg und den Friedhof der Stadt Ahrensburg",
+  "orte": [
+    "Ahrensburg"
+  ],
+  "traeger": "Ev.-Luth. Kirchengemeinde Ahrensburg (Alter Teil) und Stadt Ahrensburg (Neuer Teil), Verwaltung durch die Kirchengemeinde",
+  "art": "kirchlich",
+  "fassung": "vom 06.12.2022, in Kraft frühestens 01.01.2023; 1. Änderung 22.04.2024, 2. Änderung gültig ab 12.12.2024",
+  "quelle_url": "https://friedhof-ahrensburg.com/wp-content/uploads/2024/02/Friedhofssatzung-Ahrensburg-2023.pdf",
+  "quelle_titel": "Friedhofssatzung Ahrensburg (PDF)",
+  "friedhoefe": [
+    "Friedhof Ahrensburg mit Altem Teil (Kirchengemeinde) und Neuem Teil (Stadt); Grabfelder 17 bis 21a im Neuen Teil ohne zusätzliche Gestaltungsvorschriften (§ 24, § 25 Abs. 1)"
+  ],
+  "kurzfazit": "Grabmale brauchen vorher die schriftliche Zustimmung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Auf Wahlgräbern muss ein Grabmal mindestens 70 cm (mehrstellig 90 cm) hoch sein und darf höchstens 130 cm hoch sein, bei höchstens halber Grabbreite. Mindeststärke 12 cm, ab 100 cm Höhe 15 cm. Ein Holzkreuz darf bis zu 12 Monate ohne Antrag stehen.",
+  "ruhezeit": "Särge und Urnen 20 Jahre; tot geborene oder im 1. Lebensmonat verstorbene Kinder 5 Jahre (§ 9)",
+  "grabarten": [
+    {
+      "name": "Wahlgrab",
+      "regel": "Grabmal mind. 70 cm (einstellig) bzw. 90 cm (mehrstellig) hoch, max. 130 cm; höchstens halbe Grabbreite; ab 3 m Breite abweichende Maße möglich (§ 26 Abs. 2)"
+    },
+    {
+      "name": "Grabfelder mit zusätzlichen Gestaltungsvorschriften (alle außer Felder 17–21a)",
+      "regel": "nur Naturstein, Holz und Metall in handwerklicher Ausführung; Maße nach Belegungs- und Gestaltungsplan (§ 27)"
+    },
+    {
+      "name": "Rasengrab",
+      "regel": "Anlage und Pflege durch den Friedhofsträger (§ 24 Abs. 3)"
+    },
+    {
+      "name": "Baumgrab",
+      "regel": "nur liegende Grabmale ohne Fundament oder wurzelschonende Gedenktafeln (§ 20 Abs. 2)"
+    },
+    {
+      "name": "Gemeinschaftsgrab",
+      "regel": "Anlage und Unterhaltung durch den Friedhofsträger (§ 20 Abs. 1)"
+    }
+  ],
+  "masse": [
+    "Mindeststärke stehend unter 100 cm Höhe 12 cm, ab 100 cm 15 cm; liegend 10 cm (§ 26 Abs. 2)",
+    "Höhe auf Wahlgräbern mind. 70 cm (einstellig) bzw. 90 cm (mehrstellig), höchstens 130 cm; Breite höchstens die Hälfte der Grabbreite (§ 26 Abs. 2)",
+    "Provisorisches Holzkreuz oder Holztafel max. 120 cm hoch und 60 cm breit (§ 26 Abs. 2)"
+  ],
+  "material": [
+    "In Feldern mit zusätzlichen Gestaltungsvorschriften nur Naturstein, Holz, geschmiedetes oder gegossenes Metall in handwerklicher Ausführung; Ausnahmen in begründeten Fällen (§ 27 Abs. 2, 4)",
+    "Bearbeitung, Form und Farbe müssen sich ins Gesamtbild einfügen (§ 27 Abs. 3)"
+  ],
+  "verbote": [
+    "Keine Bäume oder großwüchsigen Sträucher auf Grabstätten (§ 24 Abs. 2)"
+  ],
+  "genehmigung": [
+    "Errichtung und Veränderung von Grabmalen nur mit vorheriger schriftlicher Zustimmung des Friedhofsträgers (§ 32 Abs. 1)",
+    "Antrag zweifach mit Entwurf (Grundriss, Vorder- und Seitenansicht 1:10) mit Material, Bearbeitung und Fundamentierung sowie Wortlaut und Anordnung von Inschrift, Ornamenten und Symbolen; in besonderen Fällen Modell 1:5 oder Attrappe in Originalgröße (§ 32 Abs. 2)",
+    "Sonstige bauliche Anlagen ebenfalls zustimmungspflichtig (§ 32 Abs. 3)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Richtlinien des Bundesinnungsverbandes des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks in der jeweils geltenden Fassung (§ 34 Abs. 1)",
+    "Nutzungsberechtigte haften; Mängel durch zugelassene Gewerbetreibende beseitigen; bei unmittelbarer Gefahr Niederlegen ohne Vorwarnung (§ 36)"
+  ],
+  "fristen": [
+    "Provisorisches Holzkreuz oder Holztafel ohne Antrag bis 12 Monate nach der Bestattung (§ 26 Abs. 2)",
+    "Nach Ablauf entfernt ausschließlich der Friedhofsträger Grabmal samt Fundament; Kosten können erhoben werden; auf Wunsch kann das Grabmal überlassen werden (§ 37 Abs. 2)"
+  ],
+  "kinderarbeit": "Es sollen keine importierten Grabsteine verwendet werden, die nicht unter fairen Arbeitsbedingungen oder mit Kinderarbeit produziert worden sind (§ 26 Abs. 1)",
+  "besonderheiten": [
+    "Belegungs- und Gestaltungsplan ist Bestandteil der Satzung (§ 25 Abs. 2, § 43)",
+    "Wertvolle Grabmale werden gelistet; Patenschaften möglich (§ 38)"
+  ],
+  "kontakt": "Friedhofsverwaltung Ahrensburg, Hamburger Straße 160, 22926 Ahrensburg (§ 43)",
+  "unsicher": [
+    "Die Ruhezeit-Angabe ist im PDF teilweise verschoben gesetzt",
+    "Die Änderungssatzungen von 2024 sind in dieser Zusammenfassung nicht berücksichtigt"
+  ]
+}

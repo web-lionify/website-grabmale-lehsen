@@ -1,0 +1,83 @@
+{
+  "id": "ratzeburg",
+  "titel": "Friedhofssatzung für den Friedhof der Ev.-Luth. Kirchengemeinde St. Georgsberg Ratzeburg",
+  "orte": [
+    "Ratzeburg",
+    "St. Georgsberg"
+  ],
+  "traeger": "Ev.-Luth. Kirchengemeinde St. Georgsberg Ratzeburg",
+  "art": "kirchlich",
+  "fassung": "vom 07.12.2016, kirchenaufsichtlich genehmigt am 16.12.2016, in Kraft seit 01.01.2017",
+  "quelle_url": "http://www.st-georgsberg.de/uploads/kp3AtX6B/Friedhofssatzung.pdf",
+  "quelle_titel": "Friedhofssatzung St. Georgsberg Ratzeburg (PDF)",
+  "friedhoefe": [
+    "Friedhof St. Georg auf dem Berge mit Altem Friedhof, Neuem Friedhof und Bergfriedhof (§ 9)"
+  ],
+  "kurzfazit": "Grabmale brauchen vorher die schriftliche Zustimmung, der Antrag wird zweifach mit Entwurf 1:10 gestellt. Erlaubt sind nur Naturstein, Holz und Metall. Pro Grabstätte gibt es ein stehendes Grabmal, das höchstens halb so breit wie das Grab ist. Die Ansichtsfläche ist je Grabart begrenzt (z. B. einstelliges Wahlgrab 0,40–0,60 m²). Steinerne Grababdeckungen sind nicht erlaubt.",
+  "ruhezeit": "Särge auf dem Alten Friedhof 25 Jahre, auf Neuem Friedhof und Bergfriedhof 30 Jahre, Kinder bis 5 Jahre 15 Jahre, Urnen 20 Jahre (§ 9)",
+  "grabarten": [
+    {
+      "name": "Reihengrab (Erdbestattung)",
+      "regel": "stehendes Grabmal in Stelenform 0,30–0,40 m² (§ 27 Abs. 6)"
+    },
+    {
+      "name": "Einstelliges Wahlgrab",
+      "regel": "0,40–0,60 m² bei höchstens 50 cm Breite (§ 27 Abs. 6)"
+    },
+    {
+      "name": "Mehrstelliges Wahlgrab",
+      "regel": "0,50–0,90 m²; ab 3 m Breite nach Festlegung (§ 27 Abs. 6)"
+    },
+    {
+      "name": "Urnenreihengrab",
+      "regel": "nur liegende Grabmale bis 0,30 m² (§ 27 Abs. 7)"
+    },
+    {
+      "name": "Urnenwahlgrab",
+      "regel": "0,30–0,45 m² (§ 27 Abs. 7)"
+    },
+    {
+      "name": "Gemeinschaftsgrab",
+      "regel": "gemeinsames Grabmal des Friedhofsträgers mit Namen und Jahreszahlen (§ 20 Abs. 1)"
+    },
+    {
+      "name": "Baumgrab",
+      "regel": "nur liegende Grabmale ohne Fundament oder wurzelschonende Tafeln (§ 20 Abs. 2)"
+    }
+  ],
+  "masse": [
+    "Mindeststärke stehend bis 100 cm Höhe 12 cm, darüber 15 cm; liegend mindestens 12 cm (§ 26 Abs. 2, § 27 Abs. 5)",
+    "Breite eines stehenden Grabmals höchstens die Hälfte der Grabbreite (§ 27 Abs. 5)",
+    "Ansichtsflächen je Grabart von 0,30 bis 0,90 m²; Gestaltungsplan kann Höchst- und Mindestmaße festlegen (§ 27 Abs. 6–8)"
+  ],
+  "material": [
+    "Nur Naturstein, Holz, geschmiedetes oder gegossenes Metall in handwerklicher Ausführung (§ 26 Abs. 1, § 27 Abs. 3)",
+    "Nur ein stehendes Grabmal je Grabstätte, je Grabbreite zusätzlich ein passender Liegestein (§ 27 Abs. 4)"
+  ],
+  "verbote": [
+    "Keine Grababdeckungen aus Naturstein, Beton, Terrazzo, Teerpappe oder Kunststoff; Natursteineinfassungen nur in Sonderfällen (§ 25 Abs. 3)",
+    "Keine Schrittplatten, keine Grabgebinde aus künstlichem Werkstoff, keine Bäume (§ 25 Abs. 3)"
+  ],
+  "genehmigung": [
+    "Errichtung und Veränderung von Grabmalen nur mit vorheriger schriftlicher Zustimmung (§ 32 Abs. 1)",
+    "Antrag zweifach mit Entwurf (Grundriss, Vorder- und Seitenansicht 1:10) mit Material, Bearbeitung und Fundamentierung sowie Wortlaut und Anordnung von Inschrift, Ornamenten und Symbolen; in besonderen Fällen Modell 1:5 oder Attrappe in Originalgröße (§ 32 Abs. 2)",
+    "Auch Steineinfassungen, Bänke und provisorische Tafeln sind zustimmungspflichtig (§ 32 Abs. 3)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung nach den Richtlinien des Bundesinnungsverbandes des Deutschen Steinmetz-, Stein- und Holzbildhauerhandwerks in der jeweils geltenden Fassung (§ 34 Abs. 1)",
+    "Haftung der Nutzungsberechtigten; Mängel durch zugelassene Gewerbetreibende beseitigen; bei Gefahr Umlegen ohne Vorwarnung (§ 36)"
+  ],
+  "fristen": [
+    "Nach Ablauf Grabmal samt Sockel und Fundament durch die Nutzungsberechtigten entfernen; nach drei Monaten Abräumung ohne Entschädigung, ggf. auf ihre Kosten (§ 37 Abs. 2)"
+  ],
+  "kinderarbeit": "Es sollen keine importierten Grabsteine verwendet werden, die nicht unter fairen Arbeitsbedingungen und mit Kinderarbeit produziert worden sind (§ 26 Abs. 1)",
+  "besonderheiten": [
+    "Alle Grabfelder unterliegen zusätzlichen Gestaltungsvorschriften; die gesamte Grabfläche ist zu bepflanzen (§ 25)",
+    "Wertvolle Grabmale werden gelistet; Patenschaften möglich (§ 38)"
+  ],
+  "kontakt": "Ev.-Luth. Kirchengemeinde St. Georgsberg, Friedhofsverwaltung Ratzeburg; Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Die Ruhezeiten-Tabelle ist im PDF verschoben gesetzt; die Zuordnung wurde nach der Reihenfolge rekonstruiert",
+    "Für den Domfriedhof und weitere Ratzeburger Friedhöfe wurde keine Satzung gefunden"
+  ]
+}

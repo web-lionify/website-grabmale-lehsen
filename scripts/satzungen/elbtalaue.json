@@ -1,0 +1,57 @@
+{
+  "id": "elbtalaue",
+  "titel": "Satzung über das Friedhofswesen der Samtgemeinde Elbtalaue (Friedhofsordnung)",
+  "orte": [
+    "Dannenberg (Elbe)",
+    "Hitzacker (Elbe)",
+    "Samtgemeinde Elbtalaue"
+  ],
+  "traeger": "Samtgemeinde Elbtalaue",
+  "art": "kommunal",
+  "fassung": "Satzung von 2008 mit späteren Änderungen; Fassung laut Dateiname „ab 01.01.2021“",
+  "quelle_url": "https://www.elbtalaue.de/downloads/datei/NDU1ZGEyY2FhMWE2MWVmMnNMTExYYUkwaGNWRy9LRWdkSDZxMU9HQmZnTWw5RTE4WjNMcE1ETkduT3EvYU5TR0sxWUx5eFVOakdpZnpNbkNrYUpyUjYrd051MHg4dVloaCtyc21xTGQwaVRNNndYUjBjTXIwQmhUWXhDZDBac0dTWTNlbVZRTzZ1aWwxckdUcDJhRlVLQnJmUUNXbE1QM0prckovQT09",
+  "quelle_titel": "Friedhofsordnung Samtgemeinde Elbtalaue (PDF)",
+  "friedhoefe": [
+    "Kommunale Friedhöfe der Samtgemeinde Elbtalaue in Ortsteilen von Dannenberg, Hitzacker und weiteren Mitgliedsgemeinden (§ 1)"
+  ],
+  "kurzfazit": "Grabmale dürfen höchstens 1,50 m hoch sein, der Sockel höchstens 20 cm. Auf Rasengräbern sind Steinkissen bis 0,28 m² und Grabmale bis 0,40 m² Ansichtsfläche erlaubt, jeweils auf einer Sockelplatte mit 15 cm Überstand und höchstens 0,80 m Gesamtbreite. Einfassungen höchstens 0,20 m hoch.",
+  "ruhezeit": "",
+  "grabarten": [
+    {
+      "name": "Reihen- und Wahlgrab",
+      "regel": "2,10 × 0,90 m; Einfassungen max. 0,20 m hoch, Hecken max. 0,60 m (§ 26 Abs. 2)"
+    },
+    {
+      "name": "Wahl-, Reihen- und Urnengrab unter Rasen",
+      "regel": "Steinkissen bis 0,28 m², Grabmal bis 0,40 m² Ansichtsfläche; Sockelplatte mit 15 cm Überstand seitlich und hinten, Gesamtbreite max. 0,80 m; Pflanzfläche in Größe der Sockelplatte möglich"
+    },
+    {
+      "name": "Urnengrab unter Rasen",
+      "regel": "0,80 × 0,80 m; anonym 0,60 × 0,60 m"
+    },
+    {
+      "name": "Baumgrabstelle für Urnen",
+      "regel": "0,60 × 0,60 m"
+    }
+  ],
+  "masse": [
+    "Grabmal max. 1,50 m hoch, Sockel max. 20 cm",
+    "Rasengräber: Steinkissen bis 0,28 m², Grabmal bis 0,40 m² Ansichtsfläche; Sockelplatte mit 15 cm Überstand, Gesamtbreite max. 0,80 m",
+    "Einfassungen max. 0,20 m hoch, Hecken max. 0,60 m; Bepflanzung Urnengräber max. 0,70 m"
+  ],
+  "material": [],
+  "verbote": [],
+  "genehmigung": [
+    "Grabmale nach den Vorschriften der Satzung genehmigungspflichtig; Einzelheiten im Original prüfen"
+  ],
+  "standsicherheit": [],
+  "fristen": [],
+  "kinderarbeit": "keine eigene Regelung gefunden (es gilt § 13a Nds. BestattG)",
+  "besonderheiten": [],
+  "kontakt": "Samtgemeinde Elbtalaue, Friedhofsverwaltung, Dannenberg; Telefon in der Satzung nicht genannt",
+  "unsicher": [
+    "Das Inkrafttreten und die geltende Fassung sind im Dokument nicht eindeutig lesbar",
+    "Paragrafenangaben zu den Maßen konnten nicht sicher zugeordnet werden",
+    "Kirchliche Friedhöfe in der Samtgemeinde haben eigene Ordnungen"
+  ]
+}
