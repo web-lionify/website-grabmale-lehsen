@@ -300,11 +300,18 @@ def cta(title="Lassen Sie sich persönlich beraten", text="Vereinbaren Sie einen
 </section>"""
 
 
+VIDEOS = {"referenzen": [("video-friedhof", "Video: Grabanlage mit Sonnenuntergang-Motiv und hellen Abdeckplatten")]}
+
+
 def gallery(slug, label):
     items = []
     for i, img in enumerate(images(slug), 1):
         items.append(
             f'<a href="{img}.jpg" data-lb><img src="{img}-k.jpg" alt="{label} – Beispiel {i}" loading="lazy" decoding="async" width="480" height="480"></a>'
+        )
+    for name, alt in VIDEOS.get(slug, []):
+        items.append(
+            f'<a class="is-video" href="img/{slug}/{name}.mp4?v={img_hash(f"img/{slug}/{name}.mp4")}" data-lb><img src="img/{slug}/{name}-k.jpg" alt="{esc(alt)}" loading="lazy" decoding="async" width="480" height="480"></a>'
         )
     return '<div class="gallery">\n' + "\n".join(items) + "\n</div>"
 
@@ -1641,6 +1648,7 @@ Options -Indexes
 ErrorDocument 404 /404.html
 AddDefaultCharset UTF-8
 AddType image/webp .webp
+AddType video/mp4 .mp4
 AddType application/manifest+json .webmanifest
 
 <IfModule mod_headers.c>
@@ -1655,7 +1663,7 @@ AddType application/manifest+json .webmanifest
   <FilesMatch "\\.(css|js)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
-  <FilesMatch "\\.(jpe?g|webp|png|svg)$">
+  <FilesMatch "\\.(jpe?g|webp|png|svg|mp4)$">
     Header set Cache-Control "public, max-age=31536000"
   </FilesMatch>
   <FilesMatch "\\.html$">
