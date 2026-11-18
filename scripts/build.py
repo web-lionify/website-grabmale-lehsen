@@ -133,7 +133,9 @@ LOCAL_BUSINESS = {
     "sameAs": ["https://www.ebay.de/str/grabsteine"],
     "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Leistungen", "itemListElement": [
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": n}} for n in
-        ("Grabsteine und Grabmale", "Stelen", "Liegesteine und Grabherzen", "Grabanlagen und Einfassungen", "Nachbeschriftung", "Aufarbeitung und Standsicherheit", "Naturstein für Haus und Garten: Treppen, Fensterbänke, Abdeckungen")]},
+        ("Grabsteine und Grabmale", "Stelen", "Liegesteine und Grabherzen", "Grabanlagen und Einfassungen", "Nachbeschriftung", "Aufarbeitung und Standsicherheit", "Naturstein für Haus und Garten: Treppen, Küchen- und Arbeitsplatten, Fensterbänke, Abdeckungen")]},
+    "publicAccess": True,
+    "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Barrierefreier Zugang", "value": True}],
     "knowsAbout": ["Grabmale", "Naturstein", "Natursteinarbeiten für Haus und Garten", "Friedhofssatzungen in Westmecklenburg"],
 }
 
@@ -432,12 +434,13 @@ def build_index():
       <p class="eyebrow">Auch für Haus und Garten</p>
       <h2>Naturstein rund ums Haus</h2>
       <p>Unser Handwerk endet nicht am Friedhof. Aus Granit und anderen Natursteinen fertigen wir auch Arbeiten für Haus und Garten – maßgenau, langlebig und passend zu Ihrem Zuhause.</p>
-      <p><a href="kontakt.html">Anfrage für Haus und Garten →</a></p>
+      <p><a href="referenzen.html#haus-garten">Beispiele ansehen →</a> &nbsp; <a href="kontakt.html">Anfrage für Haus und Garten →</a></p>
     </div>
     <ul class="values">
       <li><strong>Treppen und Stufen</strong><span>Für innen und außen, als Blockstufe oder Belag.</span></li>
+      <li><strong>Küchen- und Arbeitsplatten</strong><span>Für die Küche drinnen und die Outdoor-Küche im Garten.</span></li>
       <li><strong>Fensterbänke</strong><span>Innen- und Außenfensterbänke nach Maß.</span></li>
-      <li><strong>Abdeckungen und Platten</strong><span>Zum Beispiel für Mauern und Pfeiler.</span></li>
+      <li><strong>Abdeckungen und Hochbeete</strong><span>Zum Beispiel für Mauern, Pfeiler und Hochbeete.</span></li>
     </ul>
   </div>
 </section>
@@ -531,23 +534,41 @@ def build_category(c):
                 body, "grabmale.html", crumbs=[("Start", ""), ("Grabmale", "grabmale.html"), (c["title"], f'{c["slug"]}.html')])
 
 
+HAUS_GARTEN = ["Außentreppe mit Blockstufen aus hellem Granit", "Außentreppe aus Granit mit Blockstufen", "Eingangsstufen aus rotem Granit",
+               "Eingangspodest mit Stufe aus rotem Granit", "Treppe mit Granitbelag in Grau und Schwarz", "Innentreppe mit Stufenbelag aus Granit",
+               "Musterstufen in verschiedenen Graniten", "Küchenarbeitsplatte und Rückwand aus schwarzem Granit",
+               "Küchenarbeitsplatte aus Granit", "Outdoor-Küche mit Arbeitsplatte aus Naturstein", "Hochbeet mit Abdeckung aus Granit",
+               "Mauer- und Pfeilerabdeckungen aus Granit", "Mauerabdeckung aus Granit an einer Klinkermauer"]
+
+
 def build_references():
+    hg = "".join(f'<a href="{img}.jpg" data-lb><img src="{img}-k.jpg" alt="{esc(alt)}" loading="lazy" decoding="async" width="480" height="480"></a>\n'
+                 for img, alt in zip(images("haus-garten"), HAUS_GARTEN))
     body = f"""<section class="page-head">
   <div class="wrap">
     <p class="eyebrow">Referenzen</p>
-    <h1>Aufgestellte Grabmale</h1>
-    <p class="lead">Eine Auswahl von Grabmalen, die wir auf Friedhöfen in der Region gefertigt und aufgestellt haben.</p>
+    <h1>Unsere Arbeiten</h1>
+    <p class="lead">Eine Auswahl von Grabmalen, die wir auf Friedhöfen in der Region gefertigt und aufgestellt haben – und von Natursteinarbeiten für Haus und Garten.</p>
   </div>
 </section>
 <section class="section">
   <div class="wrap">
+    <div class="section-head"><h2>Grabmale</h2></div>
     {gallery("referenzen", "Referenz")}
     <p class="gallery-note">Weitere Beispiele finden Sie bei den einzelnen <a href="grabmale.html">Grabmal-Arten</a>.</p>
   </div>
 </section>
+<section class="section section-alt" id="haus-garten">
+  <div class="wrap">
+    <div class="section-head"><h2>Haus und Garten</h2><p>Treppen, Küchenplatten, Hochbeete und Abdeckungen aus Naturstein – maßgenau gefertigt und eingebaut.</p></div>
+    <div class="gallery">
+{hg}    </div>
+    <p class="gallery-note">Sie planen etwas für Haus oder Garten? <a href="kontakt.html">Fragen Sie uns gern an.</a></p>
+  </div>
+</section>
 {cta()}"""
     return page("referenzen.html", "Referenzen",
-                "Referenzen von Grabmale aus Lehsen: von uns gefertigte und aufgestellte Grabmale auf Friedhöfen in Westmecklenburg – Breitsteine, Stelen und mehr.",
+                "Referenzen von Grabmale aus Lehsen: aufgestellte Grabmale auf Friedhöfen in Westmecklenburg sowie Treppen, Küchenplatten und Abdeckungen aus Naturstein für Haus und Garten.",
                 body, "referenzen.html", crumbs=[("Start", ""), ("Referenzen", "referenzen.html")])
 
 
@@ -648,7 +669,8 @@ def build_directions():
       </div>
       <div class="address-card" style="margin-top:16px">
         <h2 class="box-title">Besuch der Ausstellung</h2>
-        <p>{HOURS}. Damit wir uns ausreichend Zeit für Sie nehmen können, vereinbaren Sie bitte vorab einen Termin.</p>
+        <p>Unsere Ausstellung können Sie <strong>jederzeit ansehen</strong>, auch ohne Termin – sie ist barrierefrei erreichbar.</p>
+        <p style="margin-top:10px">Für eine persönliche Beratung vereinbaren Sie bitte einen Termin – gern auch abends und samstags.</p>
         <p style="margin-top:12px"><a href="kontakt.html">Termin anfragen →</a></p>
       </div>
     </div>
@@ -666,6 +688,15 @@ def build_directions():
   </div>
 </section>
 <section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head"><h2>So erkennen Sie uns</h2><p>Schon von der Straße aus sehen Sie unser Schild mit der Aufschrift „Grabmale“. Am Eingang stehen die Musterstufen mit „Treppenstufen, Fensterbänke, Beratung &amp; Verkauf“, dahinter die Reihe von Grabsteinen in unserer Ausstellung.</p></div>
+    <div class="gallery gallery-2">
+<a href="img/anfahrt/eingang-01.jpg" data-lb><img src="img/anfahrt/eingang-01-k.jpg" alt="Musterstufen am Eingang mit der Aufschrift Treppenstufen, Fensterbänke, Beratung und Verkauf" loading="lazy" decoding="async" width="480" height="360"></a>
+<a href="img/anfahrt/eingang-02.jpg" data-lb><img src="img/anfahrt/eingang-02-k.jpg" alt="Reihe von Grabsteinen in der Ausstellung in Lehsen" loading="lazy" decoding="async" width="480" height="250"></a>
+    </div>
+  </div>
+</section>
+<section class="section">
   <div class="wrap">
     <div class="section-head"><h2>Wegbeschreibung</h2></div>
     <div class="routes">{routes}</div>
@@ -797,17 +828,26 @@ STONES = [
     {"name": "Rainbow", "art": "Sandstein", "herkunft": "Indien", "img": "liegesteine/liegesteine-28",
      "farbe": "Gelb, Ocker und Rotbraun in Wellenlinien",
      "text": "Kein Granit, sondern ein Sandstein mit auffälliger, regenbogenartiger Zeichnung. Weicher als Granit und deshalb mit naturbelassener Oberfläche besonders schön."},
+    {"name": "Atlantis", "img": "steinsorten/atlantis",
+     "farbe": "Tiefgrün mit hellen und dunklen Wellenlinien",
+     "text": "Ein ausdrucksstarker grüner Naturstein mit bewegter, fast marmorartiger Zeichnung. Poliert leuchtet das Grün besonders intensiv – ideal für Grabanlagen, die auffallen und trotzdem natürlich wirken."},
 ]
+
+
+def stone_alt(st):
+    if st.get("art") and st.get("herkunft"):
+        return f'{st["name"]} – {st["art"]} aus {st["herkunft"]}'
+    return f'{st["name"]} – {st["farbe"]}'
 
 
 def build_stones():
     items = []
     for st in STONES:
         items.append(f"""<article class="stone" id="stein-{slug(st["name"])}">
-  <a href="img/{st["img"]}.jpg" data-lb><img src="img/{st["img"]}-k.jpg" alt="{st["name"]} – {st["art"]} aus {st["herkunft"]}" loading="lazy" width="480" height="480"></a>
+  <a href="img/{st["img"]}.jpg" data-lb><img src="img/{st["img"]}-k.jpg" alt="{stone_alt(st)}" loading="lazy" width="480" height="480"></a>
   <div class="stone-body">
     <h3>{st["name"]}</h3>
-    <dl><dt>Art</dt><dd>{st["art"]}</dd><dt>Herkunft</dt><dd>{st["herkunft"]}</dd><dt>Farbe</dt><dd>{st["farbe"]}</dd></dl>
+    <dl>{"".join(f"<dt>{k}</dt><dd>{st[f]}</dd>" for k, f in (("Art", "art"), ("Herkunft", "herkunft"), ("Farbe", "farbe")) if st.get(f))}</dl>
     <p>{st["text"]}</p>
   </div>
 </article>""")
@@ -840,10 +880,10 @@ def build_stones():
 </section>
 {cta()}"""
     return page("steinsorten.html", "Steinsorten",
-                "Steinsorten für Grabmale: Orion, Himalaya, Multicolor Red, Halmstad, Viscont White und Rainbow-Sandstein – Farben, Herkunft und Wirkung erklärt.",
+                "Steinsorten für Grabmale: Orion, Himalaya, Multicolor Red, Halmstad, Viscont White, Rainbow-Sandstein und Atlantis – Farben, Herkunft und Wirkung erklärt.",
                 body, "steinsorten.html", crumbs=[("Start", ""), ("Ratgeber", "ratgeber.html"), ("Steinsorten", "steinsorten.html")],
                 schema=[{"@context": "https://schema.org", "@type": "ItemList", "name": "Steinsorten für Grabmale", "itemListElement": [
-                    {"@type": "ListItem", "position": i + 1, "name": st["name"], "description": f'{st["art"]} aus {st["herkunft"]}: {st["farbe"]}'} for i, st in enumerate(STONES)]}])
+                    {"@type": "ListItem", "position": i + 1, "name": st["name"], "description": f'{st["art"]} aus {st["herkunft"]}: {st["farbe"]}' if st.get("art") else st["farbe"]} for i, st in enumerate(STONES)]}])
 
 
 SRC_BESTATTG = ("Bestattungsgesetz M-V (Landesrecht M-V)", "https://www.landesrecht-mv.de/bsmv/document/jlr-NNLMV00007941")
@@ -943,8 +983,8 @@ SATZUNGEN = [
             ("Friedhofssatzung Lassahn", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Lassahn/2026-05-07_Lassahn_-_FS.pdf"),
             ("Friedhofssatzung Neuenkirchen", f"{KM}/fileadmin/Mecklenburg/Friedhofsverwaltung/Propstei_Parchim/Neuenkirchen/2026-05-06_Neuenkirchen_-_FS.pdf"),
             ("Satzungen des Amtes", "https://www.amt-zarrentin.de/portal/seiten/satzungen-900000012-29120.html")]),
-        ("Hagenow", "ca. 10 km", "Der Friedhof wird von der Kirchengemeinde betrieben; eine Friedhofsordnung ist nicht online veröffentlicht.", [
-            ("Kirchengemeinde Hagenow", f"{KM}/hagenow/friedhof")]),
+        ("Hagenow", "ca. 10 km", "Kirchliche Friedhöfe Hagenow und Toddin der Ev.-Luth. Kirchengemeinde Hagenow.", [
+            ("Friedhofsordnung Hagenow", "https://kirche-hagenow.de/files/kirche_hgn/content/downloads/Dokumente/Friedhof/Friedhofsordnung2018.pdf")]),
         ("Amt Hagenow-Land", "5–25 km", "Eigene Satzungen je Gemeinde:", [
             ("Alt Zachun", HL.format("alt-zachun")), ("Bresegard b. Picher", HL.format("bresegard-bei-picher")),
             ("Groß Krams", HL.format("gross-krams")), ("Hoort", HL.format("hoort")), ("Hülseburg", HL.format("huelseburg")),
@@ -1078,7 +1118,7 @@ ENTRY_ORTE = {
                    ("Camin", "Friedhofsordnung Körchow, Camin, Marsow"), ("Marsow", "Friedhofsordnung Körchow, Camin, Marsow")],
     "Wittendörp": [("Wittendörp", "Ortsrecht der Gemeinde"), ("Döbbersen", "Kirchengemeinde Döbbersen")],
     "Zarrentin am Schaalsee und Amt Zarrentin": [("Zarrentin am Schaalsee", "Friedhofsordnung Zarrentin"), ("Lassahn", "Friedhofssatzung Lassahn"), ("Neuenkirchen", "Friedhofssatzung Neuenkirchen"), ("Gallin", "Satzungen des Amtes"), ("Vellahn", "Satzungen des Amtes")],
-    "Hagenow": [("Hagenow", None)],
+    "Hagenow": [("Hagenow", None), ("Toddin", None)],
     "Amt Hagenow-Land": [("Alt Zachun", "Alt Zachun"), ("Bresegard bei Picher", "Bresegard b. Picher"), ("Groß Krams", "Groß Krams"), ("Hoort", "Hoort"),
                          ("Hülseburg", "Hülseburg"), ("Kirch Jesar", "Kirch Jesar"), ("Kuhstorf", "Kuhstorf"), ("Moraas", "Moraas"),
                          ("Pritzier", "Pritzier"), ("Strohkirchen", "Strohkirchen"), ("Warlitz", "Warlitz")],
@@ -1303,7 +1343,7 @@ ORT_SATZUNG = {
     "Wittenburg": "wittenburg-st-bartholomaeus", "Zühr": "wittenburg-zuehr", "Körchow": "koerchow-camin-marsow",
     "Camin": "koerchow-camin-marsow", "Marsow": "koerchow-camin-marsow", "Wittendörp": "wittendoerp",
     "Döbbersen": "doebbersen", "Lassahn": "lassahn", "Neuenkirchen": "neuenkirchen", "Zarrentin am Schaalsee": "zarrentin", "Gallin": "gallin",
-    "Vellahn": "vellahn", "Hagenow": "hagenow", "Alt Zachun": "alt-zachun", "Bresegard bei Picher": "bresegard-bei-picher",
+    "Vellahn": "vellahn", "Hagenow": "hagenow", "Toddin": "hagenow", "Alt Zachun": "alt-zachun", "Bresegard bei Picher": "bresegard-bei-picher",
     "Groß Krams": "gross-krams", "Hoort": "hoort", "Hülseburg": "huelseburg", "Kirch Jesar": "kirch-jesar",
     "Kuhstorf": "kuhstorf", "Moraas": "moraas", "Pritzier": "pritzier", "Strohkirchen": "strohkirchen", "Warlitz": "warlitz",
     "Holthusen": "holthusen", "Brahlstorf": "brahlstorf", "Dersenow": "dersenow", "Schwanheide": "schwanheide",
@@ -1539,7 +1579,7 @@ def build_search_index(files):
         entries.append({"t": q, "u": f"ratgeber.html#frage-{slug(q)}", "s": "Häufige Frage", "d": strip_tags(a)[:160], "x": strip_tags(a)})
     for st in STONES:
         entries.append({"t": st["name"], "u": f"steinsorten.html#stein-{slug(st['name'])}", "s": "Steinsorte",
-                        "d": f'{st["art"]} aus {st["herkunft"]} – {st["farbe"]}', "x": st["text"]})
+                        "d": (f'{st["art"]} aus {st["herkunft"]} – ' if st.get("art") else '') + st["farbe"], "x": st["text"]})
     seen = set()
     for e in SEARCH:
         u = e["u"] if not e["u"].startswith("#") else "friedhofssatzungen.html" + e["u"]

@@ -1,29 +1,83 @@
 {
   "id": "hagenow",
-  "titel": "Friedhof Hagenow (Friedhofsordnung nicht online)",
-  "orte": ["Hagenow"],
-  "traeger": "Ev.-Luth. Kirchengemeinde Hagenow (Pfarrsprengel mit KG Kirch Jesar)",
-  "art": "keine_online",
-  "fassung": "",
-  "quelle_url": "https://www.kirche-mv.de/hagenow/friedhof",
-  "quelle_titel": "Friedhofsseite der Kirchengemeinde Hagenow",
-  "friedhoefe": [],
-  "kurzfazit": "Für den kirchlichen Friedhof Hagenow ist online keine Friedhofsordnung veröffentlicht. Welche Grabmale erlaubt sind (Maße, Material, Genehmigung), erfahren Angehörige direkt bei der Kirchengemeinde Hagenow.",
-  "ruhezeit": "",
-  "grabarten": [],
-  "masse": [],
-  "material": [],
-  "verbote": [],
-  "genehmigung": [],
-  "standsicherheit": [],
-  "fristen": [],
-  "kinderarbeit": "",
-  "besonderheiten": [],
-  "kontakt": "Ev.-Luth. Kirchengemeinde Hagenow, Kirchenplatz 4, 19230 Hagenow, Tel. 03883 723128, E-Mail hagenow@elkm.de (laut kirche-mv.de/hagenow; eine eigene Friedhofsverwaltung wird dort nicht genannt)",
+  "titel": "Friedhofsordnung für die Friedhöfe in Hagenow und Toddin (Ev.-Luth. Kirchengemeinde Hagenow)",
+  "orte": ["Hagenow", "Toddin"],
+  "traeger": "Ev.-Luth. Kirchengemeinde Hagenow",
+  "art": "kirchlich",
+  "fassung": "vom 16.10.2018 (Beschluss des Kirchengemeinderats), vom Kirchenkreis Mecklenburg genehmigt am 28.02.2019; ersetzt die Friedhofsordnung vom 07.10.2003",
+  "quelle_url": "https://kirche-hagenow.de/files/kirche_hgn/content/downloads/Dokumente/Friedhof/Friedhofsordnung2018.pdf",
+  "quelle_titel": "Ev.-Luth. Kirchengemeinde Hagenow: Friedhofsordnung 2018 (PDF)",
+  "friedhoefe": ["Friedhof Hagenow (Eigentum der Ev.-Luth. Kirche zu Hagenow) (§ 1 Abs. 1)", "Friedhof Toddin (Eigentum der Ev.-Luth. Kirche zu Hagenow) (§ 1 Abs. 1)"],
+  "kurzfazit": "Auf den kirchlichen Friedhöfen Hagenow und Toddin braucht jedes Grabmal vorher die schriftliche Zustimmung der Friedhofsverwaltung; einzureichen ist ein Entwurf im Maßstab 1:10 in zweifacher Ausfertigung, die Zustimmung gilt ein Jahr. Unzulässig sind u. a. Kunststeinsockel unter Natursteingrabmalen, Grabsteine aus gegossenem Beton oder Kunststoff, Ölfarbenanstrich und Firmenbezeichnungen am Grabmal; ganzflächige Steinabdeckungen sind verboten, Steineinfassungen „unerwünscht“. In den Feldern F, N und U (bestimmte Reihen) gilt zusätzlich eine eigene Grabmal- und Bepflanzungsordnung, die nur in der Friedhofsverwaltung einsehbar ist.",
+  "ruhezeit": "25 Jahre, für Kinder bis 5 Jahre 20 Jahre (§ 12 Abs. 1); Urnengemeinschaftsanlage 25 Jahre (§ 20 Abs. 4); Wahlgrab-Nutzungszeit 25 Jahre (§ 18 Abs. 1)",
+  "grabarten": [
+    {"name": "Rasenreihengrabstätte (Erdbestattung)", "regel": "mit zusätzlichen Gestaltungsvorschriften; der Reihe nach vergeben, Nutzungsrecht für die Ruhezeit, nicht verlängerbar; keine Urnenbeisetzung in Reihengräbern (§ 16 Abs. 1, 2; § 17 Abs. 1, 2)"},
+    {"name": "Wahlgrabstätte (Einzel- oder Familiengrab) für Erdbestattung und Urnen", "regel": "mit allgemeinen Gestaltungsvorschriften; Nutzungszeit 25 Jahre, verlängerbar; Mindestmaß 2,10 × 0,90 m (Kinder bis 5 Jahre 1,20 × 0,60 m); in bereits belegte Wahlgräber je Grabbreite zwei Urnen (§ 16 Abs. 1, § 18 Abs. 1, 3, § 9 Abs. 3, § 19 Abs. 2)"},
+    {"name": "Urnenwahlgrabstätte", "regel": "mit allgemeinen oder mit zusätzlichen Gestaltungsvorschriften; mindestens 0,60 × 0,60 m, je Grabbreite eine Urne (§ 16 Abs. 1, § 9 Abs. 4, § 19 Abs. 1)"},
+    {"name": "Urnengemeinschaftsanlage (mit Namensnennung)", "regel": "Rasenfeld im Raster 40 × 40 cm, nicht anonym; Namen auf einer gemeinsamen Stele (im Preis enthalten); keine Bepflanzung durch Angehörige, Blumen und Kränze nur am zentralen Ablageplatz; Pflege durch den Friedhofsträger (§ 20 Abs. 1–3)"}
+  ],
+  "masse": [
+    "Mindeststärke (allgemeine Gestaltungsvorschriften): 0,40–0,70 m Höhe 0,12 m; 0,70–1,00 m Höhe 0,14 m; 1,00–1,50 m Höhe 0,16 m; über 1,50 m Höhe 0,18 m – jeweils bei ordnungsgemäßer, standsicherer Verdübelung (§ 23 Abs. 1)",
+    "In Abteilungen mit zusätzlichen Gestaltungsvorschriften gelten die Maße der Grabmal- und Bepflanzungsordnung (§ 23 Abs. 2)",
+    "Mindestgrabmaße: Kinder bis 5 Jahre 1,20 × 0,60 m, Personen über 5 Jahre 2,10 × 0,90 m, Urnengrab 0,60 × 0,60 m (§ 9 Abs. 3, 4)",
+    "Hecken höchstens 0,60 m hoch und nicht über die Grabgrenze (§ 31 Abs. 2)",
+    "Eine Höchsthöhe oder -breite für Grabmale ist in der Friedhofsordnung selbst nicht festgelegt"
+  ],
+  "material": [
+    "Grabmale müssen sich ins Gesamtbild des Friedhofs einfügen und in ihrer Gestaltung mit dem christlichen Glauben vereinbar sein (§ 25 Abs. 1)",
+    "In Abteilungen mit allgemeinen Gestaltungsvorschriften sonst keine zusätzlichen Anforderungen an Gestaltung und Bearbeitung – mit Ausnahme der Verbote in § 24 (§ 24 Abs. 1)",
+    "Im Antrag Material, Bearbeitung, Schriftanordnung, Ornamente, Symbole und Fundamentierung angeben (§ 25 Abs. 3)"
+  ],
+  "verbote": [
+    "Kunststeinsockel unter Natursteingrabmalen (§ 24 Abs. 1)",
+    "Grabsteine aus gegossener Betonmasse oder aus Kunststoffen (§ 24 Abs. 1)",
+    "Ölfarbenanstrich auf Grabmalen (§ 24 Abs. 1)",
+    "Symbole und Inschriften, die der Weihe des Ortes nicht entsprechen (§ 24 Abs. 1)",
+    "Firmenbezeichnungen an Grabmalen (§ 24 Abs. 1)",
+    "Ganzflächige Abdeckung der Grabstätte mit Stein oder steinähnlichen Materialien; Einfassungen aus Stein sind „unerwünscht“ (§ 31 Abs. 10)",
+    "Bestreuen mit Steinsplitt oder Marmorkies „nicht erwünscht“; Einsäumen mit Gittern, Draht- oder Holzzäunen nicht erlaubt (§ 31 Abs. 8)",
+    "Kunststoffe und nicht verrottbare Stoffe in Trauerfloristik, Grabschmuck, Grabeinfassungen und verbleibenden Pflanzbehältern; ausgenommen Grabvasen, Markierungszeichen und Gießkannen (§ 31 Abs. 9)",
+    "Pflanzenschutz- und Unkrautbekämpfungsmittel (§ 31 Abs. 8)",
+    "Arbeiten in der Nähe einer Bestattung sowie an Sonn- und Feiertagen (§ 3 Abs. 4 d, e; § 5 Abs. 6)"
+  ],
+  "genehmigung": [
+    "Errichtung und jede Veränderung von Grabmalen und baulichen Anlagen nur mit vorheriger schriftlicher Zustimmung der Friedhofsverwaltung; Nutzungsrecht nachweisen (§ 25 Abs. 2)",
+    "Entwurf mit Grundriss und Seitenansicht 1:10 inkl. Material, Bearbeitung, Schrift, Ornamente, Symbole und Fundamentierung, zweifach; auf Verlangen Schrift/Ornamente/Symbole 1:1 zweifach, in besonderen Fällen Modell 1:10 oder Attrappe in natürlicher Größe (§ 25 Abs. 3)",
+    "Zustimmung erlischt, wenn das Grabmal nicht binnen eines Jahres errichtet ist (§ 25 Abs. 4)",
+    "In Abteilungen mit zusätzlichen Gestaltungsvorschriften Zustimmung nur bei Einhaltung der Grabmal- und Bepflanzungsordnung (§ 25 Abs. 5)",
+    "Jede wesentliche Änderung der Grabgestaltung braucht ebenfalls die vorherige schriftliche Zustimmung (§ 31 Abs. 3)",
+    "Bei Anlieferung genehmigten Aufstellungsantrag vorlegen; Prüfung vor Aufstellung möglich (§ 26 Abs. 1)",
+    "Ohne Zustimmung aufgestellte Grabmale können einen Monat nach Benachrichtigung auf Kosten des Nutzungsberechtigten entfernt werden (§ 30 Abs. 3)",
+    "Steinmetze brauchen eine vorherige schriftliche Zulassung (Handwerksrolle, Haftpflichtversicherung), erteilt als Berechtigungskarte für jeweils zwei Jahre; Friedhofsordnung und Grabmal-/Bepflanzungsordnung schriftlich anerkennen (§ 5 Abs. 1–5, 8; § 34 Abs. 5)"
+  ],
+  "standsicherheit": [
+    "Fundamentierung und Befestigung nach den Versetzrichtlinien des Bundesinnungsverbandes in der jeweils gültigen Fassung, dauerhaft standsicher auch beim Öffnen benachbarter Gräber (§ 27 Abs. 1)",
+    "Die Friedhofsverwaltung kann die Fundamentierung überprüfen (§ 27 Abs. 2)",
+    "Nutzungsberechtigte sind dauerhaft für würdigen und verkehrssicheren Zustand verantwortlich; bei gefährdeter Standsicherheit unverzüglich Abhilfe durch einen zugelassenen Gewerbetreibenden (§ 28 Abs. 1, 2)",
+    "Bei Gefahr Sicherungsmaßnahmen (z. B. Umlegen) auf Kosten des Verantwortlichen; nach erfolgloser Frist Entfernung, Aufbewahrung drei Monate (§ 28 Abs. 2)",
+    "Verantwortliche haften für Schäden durch umstürzende Grabmale (§ 28 Abs. 3)"
+  ],
+  "fristen": [
+    "Zustimmung gilt ein Jahr (§ 25 Abs. 4)",
+    "Wahlgräber binnen sechs Monaten nach Erwerb, Reihengräber binnen sechs Monaten nach Bestattung bepflanzen bzw. herrichten (§ 31 Abs. 6)",
+    "Vor Ablauf der Nutzungszeit Grabmale nur mit schriftlicher Zustimmung entfernen; nach Erlöschen des Nutzungsrechts Grabmal mit Fundament binnen drei Monaten entfernen, sonst Abräumung auf Kosten des Nutzungsberechtigten, Grabmale gehen entschädigungslos an den Friedhofsträger (§ 30 Abs. 1, 2)",
+    "Abräumen von Reihengrabfeldern wird sechs Monate vorher bekanntgegeben (§ 17 Abs. 3)",
+    "Gewerbliche Arbeiten nur montags bis freitags 7.00–16.30 Uhr, nicht am Buß- und Bettag (§ 5 Abs. 6)"
+  ],
+  "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
+  "besonderheiten": [
+    "Abteilungen mit zusätzlichen Gestaltungsvorschriften: Feld F Reihe 20–26, Feld N Reihe 20–34, Feld U Reihe 10–14; eigene Grabmal- und Bepflanzungsordnung, einsehbar in der Friedhofsverwaltung während der Dienststunden (§ 34 Abs. 2, 3, 6)",
+    "Wahl zwischen Abteilungen mit allgemeinen und zusätzlichen Gestaltungsvorschriften beim Erwerb; ohne Wahl Bestattung in einer Abteilung mit allgemeinen Vorschriften (§ 8 Abs. 13, § 34 Abs. 4)",
+    "Grabmale, Fundamente und Grabzubehör, die vor dem Ausheben eines Grabes entfernt werden müssen, gehen auf Kosten des Nutzungsberechtigten (§ 10 Abs. 1)",
+    "Wertvolle Grabmale werden verzeichnet; Änderungen nur mit Zustimmung, ggf. Denkmalschutz beteiligen (§ 29)",
+    "Pastorengrabstätten sollen erhalten bleiben (§ 36 Abs. 1)",
+    "Bestehende Grabstätten: Nutzungszeit und Gestaltung nach den bisherigen Vorschriften (§ 35 Abs. 1)"
+  ],
+  "kontakt": "Ev.-Luth. Kirchengemeinde Hagenow, Kirchenplatz 4, 19230 Hagenow, Tel. 03883 723128, E-Mail hagenow@elkm.de (laut kirche-mv.de/hagenow); Widersprüche an den Friedhofsträger oder die Kirchenkreisverwaltung Außenstelle Güstrow, Domstraße 16, 18273 Güstrow (§ 40 Abs. 1)",
   "unsicher": [
-    "Die Friedhofsseite auf kirche-mv.de enthält nur die Kontaktdaten der Kirchengemeinde, keine Friedhofsordnung und keine Angaben zur Friedhofsverwaltung",
-    "Die auf der Kontaktseite genannte Webseite www.kirchgemeinde-hagenow.de war nicht erreichbar (Domain nicht auflösbar)",
-    "Eine Websuche nach einer Friedhofsordnung Hagenow ergab keinen Treffer",
-    "Ob es in Hagenow zusätzlich einen kommunalen Friedhof gibt, wurde nicht geprüft"
+    "§ 16 nennt „Rasenreihengrabstätten mit zusätzlichen Gestaltungsvorschriften“ sowie eine Urnengemeinschaftsanlage mit und ohne Namensnennung; im Text regeln § 17 nur „Reihengrabstätten“ allgemein und § 20 nur eine Anlage mit Stele und Namensnennung.",
+    "Die Grabmal- und Bepflanzungsordnung für die Abteilungen mit zusätzlichen Gestaltungsvorschriften ist nicht online veröffentlicht; dort können strengere Maße und Materialvorgaben gelten.",
+    "Ob die Abteilungen nach § 34 auf dem Friedhof Hagenow oder Toddin liegen, geht aus der Ordnung nicht hervor.",
+    "Die Kontaktdaten stammen nicht aus der Friedhofsordnung, sondern von der Gemeindeseite auf kirche-mv.de; eine eigene Telefonnummer der Friedhofsverwaltung ist in der Ordnung nicht genannt."
   ]
 }
