@@ -835,16 +835,23 @@ STONES = [
     {"name": "Rainbow", "art": "Sandstein", "herkunft": "Indien", "img": "liegesteine/liegesteine-28",
      "farbe": "Gelb, Ocker und Rotbraun in Wellenlinien",
      "text": "Kein Granit, sondern ein Sandstein mit auffälliger, regenbogenartiger Zeichnung. Weicher als Granit und deshalb mit naturbelassener Oberfläche besonders schön."},
-    {"name": "Atlantis", "img": "steinsorten/atlantis",
+    {"name": "Atlantis", "art": "Quarzit", "img": "steinsorten/atlantis",
      "farbe": "Tiefgrün mit hellen und dunklen Wellenlinien",
      "text": "Ein ausdrucksstarker grüner Naturstein mit bewegter, fast marmorartiger Zeichnung. Poliert leuchtet das Grün besonders intensiv – ideal für Grabanlagen, die auffallen und trotzdem natürlich wirken."},
 ]
 
 
+def stone_kurz(st):
+    """„Granit aus Indien“, nur „Quarzit“ oder leer – je nachdem, was bekannt ist."""
+    if not st.get("art"):
+        return ""
+    return f'{st["art"]} aus {st["herkunft"]}' if st.get("herkunft") else st["art"]
+
+
 def stone_alt(st):
-    if st.get("art") and st.get("herkunft"):
-        return f'{st["name"]} – {st["art"]} aus {st["herkunft"]}'
-    return f'{st["name"]} – {st["farbe"]}'
+    if st.get("herkunft"):
+        return f'{st["name"]} – {stone_kurz(st)}'
+    return f'{st["name"]} – {" – ".join(x for x in (stone_kurz(st), st["farbe"]) if x)}'
 
 
 def build_stones():
@@ -890,7 +897,7 @@ def build_stones():
                 "Steinsorten für Grabmale: Orion, Himalaya, Multicolor Red, Halmstad, Viscont White, Rainbow-Sandstein und Atlantis – Farben, Herkunft und Wirkung erklärt.",
                 body, "steinsorten.html", crumbs=[("Start", ""), ("Ratgeber", "ratgeber.html"), ("Steinsorten", "steinsorten.html")],
                 schema=[{"@context": "https://schema.org", "@type": "ItemList", "name": "Steinsorten für Grabmale", "itemListElement": [
-                    {"@type": "ListItem", "position": i + 1, "name": st["name"], "description": f'{st["art"]} aus {st["herkunft"]}: {st["farbe"]}' if st.get("art") else st["farbe"]} for i, st in enumerate(STONES)]}])
+                    {"@type": "ListItem", "position": i + 1, "name": st["name"], "description": f'{stone_kurz(st)}: {st["farbe"]}' if st.get("art") else st["farbe"]} for i, st in enumerate(STONES)]}])
 
 
 SRC_BESTATTG = ("Bestattungsgesetz M-V (Landesrecht M-V)", "https://www.landesrecht-mv.de/bsmv/document/jlr-NNLMV00007941")
@@ -1586,7 +1593,7 @@ def build_search_index(files):
         entries.append({"t": q, "u": f"ratgeber.html#frage-{slug(q)}", "s": "Häufige Frage", "d": strip_tags(a)[:160], "x": strip_tags(a)})
     for st in STONES:
         entries.append({"t": st["name"], "u": f"steinsorten.html#stein-{slug(st['name'])}", "s": "Steinsorte",
-                        "d": (f'{st["art"]} aus {st["herkunft"]} – ' if st.get("art") else '') + st["farbe"], "x": st["text"]})
+                        "d": (f'{stone_kurz(st)} – ' if st.get("art") else '') + st["farbe"], "x": st["text"]})
     seen = set()
     for e in SEARCH:
         u = e["u"] if not e["u"].startswith("#") else "friedhofssatzungen.html" + e["u"]
