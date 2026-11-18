@@ -39,7 +39,7 @@ p { margin: 0 0 1.1em; }
   font: 600 .78rem/1.4 var(--sans);
   letter-spacing: .18em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-dark);
   margin: 0 0 1rem;
 }
 .lead { font-size: 1.15rem; color: var(--muted); max-width: 46em; }
@@ -260,7 +260,7 @@ p { margin: 0 0 1.1em; }
 .site-footer .brand strong { color: #fff; font-size: 1.25rem; }
 .site-footer .brand span { color: #8f8a81; font-size: .62rem; }
 .footer-contact { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; }
-.footer-contact span { color: #55575b; }
+.footer-contact span { color: #8f8a81; }
 .footer-nav { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 14px 0; border-bottom: 1px solid #333538; }
 .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; padding-top: 14px; font-size: .8rem; color: #8f8a81; }
 .footer-bottom a { color: #b9b4ab; }
