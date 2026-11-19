@@ -8,6 +8,8 @@
 # Läuft normalerweise in GitHub Actions (.github/workflows/deploy.yml).
 # Lokal nur mit rsync + ssh (z. B. WSL, macOS, Linux) und eingerichtetem SSH-Schlüssel.
 #
+# Zielpfade sind relativ zum SSH-Login-Verzeichnis (all-inkl: Account-Ordner, im KAS als /webseite/... angezeigt).
+#
 # Umgebungsvariablen:
 #   SSH_HOST (Pflicht), SSH_USER (Pflicht), SSH_PORT (Standard 22)
 #   SSH_KEY_FILE      privater Schlüssel (optional, sonst ssh-agent / ~/.ssh/config)
@@ -25,8 +27,8 @@ for arg in "$@"; do
 done
 
 case "$ZIEL" in
-  staging)   PFAD_STANDARD="/webseite/staging/";   URL="https://staging.grabmale-aus-lehsen.de" ;;
-  produktiv) PFAD_STANDARD="/webseite/produktiv/"; URL="https://grabmale-aus-lehsen.de" ;;
+  staging)   PFAD_STANDARD="webseite/staging/";    URL="https://staging.grabmale-aus-lehsen.de" ;;
+  produktiv) PFAD_STANDARD="webseite/produktiv/"; URL="https://grabmale-aus-lehsen.de" ;;
   *) echo "Aufruf: $0 staging|produktiv [--dry-run]"; exit 1 ;;
 esac
 

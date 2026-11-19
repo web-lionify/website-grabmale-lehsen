@@ -11,12 +11,9 @@
 3. Für beide ein SSL-Zertifikat (Let's Encrypt) aktivieren.
 4. SSH-Zugang aktivieren und notieren: **Server**, **Benutzer**, **Port**.
    Die SSH-Fingerabdrücke des Servers (meist in der Doku/Willkommens-Mail) bereithalten.
-5. Prüfen, wie die Ordner aus SSH-Sicht heißen:
-   ```bash
-   ssh BENUTZER@SERVER 'ls -d /webseite/staging /webseite/produktiv'
-   ```
-   Liegen sie stattdessen im Home-Verzeichnis (z. B. `~/webseite/...`), die Pfade in
-   `scripts/deploy.sh` (`PFAD_STANDARD`) anpassen.
+5. Die Ordner `/webseite/staging/` und `/webseite/produktiv/` sind die Pfade aus KAS-Sicht. Per SSH liegen sie
+   relativ zum Login-Verzeichnis (`webseite/staging/`). So sind sie in `scripts/deploy.sh` (`PFAD_STANDARD`) eingetragen.
+   Der Ordner `webseite` muss existieren, sonst bricht der Upload ab.
 
 ## 2. Secrets und GitHub-Umgebungen anlegen (einmalig)
 **Windows (PowerShell)** im Repo-Ordner:
