@@ -961,7 +961,7 @@ STONES = [
     {"name": "Rainbow", "art": "Sandstein", "herkunft": "Indien", "img": "liegesteine/liegesteine-28",
      "farbe": "Gelb, Ocker und Rotbraun in Wellenlinien",
      "text": "Kein Granit, sondern ein Sandstein mit auffälliger, regenbogenartiger Zeichnung. Weicher als Granit und deshalb mit naturbelassener Oberfläche besonders schön."},
-    {"name": "Atlantis", "art": "Quarzit", "img": "steinsorten/atlantis",
+    {"name": "Atlantis", "art": "Quarzit", "herkunft": "Norwegen", "img": "steinsorten/atlantis",
      "farbe": "Tiefgrün mit hellen und dunklen Wellenlinien",
      "text": "Ein ausdrucksstarker grüner Naturstein mit bewegter, fast marmorartiger Zeichnung. Poliert leuchtet das Grün besonders intensiv – ideal für Grabanlagen, die auffallen und trotzdem natürlich wirken."},
 ]
