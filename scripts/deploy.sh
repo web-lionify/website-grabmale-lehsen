@@ -75,6 +75,16 @@ echo "Server: $SSH_USER@$SSH_HOST:$DEPLOY_PATH (Port $SSH_PORT)"
 [[ ${#DRY_RUN[@]} -gt 0 ]] && echo "Modus:  DRY-RUN – es wird nichts geändert"
 echo
 
+# Vorabprüfung: Übergeordneter Zielordner muss existieren (rsync legt nur die letzte Ebene an).
+# Sonst Login-Verzeichnis und Inhalt anzeigen, damit der richtige Pfad sichtbar wird.
+PARENT="$(dirname "${DEPLOY_PATH%/}")"
+if ! "${SSH_CMD[@]}" "$SSH_USER@$SSH_HOST" "test -d '$PARENT'"; then
+  echo "Fehler: Ordner '$PARENT' existiert auf dem Server nicht (Zielpfad: $DEPLOY_PATH)."
+  echo "Login-Verzeichnis und Inhalt:"
+  "${SSH_CMD[@]}" "$SSH_USER@$SSH_HOST" 'echo "pwd: $(pwd)"; echo "HOME: $HOME"; ls -la; for d in */; do echo "--- $d"; ls -la "$d" 2>&1 | head -15; done' || true
+  exit 1
+fi
+
 # --checksum:   vergleicht Inhalte statt Zeitstempel -> nur wirklich geänderte Dateien werden übertragen
 #               (wichtig in GitHub Actions, dort haben alle Dateien frische Zeitstempel).
 # ohne -t:      Zeitstempel unveränderter Dateien auf dem Server bleiben erhalten (Browser-Cache).
