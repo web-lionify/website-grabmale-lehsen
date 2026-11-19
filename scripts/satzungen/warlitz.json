@@ -1,21 +1,40 @@
 {
   "id": "warlitz",
   "titel": "Friedhofssatzung der Gemeinde Warlitz",
-  "orte": ["Warlitz"],
+  "orte": [
+    "Warlitz"
+  ],
   "traeger": "Gemeinde Warlitz (Amt Hagenow-Land)",
   "art": "kommunal",
   "fassung": "vom 30.06.2025 (beschlossen am 17.06.2025, bekannt gemacht am 30.06.2025)",
   "quelle_url": "https://www.amt-hagenow-land.de/portal/dokumenteplus-900000275-28990.html?ordner=1",
   "quelle_titel": "Amt Hagenow-Land: Friedhofssatzung der Gemeinde Warlitz vom 30.06.2025 (PDF)",
-  "friedhoefe": ["Friedhof der Gemeinde Warlitz (der im Gemeindegebiet gelegene, von der Gemeinde verwaltete Friedhof, § 1)"],
-  "kurzfazit": "In Warlitz sind nur Natursteine und Holz erlaubt, ohne Farbanstrich und Firmenzeichen; Erd- und Urnenwahlgräber haben feste Breiten- und Höhenspannen (Höhe inkl. Sockel). Es gibt nur Erd-, Urnenwahl- und anonyme Urnengräber. Im anonymen Urnenfeld kann der Name auf einer Gemeinschaftsstele graviert werden – laut Satzung über einen namentlich festgelegten Steinmetzbetrieb.",
+  "friedhoefe": [
+    "Friedhof der Gemeinde Warlitz (der im Gemeindegebiet gelegene, von der Gemeinde verwaltete Friedhof, § 1)"
+  ],
+  "kurzfazit": "In Warlitz sind nur Natursteine und Holz erlaubt, ohne Farbanstrich und Firmenzeichen; Erd- und Urnenwahlgräber haben feste Breiten- und Höhenspannen (Höhe inkl. Sockel). Es gibt nur Erd-, Urnenwahl- und anonyme Urnengräber. Im anonymen Urnenfeld kann der Name auf einer Gemeinschaftsstele graviert werden – laut Satzung über einen namentlich festgelegten Steinmetzbetrieb – das ist Grabmale aus Lehsen; Bestellungen nehmen wir persönlich oder per E-Mail entgegen.",
   "ruhezeit": "Erdbestattung (Leichen) 25 Jahre, Urnen (Aschen) 25 Jahre (§ 8)",
   "grabarten": [
-    {"name": "Erdwahlgrab 1-stellig", "regel": "stehendes Grabmal/Stele oben: Breite 30–50 cm, Höhe 65–95 cm; liegendes Grabmal: Breite 45–50 cm, Höhe 40–45 cm (§ 14 Abs. 4)"},
-    {"name": "Erdwahlgrab 2-stellig", "regel": "stehendes Grabmal/Stele oben: Breite 30–80 cm, Höhe 65–100 cm; liegendes Grabmal: Breite 60–70 cm, Höhe 45–55 cm (§ 14 Abs. 4)"},
-    {"name": "Urnenwahlgrab 1-stellig (Außenmaß 1,00 m × 1,00 m Einfassung)", "regel": "stehendes Grabmal/Stele Breite 18–45 cm, Höhe 50–80 cm; liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 14 Abs. 5)"},
-    {"name": "Urnenwahlgrab 2-stellig (Außenmaß 2,00 m × 1,00 m Einfassung)", "regel": "stehendes Grabmal/Stele Breite 18–45 cm, Höhe 50–80 cm; liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 14 Abs. 5)"},
-    {"name": "Anonymes Urnenreihengrab", "regel": "Grab selbst nicht gekennzeichnet; Namensgravur in einfacher Schrift auf einer Stele im anonymen Urnenfeld möglich, beauftragt und abgerechnet durch den Auftraggeber der Bestattung direkt beim in der Satzung genannten Steinmetzbetrieb; Grabschmuck nur an der Stele (§ 12 Abs. 2, 3, 5)"}
+    {
+      "name": "Erdwahlgrab 1-stellig",
+      "regel": "stehendes Grabmal/Stele oben: Breite 30–50 cm, Höhe 65–95 cm; liegendes Grabmal: Breite 45–50 cm, Höhe 40–45 cm (§ 14 Abs. 4)"
+    },
+    {
+      "name": "Erdwahlgrab 2-stellig",
+      "regel": "stehendes Grabmal/Stele oben: Breite 30–80 cm, Höhe 65–100 cm; liegendes Grabmal: Breite 60–70 cm, Höhe 45–55 cm (§ 14 Abs. 4)"
+    },
+    {
+      "name": "Urnenwahlgrab 1-stellig (Außenmaß 1,00 m × 1,00 m Einfassung)",
+      "regel": "stehendes Grabmal/Stele Breite 18–45 cm, Höhe 50–80 cm; liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 14 Abs. 5)"
+    },
+    {
+      "name": "Urnenwahlgrab 2-stellig (Außenmaß 2,00 m × 1,00 m Einfassung)",
+      "regel": "stehendes Grabmal/Stele Breite 18–45 cm, Höhe 50–80 cm; liegende Grabmale und/oder Abdeckplatten bis zum maximalen Innenmaß der Einfassung (§ 14 Abs. 5)"
+    },
+    {
+      "name": "Anonymes Urnenreihengrab",
+      "regel": "Grab selbst nicht gekennzeichnet; Namensgravur in einfacher Schrift auf einer Stele im anonymen Urnenfeld möglich, beauftragt und abgerechnet durch den Auftraggeber der Bestattung direkt beim in der Satzung genannten Steinmetzbetrieb (Grabmale aus Lehsen); Grabschmuck nur an der Stele (§ 12 Abs. 2, 3, 5)"
+    }
   ],
   "masse": [
     "Mindeststärken: bis 0,80 m Höhe 12,0 cm, bis 1,20 m Höhe 14,0 cm, bis 1,60 m Höhe 16,0 cm (§ 14 Abs. 2)",
@@ -49,6 +68,7 @@
   ],
   "kinderarbeit": "keine eigene Regelung (es gilt § 14a BestattG M-V)",
   "besonderheiten": [
+    "Namensgravur auf der Gemeinschaftsstele im anonymen Urnenfeld nur durch den in der Satzung genannten Steinmetzbetrieb – das ist Grabmale aus Lehsen; Bestellung persönlich oder per E-Mail (§ 12)",
     "Urnenwahlgräber mit Einfassung; liegende Grabmale/Abdeckplatten bis zum Innenmaß der Einfassung (§ 14 Abs. 5)",
     "Erdgrab: eine Erdbestattung und zusätzlich bis zu 2 Urnen möglich (§ 11 Abs. 3)",
     "Keine Rasen- oder Baumgräber vorgesehen (§ 10 Abs. 2)",
