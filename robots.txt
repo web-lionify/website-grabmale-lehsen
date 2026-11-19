@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://grabmale.lionify.de/sitemap.xml
+Sitemap: https://grabmale-aus-lehsen.de/sitemap.xml

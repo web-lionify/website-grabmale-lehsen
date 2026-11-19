@@ -1,46 +1,63 @@
-# Anleitung: Zugangsdaten für grabmale.lionify.de einrichten
+# Anleitung: SSH-Deploy für grabmale-aus-lehsen.de einrichten
 
-## 1. Subdomain bei all-inkl anlegen
-1. Im **KAS** anmelden: https://kas.all-inkl.com
-2. **Domain → Subdomains → Neue Subdomain anlegen**
-3. Subdomain: `grabmale`, Domain: `lionify.de`
-4. Zielverzeichnis: `/grabmale.lionify.de/` (Vorschlag übernehmen und merken)
-5. Unter **SSL-Schutz** für die Subdomain ein Let's-Encrypt-Zertifikat aktivieren.
+| Ziel | Domain | Ordner auf dem Server | Branch |
+|---|---|---|---|
+| Staging | staging.grabmale-aus-lehsen.de | `/webseite/staging/` | `staging` |
+| Produktiv | grabmale-aus-lehsen.de | `/webseite/produktiv/` | `main` |
 
-## 2. Eigenen FTP-Benutzer anlegen
-Nicht den Haupt-FTP-Zugang verwenden – ein eigener Benutzer, der nur den Webseiten-Ordner sieht, ist sicherer.
+## 1. Hosting vorbereiten (Kundenmenü des Hosters)
+1. Domain `grabmale-aus-lehsen.de` auf den Ordner `/webseite/produktiv/` zeigen lassen.
+2. Subdomain `staging.grabmale-aus-lehsen.de` anlegen, Ziel `/webseite/staging/`.
+3. Für beide ein SSL-Zertifikat (Let's Encrypt) aktivieren.
+4. SSH-Zugang aktivieren und notieren: **Server**, **Benutzer**, **Port**.
+   Die SSH-Fingerabdrücke des Servers (meist in der Doku/Willkommens-Mail) bereithalten.
+5. Die Ordner `/webseite/staging/` und `/webseite/produktiv/` sind die Pfade aus KAS-Sicht. Per SSH (chroot) liegen sie
+   unter `/www/htdocs/w012fee6/webseite/staging/` bzw. `.../produktiv/`. So sind sie in `scripts/deploy.sh` (`PFAD_STANDARD`) eingetragen.
+   Der Ordner `webseite` muss existieren, sonst bricht der Upload ab.
 
-1. Im KAS: **FTP → Neuen FTP-Benutzer anlegen**
-2. Kommentar: `GitHub Deploy grabmale`
-3. Verzeichnis: `/grabmale.lionify.de/` (dasselbe wie bei der Subdomain)
-4. Ein starkes Passwort vergeben (z. B. im Passwort-Manager erzeugen) und notieren.
-5. Speichern. Notiere dir:
-   - **FTP-Benutzer**, z. B. `f0123456`
-   - **Server**, z. B. `w0123456.kasserver.com` (steht in der FTP-Übersicht / in der Willkommens-Mail)
+## 2. Secrets und GitHub-Umgebungen anlegen (einmalig)
+**Windows (PowerShell)** im Repo-Ordner:
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\setup-secrets.ps1
+```
+Optional direkt mit Angaben: `-SshHost ssh.example.de -SshUser web123 -SshPort 22`.
+Mit `-DryRun` werden nur der Schlüssel erzeugt und die Fingerabdrücke angezeigt, in GitHub ändert sich nichts.
 
-> Wichtig: Weil der FTP-Benutzer auf `/grabmale.lionify.de/` beschränkt ist, ist das Zielverzeichnis
-> aus seiner Sicht das Hauptverzeichnis. Beim Script also als Zielordner **`/`** eingeben.
-> (Nur falls du doch den Haupt-FTP-Zugang nimmst: `/grabmale.lionify.de/` eingeben.)
+**macOS/Linux/Git Bash:** `./scripts/setup-secrets.sh`
 
-## 3. GitHub CLI installieren und anmelden (einmalig)
+Das Script
+- erzeugt einen eigenen SSH-Schlüssel nur für GitHub Actions,
+- liest den Server-Fingerabdruck (bitte vergleichen),
+- legt die Secrets `SSH_HOST`, `SSH_PORT`, `SSH_USER`, `SSH_PRIVATE_KEY`, `SSH_KNOWN_HOSTS` an,
+- legt die Umgebungen `staging` und `production` an (`production` nur von `main`, mit Freigabe).
+
+## 3. Öffentlichen Schlüssel auf dem Server eintragen
+Das Script gibt am Ende den öffentlichen Schlüssel aus (PowerShell: auch in der Zwischenablage)
+und bietet an, ihn per SSH mit Passwort direkt einzutragen.
+Er muss in `~/.ssh/authorized_keys` des SSH-Benutzers (oder im Kundenmenü unter „SSH-Schlüssel“).
+
+## 4. Branch `staging` anlegen und testen
 ```bash
-brew install gh
+git switch -c staging main
 ```
 ```bash
-gh auth login
+git push -u origin staging
 ```
-(GitHub.com → HTTPS → im Browser anmelden.)
+Erst einmal trocken: GitHub → **Actions → Deploy grabmale-aus-lehsen.de → Run workflow**,
+Branch `staging`, Ziel `staging`, **dry-run** anhaken. Im Log steht, welche Dateien übertragen würden.
+Danach ohne dry-run ausführen und https://staging.grabmale-aus-lehsen.de prüfen.
 
-## 4. Secrets ins Repo eintragen
-Im Repo-Ordner ausführen:
+## 5. Live gehen
+`main` ist gesperrt, direkte Pushes werden abgelehnt. Nach Freigabe durch den Kunden einen Pull Request
+von `staging` nach `main` öffnen und mit **Merge-Commit** mergen:
 ```bash
-./scripts/setup-secrets.sh
+gh pr create --base main --head staging --title "Live: <Kurzbeschreibung>"
 ```
-Das Script fragt Server, Benutzer, Passwort und Zielordner ab und legt sie als Repository-Secrets an.
+Der Check „PR kommt von staging“ muss grün sein. Nach dem Merge wartet der Deploy-Job in GitHub
+auf die Freigabe („Review deployments“) und lädt dann nach `/webseite/produktiv/` hoch.
 
-## 5. Ersten Deploy auslösen
-- Entweder einen Commit auf `main` pushen, oder
-- auf GitHub: **Actions → Deploy grabmale.lionify.de → Run workflow**
-
-Danach https://grabmale.lionify.de aufrufen. Schlägt der Upload fehl, im Actions-Log nachsehen –
-meist ist es ein falscher Server, ein falsches Passwort oder ein falscher Zielordner.
+## Fehlersuche
+- `Permission denied (publickey)`: Schlüssel nicht in `authorized_keys` oder falscher Benutzer.
+- `Host key verification failed`: `SSH_KNOWN_HOSTS` passt nicht → Script erneut ausführen.
+- `rsync: command not found` (auf dem Server): Hoster bietet kein rsync – beim Hoster nachfragen.
+- `No such file or directory` beim Zielordner: Pfad aus SSH-Sicht prüfen (Schritt 1.5).

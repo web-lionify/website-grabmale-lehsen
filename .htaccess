@@ -1,4 +1,4 @@
-# grabmale.lionify.de – wird von scripts/build.py erzeugt, nicht von Hand bearbeiten
+# grabmale-aus-lehsen.de – wird von scripts/build.py erzeugt, nicht von Hand bearbeiten
 
 RewriteEngine On
 # www auf Hauptadresse umleiten
@@ -9,7 +9,7 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Interne Dateien sperren
-<FilesMatch "^\.ftp-deploy-sync-state\.json$|\.(md|py|sh|sql)$">
+<FilesMatch "\.(md|py|sh|sql)$">
   Require all denied
 </FilesMatch>
 

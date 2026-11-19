@@ -1,0 +1,15 @@
+# Wird NICHT auf den Server hochgeladen (rsync --exclude-from).
+# Ein Muster pro Zeile, relativ zum Repo-Ordner.
+.git/
+.github/
+.claude/
+.vorschau/
+scripts/
+praesentation/
+node_modules/
+.gitignore
+.gitattributes
+.DS_Store
+*.md
+launch.json
+.ftp-deploy-sync-state.json
