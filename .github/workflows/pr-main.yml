@@ -1,0 +1,21 @@
+name: Pull Request nach main
+
+# main ist gesperrt: Änderungen kommen nur per Pull Request von "staging" nach "main"
+# (nachdem der Kunde sie auf staging.grabmale-aus-lehsen.de freigegeben hat).
+# Dieser Check ist im Regelsatz für main als Pflicht eingetragen.
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  quelle:
+    name: PR kommt von staging
+    runs-on: ubuntu-latest
+    steps:
+      - name: Quell-Branch prüfen
+        run: |
+          if [ "${{ github.head_ref }}" != "staging" ] || [ "${{ github.event.pull_request.head.repo.full_name }}" != "${{ github.repository }}" ]; then
+            echo "::error::Nach main darf nur der Branch staging gemergt werden (dieser PR kommt von ${{ github.head_ref }})."
+            exit 1
+          fi
+          echo "OK: PR kommt von staging."

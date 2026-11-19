@@ -14,6 +14,7 @@ Statische Webseite (Webhosting mit SSH-Zugang). Repo: web-lionify/website-grabma
   Was nicht hochgeladen wird: `scripts/deploy-exclude.txt`.
 - Staging bekommt beim Upload automatisch `robots.txt` „Disallow: /“ und den Header `X-Robots-Tag: noindex`.
 - Produktiv läuft über die GitHub-Umgebung `production` (Freigabe nötig, nur Branch `main`).
+- **`main` ist gesperrt** (Regelsatz „main nur über staging“): kein direkter Push, kein Force-Push, nicht löschbar. Änderungen nur per Pull Request `staging` → `main` (Merge-Commit); der Check „PR kommt von staging“ (`.github/workflows/pr-main.yml`) lehnt PRs aus anderen Branches ab.
 - Zugangsdaten als Repository-Secrets: `SSH_HOST`, `SSH_PORT`, `SSH_USER`, `SSH_PRIVATE_KEY`, `SSH_KNOWN_HOSTS`.
   Einrichten mit `scripts/setup-secrets.ps1` (Windows) bzw. `scripts/setup-secrets.sh` (Anleitung: `ANLEITUNG-ZUGANGSDATEN.md`).
 - Manuell: GitHub → Actions → „Deploy grabmale-aus-lehsen.de“ → Run workflow (Ziel wählen, optional dry-run).
@@ -33,6 +34,7 @@ Statische Webseite (Webhosting mit SSH-Zugang). Repo: web-lionify/website-grabma
 3. **Freigabe in drei Stufen** – nie direkt auf `main` pushen:
    1. **Lokal**: bauen (`python3 scripts/build.py`), Vorschau mit `python3 -m http.server 8080`, intern freigeben.
    2. **Staging**: Commit auf Branch `staging` pushen → automatisch auf staging.grabmale-aus-lehsen.de. Kunde prüft dort.
-   3. **Live**: nach Kundenfreigabe `staging` in `main` mergen und pushen → Deploy-Job wartet auf Freigabe (GitHub-Umgebung `production`) → grabmale-aus-lehsen.de.
+   3. **Live**: nach Kundenfreigabe Pull Request `staging` → `main` (`gh pr create --base main --head staging`) und mit Merge-Commit mergen → Deploy-Job wartet auf Freigabe (GitHub-Umgebung `production`) → grabmale-aus-lehsen.de.
+   Neue Arbeit immer auf Basis von `staging` beginnen (nie auf `main` committen).
    Vor jedem Push kurz zusammenfassen, was auf Staging bzw. live geht.
 4. Fragen an Herrn Gerdes werden nicht sofort gestellt, sondern in `OFFENE-FRAGEN.md` gesammelt. Bei „offene Fragen beantworten“ alle Fragen daraus ausgeben.

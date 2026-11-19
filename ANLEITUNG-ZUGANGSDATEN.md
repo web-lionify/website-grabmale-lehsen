@@ -48,7 +48,12 @@ Branch `staging`, Ziel `staging`, **dry-run** anhaken. Im Log steht, welche Date
 Danach ohne dry-run ausführen und https://staging.grabmale-aus-lehsen.de prüfen.
 
 ## 5. Live gehen
-Nach Freigabe durch den Kunden `staging` in `main` mergen und pushen. Der Job wartet in GitHub
+`main` ist gesperrt, direkte Pushes werden abgelehnt. Nach Freigabe durch den Kunden einen Pull Request
+von `staging` nach `main` öffnen und mit **Merge-Commit** mergen:
+```bash
+gh pr create --base main --head staging --title "Live: <Kurzbeschreibung>"
+```
+Der Check „PR kommt von staging“ muss grün sein. Nach dem Merge wartet der Deploy-Job in GitHub
 auf die Freigabe („Review deployments“) und lädt dann nach `/webseite/produktiv/` hoch.
 
 ## Fehlersuche
