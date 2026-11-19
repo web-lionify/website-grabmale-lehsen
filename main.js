@@ -191,9 +191,43 @@
     });
   })();
 
+  // Referenzen: Filter
+  (function () {
+    var bar = document.querySelector('.ref-filter');
+    if (!bar) return;
+    var items = Array.prototype.slice.call(document.querySelectorAll('.ref-item'));
+    var chips = Array.prototype.slice.call(bar.querySelectorAll('.chip'));
+    var empty = document.querySelector('.ref-empty');
+    function apply(f) {
+      var shown = 0;
+      items.forEach(function (it) {
+        var on = f === 'alle' || it.getAttribute('data-cat') === f;
+        it.hidden = !on;
+        if (on) shown++;
+      });
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', c.getAttribute('data-filter') === f ? 'true' : 'false'); });
+      if (empty) empty.hidden = shown > 0;
+    }
+    chips.forEach(function (c) {
+      c.addEventListener('click', function () { apply(c.getAttribute('data-filter')); });
+    });
+    bar.hidden = false;
+    if (location.hash === '#haus-garten') {
+      apply('haus');
+      // nach dem Filtern erneut zum Abschnitt springen (Höhe hat sich geändert)
+      setTimeout(function () { var s = document.getElementById('arbeiten'); if (s) s.scrollIntoView(); }, 0);
+    }
+  })();
+
   // Lightbox für Galerien
-  var links = Array.prototype.slice.call(document.querySelectorAll('a[data-lb]'));
-  if (!links.length) return;
+  var allLinks = Array.prototype.slice.call(document.querySelectorAll('a[data-lb]'));
+  if (!allLinks.length) return;
+  var links = allLinks;
+  // Blättern nur innerhalb derselben Galerie und nur durch sichtbare (nicht weggefilterte) Bilder
+  function groupOf(a) {
+    var g = a.closest('[data-lb-group]');
+    return allLinks.filter(function (l) { return l.closest('[data-lb-group]') === g && !l.closest('[hidden]'); });
+  }
   var lb = document.createElement('div');
   lb.className = 'lb';
   lb.setAttribute('role', 'dialog');
@@ -217,13 +251,15 @@
     if (isVid) { img.removeAttribute('src'); vid.poster = links[idx].querySelector('img').src; vid.src = href; vid.setAttribute('aria-label', links[idx].querySelector('img').alt); vid.play().catch(function () {}); }
     else { vid.removeAttribute('src'); vid.load(); img.src = href; }
     img.alt = links[idx].querySelector('img').alt;
-    count.textContent = (idx + 1) + ' / ' + links.length;
+    var fig = links[idx].closest('figure');
+    var cap = fig && fig.querySelector('figcaption') ? fig.querySelector('figcaption').textContent : '';
+    count.textContent = (idx + 1) + ' / ' + links.length + (cap ? '  ·  ' + cap : '');
   }
   function open(i) { lastFocus = document.activeElement; show(i); lb.classList.add('open'); document.body.style.overflow = 'hidden'; lb.querySelector('.lb-close').focus(); }
   function close() { vid.pause(); lb.classList.remove('open'); document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
 
-  links.forEach(function (a, i) {
-    a.addEventListener('click', function (e) { e.preventDefault(); open(i); });
+  allLinks.forEach(function (a) {
+    a.addEventListener('click', function (e) { e.preventDefault(); links = groupOf(a); open(links.indexOf(a)); });
   });
   lb.querySelector('.lb-close').addEventListener('click', close);
   lb.querySelector('.lb-prev').addEventListener('click', function () { show(idx - 1); });
