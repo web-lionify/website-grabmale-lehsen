@@ -8,7 +8,7 @@ Statische Webseite (Webhosting mit SSH-Zugang). Repo: web-lionify/website-grabma
 | Staging | https://staging.grabmale-aus-lehsen.de | `/webseite/staging/` | `staging` |
 | Produktiv | https://grabmale-aus-lehsen.de | `/webseite/produktiv/` | `main` |
 
-- Ordner sind KAS-Pfade; per SSH relativ zum Login-Verzeichnis (`webseite/staging/`, `webseite/produktiv/`).
+- Ordner sind KAS-Pfade; per SSH (chroot) liegen sie unter `/www/htdocs/w012fee6/webseite/staging/` bzw. `.../produktiv/`.
 - Upload per **rsync über SSH** aus GitHub Actions (`.github/workflows/deploy.yml` → `scripts/deploy.sh`).
   Es werden nur geänderte Dateien übertragen (`--checksum`), auf dem Server entfernte Dateien werden gelöscht (`--delete`).
   Was nicht hochgeladen wird: `scripts/deploy-exclude.txt`.
