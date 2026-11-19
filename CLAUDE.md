@@ -37,4 +37,7 @@ Statische Webseite (Webhosting mit SSH-Zugang). Repo: web-lionify/website-grabma
    3. **Live**: nach Kundenfreigabe Pull Request `staging` → `main` (`gh pr create --base main --head staging`) und mit Merge-Commit mergen → Deploy-Job wartet auf Freigabe (GitHub-Umgebung `production`) → grabmale-aus-lehsen.de.
    Neue Arbeit immer auf Basis von `staging` beginnen (nie auf `main` committen).
    Vor jedem Push kurz zusammenfassen, was auf Staging bzw. live geht.
+   - Nach lokaler Umsetzung den Link zur lokalen Vorschau geben (z. B. http://localhost:8080/referenzen.html) und auf Freigabe warten; erst dann auf `staging`.
+   - Das Release (PR `staging` → `main`) erst erstellen, wenn Sven sagt, dass der Kunde freigegeben hat.
+   - Solange `staging` neuer ist als `main` (`git rev-list --count origin/main..origin/staging` > 0), regelmäßig nachfragen, ob der Kunde freigegeben hat und das Release erstellt werden soll.
 4. Fragen an Herrn Gerdes werden nicht sofort gestellt, sondern in `OFFENE-FRAGEN.md` gesammelt. Bei „offene Fragen beantworten“ alle Fragen daraus ausgeben.

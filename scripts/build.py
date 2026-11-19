@@ -303,9 +303,16 @@ def cta(title="Lassen Sie sich persönlich beraten", text="Vereinbaren Sie einen
 VIDEOS = {"referenzen": [("video-friedhof", "Video: Grabanlage mit Sonnenuntergang-Motiv und hellen Abdeckplatten")]}
 
 
-def gallery(slug, label):
+def gallery(slug, label, fit=False):
+    """Bildergalerie. fit=True: Bilder im vollen Format (zeilenweise, gleiche Zeilenhöhe) statt quadratisch beschnitten."""
     items = []
     for i, img in enumerate(images(slug), 1):
+        if fit:
+            w, h = jpg_size(f"{img}-k.jpg")
+            items.append(
+                f'<a href="{img}.jpg" data-lb style="--r:{w / h:.3f}"><img src="{img}-k.jpg" alt="{label} – Beispiel {i}" loading="lazy" decoding="async" width="{w}" height="{h}"></a>'
+            )
+            continue
         items.append(
             f'<a href="{img}.jpg" data-lb><img src="{img}-k.jpg" alt="{label} – Beispiel {i}" loading="lazy" decoding="async" width="480" height="480"></a>'
         )
@@ -313,7 +320,8 @@ def gallery(slug, label):
         items.append(
             f'<a class="is-video" href="img/{slug}/{name}.mp4?v={img_hash(f"img/{slug}/{name}.mp4")}" data-lb><img src="img/{slug}/{name}-k.jpg" alt="{esc(alt)}" loading="lazy" decoding="async" width="480" height="480"></a>'
         )
-    return '<div class="gallery">\n' + "\n".join(items) + "\n</div>"
+    cls = "gallery gallery-fit" if fit else "gallery"
+    return f'<div class="{cls}">\n' + "\n".join(items) + "\n</div>"
 
 
 def cards():
@@ -518,7 +526,7 @@ def build_category(c):
 <section class="section section-alt">
   <div class="wrap">
     <div class="section-head"><h2>Beispiele</h2><p class="muted">{n} Arbeiten – zum Vergrößern auf ein Bild tippen.</p></div>
-    {gallery(c["slug"], c["title"])}
+    {gallery(c["slug"], c["title"], fit=True)}
   </div>
 </section>
 <section class="section">
@@ -548,34 +556,152 @@ HAUS_GARTEN = ["Außentreppe mit Blockstufen aus hellem Granit", "Außentreppe a
                "Mauer- und Pfeilerabdeckungen aus Granit", "Mauerabdeckung aus Granit an einer Klinkermauer"]
 
 
+def jpg_size(path):
+    """Breite und Höhe einer JPEG-Datei (ohne Zusatzbibliothek), für width/height gegen Layout-Sprünge."""
+    data = (ROOT / path).read_bytes()
+    i = 2
+    while i < len(data):
+        if data[i] != 0xFF:
+            i += 1
+            continue
+        marker = data[i + 1]
+        if marker in (0xC0, 0xC1, 0xC2):
+            h = int.from_bytes(data[i + 5:i + 7], "big")
+            w = int.from_bytes(data[i + 7:i + 9], "big")
+            return w, h
+        i += 2 + int.from_bytes(data[i + 2:i + 4], "big")
+    return 480, 480
+
+
+# Referenzen: Bildnummer -> (Filter, Beschreibung). Beschreibung nur als Alt-Text, nicht sichtbar.
+REF_FILTERS = [("grabmal", "Grabmale & Stelen"), ("anlage", "Grabanlagen & Einfassungen"), ("haus", "Haus & Garten")]
+REFERENZEN = {
+    "01": ("grabmal", "Liegesteine und Grabherzen mit Inschrift"),
+    "02": ("grabmal", "Gestaltete Kieselsteine mit Fußspuren"),
+    "03": ("grabmal", "Grabsteine in verschiedenen Graniten und Formen"),
+    "04": ("grabmal", "Doppelgrabmal aus schwarzem Granit mit Abdeckplatte und Figur"),
+    "05": ("grabmal", "Grabmal mit Christusbild und polierter Abdeckplatte"),
+    "06": ("anlage", "Grabeinfassung aus Granit, frisch bepflanzt"),
+    "07": ("anlage", "Doppelgrabanlage aus schwarzem Granit mit Pferdefiguren und Laternen"),
+    "08": ("anlage", "Grabanlage mit Liegeplatte, Stele und Einfassung"),
+    "09": ("grabmal", "Grabstein in Felsform mit Abdeckplatte"),
+    "10": ("grabmal", "Naturstein-Stele auf Sockelplatte"),
+    "11": ("grabmal", "Stele mit Leuchtturm-Motiv"),
+    "12": ("anlage", "Grabeinfassung mit Findling"),
+    "13": ("grabmal", "Grabmal mit Grablaterne und heller Einfassung"),
+    "14": ("grabmal", "Findling mit Madonnenfigur"),
+    "15": ("grabmal", "Zweiteiliges Grabmal aus hellem Granit"),
+    "16": ("grabmal", "Moderne Stele mit Herzausschnitt"),
+    "17": ("anlage", "Doppelgrab-Einfassung mit schwarzen Abdeckplatten"),
+    "18": ("anlage", "Grabeinfassung aus rotbraunem Granit"),
+    "19": ("anlage", "Kleine Grabeinfassung aus dunklem Granit"),
+}
+# Hervorgehobene Arbeiten oben (Bildnummer oder "video"), das erste wird am größten gezeigt
+REF_FEATURED = ["07", "11", "video", "04"]
+
+
 def build_references():
-    hg = "".join(f'<a href="{img}.jpg" data-lb><img src="{img}-k.jpg" alt="{esc(alt)}" loading="lazy" decoding="async" width="480" height="480"></a>\n'
-                 for img, alt in zip(images("haus-garten"), HAUS_GARTEN))
-    body = f"""<section class="page-head">
+    video_name, video_alt = VIDEOS["referenzen"][0]
+    video_href = f'img/referenzen/{video_name}.mp4?v={img_hash(f"img/referenzen/{video_name}.mp4")}'
+    video_alt = "Video: Grabanlage mit Sonnenuntergang-Motiv und hellen Abdeckplatten"
+
+    # Alle Arbeiten: (Filter, Link, Vorschaubild, Beschreibung, ist Video)
+    items = []
+    for img in images("referenzen"):
+        num = img.rsplit("-", 1)[1]
+        cat, cap = REFERENZEN.get(num, ("grabmal", "Grabmal aus unserer Werkstatt"))
+        items.append((cat, f"{img}.jpg", f"{img}-k.jpg", cap, False))
+    items.append(("anlage", video_href, f"img/referenzen/{video_name}-k.jpg", video_alt.replace("Video: ", ""), True))
+    for img, alt in zip(images("haus-garten"), HAUS_GARTEN):
+        items.append(("haus", f"{img}.jpg", f"{img}-k.jpg", alt, False))
+
+    def tile(cat, href, thumb, cap, is_video):
+        w, h = jpg_size(thumb)
+        cls = ' class="is-video"' if is_video else ""
+        label = "Video: " + cap if is_video else cap
+        return f"""<figure class="ref-item" data-cat="{cat}" style="--r:{w / h:.3f}">
+  <a{cls} href="{href}" data-lb><img src="{thumb}" alt="{esc(label)}" loading="lazy" decoding="async" width="{w}" height="{h}"></a>
+</figure>"""
+
+    grid = "\n".join(tile(*it) for it in items)
+    counts = {k: sum(1 for it in items if it[0] == k) for k, _ in REF_FILTERS}
+    chips = f'<button type="button" class="chip" data-filter="alle" aria-pressed="true">Alle <span>{len(items)}</span></button>' + "".join(
+        f'<button type="button" class="chip" data-filter="{k}" aria-pressed="false">{label} <span>{counts[k]}</span></button>' for k, label in REF_FILTERS)
+
+    # Hervorgehobene Arbeiten
+    feat = []
+    for n, key in enumerate(REF_FEATURED):
+        if key == "video":
+            src = f"img/referenzen/{video_name}.jpg"
+            href, cap, cls = video_href, video_alt.replace("Video: ", ""), ' is-video'
+            alt = video_alt
+        else:
+            src = f"img/referenzen/referenzen-{key}.jpg"
+            href, cap, cls = src, REFERENZEN[key][1], ""
+            alt = cap
+        w, h = jpg_size(src)
+        feat.append(f"""<figure class="feat feat-{n + 1}">
+  <a class="feat-link{cls}" href="{href}" data-lb><img src="{src}" alt="{esc(alt)}" loading="{"eager" if n == 0 else "lazy"}" decoding="async" width="{w}" height="{h}"></a>
+</figure>""")
+
+    n_grab = counts["grabmal"] + counts["anlage"]
+    body = f"""<section class="page-head ref-head">
   <div class="wrap">
     <p class="eyebrow">Referenzen</p>
     <h1>Unsere Arbeiten</h1>
-    <p class="lead">Eine Auswahl von Grabmalen, die wir auf Friedhöfen in der Region gefertigt und aufgestellt haben – und von Natursteinarbeiten für Haus und Garten.</p>
+    <p class="lead">Grabmale, Grabanlagen und Natursteinarbeiten, die wir in unserer Werkstatt in Lehsen gefertigt und in der Region aufgestellt oder eingebaut haben.</p>
+    <ul class="ref-facts">
+      <li><strong>{n_grab}</strong><span>Grabmale &amp; Grabanlagen</span></li>
+      <li><strong>{counts["haus"]}</strong><span>Arbeiten für Haus &amp; Garten</span></li>
+      <li><strong>Lehsen</strong><span>eigene Werkstatt – Beratung, Fertigung, Aufstellung</span></li>
+    </ul>
   </div>
 </section>
-<section class="section">
+<section class="section ref-featured">
   <div class="wrap">
-    <div class="section-head"><h2>Grabmale</h2></div>
-    {gallery("referenzen", "Referenz")}
+    <div class="section-head"><p class="eyebrow">Ausgewählt</p><h2>Arbeiten, auf die wir stolz sind</h2></div>
+    <div class="feat-grid" data-lb-group>
+{chr(10).join(feat)}
+    </div>
+  </div>
+</section>
+<section class="section ref-cta-wrap">
+  <div class="wrap">
+    <div class="ref-cta">
+      <div class="ref-cta-media">
+        <img src="img/hero/ausstellung-960.jpg" alt="Ausstellung von Grabmale aus Lehsen" loading="lazy" decoding="async" width="960" height="367">
+        <img src="img/haus-garten/haus-garten-10.jpg" alt="Outdoor-Küche mit Arbeitsplatte aus Naturstein" loading="lazy" decoding="async" width="{jpg_size("img/haus-garten/haus-garten-10.jpg")[0]}" height="{jpg_size("img/haus-garten/haus-garten-10.jpg")[1]}">
+      </div>
+      <div class="ref-cta-body">
+        <p class="eyebrow">Ihr Vorhaben</p>
+        <h2>Gefällt Ihnen, was Sie sehen?</h2>
+        <p>Ob Grabmal, Grabanlage oder Naturstein für Haus und Garten – jede dieser Arbeiten haben wir nach den Wünschen unserer Kunden gefertigt. Gern beraten wir auch Sie persönlich.</p>
+        <ul class="ref-cta-list">
+          <li>Beratung in unserer Ausstellung in Lehsen – auch abends und samstags</li>
+          <li>Grabmale und Grabanlagen passend zur Friedhofssatzung – den Antrag übernehmen wir</li>
+          <li>Treppen, Küchenplatten, Hochbeete und Abdeckungen – maßgenau gefertigt und eingebaut</li>
+          <li>Alles aus eigener Werkstatt – vom Entwurf bis zur Montage</li>
+        </ul>
+        <div class="btn-row"><a class="btn" href="kontakt.html">Unverbindlich anfragen</a><a class="btn btn-ghost" href="tel:{PHONE_HREF}">{PHONE_SHOW}</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-alt" id="arbeiten">
+  <span id="haus-garten" class="anchor"></span>
+  <div class="wrap">
+    <div class="section-head"><h2>Alle Arbeiten</h2><p>Auf ein Bild tippen, um es groß anzusehen. Mit den Filtern finden Sie schnell Beispiele zu Ihrem Vorhaben.</p></div>
+    <div class="ref-filter" role="group" aria-label="Arbeiten filtern" hidden>{chips}</div>
+    <div class="ref-grid" data-lb-group>
+{grid}
+    </div>
+    <p class="ref-empty" hidden>Keine Arbeiten in dieser Auswahl.</p>
     <p class="gallery-note">Weitere Beispiele finden Sie bei den einzelnen <a href="grabmale.html">Grabmal-Arten</a>.</p>
   </div>
 </section>
-<section class="section section-alt" id="haus-garten">
-  <div class="wrap">
-    <div class="section-head"><h2>Haus und Garten</h2><p>Treppen, Küchenplatten, Hochbeete und Abdeckungen aus Naturstein – maßgenau gefertigt und eingebaut.</p></div>
-    <div class="gallery">
-{hg}    </div>
-    <p class="gallery-note">Sie planen etwas für Haus oder Garten? <a href="kontakt.html">Fragen Sie uns gern an.</a></p>
-  </div>
-</section>
-{cta()}"""
+{cta("Ihr Vorhaben – unsere Handarbeit", "Ob Grabmal, Treppe oder Küchenplatte: Wir beraten Sie gern persönlich und erstellen Ihnen ein unverbindliches Angebot.")}"""
     return page("referenzen.html", "Referenzen",
-                "Referenzen von Grabmale aus Lehsen: aufgestellte Grabmale auf Friedhöfen in Westmecklenburg sowie Treppen, Küchenplatten und Abdeckungen aus Naturstein für Haus und Garten.",
+                "Referenzen von Grabmale aus Lehsen: aufgestellte Grabmale und Grabanlagen auf Friedhöfen in Westmecklenburg sowie Treppen, Küchenplatten und Abdeckungen aus Naturstein für Haus und Garten.",
                 body, "referenzen.html", crumbs=[("Start", ""), ("Referenzen", "referenzen.html")])
 
 
