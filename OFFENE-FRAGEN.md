@@ -22,6 +22,10 @@ Wird ausgegeben, wenn gesagt wird: „offene Fragen beantworten“. Beantwortete
 17. Gibt es einen markanten Hinweis für die Anfahrt (z. B. Schild, Hofeinfahrt, Hausfarbe) und ein Foto vom Gelände/Eingang?
 
 ## Entscheidungen
-10. Alte Domain grabmale-aus-lehsen.de: auf die neue Seite umleiten, abschalten oder anders nutzen?
 11. Google-Unternehmensprofil anlegen (Maps-Eintrag, Bewertungen)?
-14. Endgültige Domain: Bleibt die Seite dauerhaft unter grabmale.lionify.de oder zieht sie auf eine eigene Domain um (z. B. grabmale-aus-lehsen.de)? Wichtig vor der Anmeldung bei der Google Search Console.
+
+## Go-live (an Lionify, nicht an Herrn Gerdes)
+20. Kontaktformular: Absender `MAIL_FROM` in `kontakt.php` ist noch `noreply@lionify.de`. Muss eine Adresse sein, die über das neue Hosting-Paket versenden darf (z. B. `noreply@grabmale-aus-lehsen.de`, SPF/DKIM prüfen).
+21. Datenschutzerklärung, Abschnitt Hosting: nennt noch ALL-INKL. Liegt das neue Hosting-Paket dort? Sonst Anbieter anpassen (build.py).
+22. grabmale.lionify.de nach dem Go-live per 301 auf grabmale-aus-lehsen.de umleiten.
+23. Staging zusätzlich mit Passwortschutz (.htaccess/.htpasswd) versehen? Aktuell nur noindex + robots.txt „Disallow: /“.

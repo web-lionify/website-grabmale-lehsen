@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Erzeugt die statischen HTML-Seiten von grabmale.lionify.de.
+"""Erzeugt die statischen HTML-Seiten von grabmale-aus-lehsen.de.
 
 Aufruf (im Repo-Ordner):  python3 scripts/build.py
 Kopf, Navigation und Fußzeile stehen hier zentral, damit alle Seiten gleich bleiben.
@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 os.chdir(ROOT)
 
-SITE = "https://grabmale.lionify.de"
+SITE = "https://grabmale-aus-lehsen.de"
 NAME = "Grabmale aus Lehsen"
 OWNER = "Bernhard Gerdes"
 STREET = "Unter den Linden 14"
@@ -1582,7 +1582,7 @@ def build_htaccess():
            "img-src 'self' data: https://tile.openstreetmap.org; "
            "font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; "
            "form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests")
-    (ROOT / ".htaccess").write_text(f"""# grabmale.lionify.de – wird von scripts/build.py erzeugt, nicht von Hand bearbeiten
+    (ROOT / ".htaccess").write_text(f"""# grabmale-aus-lehsen.de – wird von scripts/build.py erzeugt, nicht von Hand bearbeiten
 
 RewriteEngine On
 # www auf Hauptadresse umleiten
@@ -1593,7 +1593,7 @@ RewriteCond %{{HTTPS}} !=on
 RewriteRule ^ https://%{{HTTP_HOST}}%{{REQUEST_URI}} [L,R=301]
 
 # Interne Dateien sperren
-<FilesMatch "^\\.ftp-deploy-sync-state\\.json$|\\.(md|py|sh|sql)$">
+<FilesMatch "\\.(md|py|sh|sql)$">
   Require all denied
 </FilesMatch>
 

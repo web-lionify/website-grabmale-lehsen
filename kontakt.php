@@ -1,5 +1,5 @@
 <?php
-// Kontaktformular von grabmale.lionify.de
+// Kontaktformular von grabmale-aus-lehsen.de
 // Versendet die Anfrage per E-Mail. Es wird nichts auf dem Server gespeichert.
 
 declare(strict_types=1);
@@ -51,7 +51,7 @@ const MAIL_TEMPLATE = <<<'HTML'
       <div style="font:13px/1.5 Arial,Helvetica,sans-serif;color:#4f565d;margin-top:12px;">Oder einfach im Mailprogramm auf „Antworten“ klicken – die Antwort geht direkt an den Absender.</div>
     </td></tr>
     <tr><td style="background:#e6e8ea;padding:16px 32px;border-radius:0 0 6px 6px;font:12px/1.5 Arial,Helvetica,sans-serif;color:#4f565d;">
-      Gesendet am {{sent}} über grabmale.lionify.de. Die Einwilligung zur Datenverarbeitung wurde erteilt.
+      Gesendet am {{sent}} über grabmale-aus-lehsen.de. Die Einwilligung zur Datenverarbeitung wurde erteilt.
     </td></tr>
   </table>
 </td></tr>

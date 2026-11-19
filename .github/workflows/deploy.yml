@@ -1,41 +1,67 @@
-name: Deploy grabmale.lionify.de
+name: Deploy grabmale-aus-lehsen.de
 
-# Kein Staging: Jeder Push auf main geht direkt live.
+# Ablauf:  lokal prüfen  ->  Push auf "staging"  ->  Kunde prüft staging.grabmale-aus-lehsen.de
+#          ->  staging in "main" mergen  ->  Upload auf grabmale-aus-lehsen.de (mit Freigabe)
+# Upload per rsync über SSH, nur geänderte Dateien (scripts/deploy.sh).
 on:
   push:
-    branches: [main]
+    branches: [staging, main]
   workflow_dispatch:
-
-concurrency:
-  group: deploy-production
-  cancel-in-progress: false
+    inputs:
+      ziel:
+        description: "Ziel"
+        type: choice
+        options: [staging, produktiv]
+        default: staging
+      dry_run:
+        description: "Nur anzeigen, was sich ändern würde (dry-run)"
+        type: boolean
+        default: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      ZIEL: ${{ github.event_name == 'workflow_dispatch' && inputs.ziel || (github.ref_name == 'main' && 'produktiv' || 'staging') }}
+    # GitHub-Umgebung: "production" kann eine Freigabe verlangen (Settings -> Environments).
+    environment:
+      name: ${{ (github.event_name == 'workflow_dispatch' && inputs.ziel || (github.ref_name == 'main' && 'produktiv' || 'staging')) == 'produktiv' && 'production' || 'staging' }}
+      url: ${{ (github.event_name == 'workflow_dispatch' && inputs.ziel || (github.ref_name == 'main' && 'produktiv' || 'staging')) == 'produktiv' && 'https://grabmale-aus-lehsen.de' || 'https://staging.grabmale-aus-lehsen.de' }}
+    concurrency:
+      group: deploy-${{ github.event_name == 'workflow_dispatch' && inputs.ziel || (github.ref_name == 'main' && 'produktiv' || 'staging') }}
+      cancel-in-progress: false
     steps:
+      - name: Produktiv nur von main
+        if: env.ZIEL == 'produktiv' && github.ref_name != 'main'
+        run: |
+          echo "::error::Produktiv darf nur vom Branch main hochgeladen werden (aktuell: ${{ github.ref_name }})."
+          exit 1
+
       - name: Code auschecken
         uses: actions/checkout@v4
 
-      # Die Action speichert einen Sync-Stand (.ftp-deploy-sync-state.json)
-      # auf dem Server und lädt danach nur geänderte Dateien hoch.
-      - name: Per FTP hochladen (nur Änderungen)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          protocol: ftps
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.github/**
-            **/node_modules/**
-            README.md
-            CLAUDE.md
-            ANLEITUNG-ZUGANGSDATEN.md
-            OFFENE-FRAGEN.md
-            **/.DS_Store
-            scripts/**
-            .claude/**
+      - name: SSH-Schlüssel einrichten
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          [ -n "$SSH_PRIVATE_KEY" ] || { echo "::error::Secret SSH_PRIVATE_KEY fehlt (scripts/setup-secrets.sh)."; exit 1; }
+          [ -n "$SSH_KNOWN_HOSTS" ] || { echo "::error::Secret SSH_KNOWN_HOSTS fehlt (scripts/setup-secrets.sh)."; exit 1; }
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key && chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts && chmod 644 ~/.ssh/known_hosts
+
+      - name: Hochladen per rsync (nur Änderungen)
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+        run: |
+          export SSH_KEY_FILE="$HOME/.ssh/deploy_key" SSH_KNOWN_HOSTS_FILE="$HOME/.ssh/known_hosts"
+          ARGS=()
+          [ "${{ inputs.dry_run }}" = "true" ] && ARGS+=(--dry-run)
+          bash scripts/deploy.sh "$ZIEL" "${ARGS[@]}"
+
+      - name: Schlüssel entfernen
+        if: always()
+        run: rm -f ~/.ssh/deploy_key
